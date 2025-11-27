@@ -1,0 +1,28 @@
+---
+title: "认领老师班级"
+generated_at: "2025-11-27 10:50:23"
+source: "https://developer.work.weixin.qq.com/document/path/94434"
+---
+
+[[toc]]
+
+<!-- import claimClassAdmin from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+
+```js
+
+wx.invoke('claimClassAdmin',{
+	
+	},function(res) {
+        if (res.err_msg == "claimClassAdmin:ok") {
+			// 回调成功
+			var departmentIds = res.departmentIds;  //数组类型
+			for (var i = 0; i < departmentIds.length; i++){
+				var departmentId = departmentIds[i];
+			}
+		}
+);
+
+```

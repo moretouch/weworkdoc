@@ -1,0 +1,26 @@
+---
+title: "设置朋友圈封面与签名"
+generated_at: "2025-11-27 10:50:17"
+source: "https://developer.work.weixin.qq.com/document/path/94845"
+---
+
+[[toc]]
+<!-- import updateMomentsSetting from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.invoke("updateMomentsSetting", {
+			signature:"个性签名",    // 个性签名
+			imgUrl:"http://www.xxx/"    // 封面url
+      },function(res) {
+        if (res.err_msg == "updateMomentsSetting:ok") {
+        }
+	}
+);
+```
+
+
+
+
+

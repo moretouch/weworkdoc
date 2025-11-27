@@ -1,0 +1,21 @@
+---
+title: " 保存选择的选项"
+generated_at: "2025-11-27 10:50:53"
+source: "https://developer.work.weixin.qq.com/document/path/100722"
+---
+
+[[toc]]
+<!-- import saveApprovalSelectedItems from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```
+wx.invoke('saveApprovalSelectedItems', {
+    "key": 'key', // 字符串，从 URL 中获取到的 key
+    "selectedData": '[{"key":"item-1","value":"选项1"},{"key":"item-2","value":"选项2"}]'// ！！！注意，旧版这里传入的是，JSON.stringify后的字符串
+}, (res) => {
+    if (res.err_msg === 'saveApprovalSelectedItems:ok') {
+        // 保存成功
+    }
+});
+```

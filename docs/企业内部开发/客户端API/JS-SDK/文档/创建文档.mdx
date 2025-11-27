@@ -1,0 +1,23 @@
+---
+title: "创建文档"
+generated_at: "2025-11-27 10:50:56"
+source: "https://developer.work.weixin.qq.com/document/path/98066"
+---
+
+[[toc]]
+<!-- import createDoc from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```javascript
+ wx.invoke('createDoc', {
+		"docType": 1
+	}, function(res) {
+		if (res.err_msg == "createDoc:ok"){
+				var docInfo = res.docInfo;
+				var docId = docInfo.docId;
+				var docName = docInfo.docName;
+		}
+ });
+
+```

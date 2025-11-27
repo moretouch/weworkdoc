@@ -1,0 +1,28 @@
+---
+title: "监听 Wi-Fi 列表更新"
+generated_at: "2025-11-27 10:51:40"
+source: "https://developer.work.weixin.qq.com/document/path/100545"
+---
+
+[[toc]]
+
+<!-- import onGetWifiList from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+
+```javascript
+wx.onGetWifiList(function(res) {
+  if (res.wifiList.length) {
+       for(var i = 0; i < res.wifiList.length; i++)
+       {
+           console.log("=====wifiList======")
+           console.log("SSID:"  +  res.wifiList[i].SSID)
+           console.log("BSSID:" + res.wifiList[i].BSSID)
+           console.log("secure:" + res.wifiList[i].secure)
+           console.log("secure:" + res.wifiList[i].signalStrength)
+           console.log("====================")
+        }
+  }
+})
+```

@@ -1,0 +1,21 @@
+---
+title: "设置私密消息"
+generated_at: "2025-11-27 10:51:14"
+source: "https://developer.work.weixin.qq.com/document/path/100508"
+---
+
+[[toc]]
+<!-- import setShareAttr from @wecom/jssdk -->
+## 旧版jweixin调用
+### 示例代码
+```
+wx.invoke("setShareAttr", {
+      withShareTicket: true,
+      state: "STATE",
+        },function(res){
+                if (res.err_msg == "setShareAttr:ok")
+                {
+                }
+        }
+);
+```

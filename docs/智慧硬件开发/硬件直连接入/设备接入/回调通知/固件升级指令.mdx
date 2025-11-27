@@ -1,0 +1,26 @@
+---
+title: "固件升级指令"
+generated_at: "2025-11-27 15:45:10"
+source: "https://developer.work.weixin.qq.com/document/path/91391"
+---
+
+管理员在app上操作升级固件，此时推送该事件通知设备来升级固件。
+
+**指令包体：**
+
+```
+{
+	"cmd" : "push_update_firmware",
+	"headers": 
+	{
+		"req_id" : "xxxx"
+	}
+}
+```
+
+**参数说明：**
+
+| 参数名       | 类型     | 描述                               |
+| --------- | ------ | -------------------------------- |
+| req_id | string | 透传请求的req_id                   |
+| cmd    | string | 指令号，此处固定为push_update_firmware |

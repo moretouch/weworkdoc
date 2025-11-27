@@ -1,0 +1,26 @@
+---
+title: "企业解绑设备事件"
+generated_at: "2025-11-27 15:45:14"
+source: "https://developer.work.weixin.qq.com/document/path/91545"
+---
+
+告知设备当前企业已解绑
+
+**指令包体：**
+
+```
+{
+	"cmd" : "push_unbind_corp",
+	"headers": 
+	{
+      		"req_id" : "xxxx"
+	}
+}
+```
+
+**参数说明：**
+
+| 参数名       | 类型     | 描述                               |
+| --------- | ------ | -------------------------------- |
+| req_id    | string | 透传请求的req_id                      |
+| cmd       | string | 指令号，此处固定为push_unbind_corp         |

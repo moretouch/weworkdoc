@@ -1,405 +1,405 @@
-2025-11-27 14:46:54,096 - INFO - Starting WeWork documentation crawler...
-2025-11-27 14:46:54,096 - INFO - Extracting categories from https://developer.work.weixin.qq.com/document/path/90195
-2025-11-27 14:46:55,407 - INFO - Found 4275 categories
-2025-11-27 14:46:56,769 - INFO - Processing document: 接口购买到期通知 (ID: 55892)
-2025-11-27 14:46:57,001 - INFO - Saved: docs/第三方应用开发/服务端API/数据与智能专区/订单管理回调/接口购买到期通知.mdx
-2025-11-27 14:46:58,002 - INFO - Processing document: 接口试用到期通知 (ID: 55893)
-2025-11-27 14:46:58,243 - INFO - Saved: docs/第三方应用开发/服务端API/数据与智能专区/订单管理回调/接口试用到期通知.mdx
-2025-11-27 14:46:59,244 - INFO - Processing document: 调起扫一扫 (ID: 14913)
-2025-11-27 14:46:59,481 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/系统界面/调起扫一扫.mdx
-2025-11-27 14:47:00,483 - INFO - Processing document: 调起电子发票 (ID: 14914)
-2025-11-27 14:47:00,729 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/系统界面/调起电子发票.mdx
-2025-11-27 14:47:01,730 - INFO - Processing document: 跳转到小程序 (ID: 23973)
-2025-11-27 14:47:01,964 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/系统界面/跳转到小程序.mdx
-2025-11-27 14:47:02,965 - INFO - Processing document: 保持屏幕常亮 (ID: 42733)
-2025-11-27 14:47:03,196 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/系统界面/保持屏幕常亮.mdx
-2025-11-27 14:47:04,197 - INFO - Processing document: 跳转认证界面 (ID: 45951)
-2025-11-27 14:47:04,435 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/系统界面/跳转认证界面.mdx
-2025-11-27 14:47:05,436 - INFO - Processing document: JS-SDK 签名算法 (ID: 14924)
-2025-11-27 14:47:05,680 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/附录/JS-SDK 签名算法.mdx
-2025-11-27 14:47:06,682 - INFO - Processing document: 所有菜单项列表 (ID: 14926)
-2025-11-27 14:47:06,918 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/附录/所有菜单项列表.mdx
-2025-11-27 14:47:07,919 - INFO - Processing document: 常见错误及解决方法 (ID: 14927)
-2025-11-27 14:47:08,160 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/附录/常见错误及解决方法.mdx
-2025-11-27 14:47:09,161 - INFO - Processing document: 概述 (ID: 14930)
-2025-11-27 14:47:09,397 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/开发指南/概述.mdx
-2025-11-27 14:47:10,398 - INFO - Processing document: 开始使用 (ID: 14931)
-2025-11-27 14:47:10,648 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/开发指南/开始使用.mdx
-2025-11-27 14:47:11,649 - INFO - Processing document: 选择通讯录成员 (ID: 17404)
-2025-11-27 14:47:11,891 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/企业通讯录/选择通讯录成员.mdx
-2025-11-27 14:47:12,892 - INFO - Processing document: 打开个人信息页接口 (ID: 17406)
-2025-11-27 14:47:13,127 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/企业通讯录/打开个人信息页接口.mdx
-2025-11-27 14:47:14,129 - INFO - Processing document: 企业互联/上下游选人接口 (ID: 28678)
-2025-11-27 14:47:14,383 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/企业通讯录/企业互联上下游选人接口.mdx
-2025-11-27 14:47:15,384 - INFO - Processing document: 返回ticket的选人接口 (ID: 30288)
-2025-11-27 14:47:15,637 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/企业通讯录/返回ticket的选人接口.mdx
-2025-11-27 14:47:16,638 - INFO - Processing document: 认领老师班级 (ID: 29897)
-2025-11-27 14:47:16,877 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/企业通讯录/认领老师班级.mdx
-2025-11-27 14:47:17,878 - INFO - Processing document: 外部联系人选人接口 (ID: 17405)
-2025-11-27 14:47:18,111 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/客户联系/外部联系人选人接口.mdx
-2025-11-27 14:47:19,112 - INFO - Processing document: 打开个人信息页接口 (ID: 17406)
-2025-11-27 14:47:19,356 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/客户联系/打开个人信息页接口.mdx
-2025-11-27 14:47:20,357 - INFO - Processing document: 聊天工具栏接口 (ID: 17199)
-2025-11-27 14:47:20,588 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/客户联系/聊天工具栏接口.mdx
-2025-11-27 14:47:21,590 - INFO - Processing document: 进入添加客户界面 (ID: 23860)
-2025-11-27 14:47:21,833 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/客户联系/进入添加客户界面.mdx
-2025-11-27 14:47:22,834 - INFO - Processing document: 群发消息给客户 (ID: 26772)
-2025-11-27 14:47:23,091 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/客户联系/群发消息给客户.mdx
-2025-11-27 14:47:24,092 - INFO - Processing document: 群发消息到客户群 (ID: 26773)
-2025-11-27 14:47:24,339 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/客户联系/群发消息到客户群.mdx
-2025-11-27 14:47:25,341 - INFO - Processing document: 发表内容到客户朋友圈 (ID: 30863)
-2025-11-27 14:47:25,588 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/客户联系/发表内容到客户朋友圈.mdx
-2025-11-27 14:47:26,590 - INFO - Processing document: 设置朋友圈封面与签名 (ID: 31844)
-2025-11-27 14:47:26,833 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/客户联系/设置朋友圈封面与签名.mdx
-2025-11-27 14:47:27,834 - INFO - Processing document: 选择客户群 (ID: 60210)
-2025-11-27 14:47:28,077 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/客户联系/选择客户群.mdx
-2025-11-27 14:47:29,078 - INFO - Processing document: 打开会话 (ID: 14929)
-2025-11-27 14:47:29,320 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/会话/打开会话.mdx
-2025-11-27 14:47:30,321 - INFO - Processing document: 变更群成员 (ID: 24598)
-2025-11-27 14:47:30,556 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/会话/变更群成员.mdx
-2025-11-27 14:47:31,557 - INFO - Processing document: 打开个人聊天窗口schema (ID: 27500)
-2025-11-27 14:47:31,794 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/会话/打开个人聊天窗口schema.mdx
-2025-11-27 14:47:32,795 - INFO - Processing document: 打开已有群聊并发送消息 (ID: 30294)
-2025-11-27 14:47:33,043 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/会话/打开已有群聊并发送消息.mdx
-2025-11-27 14:47:34,045 - INFO - Processing document: 创建企业互联/上下游会话 (ID: 29881)
-2025-11-27 14:47:34,288 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/会话/创建企业互联上下游会话.mdx
-2025-11-27 14:47:35,289 - INFO - Processing document: 变更企业互联/上下游群成员 (ID: 29888)
-2025-11-27 14:47:35,534 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/会话/变更企业互联上下游群成员.mdx
-2025-11-27 14:47:36,535 - INFO - Processing document: 创建群聊并发送消息 (ID: 30292)
-2025-11-27 14:47:36,779 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/会话/创建群聊并发送消息.mdx
-2025-11-27 14:47:37,780 - INFO - Processing document: ww.checkJsApi (ID: 29483)
-2025-11-27 14:47:38,015 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/基础接口/ww.checkJsApi.mdx
-2025-11-27 14:47:39,016 - INFO - Processing document: ww.register (ID: 29484)
-2025-11-27 14:47:39,268 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/基础接口/ww.register.mdx
-2025-11-27 14:47:40,270 - INFO - Processing document: ww.getContext (ID: 21950)
-2025-11-27 14:47:40,514 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/基础接口/ww.getContext.mdx
-2025-11-27 14:47:41,516 - INFO - Processing document: ww.initOpenData (ID: 49117)
-2025-11-27 14:47:41,753 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/基础接口/ww.initOpenData.mdx
-2025-11-27 14:47:42,755 - INFO - Processing document: ww.getSignature (ID: 46259)
-2025-11-27 14:47:43,001 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/基础接口/ww.getSignature.mdx
-2025-11-27 14:47:44,002 - INFO - Processing document: 聊天工具栏接口 (ID: 31437)
-2025-11-27 14:47:44,236 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/微信客服/聊天工具栏接口.mdx
-2025-11-27 14:47:45,238 - INFO - Processing document: 进入微信客服消息界面 (ID: 31969)
-2025-11-27 14:47:45,472 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/微信客服/进入微信客服消息界面.mdx
-2025-11-27 14:47:46,473 - INFO - Processing document: 发起班级收款 (ID: 30233)
-2025-11-27 14:47:46,714 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/家校沟通/发起班级收款.mdx
-2025-11-27 14:47:47,715 - INFO - Processing document: 微信进入居民上报小程序 (ID: 33965)
-2025-11-27 14:47:47,953 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/政民沟通/微信进入居民上报小程序.mdx
-2025-11-27 14:47:48,955 - INFO - Processing document: 进入应用客服会话 (ID: 35226)
-2025-11-27 14:47:49,185 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/第三方服务/进入应用客服会话.mdx
-2025-11-27 14:47:50,186 - INFO - Processing document: 打开应用管理页面 (ID: 37530)
-2025-11-27 14:47:50,438 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/第三方服务/打开应用管理页面.mdx
-2025-11-27 14:47:51,439 - INFO - Processing document: 打开应用评价页面 (ID: 37538)
-2025-11-27 14:47:51,680 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/第三方服务/打开应用评价页面.mdx
-2025-11-27 14:47:52,681 - INFO - Processing document: 进入应用购买页面 (ID: 48846)
-2025-11-27 14:47:52,929 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/第三方服务/进入应用购买页面.mdx
-2025-11-27 14:47:53,930 - INFO - Processing document: 上下游聊天工具栏 (ID: 38718)
-2025-11-27 14:47:54,161 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/上下游/上下游聊天工具栏.mdx
-2025-11-27 14:47:55,162 - INFO - Processing document: 获取上下游联系人ID (ID: 45926)
-2025-11-27 14:47:55,402 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/上下游/获取上下游联系人ID.mdx
-2025-11-27 14:47:56,403 - INFO - Processing document: 获取上下游互联群ID (ID: 45927)
-2025-11-27 14:47:56,633 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/上下游/获取上下游互联群ID.mdx
-2025-11-27 14:47:57,634 - INFO - Processing document: 发起对外收款 (ID: 39955)
-2025-11-27 14:47:57,884 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/对外收款/发起对外收款.mdx
-2025-11-27 14:47:58,885 - INFO - Processing document: 发起退款 (ID: 39957)
-2025-11-27 14:47:59,125 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/对外收款/发起退款.mdx
-2025-11-27 14:48:00,126 - INFO - Processing document: 获取设备数据授权 (ID: 40193)
-2025-11-27 14:48:00,360 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/智慧硬件/获取设备数据授权.mdx
-2025-11-27 14:48:01,362 - INFO - Processing document: 发起打印 (ID: 42893)
-2025-11-27 14:48:01,610 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/智慧硬件/发起打印.mdx
-2025-11-27 14:48:02,611 - INFO - Processing document: 加入视频会议 (ID: 58560)
-2025-11-27 14:48:02,842 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/智慧硬件/加入视频会议.mdx
-2025-11-27 14:48:03,843 - INFO - Processing document: 审批控件中的外部选项 (ID: 42297)
-2025-11-27 14:48:04,084 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/审批/审批控件中的外部选项.mdx
-2025-11-27 14:48:05,086 - INFO - Processing document: 应用发起审批 (ID: 42575)
-2025-11-27 14:48:05,336 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/审批/应用发起审批.mdx
-2025-11-27 14:48:06,338 - INFO - Processing document:  保存选择的选项 (ID: 57163)
-2025-11-27 14:48:06,583 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/审批/保存选择的选项.mdx
-2025-11-27 14:48:07,584 - INFO - Processing document: 获取已选择的选项 (ID: 57164)
-2025-11-27 14:48:07,822 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/审批/获取已选择的选项.mdx
-2025-11-27 14:48:08,823 - INFO - Processing document: 选择文件 (ID: 48964)
-2025-11-27 14:48:09,073 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/微盘/选择文件.mdx
-2025-11-27 14:48:10,074 - INFO - Processing document: 选择可下载的文件 (ID: 48965)
-2025-11-27 14:48:10,311 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/微盘/选择可下载的文件.mdx
-2025-11-27 14:48:11,312 - INFO - Processing document: 文件/文档标题展示组件 (ID: 49823)
-2025-11-27 14:48:11,561 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/微盘/文件文档标题展示组件.mdx
-2025-11-27 14:48:12,562 - INFO - Processing document: 创建文档 (ID: 45135)
-2025-11-27 14:48:12,813 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/文档/创建文档.mdx
-2025-11-27 14:48:13,814 - INFO - Processing document: 选择文档 (ID: 48966)
-2025-11-27 14:48:14,070 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/文档/选择文档.mdx
-2025-11-27 14:48:15,072 - INFO - Processing document: 文件/文档标题展示组件 (ID: 49823)
-2025-11-27 14:48:15,314 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/文档/文件文档标题展示组件.mdx
-2025-11-27 14:48:16,315 - INFO - Processing document: 创建企业微信登录面板 (ID: 45969)
-2025-11-27 14:48:16,561 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/开放接口/创建企业微信登录面板.mdx
-2025-11-27 14:48:17,562 - INFO - Processing document: 隐藏右上角菜单 (ID: 45938)
-2025-11-27 14:48:17,795 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/界面/隐藏右上角菜单.mdx
-2025-11-27 14:48:18,797 - INFO - Processing document: 显示右上角菜单 (ID: 45939)
-2025-11-27 14:48:19,032 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/界面/显示右上角菜单.mdx
-2025-11-27 14:48:20,033 - INFO - Processing document: 关闭当前窗口 (ID: 45940)
-2025-11-27 14:48:20,266 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/界面/关闭当前窗口.mdx
-2025-11-27 14:48:21,268 - INFO - Processing document: 批量隐藏功能按钮 (ID: 45941)
-2025-11-27 14:48:21,505 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/界面/批量隐藏功能按钮.mdx
-2025-11-27 14:48:22,506 - INFO - Processing document: 批量显示功能按钮 (ID: 45942)
-2025-11-27 14:48:22,736 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/界面/批量显示功能按钮.mdx
-2025-11-27 14:48:23,737 - INFO - Processing document: 隐藏非基础按钮 (ID: 45943)
-2025-11-27 14:48:23,980 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/界面/隐藏非基础按钮.mdx
-2025-11-27 14:48:24,981 - INFO - Processing document: 打开默认浏览器 (ID: 45946)
-2025-11-27 14:48:25,225 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/界面/打开默认浏览器.mdx
-2025-11-27 14:48:26,226 - INFO - Processing document: 监听截屏事件 (ID: 45947)
-2025-11-27 14:48:26,456 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/界面/监听截屏事件.mdx
-2025-11-27 14:48:27,457 - INFO - Processing document: 监听页面返回 (ID: 14912)
-2025-11-27 14:48:27,690 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/界面/监听页面返回.mdx
-2025-11-27 14:48:28,691 - INFO - Processing document: 选择图片 (ID: 14915)
-2025-11-27 14:48:28,937 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/图像/选择图片.mdx
-2025-11-27 14:48:29,938 - INFO - Processing document: 预览图片 (ID: 45956)
-2025-11-27 14:48:30,176 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/图像/预览图片.mdx
-2025-11-27 14:48:31,177 - INFO - Processing document: 上传图片 (ID: 45957)
-2025-11-27 14:48:31,420 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/图像/上传图片.mdx
-2025-11-27 14:48:32,422 - INFO - Processing document: 下载图片 (ID: 45958)
-2025-11-27 14:48:32,658 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/图像/下载图片.mdx
-2025-11-27 14:48:33,659 - INFO - Processing document: 获取本地图片 (ID: 45953)
-2025-11-27 14:48:33,897 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/图像/获取本地图片.mdx
-2025-11-27 14:48:34,898 - INFO - Processing document: 开始录音 (ID: 14916)
-2025-11-27 14:48:35,136 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/开始录音.mdx
-2025-11-27 14:48:36,137 - INFO - Processing document: 停止录音 (ID: 45960)
-2025-11-27 14:48:36,378 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/停止录音.mdx
-2025-11-27 14:48:37,380 - INFO - Processing document: 监听录音自动停止 (ID: 45961)
-2025-11-27 14:48:37,613 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/监听录音自动停止.mdx
-2025-11-27 14:48:38,614 - INFO - Processing document: 播放语音 (ID: 45962)
-2025-11-27 14:48:38,855 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/播放语音.mdx
-2025-11-27 14:48:39,856 - INFO - Processing document: 暂停播放 (ID: 45963)
-2025-11-27 14:48:40,093 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/暂停播放.mdx
-2025-11-27 14:48:41,095 - INFO - Processing document: 停止播放 (ID: 45964)
-2025-11-27 14:48:41,325 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/停止播放.mdx
-2025-11-27 14:48:42,327 - INFO - Processing document: 监听播放完毕 (ID: 45965)
-2025-11-27 14:48:42,556 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/监听播放完毕.mdx
-2025-11-27 14:48:43,557 - INFO - Processing document: 上传语音 (ID: 45966)
-2025-11-27 14:48:43,801 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/上传语音.mdx
-2025-11-27 14:48:44,802 - INFO - Processing document: 下载语音 (ID: 45967)
-2025-11-27 14:48:45,038 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/下载语音.mdx
-2025-11-27 14:48:46,040 - INFO - Processing document: 语音转文字 (ID: 45968)
-2025-11-27 14:48:46,279 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/音频/语音转文字.mdx
-2025-11-27 14:48:47,281 - INFO - Processing document: 预览文件 (ID: 14917)
-2025-11-27 14:48:47,521 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/文件/预览文件.mdx
-2025-11-27 14:48:48,522 - INFO - Processing document: 从会话选择文件 (ID: 34301)
-2025-11-27 14:48:48,766 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/文件/从会话选择文件.mdx
-2025-11-27 14:48:49,767 - INFO - Processing document: 获取本地临时文件 (ID: 56784)
-2025-11-27 14:48:50,022 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/文件/获取本地临时文件.mdx
-2025-11-27 14:48:51,023 - INFO - Processing document: Wi-Fi-概述 (ID: 14918)
-2025-11-27 14:48:51,274 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/Wi-Fi/Wi-Fi-概述.mdx
-2025-11-27 14:48:52,275 - INFO - Processing document: 初始化 Wi-Fi 模块 (ID: 45981)
-2025-11-27 14:48:52,507 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/Wi-Fi/初始化 Wi-Fi 模块.mdx
-2025-11-27 14:48:53,508 - INFO - Processing document: 关闭 Wi-Fi 模块 (ID: 45982)
-2025-11-27 14:48:53,741 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/Wi-Fi/关闭 Wi-Fi 模块.mdx
-2025-11-27 14:48:54,743 - INFO - Processing document: 连接 Wi-Fi (ID: 45983)
-2025-11-27 14:48:54,988 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/Wi-Fi/连接 Wi-Fi.mdx
-2025-11-27 14:48:55,989 - INFO - Processing document: 获取 Wi-Fi 列表 (ID: 45984)
-2025-11-27 14:48:56,226 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/Wi-Fi/获取 Wi-Fi 列表.mdx
-2025-11-27 14:48:57,228 - INFO - Processing document: 监听 Wi-Fi 列表更新 (ID: 45985)
-2025-11-27 14:48:57,472 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/Wi-Fi/监听 Wi-Fi 列表更新.mdx
-2025-11-27 14:48:58,473 - INFO - Processing document: 监听 Wi-Fi 连接成功 (ID: 45986)
-2025-11-27 14:48:58,708 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/Wi-Fi/监听 Wi-Fi 连接成功.mdx
-2025-11-27 14:48:59,709 - INFO - Processing document: 获取已连接中的 Wi-Fi 信息 (ID: 45987)
-2025-11-27 14:49:00,339 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/Wi-Fi/获取已连接中的 Wi-Fi 信息.mdx
-2025-11-27 14:49:01,340 - INFO - Processing document: 概述 (ID: 14919)
-2025-11-27 14:49:01,597 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/概述.mdx
-2025-11-27 14:49:02,598 - INFO - Processing document: 初始化蓝牙模块 (ID: 45992)
-2025-11-27 14:49:02,841 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/初始化蓝牙模块.mdx
-2025-11-27 14:49:03,843 - INFO - Processing document: 关闭蓝牙模块 (ID: 45993)
-2025-11-27 14:49:04,089 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/关闭蓝牙模块.mdx
-2025-11-27 14:49:05,091 - INFO - Processing document: 获取本机蓝牙状态 (ID: 45994)
-2025-11-27 14:49:05,340 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/获取本机蓝牙状态.mdx
-2025-11-27 14:49:06,341 - INFO - Processing document: 监听蓝牙状态变化 (ID: 45995)
-2025-11-27 14:49:06,581 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/监听蓝牙状态变化.mdx
-2025-11-27 14:49:07,582 - INFO - Processing document: 开始搜寻附近的蓝牙外围设备 (ID: 45996)
-2025-11-27 14:49:07,838 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/开始搜寻附近的蓝牙外围设备.mdx
-2025-11-27 14:49:08,840 - INFO - Processing document: 停止搜寻蓝牙外围设备 (ID: 45997)
-2025-11-27 14:49:09,096 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/停止搜寻蓝牙外围设备.mdx
-2025-11-27 14:49:10,097 - INFO - Processing document: 获取已发现的蓝牙设备 (ID: 45998)
-2025-11-27 14:49:10,348 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/获取已发现的蓝牙设备.mdx
-2025-11-27 14:49:11,349 - INFO - Processing document: 监听寻找到新设备 (ID: 45999)
-2025-11-27 14:49:11,606 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/监听寻找到新设备.mdx
-2025-11-27 14:49:12,607 - INFO - Processing document: 获取已连接状态的设备 (ID: 46000)
-2025-11-27 14:49:12,858 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙/获取已连接状态的设备.mdx
-2025-11-27 14:49:13,860 - INFO - Processing document: 连接BLE设备 (ID: 46012)
-2025-11-27 14:49:14,111 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/连接BLE设备.mdx
-2025-11-27 14:49:15,112 - INFO - Processing document: 断开设备连接 (ID: 46014)
-2025-11-27 14:49:15,351 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/断开设备连接.mdx
-2025-11-27 14:49:16,352 - INFO - Processing document: 监听BLE设备连接状态 (ID: 46015)
-2025-11-27 14:49:16,598 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/监听BLE设备连接状态.mdx
-2025-11-27 14:49:17,599 - INFO - Processing document: 获取BLE设备所有服务 (ID: 46016)
-2025-11-27 14:49:17,853 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/获取BLE设备所有服务.mdx
-2025-11-27 14:49:18,854 - INFO - Processing document: 获取BLE设备特征值 (ID: 46018)
-2025-11-27 14:49:19,111 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/获取BLE设备特征值.mdx
-2025-11-27 14:49:20,113 - INFO - Processing document: 读取BLE设备特征值数据 (ID: 46019)
-2025-11-27 14:49:20,373 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/读取BLE设备特征值数据.mdx
-2025-11-27 14:49:21,374 - INFO - Processing document: 写入BLE设备特征值数据 (ID: 46020)
-2025-11-27 14:49:21,622 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/写入BLE设备特征值数据.mdx
-2025-11-27 14:49:22,624 - INFO - Processing document: 启用BLE设备特征值订阅 (ID: 46021)
-2025-11-27 14:49:22,874 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/启用BLE设备特征值订阅.mdx
-2025-11-27 14:49:23,875 - INFO - Processing document: 监听BLE设备特征值变化 (ID: 46022)
-2025-11-27 14:49:24,131 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/监听BLE设备特征值变化.mdx
-2025-11-27 14:49:25,132 - INFO - Processing document: 概述 (ID: 57087)
-2025-11-27 14:49:25,375 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/蓝牙（BLE）/概述.mdx
-2025-11-27 14:49:26,377 - INFO - Processing document: 概述 (ID: 14920)
-2025-11-27 14:49:26,630 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/iBeacon/概述.mdx
-2025-11-27 14:49:27,632 - INFO - Processing document: 搜索附近设备 (ID: 46031)
-2025-11-27 14:49:27,878 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/iBeacon/搜索附近设备.mdx
-2025-11-27 14:49:28,879 - INFO - Processing document: 停止搜索设备 (ID: 46032)
-2025-11-27 14:49:29,156 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/iBeacon/停止搜索设备.mdx
-2025-11-27 14:49:30,157 - INFO - Processing document: 获取已搜索到的设备 (ID: 46034)
-2025-11-27 14:49:30,409 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/iBeacon/获取已搜索到的设备.mdx
-2025-11-27 14:49:31,410 - INFO - Processing document: 监听设备更新 (ID: 46035)
-2025-11-27 14:49:31,657 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/iBeacon/监听设备更新.mdx
-2025-11-27 14:49:32,658 - INFO - Processing document: 监听设备服务状态 (ID: 46036)
-2025-11-27 14:49:32,914 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/iBeacon/监听设备服务状态.mdx
-2025-11-27 14:49:33,916 - INFO - Processing document: 获取网络状态 (ID: 14922)
-2025-11-27 14:49:34,158 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/网络/获取网络状态.mdx
-2025-11-27 14:49:35,160 - INFO - Processing document: 监听网络状态 (ID: 46051)
-2025-11-27 14:49:35,407 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/网络/监听网络状态.mdx
-2025-11-27 14:49:36,409 - INFO - Processing document: 获取剪贴板内容 (ID: 46044)
-2025-11-27 14:49:36,663 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/剪贴板/获取剪贴板内容.mdx
-2025-11-27 14:49:37,664 - INFO - Processing document: 设置剪贴板内容 (ID: 14921)
-2025-11-27 14:49:37,920 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/剪贴板/设置剪贴板内容.mdx
-2025-11-27 14:49:38,921 - INFO - Processing document: 打开内置地图 (ID: 14923)
-2025-11-27 14:49:39,172 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/地理位置/打开内置地图.mdx
-2025-11-27 14:49:40,173 - INFO - Processing document: 获取地理位置 (ID: 46057)
-2025-11-27 14:49:40,427 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/地理位置/获取地理位置.mdx
-2025-11-27 14:49:41,428 - INFO - Processing document: 打开持续定位 (ID: 46058)
-2025-11-27 14:49:41,680 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/地理位置/打开持续定位.mdx
-2025-11-27 14:49:42,681 - INFO - Processing document: 停止持续定位 (ID: 46060)
-2025-11-27 14:49:42,929 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/地理位置/停止持续定位.mdx
-2025-11-27 14:49:43,930 - INFO - Processing document: 监听地理位置 (ID: 46061)
-2025-11-27 14:49:44,176 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/地理位置/监听地理位置.mdx
-2025-11-27 14:49:45,178 - INFO - Processing document: 获取当前客户ID (ID: 17407)
-2025-11-27 14:49:45,425 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/聊天工具栏/获取当前客户ID.mdx
-2025-11-27 14:49:46,426 - INFO - Processing document: 获取当前客户群的群ID (ID: 19330)
-2025-11-27 14:49:46,675 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/聊天工具栏/获取当前客户群的群ID.mdx
-2025-11-27 14:49:47,676 - INFO - Processing document: 隐藏聊天附件栏的发送按钮 (ID: 28777)
-2025-11-27 14:49:47,932 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/聊天工具栏/隐藏聊天附件栏的发送按钮.mdx
-2025-11-27 14:49:48,934 - INFO - Processing document: 分享消息到当前会话 (ID: 29574)
-2025-11-27 14:49:49,205 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/聊天工具栏/分享消息到当前会话.mdx
-2025-11-27 14:49:50,207 - INFO - Processing document: 概述 (ID: 14911)
-2025-11-27 14:49:50,450 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/分享/概述.mdx
-2025-11-27 14:49:51,451 - INFO - Processing document: 监听「转发」按钮点击 (ID: 45902)
-2025-11-27 14:49:51,724 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/分享/监听「转发」按钮点击.mdx
-2025-11-27 14:49:52,726 - INFO - Processing document: 监听「微信」按钮点击 (ID: 45932)
-2025-11-27 14:49:52,978 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/分享/监听「微信」按钮点击.mdx
-2025-11-27 14:49:53,980 - INFO - Processing document: 监听「朋友圈」按钮点击 (ID: 45933)
-2025-11-27 14:49:54,229 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/分享/监听「朋友圈」按钮点击.mdx
-2025-11-27 14:49:55,230 - INFO - Processing document: 自定义转发到会话 (ID: 45935)
-2025-11-27 14:49:55,482 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/分享/自定义转发到会话.mdx
-2025-11-27 14:49:56,483 - INFO - Processing document: 自定义转发到微信 (ID: 45936)
-2025-11-27 14:49:56,743 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/分享/自定义转发到微信.mdx
-2025-11-27 14:49:57,744 - INFO - Processing document: 概述 (ID: 30191)
-2025-11-27 14:49:58,000 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/私密分享/概述.mdx
-2025-11-27 14:49:59,002 - INFO - Processing document: 设置私密消息 (ID: 56726)
-2025-11-27 14:49:59,249 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/私密分享/设置私密消息.mdx
-2025-11-27 14:50:00,250 - INFO - Processing document: 获取私密消息Ticket (ID: 56727)
-2025-11-27 14:50:00,506 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/私密分享/获取私密消息Ticket.mdx
-2025-11-27 14:50:01,507 - INFO - Processing document: 获取私密消息信息 (ID: 56728)
-2025-11-27 14:50:01,759 - INFO - Saved: docs/第三方应用开发/客户端API/JS-SDK/私密分享/获取私密消息信息.mdx
-2025-11-27 14:50:02,760 - INFO - Processing document: wx.qy.login (ID: 16055)
-2025-11-27 14:50:03,018 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/登录/wx.qy.login.mdx
-2025-11-27 14:50:04,020 - INFO - Processing document: wx.qy.checkSession (ID: 16057)
-2025-11-27 14:50:04,262 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/登录/wx.qy.checkSession.mdx
-2025-11-27 14:50:05,263 - INFO - Processing document: code2Session (ID: 19720)
-2025-11-27 14:50:05,515 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/登录/code2Session.mdx
-2025-11-27 14:50:06,516 - INFO - Processing document: 第三方小程序登录流程 (ID: 19763)
-2025-11-27 14:50:06,765 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/登录/第三方小程序登录流程.mdx
-2025-11-27 14:50:07,766 - INFO - Processing document: wx.getSystemInfo (ID: 16058)
-2025-11-27 14:50:08,022 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/基础接口/wx.getSystemInfo.mdx
-2025-11-27 14:50:09,024 - INFO - Processing document: wx.getSystemInfoSync (ID: 16059)
-2025-11-27 14:50:09,277 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/基础接口/wx.getSystemInfoSync.mdx
-2025-11-27 14:50:10,278 - INFO - Processing document: wx.qy.canIUse (ID: 16060)
-2025-11-27 14:50:10,521 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/基础接口/wx.qy.canIUse.mdx
-2025-11-27 14:50:11,522 - INFO - Processing document: wx.qy.getContext (ID: 21951)
-2025-11-27 14:50:11,778 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/基础接口/wx.qy.getContext.mdx
-2025-11-27 14:50:12,779 - INFO - Processing document: wx.qy.getSystemInfo (ID: 34455)
-2025-11-27 14:50:13,029 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/基础接口/wx.qy.getSystemInfo.mdx
-2025-11-27 14:50:14,031 - INFO - Processing document: wx.qy.getEnterpriseUserInfo (ID: 16569)
-2025-11-27 14:50:14,285 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/企业通讯录/wx.qy.getEnterpriseUserInfo.mdx
-2025-11-27 14:50:15,286 - INFO - Processing document: wx.qy.getAvatar (ID: 16571)
-2025-11-27 14:50:15,540 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/企业通讯录/wx.qy.getAvatar.mdx
-2025-11-27 14:50:16,541 - INFO - Processing document: wx.qy.getQrCode (ID: 16572)
-2025-11-27 14:50:16,786 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/企业通讯录/wx.qy.getQrCode.mdx
-2025-11-27 14:50:17,787 - INFO - Processing document: wx.qy.selectEnterpriseContact (ID: 16062)
-2025-11-27 14:50:18,042 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/企业通讯录/wx.qy.selectEnterpriseContact.mdx
-2025-11-27 14:50:19,043 - INFO - Processing document: wx.qy.openUserProfile (ID: 16063)
-2025-11-27 14:50:19,281 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/企业通讯录/wx.qy.openUserProfile.mdx
-2025-11-27 14:50:20,282 - INFO - Processing document: wx.qy.selectCorpGroupContact (ID: 28653)
-2025-11-27 14:50:20,544 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/企业通讯录/wx.qy.selectCorpGroupContact.mdx
-2025-11-27 14:50:21,545 - INFO - Processing document: wx.qy.claimClassAdmin (ID: 29902)
-2025-11-27 14:50:21,789 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/企业通讯录/wx.qy.claimClassAdmin.mdx
-2025-11-27 14:50:22,790 - INFO - Processing document: wx.qy.selectPrivilegedContact (ID: 32272)
-2025-11-27 14:50:23,045 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/企业通讯录/wx.qy.selectPrivilegedContact.mdx
-2025-11-27 14:50:24,046 - INFO - Processing document: wx.qy.openEnterpriseChat (ID: 16064)
-2025-11-27 14:50:24,301 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/会话/wx.qy.openEnterpriseChat.mdx
-2025-11-27 14:50:25,302 - INFO - Processing document: wx.qy.updateEnterpriseChat (ID: 24596)
-2025-11-27 14:50:25,551 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/会话/wx.qy.updateEnterpriseChat.mdx
-2025-11-27 14:50:26,552 - INFO - Processing document: wx.qy.sendChatMessage (ID: 21264)
-2025-11-27 14:50:26,807 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/会话/wx.qy.sendChatMessage.mdx
-2025-11-27 14:50:27,808 - INFO - Processing document: 私密消息 (ID: 30225)
-2025-11-27 14:50:28,068 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/会话/私密消息.mdx
-2025-11-27 14:50:29,069 - INFO - Processing document: wx.qy.createCorpGroupChat (ID: 29841)
-2025-11-27 14:50:29,321 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/会话/wx.qy.createCorpGroupChat.mdx
-2025-11-27 14:50:30,322 - INFO - Processing document: wx.qy.updateCorpGroupChat (ID: 29849)
-2025-11-27 14:50:30,577 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/会话/wx.qy.updateCorpGroupChat.mdx
-2025-11-27 14:50:31,578 - INFO - Processing document: wx.qy.getNFCReaderState (ID: 16077)
-2025-11-27 14:50:31,817 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/NFC接口/wx.qy.getNFCReaderState.mdx
-2025-11-27 14:50:32,818 - INFO - Processing document: wx.qy.startNFCReader (ID: 16078)
-2025-11-27 14:50:33,058 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/NFC接口/wx.qy.startNFCReader.mdx
-2025-11-27 14:50:34,059 - INFO - Processing document: wx.qy.stopNFCReader (ID: 16079)
-2025-11-27 14:50:34,308 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/NFC接口/wx.qy.stopNFCReader.mdx
-2025-11-27 14:50:35,310 - INFO - Processing document: onNFCReadMessage (ID: 16080)
-2025-11-27 14:50:35,557 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/NFC接口/onNFCReadMessage.mdx
-2025-11-27 14:50:36,559 - INFO - Processing document: 小程序发送通知 (ID: 15092)
-2025-11-27 14:50:36,815 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/更多/小程序发送通知.mdx
-2025-11-27 14:50:37,817 - INFO - Processing document: 语音转文字接口 (ID: 16126)
-2025-11-27 14:50:38,076 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/更多/语音转文字接口.mdx
-2025-11-27 14:50:39,077 - INFO - Processing document: 转发成功回调 (ID: 16755)
-2025-11-27 14:50:39,323 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/更多/转发成功回调.mdx
-2025-11-27 14:50:40,325 - INFO - Processing document: 从会话选择文件 (ID: 34299)
-2025-11-27 14:50:40,586 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/更多/从会话选择文件.mdx
-2025-11-27 14:50:41,587 - INFO - Processing document: wx.qy.openUserProfile (ID: 16063)
-2025-11-27 14:50:41,831 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.openUserProfile.mdx
-2025-11-27 14:50:42,832 - INFO - Processing document: wx.qy.getCurExternalContact (ID: 16065)
-2025-11-27 14:50:43,103 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.getCurExternalContact.mdx
-2025-11-27 14:50:44,104 - INFO - Processing document: wx.qy.getCurExternalChat (ID: 21262)
-2025-11-27 14:50:44,357 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.getCurExternalChat.mdx
-2025-11-27 14:50:45,358 - INFO - Processing document: wx.qy.shareToExternalContact (ID: 16853)
-2025-11-27 14:50:45,608 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.shareToExternalContact.mdx
-2025-11-27 14:50:46,609 - INFO - Processing document: wx.qy.shareToExternalChat (ID: 21273)
-2025-11-27 14:50:46,862 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.shareToExternalChat.mdx
-2025-11-27 14:50:47,864 - INFO - Processing document: 「联系我」插件 (ID: 15517)
-2025-11-27 14:50:48,112 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/「联系我」插件.mdx
-2025-11-27 14:50:49,114 - INFO - Processing document: wx.qy.selectExternalContact (ID: 16061)
-2025-11-27 14:50:49,357 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.selectExternalContact.mdx
-2025-11-27 14:50:50,359 - INFO - Processing document: wx.qy.sendChatMessage (ID: 21264)
-2025-11-27 14:50:50,615 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.sendChatMessage.mdx
-2025-11-27 14:50:51,616 - INFO - Processing document: wx.qy.navigateToAddCustomer (ID: 23863)
-2025-11-27 14:50:51,860 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.navigateToAddCustomer.mdx
-2025-11-27 14:50:52,862 - INFO - Processing document: wx.qy.shareToExternalMoments (ID: 30868)
-2025-11-27 14:50:53,118 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.shareToExternalMoments.mdx
-2025-11-27 14:50:54,120 - INFO - Processing document: wx.qy.updateMomentsSetting (ID: 31847)
-2025-11-27 14:50:54,361 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.updateMomentsSetting.mdx
-2025-11-27 14:50:55,362 - INFO - Processing document: wx.qy.selectExternalChat (ID: 60088)
-2025-11-27 14:50:55,610 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/客户联系/wx.qy.selectExternalChat.mdx
-2025-11-27 14:50:56,611 - INFO - Processing document: 客服工具栏接口 (ID: 31438)
-2025-11-27 14:50:56,887 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/微信客服/客服工具栏接口.mdx
-2025-11-27 14:50:57,889 - INFO - Processing document: 微信小程序打开微信客服 (ID: 31328)
-2025-11-27 14:50:58,136 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/微信客服/微信小程序打开微信客服.mdx
-2025-11-27 14:50:59,137 - INFO - Processing document: wx.qy.navigateToKfChat (ID: 31970)
-2025-11-27 14:50:59,378 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/微信客服/wx.qy.navigateToKfChat.mdx
-2025-11-27 14:51:00,380 - INFO - Processing document: 发起班级收款 (ID: 30232)
-2025-11-27 14:51:00,633 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/家校沟通/发起班级收款.mdx
-2025-11-27 14:51:01,634 - INFO - Processing document: 微信小程序进入填写学生资料页面 (ID: 30679)
-2025-11-27 14:51:01,878 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/家校沟通/微信小程序进入填写学生资料页面.mdx
-2025-11-27 14:51:02,880 - INFO - Processing document: 微信进入居民上报小程序 (ID: 33960)
-2025-11-27 14:51:03,122 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/政民沟通/微信进入居民上报小程序.mdx
-2025-11-27 14:51:04,123 - INFO - Processing document: 进入应用客服会话 (ID: 35248)
-2025-11-27 14:51:04,372 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/第三方服务/进入应用客服会话.mdx
-2025-11-27 14:51:05,373 - INFO - Processing document: 打开应用评价页面 (ID: 37521)
+2025-11-27 15:44:05,462 - INFO - Starting WeWork documentation crawler...
+2025-11-27 15:44:05,463 - INFO - Extracting categories from https://developer.work.weixin.qq.com/document/path/90195
+2025-11-27 15:44:06,942 - INFO - Found 4275 categories
+2025-11-27 15:44:08,421 - INFO - Processing document: 打开应用评价页面 (ID: 37521)
+2025-11-27 15:44:08,643 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/第三方服务/打开应用评价页面.mdx
+2025-11-27 15:44:09,645 - INFO - Processing document: 打开应用管理页面 (ID: 37522)
+2025-11-27 15:44:09,894 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/第三方服务/打开应用管理页面.mdx
+2025-11-27 15:44:10,895 - INFO - Processing document: 进入应用购买页面 (ID: 48847)
+2025-11-27 15:44:11,122 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/第三方服务/进入应用购买页面.mdx
+2025-11-27 15:44:12,123 - INFO - Processing document: 聊天工具栏接口 (ID: 38713)
+2025-11-27 15:44:12,353 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/上下游/聊天工具栏接口.mdx
+2025-11-27 15:44:13,355 - INFO - Processing document: 发起对外收款 (ID: 40008)
+2025-11-27 15:44:13,585 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/对外收款/发起对外收款.mdx
+2025-11-27 15:44:14,586 - INFO - Processing document: 发起退款 (ID: 40009)
+2025-11-27 15:44:14,812 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/对外收款/发起退款.mdx
+2025-11-27 15:44:15,814 - INFO - Processing document: 获取设备数据授权 (ID: 40194)
+2025-11-27 15:44:16,035 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/智慧硬件/获取设备数据授权.mdx
+2025-11-27 15:44:17,036 - INFO - Processing document: 发起打印 (ID: 42886)
+2025-11-27 15:44:17,260 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/智慧硬件/发起打印.mdx
+2025-11-27 15:44:18,262 - INFO - Processing document: 选择文件 (ID: 48976)
+2025-11-27 15:44:18,495 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/微盘/选择文件.mdx
+2025-11-27 15:44:19,496 - INFO - Processing document: 选择可下载的文件 (ID: 48978)
+2025-11-27 15:44:19,727 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/微盘/选择可下载的文件.mdx
+2025-11-27 15:44:20,729 - INFO - Processing document: 创建文档 (ID: 45134)
+2025-11-27 15:44:20,958 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/文档/创建文档.mdx
+2025-11-27 15:44:21,960 - INFO - Processing document: 选择文档 (ID: 48981)
+2025-11-27 15:44:22,190 - INFO - Saved: docs/第三方应用开发/客户端API/小程序/文档/选择文档.mdx
+2025-11-27 15:44:23,192 - INFO - Processing document: 样式库 WeUI for Work (ID: 12146)
+2025-11-27 15:44:23,419 - INFO - Saved: docs/第三方应用开发/工具与资源/样式库 WeUI for Work.mdx
+2025-11-27 15:44:24,420 - INFO - Processing document: 设计资源下载 (ID: 11184)
+2025-11-27 15:44:24,662 - INFO - Saved: docs/第三方应用开发/工具与资源/设计资源下载.mdx
+2025-11-27 15:44:25,662 - INFO - Processing document: 加解密库下载与返回码 (ID: 10128)
+2025-11-27 15:44:25,911 - INFO - Saved: docs/第三方应用开发/工具与资源/加解密库下载与返回码.mdx
+2025-11-27 15:44:26,912 - INFO - Processing document: 接口代码参考示例 (ID: 10520)
+2025-11-27 15:44:27,150 - INFO - Saved: docs/第三方应用开发/工具与资源/接口代码参考示例.mdx
+2025-11-27 15:44:28,151 - INFO - Processing document: 开发者工具 (ID: 12222)
+2025-11-27 15:44:28,389 - INFO - Saved: docs/第三方应用开发/工具与资源/开发者工具.mdx
+2025-11-27 15:44:29,390 - INFO - Processing document: 企业微信应用深色模式色值表 (ID: 30752)
+2025-11-27 15:44:29,634 - INFO - Saved: docs/第三方应用开发/工具与资源/企业微信应用深色模式色值表.mdx
+2025-11-27 15:44:30,635 - INFO - Processing document: 企业微信应用接入指引 (ID: 13245)
+2025-11-27 15:44:31,039 - INFO - Saved: docs/第三方应用开发/运营规范/企业微信应用接入指引.mdx
+2025-11-27 15:44:32,040 - INFO - Processing document: 应用推荐规范 (ID: 13502)
+2025-11-27 15:44:32,444 - INFO - Saved: docs/第三方应用开发/运营规范/应用推荐规范.mdx
+2025-11-27 15:44:33,445 - INFO - Processing document: 企业微信解决方案录入指引 (ID: 16975)
+2025-11-27 15:44:33,686 - INFO - Saved: docs/第三方应用开发/运营规范/企业微信解决方案录入指引.mdx
+2025-11-27 15:44:34,687 - INFO - Processing document: 企业微信第三方应用平台运营规则 (ID: 20012)
+2025-11-27 15:44:34,920 - INFO - Saved: docs/第三方应用开发/运营规范/企业微信第三方应用平台运营规则.mdx
+2025-11-27 15:44:35,922 - INFO - Processing document: 与企业号接口差异 (ID: 12060)
+2025-11-27 15:44:36,159 - INFO - Saved: docs/第三方应用开发/附录/与企业号接口差异.mdx
+2025-11-27 15:44:37,160 - INFO - Processing document: 访问频率限制 (ID: 10785)
+2025-11-27 15:44:37,385 - INFO - Saved: docs/第三方应用开发/附录/访问频率限制.mdx
+2025-11-27 15:44:38,387 - INFO - Processing document: 全局错误码 (ID: 10649)
+2025-11-27 15:44:39,147 - INFO - Saved: docs/第三方应用开发/附录/全局错误码.mdx
+2025-11-27 15:44:40,149 - INFO - Processing document: 企业规模与行业信息 (ID: 13258)
+2025-11-27 15:44:40,385 - INFO - Saved: docs/第三方应用开发/附录/企业规模与行业信息.mdx
+2025-11-27 15:44:41,386 - INFO - Processing document: 常见问题 - FAQ (ID: 12067)
+2025-11-27 15:44:41,797 - INFO - Saved: docs/第三方应用开发/附录/常见问题 - FAQ.mdx
+2025-11-27 15:44:42,799 - INFO - Processing document: 加解密方案说明 (ID: 12976)
+2025-11-27 15:44:43,050 - INFO - Saved: docs/第三方应用开发/附录/加解密方案说明.mdx
+2025-11-27 15:44:44,051 - INFO - Processing document: 通讯录展示控件 - FAQ (ID: 20585)
+2025-11-27 15:44:44,284 - INFO - Saved: docs/第三方应用开发/附录/通讯录展示控件 - FAQ.mdx
+2025-11-27 15:44:45,286 - INFO - Processing document: 深色模式适配指南 (ID: 30589)
+2025-11-27 15:44:45,511 - INFO - Saved: docs/第三方应用开发/附录/深色模式适配指南.mdx
+2025-11-27 15:44:46,512 - INFO - Processing document: 购买接口许可支持关联代开发应用订单 (ID: 49197)
+2025-11-27 15:44:46,736 - INFO - Saved: docs/第三方应用开发/附录/购买接口许可支持关联代开发应用订单.mdx
+2025-11-27 15:44:47,738 - INFO - Processing document: 联系我们 (ID: 10521)
+2025-11-27 15:44:47,962 - INFO - Saved: docs/第三方应用开发/联系我们/联系我们.mdx
+2025-11-27 15:44:48,963 - INFO - Processing document: 更新日志 (ID: 11303)
+2025-11-27 15:44:49,563 - INFO - Saved: docs/第三方应用开发/更新日志.mdx
+2025-11-27 15:44:50,564 - INFO - Processing document: 更新日志 (ID: 11303)
+2025-11-27 15:44:51,176 - INFO - Saved: docs/第三方应用开发/更新日志/更新日志.mdx
+2025-11-27 15:44:52,176 - INFO - Processing document: 企业微信智慧硬件服务接入指引 (ID: 14228)
+2025-11-27 15:44:52,398 - INFO - Saved: docs/智慧硬件开发/快速入门/企业微信智慧硬件服务接入指引.mdx
+2025-11-27 15:44:53,399 - INFO - Processing document: 接入协议概述 (ID: 15349)
+2025-11-27 15:44:53,626 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接入协议概述.mdx
+2025-11-27 15:44:54,628 - INFO - Processing document: 获取SecretNo (ID: 15350)
+2025-11-27 15:44:54,858 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/获取SecretNo.mdx
+2025-11-27 15:44:55,859 - INFO - Processing document: 设备注册网络 (ID: 15351)
+2025-11-27 15:44:56,088 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/设备注册网络.mdx
+2025-11-27 15:44:57,090 - INFO - Processing document: 设备激活 (ID: 15352)
+2025-11-27 15:44:57,313 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/设备激活.mdx
+2025-11-27 15:44:58,314 - INFO - Processing document: 订阅企业信息 (ID: 15353)
+2025-11-27 15:44:58,544 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/订阅企业信息.mdx
+2025-11-27 15:44:59,545 - INFO - Processing document: 设备心跳 (ID: 15354)
+2025-11-27 15:44:59,767 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/设备心跳.mdx
+2025-11-27 15:45:00,768 - INFO - Processing document: 上报设备异常事件 (ID: 15360)
+2025-11-27 15:45:00,993 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/上报设备异常事件.mdx
+2025-11-27 15:45:01,995 - INFO - Processing document: 获取服务器时间 (ID: 15364)
+2025-11-27 15:45:02,233 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/获取服务器时间.mdx
+2025-11-27 15:45:03,234 - INFO - Processing document: 触发云端下发指令 (ID: 15365)
+2025-11-27 15:45:03,458 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/触发云端下发指令.mdx
+2025-11-27 15:45:04,459 - INFO - Processing document: 获取最新固件信息 (ID: 15367)
+2025-11-27 15:45:04,693 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/获取最新固件信息.mdx
+2025-11-27 15:45:05,694 - INFO - Processing document: 设备登录二维码 (ID: 16638)
+2025-11-27 15:45:05,930 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/设备登录二维码.mdx
+2025-11-27 15:45:06,931 - INFO - Processing document: 获取设备绑定企业信息 (ID: 26631)
+2025-11-27 15:45:07,168 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/获取设备绑定企业信息.mdx
+2025-11-27 15:45:08,170 - INFO - Processing document: 上传日志文件 (ID: 15872)
+2025-11-27 15:45:08,394 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/接口调用/上传日志文件.mdx
+2025-11-27 15:45:09,396 - INFO - Processing document: 企业绑定设备事件 (ID: 15376)
+2025-11-27 15:45:09,614 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/回调通知/企业绑定设备事件.mdx
+2025-11-27 15:45:10,615 - INFO - Processing document: 固件升级指令 (ID: 15378)
+2025-11-27 15:45:10,840 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/回调通知/固件升级指令.mdx
+2025-11-27 15:45:11,841 - INFO - Processing document: 上传日志文件指令 (ID: 15855)
+2025-11-27 15:45:12,074 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/回调通知/上传日志文件指令.mdx
+2025-11-27 15:45:13,075 - INFO - Processing document: 用户扫码指令 (ID: 15951)
+2025-11-27 15:45:13,300 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/回调通知/用户扫码指令.mdx
+2025-11-27 15:45:14,301 - INFO - Processing document: 企业解绑设备事件 (ID: 16277)
+2025-11-27 15:45:14,532 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/回调通知/企业解绑设备事件.mdx
+2025-11-27 15:45:15,534 - INFO - Processing document: 重启设备指令 (ID: 20285)
+2025-11-27 15:45:15,761 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/回调通知/重启设备指令.mdx
+2025-11-27 15:45:16,763 - INFO - Processing document: 设备比对版本号流程 (ID: 15397)
+2025-11-27 15:45:16,983 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/附录/设备比对版本号流程.mdx
+2025-11-27 15:45:17,985 - INFO - Processing document: 设备报警及日志上传流程 (ID: 15963)
+2025-11-27 15:45:18,220 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/附录/设备报警及日志上传流程.mdx
+2025-11-27 15:45:19,221 - INFO - Processing document: 蓝牙识别及配网协议 (ID: 14078)
+2025-11-27 15:45:19,629 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/蓝牙相关协议/蓝牙识别及配网协议.mdx
+2025-11-27 15:45:20,630 - INFO - Processing document: 蓝牙识别及配网SDK (ID: 14508)
+2025-11-27 15:45:20,865 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/蓝牙相关协议/蓝牙识别及配网SDK.mdx
+2025-11-27 15:45:21,866 - INFO - Processing document: 成员绑定硬件设备 (ID: 49674)
+2025-11-27 15:45:22,094 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/设备接入/成员绑定硬件设备.mdx
+2025-11-27 15:45:23,095 - INFO - Processing document: 上传识别特征值 (ID: 15355)
+2025-11-27 15:45:23,330 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/上传识别特征值.mdx
+2025-11-27 15:45:24,332 - INFO - Processing document: 全量获取用户数据 (ID: 15356)
+2025-11-27 15:45:24,558 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/全量获取用户数据.mdx
+2025-11-27 15:45:25,560 - INFO - Processing document: 增量获取用户数据 (ID: 15357)
+2025-11-27 15:45:25,796 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/增量获取用户数据.mdx
+2025-11-27 15:45:26,797 - INFO - Processing document: 上报考勤打卡/门禁通行记录 (ID: 15362)
+2025-11-27 15:45:27,032 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/上报考勤打卡门禁通行记录.mdx
+2025-11-27 15:45:28,033 - INFO - Processing document: 获取通讯录最新版本号 (ID: 15366)
+2025-11-27 15:45:28,257 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/获取通讯录最新版本号.mdx
+2025-11-27 15:45:29,259 - INFO - Processing document: 增量获取访客数据 (ID: 18437)
+2025-11-27 15:45:29,490 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/增量获取访客数据.mdx
+2025-11-27 15:45:30,492 - INFO - Processing document: 检查UserId合法性 (ID: 16457)
+2025-11-27 15:45:30,726 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/检查UserId合法性.mdx
+2025-11-27 15:45:31,727 - INFO - Processing document: 上报体温检测记录 (ID: 21676)
+2025-11-27 15:45:31,947 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/上报体温检测记录.mdx
+2025-11-27 15:45:32,948 - INFO - Processing document: 获取健康码信息 (ID: 21798)
+2025-11-27 15:45:33,183 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/获取健康码信息.mdx
+2025-11-27 15:45:34,184 - INFO - Processing document: 异步补录体温检测记录 (ID: 21956)
+2025-11-27 15:45:34,408 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/异步补录体温检测记录.mdx
+2025-11-27 15:45:35,409 - INFO - Processing document: 全量获取访客数据 (ID: 15370)
+2025-11-27 15:45:35,639 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/全量获取访客数据.mdx
+2025-11-27 15:45:36,640 - INFO - Processing document: 获取访客列表最新版本号 (ID: 18441)
+2025-11-27 15:45:36,867 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/获取访客列表最新版本号.mdx
+2025-11-27 15:45:37,868 - INFO - Processing document: 上报远程开门/扫码开门结果 (ID: 34458)
+2025-11-27 15:45:38,104 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/上报远程开门扫码开门结果.mdx
+2025-11-27 15:45:39,105 - INFO - Processing document: 指纹/人脸多算法版本协议 (ID: 16856)
+2025-11-27 15:45:39,352 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/接口调用/指纹人脸多算法版本协议.mdx
+2025-11-27 15:45:40,353 - INFO - Processing document: 通讯录变更事件 (ID: 15373)
+2025-11-27 15:45:40,575 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/云端下发指令/通讯录变更事件.mdx
+2025-11-27 15:45:41,576 - INFO - Processing document: 识别信息录入指令 (ID: 15375)
+2025-11-27 15:45:41,803 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/云端下发指令/识别信息录入指令.mdx
+2025-11-27 15:45:42,805 - INFO - Processing document: 成员UserId变更事件 (ID: 15377)
+2025-11-27 15:45:43,032 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/云端下发指令/成员UserId变更事件.mdx
+2025-11-27 15:45:44,033 - INFO - Processing document: 访客列表变更事件 (ID: 15381)
+2025-11-27 15:45:44,255 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/云端下发指令/访客列表变更事件.mdx
+2025-11-27 15:45:45,256 - INFO - Processing document: 取消识别信息录入指令 (ID: 17273)
+2025-11-27 15:45:45,482 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/云端下发指令/取消识别信息录入指令.mdx
+2025-11-27 15:45:46,483 - INFO - Processing document: 设备自助录入开关变更事件 (ID: 30877)
+2025-11-27 15:45:46,713 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/云端下发指令/设备自助录入开关变更事件.mdx
+2025-11-27 15:45:47,714 - INFO - Processing document: 远程开门/扫码开门指令 (ID: 34457)
+2025-11-27 15:45:47,936 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/云端下发指令/远程开门扫码开门指令.mdx
+2025-11-27 15:45:48,937 - INFO - Processing document: 全量拉取通讯录流程 (ID: 15398)
+2025-11-27 15:45:49,162 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/附录/全量拉取通讯录流程.mdx
+2025-11-27 15:45:50,163 - INFO - Processing document: 门禁通行规则语法说明 (ID: 15400)
+2025-11-27 15:45:50,384 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/附录/门禁通行规则语法说明.mdx
+2025-11-27 15:45:51,385 - INFO - Processing document: 访客UserId规则说明 (ID: 15401)
+2025-11-27 15:45:51,605 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/附录/访客UserId规则说明.mdx
+2025-11-27 15:45:52,606 - INFO - Processing document: 员工二维码校验规则 (ID: 15422)
+2025-11-27 15:45:52,831 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/附录/员工二维码校验规则.mdx
+2025-11-27 15:45:53,832 - INFO - Processing document: 访客二维码校验规则 (ID: 15423)
+2025-11-27 15:45:54,058 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/考勤门禁设备/附录/访客二维码校验规则.mdx
+2025-11-27 15:45:55,059 - INFO - Processing document: 打印/扫描设备接入指引 (ID: 15959)
+2025-11-27 15:45:55,292 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/打印扫描设备/打印扫描设备接入指引.mdx
+2025-11-27 15:45:56,293 - INFO - Processing document: 获取打印任务列表 (ID: 15911)
+2025-11-27 15:45:56,516 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/打印扫描设备/接口调用/获取打印任务列表.mdx
+2025-11-27 15:45:57,518 - INFO - Processing document: 下载打印文件 (ID: 15947)
+2025-11-27 15:45:57,743 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/打印扫描设备/接口调用/下载打印文件.mdx
+2025-11-27 15:45:58,745 - INFO - Processing document: 获取身份验证二维码 (ID: 15948)
+2025-11-27 15:45:58,968 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/打印扫描设备/接口调用/获取身份验证二维码.mdx
+2025-11-27 15:45:59,970 - INFO - Processing document: 上报打印任务状态 (ID: 15949)
+2025-11-27 15:46:00,209 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/打印扫描设备/接口调用/上报打印任务状态.mdx
+2025-11-27 15:46:01,211 - INFO - Processing document: 带扩展参数的文件上传协议 (ID: 20072)
+2025-11-27 15:46:01,447 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/打印扫描设备/接口调用/带扩展参数的文件上传协议.mdx
+2025-11-27 15:46:02,448 - INFO - Processing document: 上传打印机扫描文件 (ID: 20073)
+2025-11-27 15:46:02,675 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/打印扫描设备/接口调用/上传打印机扫描文件.mdx
+2025-11-27 15:46:03,676 - INFO - Processing document: 打印任务推送事件 (ID: 15950)
+2025-11-27 15:46:03,895 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/打印扫描设备/回调通知/打印任务推送事件.mdx
+2025-11-27 15:46:04,897 - INFO - Processing document: 打印任务删除事件 (ID: 15953)
+2025-11-27 15:46:05,123 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/打印扫描设备/回调通知/打印任务删除事件.mdx
+2025-11-27 15:46:06,124 - INFO - Processing document: 概述 (ID: 27403)
+2025-11-27 15:46:06,362 - INFO - Saved: docs/智慧硬件开发/硬件直连接入/概述.mdx
+2025-11-27 15:46:07,363 - INFO - Processing document: 样式库 WeUI for Work (ID: 12146)
+2025-11-27 15:46:07,598 - INFO - Saved: docs/智慧硬件开发/工具与资源/样式库 WeUI for Work.mdx
+2025-11-27 15:46:08,599 - INFO - Processing document: 设计资源下载 (ID: 11184)
+2025-11-27 15:46:08,833 - INFO - Saved: docs/智慧硬件开发/工具与资源/设计资源下载.mdx
+2025-11-27 15:46:09,834 - INFO - Processing document: 加解密库下载与返回码 (ID: 10128)
+2025-11-27 15:46:10,068 - INFO - Saved: docs/智慧硬件开发/工具与资源/加解密库下载与返回码.mdx
+2025-11-27 15:46:11,069 - INFO - Processing document: 接口代码参考示例 (ID: 10520)
+2025-11-27 15:46:11,319 - INFO - Saved: docs/智慧硬件开发/工具与资源/接口代码参考示例.mdx
+2025-11-27 15:46:12,320 - INFO - Processing document: 开发者工具 (ID: 12222)
+2025-11-27 15:46:13,025 - INFO - Saved: docs/智慧硬件开发/工具与资源/开发者工具.mdx
+2025-11-27 15:46:14,026 - INFO - Processing document: 联系我们 (ID: 10521)
+2025-11-27 15:46:14,247 - INFO - Saved: docs/智慧硬件开发/联系我们/联系我们.mdx
+2025-11-27 15:46:15,248 - INFO - Processing document: 更新日志 (ID: 11303)
+2025-11-27 15:46:15,863 - INFO - Saved: docs/智慧硬件开发/更新日志.mdx
+2025-11-27 15:46:16,864 - INFO - Processing document: 更新日志 (ID: 11303)
+2025-11-27 15:46:17,474 - INFO - Saved: docs/智慧硬件开发/更新日志/更新日志.mdx
+2025-11-27 15:46:18,475 - INFO - Processing document: 成员绑定硬件设备 (ID: 52042)
+2025-11-27 15:46:18,708 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/设备接入/成员绑定硬件设备.mdx
+2025-11-27 15:46:19,709 - INFO - Processing document: 获取打印任务列表 (ID: 42204)
+2025-11-27 15:46:19,950 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/打印扫描设备/接口调用/获取打印任务列表.mdx
+2025-11-27 15:46:20,951 - INFO - Processing document: 获取打印文件 (ID: 42205)
+2025-11-27 15:46:21,175 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/打印扫描设备/接口调用/获取打印文件.mdx
+2025-11-27 15:46:22,176 - INFO - Processing document: 上报打印任务状态 (ID: 42207)
+2025-11-27 15:46:22,402 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/打印扫描设备/接口调用/上报打印任务状态.mdx
+2025-11-27 15:46:23,403 - INFO - Processing document: 上传扫描文件 (ID: 42208)
+2025-11-27 15:46:23,627 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/打印扫描设备/接口调用/上传扫描文件.mdx
+2025-11-27 15:46:24,629 - INFO - Processing document: 返回转码后的打印文件 (ID: 42212)
+2025-11-27 15:46:24,863 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/打印扫描设备/接口调用/返回转码后的打印文件.mdx
+2025-11-27 15:46:25,864 - INFO - Processing document: 获取打印身份识别二维码 (ID: 42214)
+2025-11-27 15:46:26,092 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/打印扫描设备/接口调用/获取打印身份识别二维码.mdx
+2025-11-27 15:46:27,094 - INFO - Processing document: 推送打印任务 (ID: 42215)
+2025-11-27 15:46:27,330 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/打印扫描设备/回调通知/推送打印任务.mdx
+2025-11-27 15:46:28,332 - INFO - Processing document: 推送打印转码任务 (ID: 42343)
+2025-11-27 15:46:28,559 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/打印扫描设备/回调通知/推送打印转码任务.mdx
+2025-11-27 15:46:29,560 - INFO - Processing document: 删除打印任务 (ID: 43523)
+2025-11-27 15:46:29,791 - INFO - Saved: docs/智慧硬件开发/硬件云端接入/打印扫描设备/回调通知/删除打印任务.mdx
+2025-11-27 15:46:30,792 - INFO - Processing document: 概述 (ID: 36688)
+2025-11-27 15:46:31,017 - INFO - Saved: docs/服务商代开发/快速入门/概述.mdx
+2025-11-27 15:46:32,018 - INFO - Processing document: 代开发流程 (ID: 36689)
+2025-11-27 15:46:32,267 - INFO - Saved: docs/服务商代开发/快速入门/代开发流程.mdx
+2025-11-27 15:46:33,268 - INFO - Processing document: 回调配置 (ID: 14961)
+2025-11-27 15:46:33,512 - INFO - Saved: docs/服务商代开发/服务端API/开发指南/回调配置.mdx
+2025-11-27 15:46:34,513 - INFO - Processing document: 获取企业微信接口IP段 (ID: 19995)
+2025-11-27 15:46:34,733 - INFO - Saved: docs/服务商代开发/服务端API/开发指南/获取企业微信接口IP段.mdx
+2025-11-27 15:46:35,735 - INFO - Processing document: 开发前必读 (ID: 42538)
+2025-11-27 15:46:35,968 - INFO - Saved: docs/服务商代开发/服务端API/开发指南/开发前必读.mdx
+2025-11-27 15:46:36,969 - INFO - Processing document: 基本概念介绍 (ID: 42539)
+2025-11-27 15:46:37,195 - INFO - Saved: docs/服务商代开发/服务端API/开发指南/基本概念介绍.mdx
+2025-11-27 15:46:38,197 - INFO - Processing document: 与自建应用接口的差异 (ID: 42546)
+2025-11-27 15:46:38,423 - INFO - Saved: docs/服务商代开发/服务端API/开发指南/与自建应用接口的差异.mdx
+2025-11-27 15:46:39,424 - INFO - Processing document: 代开发应用权限说明 (ID: 33971)
+2025-11-27 15:46:39,679 - INFO - Saved: docs/服务商代开发/服务端API/开发指南/代开发应用权限说明.mdx
+2025-11-27 15:46:40,680 - INFO - Processing document: 获取企业微信回调IP段 (ID: 19996)
+2025-11-27 15:46:40,907 - INFO - Saved: docs/服务商代开发/服务端API/开发指南/获取企业微信回调IP段.mdx
+2025-11-27 15:46:41,908 - INFO - Processing document: 概述 (ID: 10016)
+2025-11-27 15:46:42,134 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/概述.mdx
+2025-11-27 15:46:43,135 - INFO - Processing document: 读取成员 (ID: 10019)
+2025-11-27 15:46:43,382 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/成员管理/读取成员.mdx
+2025-11-27 15:46:44,383 - INFO - Processing document: 获取部门成员 (ID: 10061)
+2025-11-27 15:46:44,607 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/成员管理/获取部门成员.mdx
+2025-11-27 15:46:45,608 - INFO - Processing document: 获取部门成员详情 (ID: 10063)
+2025-11-27 15:46:45,847 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/成员管理/获取部门成员详情.mdx
+2025-11-27 15:46:46,849 - INFO - Processing document: userid与openid互换 (ID: 11279)
+2025-11-27 15:46:47,087 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/成员管理/userid与openid互换.mdx
+2025-11-27 15:46:48,088 - INFO - Processing document: 手机号获取userid (ID: 16820)
+2025-11-27 15:46:48,317 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/成员管理/手机号获取userid.mdx
+2025-11-27 15:46:49,318 - INFO - Processing document: 邮箱获取userid (ID: 39794)
+2025-11-27 15:46:49,548 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/成员管理/邮箱获取userid.mdx
+2025-11-27 15:46:50,549 - INFO - Processing document: 获取成员ID列表 (ID: 40856)
+2025-11-27 15:46:50,779 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/成员管理/获取成员ID列表.mdx
+2025-11-27 15:46:51,780 - INFO - Processing document: 成员扩展属性 (ID: 54430)
+2025-11-27 15:46:52,010 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/成员管理/成员扩展属性.mdx
+2025-11-27 15:46:53,011 - INFO - Processing document: 获取部门列表 (ID: 10093)
+2025-11-27 15:46:53,248 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/部门管理/获取部门列表.mdx
+2025-11-27 15:46:54,249 - INFO - Processing document: 获取子部门ID列表 (ID: 36259)
+2025-11-27 15:46:54,483 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/部门管理/获取子部门ID列表.mdx
+2025-11-27 15:46:55,484 - INFO - Processing document: 获取单个部门详情 (ID: 36260)
+2025-11-27 15:46:55,709 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/部门管理/获取单个部门详情.mdx
+2025-11-27 15:46:56,711 - INFO - Processing document: 创建标签 (ID: 10915)
+2025-11-27 15:46:56,945 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/标签管理/创建标签.mdx
+2025-11-27 15:46:57,947 - INFO - Processing document: 更新标签名字 (ID: 10919)
+2025-11-27 15:46:58,170 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/标签管理/更新标签名字.mdx
+2025-11-27 15:46:59,171 - INFO - Processing document: 删除标签 (ID: 10920)
+2025-11-27 15:46:59,395 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/标签管理/删除标签.mdx
+2025-11-27 15:47:00,396 - INFO - Processing document: 获取标签成员 (ID: 10921)
+2025-11-27 15:47:00,624 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/标签管理/获取标签成员.mdx
+2025-11-27 15:47:01,625 - INFO - Processing document: 增加标签成员 (ID: 10923)
+2025-11-27 15:47:01,861 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/标签管理/增加标签成员.mdx
+2025-11-27 15:47:02,863 - INFO - Processing document: 删除标签成员 (ID: 10925)
+2025-11-27 15:47:03,085 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/标签管理/删除标签成员.mdx
+2025-11-27 15:47:04,087 - INFO - Processing document: 获取标签列表 (ID: 10926)
+2025-11-27 15:47:04,317 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/标签管理/获取标签列表.mdx
+2025-11-27 15:47:05,318 - INFO - Processing document: 概述 (ID: 31877)
+2025-11-27 15:47:05,545 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/异步导出接口/概述.mdx
+2025-11-27 15:47:06,547 - INFO - Processing document: 导出成员 (ID: 31876)
+2025-11-27 15:47:06,771 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/异步导出接口/导出成员.mdx
+2025-11-27 15:47:07,772 - INFO - Processing document: 导出成员详情 (ID: 31880)
+2025-11-27 15:47:08,005 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/异步导出接口/导出成员详情.mdx
+2025-11-27 15:47:09,007 - INFO - Processing document: 导出部门 (ID: 31882)
+2025-11-27 15:47:09,234 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/异步导出接口/导出部门.mdx
+2025-11-27 15:47:10,235 - INFO - Processing document: 导出标签成员 (ID: 31883)
+2025-11-27 15:47:10,460 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/异步导出接口/导出标签成员.mdx
+2025-11-27 15:47:11,461 - INFO - Processing document: 获取导出结果 (ID: 31884)
+2025-11-27 15:47:11,699 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/异步导出接口/获取导出结果.mdx
+2025-11-27 15:47:12,700 - INFO - Processing document: 导出任务完成通知 (ID: 34052)
+2025-11-27 15:47:12,926 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/异步导出接口/导出任务完成通知.mdx
+2025-11-27 15:47:13,928 - INFO - Processing document: 概述 (ID: 15002)
+2025-11-27 15:47:14,157 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/通讯录回调通知/概述.mdx
+2025-11-27 15:47:15,159 - INFO - Processing document: 成员变更通知 (ID: 15004)
+2025-11-27 15:47:15,408 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/通讯录回调通知/成员变更通知.mdx
+2025-11-27 15:47:16,409 - INFO - Processing document: 部门变更通知 (ID: 15005)
+2025-11-27 15:47:16,635 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/通讯录回调通知/部门变更通知.mdx
+2025-11-27 15:47:17,637 - INFO - Processing document: 标签变更通知 (ID: 15006)
+2025-11-27 15:47:17,866 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/通讯录回调通知/标签变更通知.mdx
+2025-11-27 15:47:18,867 - INFO - Processing document: 异步任务完成通知 (ID: 15011)
+2025-11-27 15:47:19,091 - INFO - Saved: docs/服务商代开发/服务端API/通讯录管理/通讯录回调通知/异步任务完成通知.mdx
+2025-11-27 15:47:20,093 - INFO - Processing document: 概述 (ID: 13473)
+2025-11-27 15:47:20,329 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/概述.mdx
+2025-11-27 15:47:21,330 - INFO - Processing document: 成员对外信息 (ID: 13450)
+2025-11-27 15:47:21,558 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/成员对外信息.mdx
+2025-11-27 15:47:22,560 - INFO - Processing document: 获取配置了客户联系功能的成员列表 (ID: 15642)
+2025-11-27 15:47:22,800 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/企业服务人员管理/获取配置了客户联系功能的成员列表.mdx
+2025-11-27 15:47:23,802 - INFO - Processing document: 检查用户是否配置了客户联系功能使用权限 (ID: 21268)
+2025-11-27 15:47:24,033 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/企业服务人员管理/检查用户是否配置了客户联系功能使用权限.mdx
+2025-11-27 15:47:25,034 - INFO - Processing document: 获取客户列表 (ID: 15445)
+2025-11-27 15:47:25,264 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户管理/获取客户列表.mdx
+2025-11-27 15:47:26,266 - INFO - Processing document: 获取客户详情 (ID: 13878)
+2025-11-27 15:47:26,505 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户管理/获取客户详情.mdx
+2025-11-27 15:47:27,507 - INFO - Processing document: 批量获取客户详情 (ID: 23414)
+2025-11-27 15:47:27,750 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户管理/批量获取客户详情.mdx
+2025-11-27 15:47:28,751 - INFO - Processing document: 修改客户备注信息 (ID: 16662)
+2025-11-27 15:47:28,985 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户管理/修改客户备注信息.mdx
+2025-11-27 15:47:29,986 - INFO - Processing document: 客户联系规则组管理 (ID: 32023)
+2025-11-27 15:47:30,244 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户管理/客户联系规则组管理.mdx
+2025-11-27 15:47:31,245 - INFO - Processing document: 管理企业标签 (ID: 17298)
+2025-11-27 15:47:31,483 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户标签管理/管理企业标签.mdx
+2025-11-27 15:47:32,485 - INFO - Processing document: 编辑客户企业标签 (ID: 16666)
+2025-11-27 15:47:32,713 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户标签管理/编辑客户企业标签.mdx
+2025-11-27 15:47:33,714 - INFO - Processing document: 管理企业规则组下的客户标签 (ID: 32022)
+2025-11-27 15:47:33,962 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户标签管理/管理企业规则组下的客户标签.mdx
+2025-11-27 15:47:34,963 - INFO - Processing document: 分配在职成员的客户 (ID: 27271)
+2025-11-27 15:47:35,201 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/在职继承/分配在职成员的客户.mdx
+2025-11-27 15:47:36,203 - INFO - Processing document: 查询客户接替状态 (ID: 27284)
+2025-11-27 15:47:36,432 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/在职继承/查询客户接替状态.mdx
+2025-11-27 15:47:37,434 - INFO - Processing document: 分配在职成员的客户群 (ID: 38681)
+2025-11-27 15:47:37,665 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/在职继承/分配在职成员的客户群.mdx
+2025-11-27 15:47:38,666 - INFO - Processing document: 获取待分配的离职成员列表 (ID: 16248)
+2025-11-27 15:47:38,901 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/离职继承/获取待分配的离职成员列表.mdx
+2025-11-27 15:47:39,902 - INFO - Processing document: 分配离职成员的客户 (ID: 27272)
+2025-11-27 15:47:40,138 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/离职继承/分配离职成员的客户.mdx
+2025-11-27 15:47:41,139 - INFO - Processing document: 查询客户接替状态 (ID: 27286)
+2025-11-27 15:47:41,373 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/离职继承/查询客户接替状态.mdx
+2025-11-27 15:47:42,375 - INFO - Processing document: 分配离职成员的客户群 (ID: 19416)
+2025-11-27 15:47:42,599 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/离职继承/分配离职成员的客户群.mdx
+2025-11-27 15:47:43,600 - INFO - Processing document: 获取客户群列表 (ID: 19409)
+2025-11-27 15:47:43,836 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户群管理/获取客户群列表.mdx
+2025-11-27 15:47:44,838 - INFO - Processing document: 获取客户群详情 (ID: 19412)
+2025-11-27 15:47:45,072 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户群管理/获取客户群详情.mdx
+2025-11-27 15:47:46,074 - INFO - Processing document: 客户群opengid转换 (ID: 31650)
+2025-11-27 15:47:46,294 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户群管理/客户群opengid转换.mdx
+2025-11-27 15:47:47,295 - INFO - Processing document: 客户联系「联系我」管理 (ID: 15645)
+2025-11-27 15:47:47,712 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/联系我与客户入群方式/客户联系「联系我」管理.mdx
+2025-11-27 15:47:48,713 - INFO - Processing document: 客户群「加入群聊」管理 (ID: 19243)
+2025-11-27 15:47:48,947 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/联系我与客户入群方式/客户群「加入群聊」管理.mdx
+2025-11-27 15:47:49,949 - INFO - Processing document: 概述 (ID: 26595)
+2025-11-27 15:47:50,183 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户朋友圈/概述.mdx
+2025-11-27 15:47:51,185 - INFO - Processing document: 企业发表内容到客户的朋友圈 (ID: 34646)
+2025-11-27 15:47:51,425 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户朋友圈/企业发表内容到客户的朋友圈.mdx
+2025-11-27 15:47:52,427 - INFO - Processing document: 获取客户朋友圈全部的发表记录 (ID: 25254)
+2025-11-27 15:47:52,663 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户朋友圈/获取客户朋友圈全部的发表记录.mdx
+2025-11-27 15:47:53,664 - INFO - Processing document: 停止发表企业朋友圈 (ID: 44259)
+2025-11-27 15:47:53,891 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户朋友圈/停止发表企业朋友圈.mdx
+2025-11-27 15:47:54,892 - INFO - Processing document: 客户朋友圈规则组管理 (ID: 32104)
+2025-11-27 15:47:55,132 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/客户朋友圈/客户朋友圈规则组管理.mdx
+2025-11-27 15:47:56,133 - INFO - Processing document: 获取企业的全部群发记录 (ID: 25429)
+2025-11-27 15:47:56,388 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/消息推送/获取企业的全部群发记录.mdx
+2025-11-27 15:47:57,389 - INFO - Processing document: 发送新客户欢迎语 (ID: 16489)
+2025-11-27 15:47:57,624 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/消息推送/发送新客户欢迎语.mdx
+2025-11-27 15:47:58,625 - INFO - Processing document: 入群欢迎语素材管理 (ID: 19635)
+2025-11-27 15:47:58,871 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/消息推送/入群欢迎语素材管理.mdx
+2025-11-27 15:47:59,873 - INFO - Processing document: 创建企业群发 (ID: 15836)
+2025-11-27 15:48:00,103 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/消息推送/创建企业群发.mdx
+2025-11-27 15:48:01,104 - INFO - Processing document: 提醒成员群发 (ID: 44255)
+2025-11-27 15:48:01,331 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/消息推送/提醒成员群发.mdx
+2025-11-27 15:48:02,333 - INFO - Processing document: 停止企业群发 (ID: 44257)
+2025-11-27 15:48:02,563 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/消息推送/停止企业群发.mdx
+2025-11-27 15:48:03,565 - INFO - Processing document: 获取「联系客户统计」数据 (ID: 16392)
+2025-11-27 15:48:03,798 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/统计管理/获取「联系客户统计」数据.mdx
+2025-11-27 15:48:04,799 - INFO - Processing document: 获取「群聊数据统计」数据 (ID: 19418)
+2025-11-27 15:48:05,035 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/统计管理/获取「群聊数据统计」数据.mdx
+2025-11-27 15:48:06,037 - INFO - Processing document: 概述 (ID: 15608)
+2025-11-27 15:48:06,263 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/变更回调/概述.mdx
+2025-11-27 15:48:07,264 - INFO - Processing document: 事件格式 (ID: 15260)
+2025-11-27 15:48:07,686 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/变更回调/事件格式.mdx
+2025-11-27 15:48:08,687 - INFO - Processing document: 获客助手事件通知 (ID: 47918)
+2025-11-27 15:48:08,930 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/变更回调/获客助手事件通知.mdx
+2025-11-27 15:48:09,931 - INFO - Processing document: 管理商品图册 (ID: 34655)
+2025-11-27 15:48:10,177 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/管理商品图册.mdx
+2025-11-27 15:48:11,179 - INFO - Processing document: 管理聊天敏感词 (ID: 34656)
+2025-11-27 15:48:11,426 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/管理聊天敏感词.mdx
+2025-11-27 15:48:12,428 - INFO - Processing document: 上传附件资源 (ID: 34657)
+2025-11-27 15:48:12,660 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/上传附件资源.mdx
+2025-11-27 15:48:13,662 - INFO - Processing document: 获客链接管理 (ID: 42921)
+2025-11-27 15:48:13,911 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/获客助手/获客链接管理.mdx
+2025-11-27 15:48:14,912 - INFO - Processing document: 获取由获客链接添加的客户信息 (ID: 42923)
+2025-11-27 15:48:15,141 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/获客助手/获取由获客链接添加的客户信息.mdx
+2025-11-27 15:48:16,142 - INFO - Processing document: 获客助手额度管理与使用统计 (ID: 43599)
+2025-11-27 15:48:16,372 - INFO - Saved: docs/服务商代开发/服务端API/客户联系/获客助手/获客助手额度管理与使用统计.mdx
+2025-11-27 15:48:17,373 - INFO - Processing document: 提升广告有效率 (ID: 51881)
 Traceback (most recent call last):
   File "/home/runner/work/weworkdoc/weworkdoc/wework_doc_crawler.py", line 260, in <module>
     crawler.run()

@@ -1,0 +1,22 @@
+---
+title: "获取设备数据授权"
+generated_at: "2025-11-27 18:52:58"
+source: "https://developer.work.weixin.qq.com/document/path/97260"
+---
+
+[[toc]]
+<!-- import openAppDeviceDataAuth from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```js
+wx.invoke('openAppDeviceDataAuth', {}, function(res){
+  if (/openAppDeviceDataAuth:ok/.test(res.err_msg)) {
+  	// 调用成功                  
+  }
+  if (/openAppDeviceDataAuth:fail/.test(res.err_msg)) {
+  	// 调用失败                  
+  }        
+})
+```
+

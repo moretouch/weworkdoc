@@ -1,0 +1,29 @@
+---
+title: "打开已有群聊并发送消息"
+generated_at: "2025-11-27 18:52:31"
+source: "https://developer.work.weixin.qq.com/document/path/96939"
+---
+
+[[toc]]
+<!-- import openExistedChatWithMsg from @wecom/jssdk -->
+## 旧版jweixin调用
+### 示例代码
+```
+wx.invoke("openExistedChatWithMsg", {
+                chatId: "chatId123",
+                msg: {
+                	msgtype: "link",
+                	link: {
+                    		title: "title1",
+                    		desc: "desc1",
+                    		url: "link1",
+                    		imgUrl: "imgurl1"
+                	}
+             	}
+        },function(res){
+                if (res.err_msg == "openExistedChatWithMsg:ok")
+                {
+                }
+        }
+);
+```

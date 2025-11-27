@@ -1,0 +1,23 @@
+---
+title: "加入视频会议"
+generated_at: "2025-11-27 18:53:05"
+source: "https://developer.work.weixin.qq.com/document/path/100861"
+---
+
+
+<!-- import enterHWOpenTalk from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.invoke('enterHWOpenTalk', {
+        'code': "",
+        'ticket': "",
+    }, function(res){
+        if(res.err_msg == "enterHWOpenTalk:ok"){
+        // 发起加入会议请求成功
+        }else {
+        // 发起加入会议请求失败
+    }
+ });
+```

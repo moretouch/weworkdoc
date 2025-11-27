@@ -1,0 +1,24 @@
+---
+title: "选择文件"
+generated_at: "2025-11-27 18:53:12"
+source: "https://developer.work.weixin.qq.com/document/path/99196"
+---
+
+
+<!-- import wedriveSelectFile from @wecom/jssdk -->
+
+
+
+## 旧版jweixin调用
+
+### 示例代码
+```javascript wedriveSelectFileForShare
+wx.invoke('wedriveSelectFile', {
+  selectedFileNum: 1
+}, function (res) {
+  if (res.err_msg == "wedriveSelectFile:ok") {
+    var selectedFileUrls = res.result.selectedFileUrls;  // 后续废弃
+    var selectedFileInfos = res.result.selectedFileInfos;
+  }
+});
+```

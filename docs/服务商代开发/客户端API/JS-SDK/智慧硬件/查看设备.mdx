@@ -1,0 +1,21 @@
+---
+title: "查看设备"
+generated_at: "2025-11-27 18:53:01"
+source: "https://developer.work.weixin.qq.com/document/path/97262"
+---
+
+[[toc]]
+<!-- import openDeviceProfile from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```
+wx.invoke("openDeviceProfile", {
+    "deviceSn": "QYWX001", // 设备SN
+},function(res){
+    if (res.err_msg == "openDeviceProfile:ok")
+    {
+        // 打开设备详情页成功
+    }
+});
+```

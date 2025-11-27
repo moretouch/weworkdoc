@@ -1,0 +1,21 @@
+---
+title: "从会话选择文件"
+generated_at: "2025-11-27 18:54:01"
+source: "https://developer.work.weixin.qq.com/document/path/100496"
+---
+
+[[toc]]
+<!-- import chooseMessageFile from @wecom/jssdk -->
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.invoke('chooseMessageFile', {
+		count: 10,
+		type: 'image',
+	}, function(res) {
+		// 这里是回调函数 
+		if (res.err_msg == "chooseMessageFile:ok"){
+			const tempFiles = res.tempFiles
+		}
+});
+```

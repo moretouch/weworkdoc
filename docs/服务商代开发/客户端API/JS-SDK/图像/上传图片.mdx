@@ -1,0 +1,23 @@
+---
+title: "上传图片"
+generated_at: "2025-11-27 18:53:42"
+source: "https://developer.work.weixin.qq.com/document/path/100389"
+---
+
+
+
+[[toc]]
+
+<!-- import uploadImage from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.uploadImage({
+    localId: '', // 需要上传的图片的本地ID，由chooseImage接口获得
+    isShowProgressTips: 1, // 默认为1，显示进度提示
+    success: function (res) {
+        var serverId = res.serverId; // 返回图片的服务器端ID
+    }
+});
+```

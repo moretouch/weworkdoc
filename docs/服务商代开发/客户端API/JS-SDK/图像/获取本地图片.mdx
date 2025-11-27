@@ -1,0 +1,18 @@
+---
+title: "获取本地图片"
+generated_at: "2025-11-27 18:53:45"
+source: "https://developer.work.weixin.qq.com/document/path/100391"
+---
+
+[[toc]]
+<!-- import getLocalImgData from @wecom/jssdk -->
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.getLocalImgData({
+    localId: '', // 图片的localID
+    success: function (res) {
+        var localData = res.localData; // localData是图片的base64数据，可以用img标签显示
+}
+});
+```

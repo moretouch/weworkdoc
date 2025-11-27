@@ -1,0 +1,160 @@
+name: WeWork Documentation Crawler
+
+on:
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: 'Force run even if no changes detected'
+        required: false
+        default: 'false'
+        type: boolean
+  
+  # Run every hour
+  schedule:
+    - cron: '34 * * * *'  # Every hour at minute 0
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30  # Prevent runaway jobs
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Full history for git operations
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Configure git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+    
+    - name: Check for existing docs
+      id: check_docs
+      run: |
+        if [ -d "docs" ]; then
+          echo "docs_exist=true" >> $GITHUB_OUTPUT
+          doc_count=$(find docs -name "*.mdx" | wc -l)
+          echo "doc_count=$doc_count" >> $GITHUB_OUTPUT
+        else
+          echo "docs_exist=false" >> $GITHUB_OUTPUT
+          echo "doc_count=0" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Run crawler
+      id: crawler
+      continue-on-error: true  # Don't fail the job if crawler hits rate limit
+      run: |
+        echo "Starting crawler..."
+        echo "Current docs count: ${{ steps.check_docs.outputs.doc_count }}"
+        
+        # Capture both stdout and stderr, and exit code
+        python wework_doc_crawler.py 2>&1 | tee crawler.log
+        exit_code=${PIPESTATUS[0]}
+        
+        echo "Crawler finished with exit code: $exit_code"
+        echo "exit_code=$exit_code" >> $GITHUB_OUTPUT
+        
+        # Check if any new files were created
+        if [ -d "docs" ]; then
+          new_doc_count=$(find docs -name "*.mdx" | wc -l)
+          echo "new_doc_count=$new_doc_count" >> $GITHUB_OUTPUT
+          
+          # Calculate difference
+          old_count=${{ steps.check_docs.outputs.doc_count }}
+          diff=$((new_doc_count - old_count))
+          echo "docs_added=$diff" >> $GITHUB_OUTPUT
+        else
+          echo "new_doc_count=0" >> $GITHUB_OUTPUT
+          echo "docs_added=0" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Upload crawler logs
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: crawler-logs-${{ github.run_number }}
+        path: crawler.log
+        retention-days: 7
+    
+    - name: Check for changes
+      id: git_status
+      run: |
+        # Add all new files
+        git add .
+        
+        # Check if there are any changes to commit
+        if git diff --cached --quiet; then
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+          echo "No changes detected"
+        else
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "Changes detected"
+          git status
+        fi
+    
+    - name: Commit and push changes
+      if: steps.git_status.outputs.has_changes == 'true'
+      run: |
+        # Create commit message with summary
+        docs_added=${{ steps.crawler.outputs.docs_added }}
+        exit_code=${{ steps.crawler.outputs.exit_code }}
+        
+        if [ "$exit_code" = "0" ]; then
+          status_msg="✅ Completed successfully"
+        else
+          status_msg="⚠️ Stopped (likely rate limited)"
+        fi
+        
+        commit_msg="📚 Auto-crawl: Added $docs_added documents - $status_msg
+        
+        - Total documents: ${{ steps.crawler.outputs.new_doc_count }}
+        - Documents added: $docs_added
+        - Exit code: $exit_code
+        - Timestamp: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+        
+        git commit -m "$commit_msg"
+        
+        # Push changes
+        git push origin HEAD:${{ github.ref_name }}
+        
+        echo "✅ Successfully pushed $docs_added new documents to repository"
+    
+    - name: Create summary
+      if: always()
+      run: |
+        echo "## 🤖 Crawler Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+        echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+        echo "| **Exit Code** | ${{ steps.crawler.outputs.exit_code }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| **Previous Doc Count** | ${{ steps.check_docs.outputs.doc_count }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| **Current Doc Count** | ${{ steps.crawler.outputs.new_doc_count }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| **Documents Added** | ${{ steps.crawler.outputs.docs_added }} |" >> $GITHUB_STEP_SUMMARY
+        echo "| **Changes Committed** | ${{ steps.git_status.outputs.has_changes }} |" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ "${{ steps.crawler.outputs.exit_code }}" != "0" ]; then
+          echo "⚠️ **Note:** Crawler stopped with non-zero exit code. This is expected when rate limits are hit." >> $GITHUB_STEP_SUMMARY
+          echo "The next scheduled run will continue from where it left off." >> $GITHUB_STEP_SUMMARY
+        fi

@@ -1,405 +1,405 @@
-2025-11-27 09:31:07,205 - INFO - Starting WeWork documentation crawler...
-2025-11-27 09:31:07,205 - INFO - Extracting categories from https://developer.work.weixin.qq.com/document/path/90195
-2025-11-27 09:31:08,774 - INFO - Found 4275 categories
-2025-11-27 09:31:10,226 - INFO - Processing document: 获取客户详情 (ID: 13878)
-2025-11-27 09:31:10,522 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户管理/获取客户详情.mdx
-2025-11-27 09:31:11,523 - INFO - Processing document: 修改客户备注信息 (ID: 16662)
-2025-11-27 09:31:11,809 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户管理/修改客户备注信息.mdx
-2025-11-27 09:31:12,809 - INFO - Processing document: 批量获取客户详情 (ID: 23414)
-2025-11-27 09:31:13,102 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户管理/批量获取客户详情.mdx
-2025-11-27 09:31:14,103 - INFO - Processing document: 客户联系规则组管理 (ID: 32023)
-2025-11-27 09:31:14,394 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户管理/客户联系规则组管理.mdx
-2025-11-27 09:31:15,396 - INFO - Processing document: 管理企业标签 (ID: 17298)
-2025-11-27 09:31:15,687 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户标签管理/管理企业标签.mdx
-2025-11-27 09:31:16,688 - INFO - Processing document: 编辑客户企业标签 (ID: 16666)
-2025-11-27 09:31:16,955 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户标签管理/编辑客户企业标签.mdx
-2025-11-27 09:31:17,957 - INFO - Processing document: 管理企业规则组下的客户标签 (ID: 32022)
-2025-11-27 09:31:18,253 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户标签管理/管理企业规则组下的客户标签.mdx
-2025-11-27 09:31:19,254 - INFO - Processing document: 获取客户群列表 (ID: 19409)
-2025-11-27 09:31:19,536 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户群管理/获取客户群列表.mdx
-2025-11-27 09:31:20,537 - INFO - Processing document: 获取客户群详情 (ID: 19412)
-2025-11-27 09:31:20,809 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户群管理/获取客户群详情.mdx
-2025-11-27 09:31:21,811 - INFO - Processing document: 客户群opengid转换 (ID: 31650)
-2025-11-27 09:31:22,088 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户群管理/客户群opengid转换.mdx
-2025-11-27 09:31:23,089 - INFO - Processing document: 获取待分配的离职成员列表 (ID: 16248)
-2025-11-27 09:31:23,373 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/离职继承/获取待分配的离职成员列表.mdx
-2025-11-27 09:31:24,374 - INFO - Processing document: 分配离职成员的客户群 (ID: 19416)
-2025-11-27 09:31:24,645 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/离职继承/分配离职成员的客户群.mdx
-2025-11-27 09:31:25,646 - INFO - Processing document: 分配离职成员的客户 (ID: 27272)
-2025-11-27 09:31:25,931 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/离职继承/分配离职成员的客户.mdx
-2025-11-27 09:31:26,932 - INFO - Processing document: 查询客户接替状态 (ID: 27286)
-2025-11-27 09:31:27,203 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/离职继承/查询客户接替状态.mdx
-2025-11-27 09:31:28,204 - INFO - Processing document: 概述 (ID: 15608)
-2025-11-27 09:31:28,477 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/回调通知/概述.mdx
-2025-11-27 09:31:29,479 - INFO - Processing document: 事件格式 (ID: 15260)
-2025-11-27 09:31:29,979 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/回调通知/事件格式.mdx
-2025-11-27 09:31:30,980 - INFO - Processing document: 获客助手事件通知 (ID: 42924)
-2025-11-27 09:31:31,275 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/回调通知/获客助手事件通知.mdx
-2025-11-27 09:31:32,276 - INFO - Processing document: 获取「联系客户统计」数据 (ID: 16392)
-2025-11-27 09:31:32,547 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/统计管理/获取「联系客户统计」数据.mdx
-2025-11-27 09:31:33,549 - INFO - Processing document: 获取「群聊数据统计」数据 (ID: 19418)
-2025-11-27 09:31:33,842 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/统计管理/获取「群聊数据统计」数据.mdx
-2025-11-27 09:31:34,843 - INFO - Processing document: 创建企业群发 (ID: 15836)
-2025-11-27 09:31:35,115 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/创建企业群发.mdx
-2025-11-27 09:31:36,116 - INFO - Processing document: 发送新客户欢迎语 (ID: 16489)
-2025-11-27 09:31:36,398 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/发送新客户欢迎语.mdx
-2025-11-27 09:31:37,399 - INFO - Processing document: 入群欢迎语素材管理 (ID: 19635)
-2025-11-27 09:31:37,690 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/入群欢迎语素材管理.mdx
-2025-11-27 09:31:38,691 - INFO - Processing document: 获取企业的全部群发记录 (ID: 25429)
-2025-11-27 09:31:38,972 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/获取企业的全部群发记录.mdx
-2025-11-27 09:31:39,973 - INFO - Processing document: 提醒成员群发 (ID: 44255)
-2025-11-27 09:31:40,247 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/提醒成员群发.mdx
-2025-11-27 09:31:41,248 - INFO - Processing document: 停止企业群发 (ID: 44257)
-2025-11-27 09:31:41,519 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/停止企业群发.mdx
-2025-11-27 09:31:42,520 - INFO - Processing document: 客户联系「联系我」管理 (ID: 15645)
-2025-11-27 09:31:43,023 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/联系我与客户入群方式/客户联系「联系我」管理.mdx
-2025-11-27 09:31:44,024 - INFO - Processing document: 客户群「加入群聊」管理 (ID: 19243)
-2025-11-27 09:31:44,310 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/联系我与客户入群方式/客户群「加入群聊」管理.mdx
-2025-11-27 09:31:45,311 - INFO - Processing document: 成员对外信息 (ID: 13450)
-2025-11-27 09:31:45,594 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/成员对外信息.mdx
-2025-11-27 09:31:46,595 - INFO - Processing document: 获取配置了客户联系功能的成员列表 (ID: 15642)
-2025-11-27 09:31:46,871 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/企业服务人员管理/获取配置了客户联系功能的成员列表.mdx
-2025-11-27 09:31:47,872 - INFO - Processing document: 获取客户朋友圈全部的发表记录 (ID: 25254)
-2025-11-27 09:31:48,192 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/获取客户朋友圈全部的发表记录.mdx
-2025-11-27 09:31:49,193 - INFO - Processing document: 概述 (ID: 26595)
-2025-11-27 09:31:49,463 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/概述.mdx
-2025-11-27 09:31:50,464 - INFO - Processing document: 客户朋友圈规则组管理 (ID: 32104)
-2025-11-27 09:31:50,779 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/客户朋友圈规则组管理.mdx
-2025-11-27 09:31:51,781 - INFO - Processing document: 企业发表内容到客户的朋友圈 (ID: 34646)
-2025-11-27 09:31:52,070 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/企业发表内容到客户的朋友圈.mdx
-2025-11-27 09:31:53,071 - INFO - Processing document: 停止发表企业朋友圈 (ID: 44259)
-2025-11-27 09:31:53,344 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/停止发表企业朋友圈.mdx
-2025-11-27 09:31:54,346 - INFO - Processing document: 查询客户接替状态 (ID: 27284)
-2025-11-27 09:31:54,630 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/在职继承/查询客户接替状态.mdx
-2025-11-27 09:31:55,631 - INFO - Processing document: 分配在职成员的客户群 (ID: 38681)
-2025-11-27 09:31:55,909 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/在职继承/分配在职成员的客户群.mdx
-2025-11-27 09:31:56,910 - INFO - Processing document: 管理商品图册 (ID: 34655)
-2025-11-27 09:31:57,188 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/管理商品图册.mdx
-2025-11-27 09:31:58,189 - INFO - Processing document: 管理聊天敏感词 (ID: 34656)
-2025-11-27 09:31:58,479 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/管理聊天敏感词.mdx
-2025-11-27 09:31:59,480 - INFO - Processing document: 上传附件资源 (ID: 34657)
-2025-11-27 09:31:59,752 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/上传附件资源.mdx
-2025-11-27 09:32:00,753 - INFO - Processing document: 获客链接管理 (ID: 42921)
-2025-11-27 09:32:01,044 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/获客链接管理.mdx
-2025-11-27 09:32:02,045 - INFO - Processing document: 获取由获客链接添加的客户信息 (ID: 42923)
-2025-11-27 09:32:02,325 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/获取由获客链接添加的客户信息.mdx
-2025-11-27 09:32:03,326 - INFO - Processing document: 获客助手额度管理与使用统计 (ID: 43599)
-2025-11-27 09:32:03,607 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/获客助手额度管理与使用统计.mdx
-2025-11-27 09:32:04,608 - INFO - Processing document: 提升广告有效率 (ID: 51881)
-2025-11-27 09:32:04,869 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/提升广告有效率.mdx
-2025-11-27 09:32:05,871 - INFO - Processing document: 获取成员多次收消息详情 (ID: 55183)
-2025-11-27 09:32:06,133 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/获取成员多次收消息详情.mdx
-2025-11-27 09:32:07,134 - INFO - Processing document: 获取已服务的外部联系人 (ID: 50223)
-2025-11-27 09:32:07,418 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获取已服务的外部联系人.mdx
-2025-11-27 09:32:08,420 - INFO - Processing document: 获取下级/下游企业小程序session (ID: 25574)
-2025-11-27 09:32:08,690 - INFO - Saved: docs/企业内部开发/服务端API/企业互联/获取下级下游企业小程序session.mdx
-2025-11-27 09:32:09,692 - INFO - Processing document: 获取下级/下游企业的access_token (ID: 24919)
-2025-11-27 09:32:09,968 - INFO - Saved: docs/企业内部开发/服务端API/企业互联/获取下级下游企业的access_token.mdx
-2025-11-27 09:32:10,969 - INFO - Processing document: 概述 (ID: 24909)
-2025-11-27 09:32:11,252 - INFO - Saved: docs/企业内部开发/服务端API/企业互联/概述.mdx
-2025-11-27 09:32:12,254 - INFO - Processing document: 获取应用共享信息 (ID: 25951)
-2025-11-27 09:32:12,523 - INFO - Saved: docs/企业内部开发/服务端API/企业互联/获取应用共享信息.mdx
-2025-11-27 09:32:13,524 - INFO - Processing document: 批量获取汇报记录单号 (ID: 25844)
-2025-11-27 09:32:13,808 - INFO - Saved: docs/企业内部开发/服务端API/汇报/批量获取汇报记录单号.mdx
-2025-11-27 09:32:14,809 - INFO - Processing document: 获取汇报记录详情 (ID: 25845)
-2025-11-27 09:32:15,289 - INFO - Saved: docs/企业内部开发/服务端API/汇报/获取汇报记录详情.mdx
-2025-11-27 09:32:16,291 - INFO - Processing document: 获取汇报统计数据 (ID: 25846)
-2025-11-27 09:32:16,586 - INFO - Saved: docs/企业内部开发/服务端API/汇报/获取汇报统计数据.mdx
-2025-11-27 09:32:17,588 - INFO - Processing document: 概述 (ID: 26566)
-2025-11-27 09:32:17,859 - INFO - Saved: docs/企业内部开发/服务端API/汇报/概述.mdx
-2025-11-27 09:32:18,860 - INFO - Processing document: 下载微盘文件 (ID: 44913)
-2025-11-27 09:32:19,130 - INFO - Saved: docs/企业内部开发/服务端API/汇报/下载微盘文件.mdx
-2025-11-27 09:32:20,131 - INFO - Processing document: 概述 (ID: 25813)
-2025-11-27 09:32:20,408 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/概述.mdx
-2025-11-27 09:32:21,409 - INFO - Processing document: 获取配置的网格及网格负责人 (ID: 25638)
-2025-11-27 09:32:21,684 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取配置的网格及网格负责人.mdx
-2025-11-27 09:32:22,686 - INFO - Processing document: 获取单位居民上报数据统计 (ID: 25637)
-2025-11-27 09:32:22,958 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取单位居民上报数据统计.mdx
-2025-11-27 09:32:23,959 - INFO - Processing document: 获取个人居民上报数据统计 (ID: 25635)
-2025-11-27 09:32:24,226 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取个人居民上报数据统计.mdx
-2025-11-27 09:32:25,227 - INFO - Processing document: 获取上报事件分类统计 (ID: 25634)
-2025-11-27 09:32:25,492 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取上报事件分类统计.mdx
-2025-11-27 09:32:26,494 - INFO - Processing document: 获取居民上报事件列表 (ID: 25908)
-2025-11-27 09:32:26,774 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取居民上报事件列表.mdx
-2025-11-27 09:32:27,775 - INFO - Processing document: 获取居民上报的事件详情信息 (ID: 25636)
-2025-11-27 09:32:28,054 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取居民上报的事件详情信息.mdx
-2025-11-27 09:32:29,056 - INFO - Processing document: 概述 (ID: 25814)
-2025-11-27 09:32:29,328 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/概述.mdx
-2025-11-27 09:32:30,329 - INFO - Processing document: 获取配置的网格及网格负责人 (ID: 25653)
-2025-11-27 09:32:30,603 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取配置的网格及网格负责人.mdx
-2025-11-27 09:32:31,605 - INFO - Processing document: 获取单位巡查上报数据统计 (ID: 25652)
-2025-11-27 09:32:31,868 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取单位巡查上报数据统计.mdx
-2025-11-27 09:32:32,870 - INFO - Processing document: 获取个人巡查上报数据统计 (ID: 25650)
-2025-11-27 09:32:33,135 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取个人巡查上报数据统计.mdx
-2025-11-27 09:32:34,137 - INFO - Processing document: 获取上报事件分类统计 (ID: 25649)
-2025-11-27 09:32:34,419 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取上报事件分类统计.mdx
-2025-11-27 09:32:35,420 - INFO - Processing document: 获取巡查上报的事件详情信息 (ID: 25651)
-2025-11-27 09:32:35,703 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取巡查上报的事件详情信息.mdx
-2025-11-27 09:32:36,703 - INFO - Processing document: 获取巡查上报事件列表 (ID: 25914)
-2025-11-27 09:32:36,981 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取巡查上报事件列表.mdx
-2025-11-27 09:32:37,982 - INFO - Processing document: 添加网格 (ID: 30068)
-2025-11-27 09:32:38,255 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/添加网格.mdx
-2025-11-27 09:32:39,257 - INFO - Processing document: 编辑网格 (ID: 30078)
-2025-11-27 09:32:39,523 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/编辑网格.mdx
-2025-11-27 09:32:40,524 - INFO - Processing document: 删除网格 (ID: 30079)
-2025-11-27 09:32:40,798 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/删除网格.mdx
-2025-11-27 09:32:41,799 - INFO - Processing document: 获取网格列表 (ID: 30080)
-2025-11-27 09:32:42,065 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/获取网格列表.mdx
-2025-11-27 09:32:43,066 - INFO - Processing document: 获取用户负责及参与的网格列表 (ID: 30081)
-2025-11-27 09:32:43,341 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/获取用户负责及参与的网格列表.mdx
-2025-11-27 09:32:44,343 - INFO - Processing document: 概述 (ID: 30633)
-2025-11-27 09:32:44,603 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/概述.mdx
-2025-11-27 09:32:45,604 - INFO - Processing document: 添加事件类别 (ID: 30082)
-2025-11-27 09:32:45,877 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置事件类别/添加事件类别.mdx
-2025-11-27 09:32:46,879 - INFO - Processing document: 修改事件类别 (ID: 30083)
-2025-11-27 09:32:47,152 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置事件类别/修改事件类别.mdx
-2025-11-27 09:32:48,153 - INFO - Processing document: 删除事件类别 (ID: 30084)
-2025-11-27 09:32:48,423 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置事件类别/删除事件类别.mdx
-2025-11-27 09:32:49,425 - INFO - Processing document: 获取事件类别列表 (ID: 30455)
-2025-11-27 09:32:49,703 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置事件类别/获取事件类别列表.mdx
-2025-11-27 09:32:50,704 - INFO - Processing document: 概述 (ID: 22789)
-2025-11-27 09:32:50,968 - INFO - Saved: docs/企业内部开发/服务端API/会议室/概述.mdx
-2025-11-27 09:32:51,969 - INFO - Processing document: 会议室管理 (ID: 22512)
-2025-11-27 09:32:52,249 - INFO - Saved: docs/企业内部开发/服务端API/会议室/会议室管理.mdx
-2025-11-27 09:32:53,251 - INFO - Processing document: 会议室预定管理 (ID: 22517)
-2025-11-27 09:32:53,546 - INFO - Saved: docs/企业内部开发/服务端API/会议室/会议室预定管理.mdx
-2025-11-27 09:32:54,547 - INFO - Processing document: 回调事件 (ID: 36019)
-2025-11-27 09:32:54,825 - INFO - Saved: docs/企业内部开发/服务端API/会议室/回调事件.mdx
-2025-11-27 09:32:55,827 - INFO - Processing document: 概述 (ID: 18555)
-2025-11-27 09:32:56,110 - INFO - Saved: docs/企业内部开发/服务端API/日程/概述.mdx
-2025-11-27 09:32:57,111 - INFO - Processing document: 更新日历 (ID: 44557)
-2025-11-27 09:32:57,403 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日历/更新日历.mdx
-2025-11-27 09:32:58,404 - INFO - Processing document: 获取日历详情 (ID: 44558)
-2025-11-27 09:32:58,678 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日历/获取日历详情.mdx
-2025-11-27 09:32:59,679 - INFO - Processing document: 删除日历 (ID: 44559)
-2025-11-27 09:32:59,949 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日历/删除日历.mdx
-2025-11-27 09:33:00,951 - INFO - Processing document: 更新日程 (ID: 44567)
-2025-11-27 09:33:01,231 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/更新日程.mdx
-2025-11-27 09:33:02,232 - INFO - Processing document: 新增日程参与者 (ID: 44568)
-2025-11-27 09:33:02,499 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/新增日程参与者.mdx
-2025-11-27 09:33:03,500 - INFO - Processing document: 删除日程参与者 (ID: 44569)
-2025-11-27 09:33:03,763 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/删除日程参与者.mdx
-2025-11-27 09:33:04,764 - INFO - Processing document: 获取日历下的日程列表 (ID: 44570)
-2025-11-27 09:33:05,044 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/获取日历下的日程列表.mdx
-2025-11-27 09:33:06,045 - INFO - Processing document: 获取日程详情 (ID: 44571)
-2025-11-27 09:33:06,369 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/获取日程详情.mdx
-2025-11-27 09:33:07,370 - INFO - Processing document: 取消日程 (ID: 44573)
-2025-11-27 09:33:07,631 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/取消日程.mdx
-2025-11-27 09:33:08,632 - INFO - Processing document: 删除日历事件 (ID: 44583)
-2025-11-27 09:33:08,905 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/删除日历事件.mdx
-2025-11-27 09:33:09,907 - INFO - Processing document: 修改日历事件 (ID: 44584)
-2025-11-27 09:33:10,182 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/修改日历事件.mdx
-2025-11-27 09:33:11,183 - INFO - Processing document: 修改日程事件 (ID: 44585)
-2025-11-27 09:33:11,470 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/修改日程事件.mdx
-2025-11-27 09:33:12,471 - INFO - Processing document: 删除日程事件 (ID: 44587)
-2025-11-27 09:33:12,742 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/删除日程事件.mdx
-2025-11-27 09:33:13,743 - INFO - Processing document: 日程回执事件 (ID: 45406)
-2025-11-27 09:33:14,019 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/日程回执事件.mdx
-2025-11-27 09:33:15,020 - INFO - Processing document: 概述 (ID: 25775)
-2025-11-27 09:33:15,298 - INFO - Saved: docs/企业内部开发/服务端API/会议/概述.mdx
-2025-11-27 09:33:16,299 - INFO - Processing document: 创建预约会议 (ID: 45733)
-2025-11-27 09:33:16,587 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/创建预约会议.mdx
-2025-11-27 09:33:17,589 - INFO - Processing document: 获取会议详情 (ID: 45739)
-2025-11-27 09:33:18,444 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议详情.mdx
-2025-11-27 09:33:19,445 - INFO - Processing document: 取消预约会议 (ID: 45756)
-2025-11-27 09:33:19,727 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/取消预约会议.mdx
-2025-11-27 09:33:20,729 - INFO - Processing document: 修改预约会议 (ID: 45762)
-2025-11-27 09:33:21,221 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/修改预约会议.mdx
-2025-11-27 09:33:22,223 - INFO - Processing document: 获取已参会成员列表 (ID: 45769)
-2025-11-27 09:33:22,502 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取已参会成员列表.mdx
-2025-11-27 09:33:23,504 - INFO - Processing document: 获取实时会中成员列表 (ID: 45780)
-2025-11-27 09:33:23,791 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取实时会中成员列表.mdx
-2025-11-27 09:33:24,793 - INFO - Processing document: 获取会议受邀成员列表 (ID: 45799)
-2025-11-27 09:33:25,072 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议受邀成员列表.mdx
-2025-11-27 09:33:26,074 - INFO - Processing document: 更新会议受邀成员列表 (ID: 45821)
-2025-11-27 09:33:26,351 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/更新会议受邀成员列表.mdx
-2025-11-27 09:33:27,352 - INFO - Processing document: 获取实时等候室成员列表 (ID: 45824)
-2025-11-27 09:33:27,638 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取实时等候室成员列表.mdx
-2025-11-27 09:33:28,639 - INFO - Processing document: 获取等候室成员记录 (ID: 45825)
-2025-11-27 09:33:28,910 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取等候室成员记录.mdx
-2025-11-27 09:33:29,911 - INFO - Processing document: 获取成员设备是否入会 (ID: 45835)
-2025-11-27 09:33:30,185 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取成员设备是否入会.mdx
-2025-11-27 09:33:31,186 - INFO - Processing document: 获取成员会议ID列表 (ID: 25438)
-2025-11-27 09:33:31,466 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取成员会议ID列表.mdx
-2025-11-27 09:33:32,468 - INFO - Processing document: 获取会议成员报名 ID (ID: 47182)
-2025-11-27 09:33:32,748 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议成员报名 ID.mdx
-2025-11-27 09:33:33,749 - INFO - Processing document: 修改会议报名配置 (ID: 47185)
-2025-11-27 09:33:34,020 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/修改会议报名配置.mdx
-2025-11-27 09:33:35,021 - INFO - Processing document: 获取会议报名配置 (ID: 47194)
-2025-11-27 09:33:35,309 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议报名配置.mdx
-2025-11-27 09:33:36,310 - INFO - Processing document: 审批会议报名信息 (ID: 47204)
-2025-11-27 09:33:36,590 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/审批会议报名信息.mdx
-2025-11-27 09:33:37,591 - INFO - Processing document: 获取会议报名信息 (ID: 47207)
-2025-11-27 09:33:37,873 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议报名信息.mdx
-2025-11-27 09:33:38,874 - INFO - Processing document: 导入会议报名信息 (ID: 47221)
-2025-11-27 09:33:39,152 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/导入会议报名信息.mdx
-2025-11-27 09:33:40,153 - INFO - Processing document: 删除会议报名信息 (ID: 47222)
-2025-11-27 09:33:40,430 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/删除会议报名信息.mdx
-2025-11-27 09:33:41,432 - INFO - Processing document: 创建用户专属参会链接 (ID: 47223)
-2025-11-27 09:33:41,710 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/创建用户专属参会链接.mdx
-2025-11-27 09:33:42,711 - INFO - Processing document: 获取用户专属参会链接 (ID: 47225)
-2025-11-27 09:33:42,982 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取用户专属参会链接.mdx
-2025-11-27 09:33:43,983 - INFO - Processing document: 获取会议健康度 (ID: 47227)
-2025-11-27 09:33:44,258 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议健康度.mdx
-2025-11-27 09:33:45,259 - INFO - Processing document: 获取会议嘉宾列表 (ID: 47248)
-2025-11-27 09:33:45,545 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议嘉宾列表.mdx
-2025-11-27 09:33:46,547 - INFO - Processing document: 更新会议嘉宾列表 (ID: 47249)
-2025-11-27 09:33:46,826 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/更新会议嘉宾列表.mdx
-2025-11-27 09:33:47,828 - INFO - Processing document: 管理会中设置 (ID: 45855)
-2025-11-27 09:33:48,103 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/管理会中设置.mdx
-2025-11-27 09:33:49,105 - INFO - Processing document: 管理联席主持人 (ID: 45860)
-2025-11-27 09:33:49,381 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/管理联席主持人.mdx
-2025-11-27 09:33:50,382 - INFO - Processing document: 移出成员 (ID: 45862)
-2025-11-27 09:33:50,660 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/移出成员.mdx
-2025-11-27 09:33:51,661 - INFO - Processing document: 静音成员 (ID: 45865)
-2025-11-27 09:33:51,938 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/静音成员.mdx
-2025-11-27 09:33:52,939 - INFO - Processing document: 关闭成员屏幕共享 (ID: 45866)
-2025-11-27 09:33:53,210 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/关闭成员屏幕共享.mdx
-2025-11-27 09:33:54,211 - INFO - Processing document: 管理等候室成员 (ID: 45873)
-2025-11-27 09:33:54,520 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/管理等候室成员.mdx
-2025-11-27 09:33:55,521 - INFO - Processing document: 结束会议 (ID: 45875)
-2025-11-27 09:33:55,794 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/结束会议.mdx
-2025-11-27 09:33:56,796 - INFO - Processing document: 修改成员在会中显示的昵称 (ID: 45876)
-2025-11-27 09:33:57,071 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/修改成员在会中显示的昵称.mdx
-2025-11-27 09:33:58,072 - INFO - Processing document: 关闭或开启成员视频 (ID: 45886)
-2025-11-27 09:33:58,353 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/关闭或开启成员视频.mdx
-2025-11-27 09:33:59,355 - INFO - Processing document: 创建会议投票主题 (ID: 47252)
-2025-11-27 09:33:59,633 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/创建会议投票主题.mdx
-2025-11-27 09:34:00,635 - INFO - Processing document: 修改会议投票主题 (ID: 47253)
-2025-11-27 09:34:00,910 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/修改会议投票主题.mdx
-2025-11-27 09:34:01,911 - INFO - Processing document: 获取会议投票列表 (ID: 47255)
-2025-11-27 09:34:02,195 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/获取会议投票列表.mdx
-2025-11-27 09:34:03,196 - INFO - Processing document: 获取会议投票主题信息 (ID: 47258)
-2025-11-27 09:34:03,482 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/获取会议投票主题信息.mdx
-2025-11-27 09:34:04,483 - INFO - Processing document: 获取会议投票详情 (ID: 47263)
-2025-11-27 09:34:04,766 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/获取会议投票详情.mdx
-2025-11-27 09:34:05,767 - INFO - Processing document: 删除会议投票 (ID: 47270)
-2025-11-27 09:34:06,042 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/删除会议投票.mdx
-2025-11-27 09:34:07,044 - INFO - Processing document: 发起会议投票 (ID: 47276)
-2025-11-27 09:34:07,312 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/发起会议投票.mdx
-2025-11-27 09:34:08,314 - INFO - Processing document: 结束会议投票 (ID: 47277)
-2025-11-27 09:34:08,588 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/结束会议投票.mdx
-2025-11-27 09:34:09,589 - INFO - Processing document: 获取会议录制列表 (ID: 45889)
-2025-11-27 09:34:09,869 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取会议录制列表.mdx
-2025-11-27 09:34:10,870 - INFO - Processing document: 获取会议录制地址 (ID: 45897)
-2025-11-27 09:34:11,144 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取会议录制地址.mdx
-2025-11-27 09:34:12,145 - INFO - Processing document: 获取单个录制文件详情 (ID: 45905)
-2025-11-27 09:34:12,429 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取单个录制文件详情.mdx
-2025-11-27 09:34:13,430 - INFO - Processing document: 删除会议录制 (ID: 45909)
-2025-11-27 09:34:13,702 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/删除会议录制.mdx
-2025-11-27 09:34:14,703 - INFO - Processing document: 删除单个录制文件 (ID: 45910)
-2025-11-27 09:34:14,966 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/删除单个录制文件.mdx
-2025-11-27 09:34:15,967 - INFO - Processing document: 修改会议录制共享设置 (ID: 45912)
-2025-11-27 09:34:16,248 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/修改会议录制共享设置.mdx
-2025-11-27 09:34:17,249 - INFO - Processing document: 获取录制文件访问统计 (ID: 45914)
-2025-11-27 09:34:17,516 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取录制文件访问统计.mdx
-2025-11-27 09:34:18,517 - INFO - Processing document: 获取录制转写详情 (ID: 45916)
-2025-11-27 09:34:18,800 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取录制转写详情.mdx
-2025-11-27 09:34:19,801 - INFO - Processing document: 获取录制转写段落信息 (ID: 45920)
-2025-11-27 09:34:20,075 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取录制转写段落信息.mdx
-2025-11-27 09:34:21,076 - INFO - Processing document: 获取录制转写搜索结果 (ID: 45921)
-2025-11-27 09:34:21,350 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取录制转写搜索结果.mdx
-2025-11-27 09:34:22,352 - INFO - Processing document: 会议开始事件 (ID: 46054)
-2025-11-27 09:34:22,626 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议开始事件.mdx
-2025-11-27 09:34:23,627 - INFO - Processing document: 会议结束事件 (ID: 46059)
-2025-11-27 09:34:23,921 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议结束事件.mdx
-2025-11-27 09:34:24,923 - INFO - Processing document: 会议全体静音事件 (ID: 46063)
-2025-11-27 09:34:25,206 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议全体静音事件.mdx
-2025-11-27 09:34:26,207 - INFO - Processing document: 会议解除全体静音事件 (ID: 46067)
-2025-11-27 09:34:26,477 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议解除全体静音事件.mdx
-2025-11-27 09:34:27,478 - INFO - Processing document: 成员入会事件 (ID: 46070)
-2025-11-27 09:34:27,757 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员入会事件.mdx
-2025-11-27 09:34:28,758 - INFO - Processing document: 成员离会事件 (ID: 46078)
-2025-11-27 09:34:29,041 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员离会事件.mdx
-2025-11-27 09:34:30,042 - INFO - Processing document: 成员等待主持人入会事件 (ID: 46079)
-2025-11-27 09:34:30,323 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员等待主持人入会事件.mdx
-2025-11-27 09:34:31,325 - INFO - Processing document: 成员进入等候室事件 (ID: 46081)
-2025-11-27 09:34:31,596 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员进入等候室事件.mdx
-2025-11-27 09:34:32,597 - INFO - Processing document: 成员离开等候室事件 (ID: 46082)
-2025-11-27 09:34:32,882 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员离开等候室事件.mdx
-2025-11-27 09:34:33,883 - INFO - Processing document: 成员从等候室进入会议事件 (ID: 46179)
-2025-11-27 09:34:34,164 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员从等候室进入会议事件.mdx
-2025-11-27 09:34:35,165 - INFO - Processing document: 成员从会议中被移入等候室事件 (ID: 46180)
-2025-11-27 09:34:35,447 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员从会议中被移入等候室事件.mdx
-2025-11-27 09:34:36,449 - INFO - Processing document: 共享屏幕开启事件 (ID: 46181)
-2025-11-27 09:34:36,734 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/共享屏幕开启事件.mdx
-2025-11-27 09:34:37,736 - INFO - Processing document: 共享屏幕结束事件 (ID: 46182)
-2025-11-27 09:34:38,009 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/共享屏幕结束事件.mdx
-2025-11-27 09:34:39,011 - INFO - Processing document: 会议成员角色变更事件 (ID: 46186)
-2025-11-27 09:34:39,297 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议成员角色变更事件.mdx
-2025-11-27 09:34:40,298 - INFO - Processing document: 开始云录制事件 (ID: 46187)
-2025-11-27 09:34:40,572 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/开始云录制事件.mdx
-2025-11-27 09:34:41,574 - INFO - Processing document: 暂停云录制事件 (ID: 46188)
-2025-11-27 09:34:41,858 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/暂停云录制事件.mdx
-2025-11-27 09:34:42,859 - INFO - Processing document: 恢复云录制事件 (ID: 46190)
-2025-11-27 09:34:43,141 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/恢复云录制事件.mdx
-2025-11-27 09:34:44,142 - INFO - Processing document: 停止云录制事件 (ID: 46191)
-2025-11-27 09:34:44,424 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/停止云录制事件.mdx
-2025-11-27 09:34:45,425 - INFO - Processing document: 云录制已完成事件 (ID: 46192)
-2025-11-27 09:34:45,702 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/云录制已完成事件.mdx
-2025-11-27 09:34:46,703 - INFO - Processing document: 删除云录制事件 (ID: 46194)
-2025-11-27 09:34:46,993 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/删除云录制事件.mdx
-2025-11-27 09:34:47,994 - INFO - Processing document: 网络研讨会成员角色变更事件 (ID: 47133)
-2025-11-27 09:34:48,277 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/网络研讨会成员角色变更事件.mdx
-2025-11-27 09:34:49,279 - INFO - Processing document: 网络研讨会暖场上传结果 (ID: 47138)
-2025-11-27 09:34:49,552 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/网络研讨会暖场上传结果.mdx
-2025-11-27 09:34:50,553 - INFO - Processing document: PSTN 外呼状态更新事件 (ID: 47142)
-2025-11-27 09:34:50,820 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/PSTN 外呼状态更新事件.mdx
-2025-11-27 09:34:51,822 - INFO - Processing document: 素材上传结果 (ID: 47145)
-2025-11-27 09:34:52,107 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/素材上传结果.mdx
-2025-11-27 09:34:53,108 - INFO - Processing document: 用户报名事件 (ID: 47152)
-2025-11-27 09:34:53,388 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/用户报名事件.mdx
-2025-11-27 09:34:54,389 - INFO - Processing document: 用户取消报名事件 (ID: 47153)
-2025-11-27 09:34:54,658 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/用户取消报名事件.mdx
-2025-11-27 09:34:55,659 - INFO - Processing document: 会议室应答事件 (ID: 47154)
-2025-11-27 09:34:55,943 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议室应答事件.mdx
-2025-11-27 09:34:56,945 - INFO - Processing document: 修改会议事件 (ID: 48488)
-2025-11-27 09:34:57,226 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/修改会议事件.mdx
-2025-11-27 09:34:58,227 - INFO - Processing document:  取消会议事件 (ID: 48489)
-2025-11-27 09:34:58,499 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/取消会议事件.mdx
-2025-11-27 09:34:59,500 - INFO - Processing document: 概述 (ID: 48645)
-2025-11-27 09:34:59,769 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/概述.mdx
-2025-11-27 09:35:00,770 - INFO - Processing document: 会议发起事件 (ID: 52619)
-2025-11-27 09:35:01,053 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议发起事件.mdx
-2025-11-27 09:35:02,054 - INFO - Processing document: 获取 MRA 状态信息 (ID: 47165)
-2025-11-27 09:35:02,334 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议室连接器（MRA）管理/获取 MRA 状态信息.mdx
-2025-11-27 09:35:03,336 - INFO - Processing document: 切换 MRA 默认布局 (ID: 47174)
-2025-11-27 09:35:03,613 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议室连接器（MRA）管理/切换 MRA 默认布局.mdx
-2025-11-27 09:35:04,614 - INFO - Processing document: 设置 MRA 举手或手放下 (ID: 47177)
-2025-11-27 09:35:04,891 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议室连接器（MRA）管理/设置 MRA 举手或手放下.mdx
-2025-11-27 09:35:05,892 - INFO - Processing document: 挂断 MRA 呼叫 (ID: 47178)
-2025-11-27 09:35:06,173 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议室连接器（MRA）管理/挂断 MRA 呼叫.mdx
-2025-11-27 09:35:07,175 - INFO - Processing document: 预定Rooms会议室 (ID: 47179)
-2025-11-27 09:35:07,457 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/预定Rooms会议室.mdx
-2025-11-27 09:35:08,458 - INFO - Processing document: 释放Rooms会议室 (ID: 47180)
-2025-11-27 09:35:08,731 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/释放Rooms会议室.mdx
-2025-11-27 09:35:09,733 - INFO - Processing document: 获取Rooms会议室详情 (ID: 47181)
-2025-11-27 09:35:10,025 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室详情.mdx
-2025-11-27 09:35:11,027 - INFO - Processing document: 获取Rooms会议室列表 (ID: 47183)
-2025-11-27 09:35:11,312 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室列表.mdx
-2025-11-27 09:35:12,313 - INFO - Processing document: 获取Rooms会议室下的会议列表 (ID: 47184)
-2025-11-27 09:35:12,588 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室下的会议列表.mdx
-2025-11-27 09:35:13,589 - INFO - Processing document: 获取设备列表 (ID: 47186)
-2025-11-27 09:35:13,914 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取设备列表.mdx
-2025-11-27 09:35:14,916 - INFO - Processing document: 获取控制器列表 (ID: 47189)
-2025-11-27 09:35:15,185 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取控制器列表.mdx
-2025-11-27 09:35:16,187 - INFO - Processing document: 获取Rooms会议室配置项 (ID: 47197)
-2025-11-27 09:35:16,470 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室配置项.mdx
-2025-11-27 09:35:17,471 - INFO - Processing document: 呼叫Rooms会议室 (ID: 47200)
-2025-11-27 09:35:17,747 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/呼叫Rooms会议室.mdx
-2025-11-27 09:35:18,748 - INFO - Processing document: 取消呼叫Rooms会议室 (ID: 47202)
-2025-11-27 09:35:19,027 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/取消呼叫Rooms会议室.mdx
-2025-11-27 09:35:20,029 - INFO - Processing document: 获取Rooms会议室应答状态 (ID: 47203)
-2025-11-27 09:35:20,303 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室应答状态.mdx
-2025-11-27 09:35:21,304 - INFO - Processing document: 获取Rooms会议室资源 (ID: 47206)
-2025-11-27 09:35:21,575 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室资源.mdx
-2025-11-27 09:35:22,576 - INFO - Processing document: 获取布局模板列表 (ID: 47291)
-2025-11-27 09:35:22,851 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/获取布局模板列表.mdx
-2025-11-27 09:35:23,852 - INFO - Processing document: 添加会议基础布局 (ID: 47292)
-2025-11-27 09:35:24,124 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/添加会议基础布局.mdx
-2025-11-27 09:35:25,125 - INFO - Processing document: 修改会议基础布局 (ID: 47293)
-2025-11-27 09:35:25,397 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/修改会议基础布局.mdx
-2025-11-27 09:35:26,398 - INFO - Processing document: 设置会议默认布局 (ID: 47294)
+2025-11-27 09:45:26,623 - INFO - Starting WeWork documentation crawler...
+2025-11-27 09:45:26,623 - INFO - Extracting categories from https://developer.work.weixin.qq.com/document/path/90195
+2025-11-27 09:45:28,745 - INFO - Found 4275 categories
+2025-11-27 09:45:30,200 - INFO - Processing document: 设置会议默认布局 (ID: 47294)
+2025-11-27 09:45:30,474 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/设置会议默认布局.mdx
+2025-11-27 09:45:31,475 - INFO - Processing document: 添加会议背景 (ID: 47298)
+2025-11-27 09:45:31,750 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/添加会议背景.mdx
+2025-11-27 09:45:32,752 - INFO - Processing document: 设置会议默认背景 (ID: 47299)
+2025-11-27 09:45:33,026 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/设置会议默认背景.mdx
+2025-11-27 09:45:34,027 - INFO - Processing document: 删除会议背景 (ID: 47300)
+2025-11-27 09:45:34,307 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/删除会议背景.mdx
+2025-11-27 09:45:35,308 - INFO - Processing document: 批量删除会议背景 (ID: 47301)
+2025-11-27 09:45:35,588 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/批量删除会议背景.mdx
+2025-11-27 09:45:36,590 - INFO - Processing document: 获取会议背景列表 (ID: 47302)
+2025-11-27 09:45:36,869 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/获取会议背景列表.mdx
+2025-11-27 09:45:37,870 - INFO - Processing document: 添加会议高级布局 (ID: 47359)
+2025-11-27 09:45:38,154 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/添加会议高级布局.mdx
+2025-11-27 09:45:39,155 - INFO - Processing document: 获取会议布局列表 (ID: 47360)
+2025-11-27 09:45:39,437 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/获取会议布局列表.mdx
+2025-11-27 09:45:40,438 - INFO - Processing document: 获取用户布局 (ID: 47365)
+2025-11-27 09:45:40,712 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/获取用户布局.mdx
+2025-11-27 09:45:41,713 - INFO - Processing document: 批量删除布局 (ID: 47366)
+2025-11-27 09:45:41,986 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/批量删除布局.mdx
+2025-11-27 09:45:42,988 - INFO - Processing document: 修改会议高级布局 (ID: 47367)
+2025-11-27 09:45:43,266 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/修改会议高级布局.mdx
+2025-11-27 09:45:44,267 - INFO - Processing document: 设置高级布局 (ID: 47368)
+2025-11-27 09:45:44,547 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/设置高级布局.mdx
+2025-11-27 09:45:45,549 - INFO - Processing document: 批量外呼 (ID: 47228)
+2025-11-27 09:45:45,825 - INFO - Saved: docs/企业内部开发/服务端API/会议/电话入会（PSTN）管理/批量外呼.mdx
+2025-11-27 09:45:46,827 - INFO - Processing document: 获取会议的外呼状态 (ID: 47229)
+2025-11-27 09:45:47,103 - INFO - Saved: docs/企业内部开发/服务端API/会议/电话入会（PSTN）管理/获取会议的外呼状态.mdx
+2025-11-27 09:45:48,105 - INFO - Processing document: 获取电话入会的成员ID (ID: 47230)
+2025-11-27 09:45:48,387 - INFO - Saved: docs/企业内部开发/服务端API/会议/电话入会（PSTN）管理/获取电话入会的成员ID.mdx
+2025-11-27 09:45:49,389 - INFO - Processing document: 创建网络研讨会 (ID: 47278)
+2025-11-27 09:45:49,677 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/创建网络研讨会.mdx
+2025-11-27 09:45:50,678 - INFO - Processing document: 修改网络研讨会 (ID: 47279)
+2025-11-27 09:45:50,962 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/修改网络研讨会.mdx
+2025-11-27 09:45:51,963 - INFO - Processing document: 获取网络研讨会详情 (ID: 47342)
+2025-11-27 09:45:52,251 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会详情.mdx
+2025-11-27 09:45:53,252 - INFO - Processing document: 取消网络研讨会 (ID: 47378)
+2025-11-27 09:45:53,520 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/取消网络研讨会.mdx
+2025-11-27 09:45:54,521 - INFO - Processing document: 获取网络研讨会嘉宾列表 (ID: 47380)
+2025-11-27 09:45:54,795 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会嘉宾列表.mdx
+2025-11-27 09:45:55,797 - INFO - Processing document: 更新网络研讨会嘉宾列表 (ID: 47382)
+2025-11-27 09:45:56,073 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/更新网络研讨会嘉宾列表.mdx
+2025-11-27 09:45:57,074 - INFO - Processing document: 获取网络研讨会成员报名 ID (ID: 47383)
+2025-11-27 09:45:57,345 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会成员报名 ID.mdx
+2025-11-27 09:45:58,346 - INFO - Processing document: 获取网络研讨会报名配置 (ID: 47395)
+2025-11-27 09:45:58,628 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会报名配置.mdx
+2025-11-27 09:45:59,630 - INFO - Processing document: 修改网络研讨会报名配置 (ID: 47398)
+2025-11-27 09:45:59,909 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/修改网络研讨会报名配置.mdx
+2025-11-27 09:46:00,910 - INFO - Processing document: 获取网络研讨会报名信息 (ID: 47399)
+2025-11-27 09:46:01,185 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会报名信息.mdx
+2025-11-27 09:46:02,187 - INFO - Processing document: 审批网络研讨会报名信息 (ID: 47401)
+2025-11-27 09:46:02,469 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/审批网络研讨会报名信息.mdx
+2025-11-27 09:46:03,470 - INFO - Processing document: 导入网络研讨会报名信息 (ID: 47413)
+2025-11-27 09:46:03,745 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/导入网络研讨会报名信息.mdx
+2025-11-27 09:46:04,746 - INFO - Processing document: 删除网络研讨会报名信息 (ID: 47414)
+2025-11-27 09:46:05,024 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/删除网络研讨会报名信息.mdx
+2025-11-27 09:46:06,025 - INFO - Processing document: 管理网络研讨会暖场配置 (ID: 47416)
+2025-11-27 09:46:06,306 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/管理网络研讨会暖场配置.mdx
+2025-11-27 09:46:07,307 - INFO - Processing document: 修改预约会议 (ID: 25434)
+2025-11-27 09:46:07,587 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/修改预约会议.mdx
+2025-11-27 09:46:08,589 - INFO - Processing document: 取消预约会议 (ID: 25248)
+2025-11-27 09:46:08,865 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/取消预约会议.mdx
+2025-11-27 09:46:09,867 - INFO - Processing document: 获取会议详情 (ID: 25246)
+2025-11-27 09:46:10,148 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/获取会议详情.mdx
+2025-11-27 09:46:11,149 - INFO - Processing document: 获取成员会议ID列表 (ID: 25438)
+2025-11-27 09:46:11,426 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/获取成员会议ID列表.mdx
+2025-11-27 09:46:12,427 - INFO - Processing document: 创建预约会议 (ID: 25245)
+2025-11-27 09:46:12,707 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/创建预约会议.mdx
+2025-11-27 09:46:13,708 - INFO - Processing document: 分配高级功能账号 (ID: 50750)
+2025-11-27 09:46:13,984 - INFO - Saved: docs/企业内部开发/服务端API/会议/高级功能账号管理/分配高级功能账号.mdx
+2025-11-27 09:46:14,986 - INFO - Processing document: 取消高级功能账号 (ID: 50756)
+2025-11-27 09:46:15,266 - INFO - Saved: docs/企业内部开发/服务端API/会议/高级功能账号管理/取消高级功能账号.mdx
+2025-11-27 09:46:16,267 - INFO - Processing document: 获取高级功能账号列表 (ID: 50757)
+2025-11-27 09:46:16,541 - INFO - Saved: docs/企业内部开发/服务端API/会议/高级功能账号管理/获取高级功能账号列表.mdx
+2025-11-27 09:46:17,542 - INFO - Processing document: 获取会议发起记录 (ID: 52624)
+2025-11-27 09:46:17,820 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议统计管理/获取会议发起记录.mdx
+2025-11-27 09:46:18,821 - INFO - Processing document: 概述 (ID: 25967)
+2025-11-27 09:46:19,096 - INFO - Saved: docs/企业内部开发/服务端API/直播/概述.mdx
+2025-11-27 09:46:20,097 - INFO - Processing document: 获取成员直播ID列表 (ID: 26267)
+2025-11-27 09:46:20,370 - INFO - Saved: docs/企业内部开发/服务端API/直播/获取成员直播ID列表.mdx
+2025-11-27 09:46:21,371 - INFO - Processing document: 获取直播详情 (ID: 21995)
+2025-11-27 09:46:21,647 - INFO - Saved: docs/企业内部开发/服务端API/直播/获取直播详情.mdx
+2025-11-27 09:46:22,648 - INFO - Processing document: 获取直播观看明细 (ID: 21999)
+2025-11-27 09:46:22,926 - INFO - Saved: docs/企业内部开发/服务端API/直播/获取直播观看明细.mdx
+2025-11-27 09:46:23,928 - INFO - Processing document: 创建预约直播 (ID: 25240)
+2025-11-27 09:46:24,207 - INFO - Saved: docs/企业内部开发/服务端API/直播/创建预约直播.mdx
+2025-11-27 09:46:25,208 - INFO - Processing document: 取消预约直播 (ID: 25243)
+2025-11-27 09:46:25,490 - INFO - Saved: docs/企业内部开发/服务端API/直播/取消预约直播.mdx
+2025-11-27 09:46:26,491 - INFO - Processing document: 修改预约直播 (ID: 25516)
+2025-11-27 09:46:26,770 - INFO - Saved: docs/企业内部开发/服务端API/直播/修改预约直播.mdx
+2025-11-27 09:46:27,772 - INFO - Processing document: 在微信中观看直播或直播回放 (ID: 26465)
+2025-11-27 09:46:28,047 - INFO - Saved: docs/企业内部开发/服务端API/直播/在微信中观看直播或直播回放.mdx
+2025-11-27 09:46:29,048 - INFO - Processing document: 删除直播回放 (ID: 25244)
+2025-11-27 09:46:29,321 - INFO - Saved: docs/企业内部开发/服务端API/直播/删除直播回放.mdx
+2025-11-27 09:46:30,323 - INFO - Processing document: 直播回调事件 (ID: 28367)
+2025-11-27 09:46:30,598 - INFO - Saved: docs/企业内部开发/服务端API/直播/直播回调事件.mdx
+2025-11-27 09:46:31,599 - INFO - Processing document: 获取跳转小程序商城的直播观众信息 (ID: 29984)
+2025-11-27 09:46:31,877 - INFO - Saved: docs/企业内部开发/服务端API/直播/获取跳转小程序商城的直播观众信息.mdx
+2025-11-27 09:46:32,878 - INFO - Processing document: 概述 (ID: 23784)
+2025-11-27 09:46:33,151 - INFO - Saved: docs/企业内部开发/服务端API/微盘/概述.mdx
+2025-11-27 09:46:34,152 - INFO - Processing document: 版本和容量管理 (ID: 39471)
+2025-11-27 09:46:34,429 - INFO - Saved: docs/企业内部开发/服务端API/微盘/版本和容量管理.mdx
+2025-11-27 09:46:35,431 - INFO - Processing document: 重命名空间 (ID: 44634)
+2025-11-27 09:46:35,703 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间/重命名空间.mdx
+2025-11-27 09:46:36,705 - INFO - Processing document: 解散空间 (ID: 44636)
+2025-11-27 09:46:36,979 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间/解散空间.mdx
+2025-11-27 09:46:37,980 - INFO - Processing document: 获取空间信息 (ID: 44639)
+2025-11-27 09:46:38,260 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间/获取空间信息.mdx
+2025-11-27 09:46:39,261 - INFO - Processing document: 移除成员/部门 (ID: 44652)
+2025-11-27 09:46:39,536 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间权限/移除成员部门.mdx
+2025-11-27 09:46:40,537 - INFO - Processing document: 安全设置 (ID: 44653)
+2025-11-27 09:46:40,810 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间权限/安全设置.mdx
+2025-11-27 09:46:41,811 - INFO - Processing document: 获取邀请链接 (ID: 44654)
+2025-11-27 09:46:42,085 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间权限/获取邀请链接.mdx
+2025-11-27 09:46:43,086 - INFO - Processing document: 获取空间信息 (ID: 44655)
+2025-11-27 09:46:43,367 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间权限/获取空间信息.mdx
+2025-11-27 09:46:44,368 - INFO - Processing document: 上传文件 (ID: 44657)
+2025-11-27 09:46:44,640 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/上传文件.mdx
+2025-11-27 09:46:45,641 - INFO - Processing document: 下载文件 (ID: 44658)
+2025-11-27 09:46:45,919 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/下载文件.mdx
+2025-11-27 09:46:46,921 - INFO - Processing document: 新建文件夹/文档 (ID: 44659)
+2025-11-27 09:46:47,202 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/新建文件夹文档.mdx
+2025-11-27 09:46:48,203 - INFO - Processing document: 重命名文件 (ID: 44660)
+2025-11-27 09:46:48,481 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/重命名文件.mdx
+2025-11-27 09:46:49,482 - INFO - Processing document: 移动文件 (ID: 44661)
+2025-11-27 09:46:49,754 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/移动文件.mdx
+2025-11-27 09:46:50,756 - INFO - Processing document: 删除文件 (ID: 44662)
+2025-11-27 09:46:51,026 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/删除文件.mdx
+2025-11-27 09:46:52,027 - INFO - Processing document: 获取文件信息 (ID: 44663)
+2025-11-27 09:46:52,302 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/获取文件信息.mdx
+2025-11-27 09:46:53,303 - INFO - Processing document: 文件分块上传 (ID: 40102)
+2025-11-27 09:46:53,592 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/文件分块上传.mdx
+2025-11-27 09:46:54,594 - INFO - Processing document: 删除成员 (ID: 44665)
+2025-11-27 09:46:54,870 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/删除成员.mdx
+2025-11-27 09:46:55,871 - INFO - Processing document: 分享设置 (ID: 44666)
+2025-11-27 09:46:56,150 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/分享设置.mdx
+2025-11-27 09:46:57,152 - INFO - Processing document: 获取分享链接 (ID: 44667)
+2025-11-27 09:46:57,490 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/获取分享链接.mdx
+2025-11-27 09:46:58,492 - INFO - Processing document: 获取文件权限信息 (ID: 44668)
+2025-11-27 09:46:58,767 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/获取文件权限信息.mdx
+2025-11-27 09:46:59,768 - INFO - Processing document: 修改文件安全设置 (ID: 44669)
+2025-11-27 09:47:00,044 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/修改文件安全设置.mdx
+2025-11-27 09:47:01,045 - INFO - Processing document: 微盘容量不足事件 (ID: 44676)
+2025-11-27 09:47:01,328 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/微盘容量不足事件.mdx
+2025-11-27 09:47:02,329 - INFO - Processing document: 空间变更事件 (ID: 44677)
+2025-11-27 09:47:02,599 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/空间变更事件.mdx
+2025-11-27 09:47:03,600 - INFO - Processing document: 文件变更事件 (ID: 44678)
+2025-11-27 09:47:03,871 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/文件变更事件.mdx
+2025-11-27 09:47:04,873 - INFO - Processing document: 解散空间 (ID: 44679)
+2025-11-27 09:47:05,159 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/解散空间.mdx
+2025-11-27 09:47:06,160 - INFO - Processing document: 修改空间成员 (ID: 44680)
+2025-11-27 09:47:06,448 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/修改空间成员.mdx
+2025-11-27 09:47:07,449 - INFO - Processing document: 修改空间安全设置 (ID: 44681)
+2025-11-27 09:47:07,728 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/修改空间安全设置.mdx
+2025-11-27 09:47:08,729 - INFO - Processing document: 分配高级功能账号 (ID: 50758)
+2025-11-27 09:47:08,998 - INFO - Saved: docs/企业内部开发/服务端API/微盘/高级功能账号管理/分配高级功能账号.mdx
+2025-11-27 09:47:09,999 - INFO - Processing document: 取消高级功能账号 (ID: 50759)
+2025-11-27 09:47:10,271 - INFO - Saved: docs/企业内部开发/服务端API/微盘/高级功能账号管理/取消高级功能账号.mdx
+2025-11-27 09:47:11,273 - INFO - Processing document: 获取高级功能账号列表 (ID: 50760)
+2025-11-27 09:47:11,555 - INFO - Saved: docs/企业内部开发/服务端API/微盘/高级功能账号管理/获取高级功能账号列表.mdx
+2025-11-27 09:47:12,556 - INFO - Processing document: 获取公费电话拨打记录 (ID: 14744)
+2025-11-27 09:47:12,831 - INFO - Saved: docs/企业内部开发/服务端API/公费电话/获取公费电话拨打记录.mdx
+2025-11-27 09:47:13,833 - INFO - Processing document: 获取健康上报使用统计 (ID: 22028)
+2025-11-27 09:47:14,113 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/健康上报/获取健康上报使用统计.mdx
+2025-11-27 09:47:15,115 - INFO - Processing document: 获取健康上报任务ID列表 (ID: 22038)
+2025-11-27 09:47:15,392 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/健康上报/获取健康上报任务ID列表.mdx
+2025-11-27 09:47:16,393 - INFO - Processing document: 获取健康上报任务详情 (ID: 22041)
+2025-11-27 09:47:16,668 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/健康上报/获取健康上报任务详情.mdx
+2025-11-27 09:47:17,669 - INFO - Processing document: 获取用户填写答案 (ID: 22062)
+2025-11-27 09:47:17,949 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/健康上报/获取用户填写答案.mdx
+2025-11-27 09:47:18,951 - INFO - Processing document: 获取老师直播ID列表 (ID: 21632)
+2025-11-27 09:47:19,222 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取老师直播ID列表.mdx
+2025-11-27 09:47:20,223 - INFO - Processing document: 获取直播详情 (ID: 21636)
+2025-11-27 09:47:20,495 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取直播详情.mdx
+2025-11-27 09:47:21,495 - INFO - Processing document: 获取观看直播统计 (ID: 21657)
+2025-11-27 09:47:21,782 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取观看直播统计.mdx
+2025-11-27 09:47:22,783 - INFO - Processing document: 获取未观看直播统计 (ID: 21653)
+2025-11-27 09:47:23,061 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取未观看直播统计.mdx
+2025-11-27 09:47:24,062 - INFO - Processing document: 删除直播回放 (ID: 25244)
+2025-11-27 09:47:24,341 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/删除直播回放.mdx
+2025-11-27 09:47:25,343 - INFO - Processing document: 获取观看直播统计V2 (ID: 39112)
+2025-11-27 09:47:25,643 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取观看直播统计V2.mdx
+2025-11-27 09:47:26,644 - INFO - Processing document: 获取未观看直播统计V2 (ID: 39116)
+2025-11-27 09:47:26,923 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取未观看直播统计V2.mdx
+2025-11-27 09:47:27,924 - INFO - Processing document: 获取学生付款结果 (ID: 30127)
+2025-11-27 09:47:28,201 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/班级收款/获取学生付款结果.mdx
+2025-11-27 09:47:29,203 - INFO - Processing document: 获取订单详情 (ID: 30132)
+2025-11-27 09:47:29,478 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/班级收款/获取订单详情.mdx
+2025-11-27 09:47:30,479 - INFO - Processing document: 概述 (ID: 31106)
+2025-11-27 09:47:30,758 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/概述.mdx
+2025-11-27 09:47:31,759 - INFO - Processing document: 获取接待人员列表 (ID: 31064)
+2025-11-27 09:47:32,033 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/接待人员管理/获取接待人员列表.mdx
+2025-11-27 09:47:33,035 - INFO - Processing document: 添加接待人员 (ID: 31065)
+2025-11-27 09:47:33,318 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/接待人员管理/添加接待人员.mdx
+2025-11-27 09:47:34,320 - INFO - Processing document: 删除接待人员 (ID: 31066)
+2025-11-27 09:47:34,595 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/接待人员管理/删除接待人员.mdx
+2025-11-27 09:47:35,597 - INFO - Processing document: 获取客服账号列表 (ID: 31139)
+2025-11-27 09:47:35,873 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/获取客服账号列表.mdx
+2025-11-27 09:47:36,874 - INFO - Processing document: 添加客服账号 (ID: 31140)
+2025-11-27 09:47:37,860 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/添加客服账号.mdx
+2025-11-27 09:47:38,861 - INFO - Processing document: 删除客服账号 (ID: 31141)
+2025-11-27 09:47:39,147 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/删除客服账号.mdx
+2025-11-27 09:47:40,148 - INFO - Processing document: 修改客服账号 (ID: 31142)
+2025-11-27 09:47:40,431 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/修改客服账号.mdx
+2025-11-27 09:47:41,432 - INFO - Processing document: 获取客服账号链接 (ID: 31144)
+2025-11-27 09:47:41,710 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/获取客服账号链接.mdx
+2025-11-27 09:47:42,711 - INFO - Processing document: 分配客服会话 (ID: 31080)
+2025-11-27 09:47:43,064 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/会话分配与消息收发/分配客服会话.mdx
+2025-11-27 09:47:44,066 - INFO - Processing document: 接收消息和事件 (ID: 31078)
+2025-11-27 09:47:44,607 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/会话分配与消息收发/接收消息和事件.mdx
+2025-11-27 09:47:45,608 - INFO - Processing document: 发送消息 (ID: 31152)
+2025-11-27 09:47:46,134 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/会话分配与消息收发/发送消息.mdx
+2025-11-27 09:47:47,135 - INFO - Processing document: 发送欢迎语等事件响应消息 (ID: 32344)
+2025-11-27 09:47:47,431 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/会话分配与消息收发/发送欢迎语等事件响应消息.mdx
+2025-11-27 09:47:48,432 - INFO - Processing document: 「升级服务」配置 (ID: 31085)
+2025-11-27 09:47:48,729 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/「升级服务」配置.mdx
+2025-11-27 09:47:49,730 - INFO - Processing document: 获取客户基础信息 (ID: 31072)
+2025-11-27 09:47:50,019 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/其他基础信息获取/获取客户基础信息.mdx
+2025-11-27 09:47:51,020 - INFO - Processing document: 获取「客户数据统计」企业汇总数据 (ID: 37457)
+2025-11-27 09:47:51,306 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/统计管理/获取「客户数据统计」企业汇总数据.mdx
+2025-11-27 09:47:52,308 - INFO - Processing document: 获取「客户数据统计」接待人员明细数据 (ID: 37469)
+2025-11-27 09:47:52,601 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/统计管理/获取「客户数据统计」接待人员明细数据.mdx
+2025-11-27 09:47:53,603 - INFO - Processing document: 知识库分组管理 (ID: 40159)
+2025-11-27 09:47:53,896 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/机器人管理/知识库分组管理.mdx
+2025-11-27 09:47:54,897 - INFO - Processing document: 知识库问答管理 (ID: 40162)
+2025-11-27 09:47:55,197 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/机器人管理/知识库问答管理.mdx
+2025-11-27 09:47:56,198 - INFO - Processing document: 回调通知 (ID: 42945)
+2025-11-27 09:47:56,485 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/回调通知.mdx
+2025-11-27 09:47:57,486 - INFO - Processing document: 获取对接规则id列表 (ID: 38131)
+2025-11-27 09:47:57,767 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/获取对接规则id列表.mdx
+2025-11-27 09:47:58,769 - INFO - Processing document: 删除对接规则 (ID: 38133)
+2025-11-27 09:47:59,050 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/删除对接规则.mdx
+2025-11-27 09:48:00,052 - INFO - Processing document: 获取对接规则详情 (ID: 38134)
+2025-11-27 09:48:00,341 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/获取对接规则详情.mdx
+2025-11-27 09:48:01,342 - INFO - Processing document: 新增对接规则 (ID: 38135)
+2025-11-27 09:48:01,631 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/新增对接规则.mdx
+2025-11-27 09:48:02,633 - INFO - Processing document: 更新对接规则 (ID: 38136)
+2025-11-27 09:48:02,922 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/更新对接规则.mdx
+2025-11-27 09:48:03,924 - INFO - Processing document: 概述 (ID: 39114)
+2025-11-27 09:48:04,205 - INFO - Saved: docs/企业内部开发/服务端API/上下游/回调事件/概述.mdx
+2025-11-27 09:48:05,206 - INFO - Processing document: 上下游变更回调 (ID: 38768)
+2025-11-27 09:48:05,497 - INFO - Saved: docs/企业内部开发/服务端API/上下游/回调事件/上下游变更回调.mdx
+2025-11-27 09:48:06,498 - INFO - Processing document: 异步任务完成通知 (ID: 38773)
+2025-11-27 09:48:06,792 - INFO - Saved: docs/企业内部开发/服务端API/上下游/回调事件/异步任务完成通知.mdx
+2025-11-27 09:48:07,792 - INFO - Processing document: 获取应用共享信息 (ID: 25951)
+2025-11-27 09:48:08,076 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/获取应用共享信息.mdx
+2025-11-27 09:48:09,077 - INFO - Processing document: 获取下级/下游企业的access_token (ID: 24919)
+2025-11-27 09:48:09,360 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/获取下级下游企业的access_token.mdx
+2025-11-27 09:48:10,361 - INFO - Processing document: 获取下级/下游企业小程序session (ID: 25574)
+2025-11-27 09:48:10,640 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/获取下级下游企业小程序session.mdx
+2025-11-27 09:48:11,642 - INFO - Processing document: 上下游关联客户信息-已添加客户 (ID: 35987)
+2025-11-27 09:48:11,931 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/上下游关联客户信息-已添加客户.mdx
+2025-11-27 09:48:12,932 - INFO - Processing document: 上下游关联客户信息-未添加客户 (ID: 43378)
+2025-11-27 09:48:13,218 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/上下游关联客户信息-未添加客户.mdx
+2025-11-27 09:48:14,219 - INFO - Processing document: 获取上下游信息 (ID: 35438)
+2025-11-27 09:48:14,519 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/获取上下游信息.mdx
+2025-11-27 09:48:15,521 - INFO - Processing document: 批量导入上下游联系人 (ID: 38752)
+2025-11-27 09:48:15,811 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/批量导入上下游联系人.mdx
+2025-11-27 09:48:16,812 - INFO - Processing document: 移除企业 (ID: 38769)
+2025-11-27 09:48:17,104 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/移除企业.mdx
+2025-11-27 09:48:18,105 - INFO - Processing document: 获取异步任务结果 (ID: 38785)
+2025-11-27 09:48:18,394 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/获取异步任务结果.mdx
+2025-11-27 09:48:19,395 - INFO - Processing document: 查询成员自定义id (ID: 43913)
+2025-11-27 09:48:19,675 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/查询成员自定义id.mdx
+2025-11-27 09:48:20,676 - INFO - Processing document: 获取下级企业加入的上下游 (ID: 43918)
+2025-11-27 09:48:20,956 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/获取下级企业加入的上下游.mdx
+2025-11-27 09:48:21,957 - INFO - Processing document: 概述 (ID: 42599)
+2025-11-27 09:48:22,246 - INFO - Saved: docs/企业内部开发/服务端API/上下游/概述.mdx
+2025-11-27 09:48:23,247 - INFO - Processing document: 概述 (ID: 37468)
+2025-11-27 09:48:23,529 - INFO - Saved: docs/企业内部开发/服务端API/邮件/概述.mdx
+2025-11-27 09:48:24,531 - INFO - Processing document: 禁用/启用邮箱账号 (ID: 37505)
+2025-11-27 09:48:24,810 - INFO - Saved: docs/企业内部开发/服务端API/邮件/禁用启用邮箱账号.mdx
+2025-11-27 09:48:25,811 - INFO - Processing document: 获取邮件未读数 (ID: 37507)
+2025-11-27 09:48:26,090 - INFO - Saved: docs/企业内部开发/服务端API/邮件/获取邮件未读数.mdx
+2025-11-27 09:48:27,092 - INFO - Processing document: 回调通知 (ID: 44020)
+2025-11-27 09:48:27,370 - INFO - Saved: docs/企业内部开发/服务端API/邮件/回调通知.mdx
+2025-11-27 09:48:28,371 - INFO - Processing document: 发送日程邮件 (ID: 44632)
+2025-11-27 09:48:28,663 - INFO - Saved: docs/企业内部开发/服务端API/邮件/发送邮件/发送日程邮件.mdx
+2025-11-27 09:48:29,665 - INFO - Processing document: 发送会议邮件 (ID: 44633)
+2025-11-27 09:48:29,956 - INFO - Saved: docs/企业内部开发/服务端API/邮件/发送邮件/发送会议邮件.mdx
+2025-11-27 09:48:30,958 - INFO - Processing document: 获取邮件内容 (ID: 44689)
+2025-11-27 09:48:31,251 - INFO - Saved: docs/企业内部开发/服务端API/邮件/获取接收的邮件/获取邮件内容.mdx
+2025-11-27 09:48:32,252 - INFO - Processing document: 查询应用邮箱账号 (ID: 44692)
+2025-11-27 09:48:32,530 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理应用邮箱账号/查询应用邮箱账号.mdx
+2025-11-27 09:48:33,532 - INFO - Processing document: 更新邮件群组 (ID: 44701)
+2025-11-27 09:48:33,827 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理邮件群组/更新邮件群组.mdx
+2025-11-27 09:48:34,828 - INFO - Processing document: 删除邮件群组 (ID: 44702)
+2025-11-27 09:48:35,104 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理邮件群组/删除邮件群组.mdx
+2025-11-27 09:48:36,106 - INFO - Processing document: 获取邮件群组详情 (ID: 44703)
+2025-11-27 09:48:36,391 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理邮件群组/获取邮件群组详情.mdx
+2025-11-27 09:48:37,392 - INFO - Processing document: 模糊搜索邮件群组 (ID: 44705)
+2025-11-27 09:48:37,676 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理邮件群组/模糊搜索邮件群组.mdx
+2025-11-27 09:48:38,678 - INFO - Processing document: 更新公共邮箱 (ID: 44710)
+2025-11-27 09:48:38,971 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/更新公共邮箱.mdx
+2025-11-27 09:48:39,972 - INFO - Processing document: 删除公共邮箱 (ID: 44711)
+2025-11-27 09:48:40,253 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/删除公共邮箱.mdx
+2025-11-27 09:48:41,254 - INFO - Processing document: 获取公共邮箱详情 (ID: 44712)
+2025-11-27 09:48:41,538 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/获取公共邮箱详情.mdx
+2025-11-27 09:48:42,540 - INFO - Processing document: 模糊搜索公共邮箱 (ID: 44713)
+2025-11-27 09:48:42,823 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/模糊搜索公共邮箱.mdx
+2025-11-27 09:48:43,824 - INFO - Processing document: 回调通知 (ID: 55395)
+2025-11-27 09:48:44,108 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/回调通知.mdx
+2025-11-27 09:48:45,109 - INFO - Processing document: 获取客户端专用密码列表 (ID: 55435)
+2025-11-27 09:48:45,395 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/获取客户端专用密码列表.mdx
+2025-11-27 09:48:46,396 - INFO - Processing document: 删除客户端专用密码 (ID: 55438)
+2025-11-27 09:48:46,676 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/删除客户端专用密码.mdx
+2025-11-27 09:48:47,677 - INFO - Processing document: 更改用户功能属性 (ID: 44727)
+2025-11-27 09:48:47,961 - INFO - Saved: docs/企业内部开发/服务端API/邮件/其他邮件客户端登录设置/更改用户功能属性.mdx
+2025-11-27 09:48:48,962 - INFO - Processing document: 分配高级功能账号 (ID: 49575)
+2025-11-27 09:48:49,243 - INFO - Saved: docs/企业内部开发/服务端API/邮件/高级功能账号管理/分配高级功能账号.mdx
+2025-11-27 09:48:50,245 - INFO - Processing document: 取消高级功能账号 (ID: 49576)
+2025-11-27 09:48:50,526 - INFO - Saved: docs/企业内部开发/服务端API/邮件/高级功能账号管理/取消高级功能账号.mdx
+2025-11-27 09:48:51,528 - INFO - Processing document: 获取高级功能账号列表 (ID: 49577)
+2025-11-27 09:48:51,809 - INFO - Saved: docs/企业内部开发/服务端API/邮件/高级功能账号管理/获取高级功能账号列表.mdx
+2025-11-27 09:48:52,810 - INFO - Processing document: 概述 (ID: 43883)
+2025-11-27 09:48:53,087 - INFO - Saved: docs/企业内部开发/服务端API/文档/概述.mdx
+2025-11-27 09:48:54,089 - INFO - Processing document: 编辑文档内容 (ID: 44293)
+2025-11-27 09:48:54,389 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档内容/编辑文档内容.mdx
+2025-11-27 09:48:55,390 - INFO - Processing document: 获取文档数据 (ID: 44378)
+2025-11-27 09:48:55,931 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档内容/获取文档数据.mdx
+2025-11-27 09:48:56,932 - INFO - Processing document: 获取表格数据 (ID: 44380)
+2025-11-27 09:48:57,445 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理表格内容/获取表格数据.mdx
+2025-11-27 09:48:58,446 - INFO - Processing document: 获取表格行列信息 (ID: 44543)
+2025-11-27 09:48:58,735 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理表格内容/获取表格行列信息.mdx
+2025-11-27 09:48:59,737 - INFO - Processing document: 编辑表格内容 (ID: 60079)
+2025-11-27 09:49:00,027 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理表格内容/编辑表格内容.mdx
+2025-11-27 09:49:01,028 - INFO - Processing document: 分享文档 (ID: 44589)
+2025-11-27 09:49:01,312 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档/分享文档.mdx
+2025-11-27 09:49:02,313 - INFO - Processing document: 获取文档基础信息 (ID: 44590)
+2025-11-27 09:49:02,591 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档/获取文档基础信息.mdx
+2025-11-27 09:49:03,593 - INFO - Processing document: 删除文档 (ID: 44592)
+2025-11-27 09:49:03,876 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档/删除文档.mdx
+2025-11-27 09:49:04,878 - INFO - Processing document: 重命名文档 (ID: 44593)
+2025-11-27 09:49:05,160 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档/重命名文档.mdx
+2025-11-27 09:49:06,162 - INFO - Processing document: 修改文档查看规则 (ID: 44606)
+2025-11-27 09:49:06,456 - INFO - Saved: docs/企业内部开发/服务端API/文档/设置文档权限/修改文档查看规则.mdx
+2025-11-27 09:49:07,457 - INFO - Processing document: 修改文档通知范围及权限 (ID: 44607)
+2025-11-27 09:49:07,752 - INFO - Saved: docs/企业内部开发/服务端API/文档/设置文档权限/修改文档通知范围及权限.mdx
+2025-11-27 09:49:08,754 - INFO - Processing document: 修改文档安全设置 (ID: 44608)
+2025-11-27 09:49:09,037 - INFO - Saved: docs/企业内部开发/服务端API/文档/设置文档权限/修改文档安全设置.mdx
+2025-11-27 09:49:10,038 - INFO - Processing document: 管理智能表格内容权限 (ID: 53864)
+2025-11-27 09:49:10,335 - INFO - Saved: docs/企业内部开发/服务端API/文档/设置文档权限/管理智能表格内容权限.mdx
+2025-11-27 09:49:11,336 - INFO - Processing document: 编辑收集表 (ID: 44610)
+2025-11-27 09:49:11,623 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理收集表/编辑收集表.mdx
+2025-11-27 09:49:12,624 - INFO - Processing document: 获取收集表信息 (ID: 44611)
+2025-11-27 09:49:12,927 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理收集表/获取收集表信息.mdx
+2025-11-27 09:49:13,929 - INFO - Processing document: 收集表的统计信息查询 (ID: 44612)
+2025-11-27 09:49:14,214 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理收集表/收集表的统计信息查询.mdx
+2025-11-27 09:49:15,215 - INFO - Processing document: 读取收集表答案 (ID: 44613)
+2025-11-27 09:49:15,508 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理收集表/读取收集表答案.mdx
+2025-11-27 09:49:16,510 - INFO - Processing document: 修改文档成员事件 (ID: 44621)
+2025-11-27 09:49:16,795 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/修改文档成员事件.mdx
+2025-11-27 09:49:17,796 - INFO - Processing document: 删除文档事件 (ID: 44622)
+2025-11-27 09:49:18,089 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/删除文档事件.mdx
+2025-11-27 09:49:19,090 - INFO - Processing document: 收集表完成事件 (ID: 44623)
+2025-11-27 09:49:19,378 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/收集表完成事件.mdx
+2025-11-27 09:49:20,379 - INFO - Processing document: 删除收集表事件 (ID: 45066)
+2025-11-27 09:49:20,665 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/删除收集表事件.mdx
+2025-11-27 09:49:21,667 - INFO - Processing document: 修改收集表设置事件 (ID: 45068)
+2025-11-27 09:49:21,958 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/修改收集表设置事件.mdx
+2025-11-27 09:49:22,959 - INFO - Processing document: 记录变更事件 (ID: 58863)
+2025-11-27 09:49:23,252 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/记录变更事件.mdx
+2025-11-27 09:49:24,253 - INFO - Processing document: 字段变更事件 (ID: 58864)
+2025-11-27 09:49:24,536 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/字段变更事件.mdx
+2025-11-27 09:49:25,538 - INFO - Processing document: 分配高级功能账号 (ID: 50761)
+2025-11-27 09:49:25,815 - INFO - Saved: docs/企业内部开发/服务端API/文档/高级功能账号管理/分配高级功能账号.mdx
+2025-11-27 09:49:26,817 - INFO - Processing document: 取消高级功能账号 (ID: 50763)
+2025-11-27 09:49:27,092 - INFO - Saved: docs/企业内部开发/服务端API/文档/高级功能账号管理/取消高级功能账号.mdx
+2025-11-27 09:49:28,093 - INFO - Processing document: 获取高级功能账号列表 (ID: 50764)
+2025-11-27 09:49:28,378 - INFO - Saved: docs/企业内部开发/服务端API/文档/高级功能账号管理/获取高级功能账号列表.mdx
+2025-11-27 09:49:29,379 - INFO - Processing document: 添加子表 (ID: 53106)
+2025-11-27 09:49:29,673 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加子表.mdx
+2025-11-27 09:49:30,675 - INFO - Processing document: 更新子表 (ID: 53108)
+2025-11-27 09:49:30,962 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新子表.mdx
+2025-11-27 09:49:31,964 - INFO - Processing document: 删除子表 (ID: 53107)
+2025-11-27 09:49:32,243 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/删除子表.mdx
+2025-11-27 09:49:33,244 - INFO - Processing document: 添加视图 (ID: 53110)
+2025-11-27 09:49:33,534 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加视图.mdx
+2025-11-27 09:49:34,536 - INFO - Processing document: 删除视图 (ID: 53111)
+2025-11-27 09:49:34,819 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/删除视图.mdx
+2025-11-27 09:49:35,820 - INFO - Processing document: 更新视图 (ID: 53113)
+2025-11-27 09:49:36,117 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新视图.mdx
+2025-11-27 09:49:37,118 - INFO - Processing document: 添加字段 (ID: 53114)
+2025-11-27 09:49:37,414 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加字段.mdx
+2025-11-27 09:49:38,415 - INFO - Processing document: 删除字段 (ID: 53115)
+2025-11-27 09:49:38,696 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/删除字段.mdx
+2025-11-27 09:49:39,697 - INFO - Processing document: 更新字段 (ID: 53116)
+2025-11-27 09:49:39,989 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新字段.mdx
+2025-11-27 09:49:40,990 - INFO - Processing document: 添加记录 (ID: 53118)
+2025-11-27 09:49:41,278 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加记录.mdx
+2025-11-27 09:49:42,279 - INFO - Processing document: 删除记录 (ID: 53119)
+2025-11-27 09:49:42,560 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/删除记录.mdx
+2025-11-27 09:49:43,562 - INFO - Processing document: 更新记录 (ID: 53120)
+2025-11-27 09:49:43,847 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新记录.mdx
+2025-11-27 09:49:44,848 - INFO - Processing document: 添加编组 (ID: 59536)
+2025-11-27 09:49:45,135 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加编组.mdx
+2025-11-27 09:49:46,136 - INFO - Processing document: 更新编组 (ID: 59537)
+2025-11-27 09:49:46,419 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新编组.mdx
+2025-11-27 09:49:47,421 - INFO - Processing document: 删除编组 (ID: 59538)
 Traceback (most recent call last):
   File "/home/runner/work/weworkdoc/weworkdoc/wework_doc_crawler.py", line 260, in <module>
     crawler.run()

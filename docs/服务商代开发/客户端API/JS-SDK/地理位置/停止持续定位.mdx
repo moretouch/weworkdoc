@@ -1,0 +1,20 @@
+---
+title: "停止持续定位"
+generated_at: "2025-11-27 19:40:37"
+source: "https://developer.work.weixin.qq.com/document/path/100453"
+---
+
+[[toc]]
+<!-- import stopAutoLBS from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.invoke('stopAutoLBS', {}, function(res) {
+  if(res.err_msg == "stopAutoLBS:ok"){
+    //调用成功
+  }else {
+    //错误处理
+  }
+});
+```

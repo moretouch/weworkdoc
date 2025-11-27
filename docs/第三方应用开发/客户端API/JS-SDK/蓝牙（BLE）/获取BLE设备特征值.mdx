@@ -1,0 +1,24 @@
+---
+title: "获取BLE设备特征值"
+generated_at: "2025-11-27 14:49:19"
+source: "https://developer.work.weixin.qq.com/document/path/100647"
+---
+
+
+
+[[toc]]
+
+<!-- import getBLEDeviceCharacteristics from @wecom/jssdk -->
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.getBLEDeviceCharacteristics({
+  // 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接
+  deviceId,
+  // 这里的 serviceId 需要在 getBLEDeviceServices 接口中获取
+  serviceId,
+  success (res) {
+  console.log('device getBLEDeviceCharacteristics:', res.characteristics)
+  }
+})
+```

@@ -1,0 +1,21 @@
+---
+title: "选择文档"
+generated_at: "2025-11-27 14:48:14"
+source: "https://developer.work.weixin.qq.com/document/path/99180"
+---
+
+[[toc]]
+<!-- import wedocSelectDoc from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.invoke('wedocSelectDoc', {
+  selectedFileNum: 1
+}, function (res) {
+  if (res.err_msg == "wedocSelectDoc:ok") {
+    var selectedFileUrls = res.result.selectedFileUrls;  // 后续废弃
+    var selectedFileInfos = res.result.selectedFileInfos;
+  }
+});
+```

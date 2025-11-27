@@ -1,0 +1,21 @@
+---
+title: "监听录音自动停止"
+generated_at: "2025-11-27 14:48:37"
+source: "https://developer.work.weixin.qq.com/document/path/100615"
+---
+
+
+
+[[toc]]
+
+<!-- import onVoiceRecordEnd from @wecom/jssdk -->
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.onVoiceRecordEnd({
+    // 录音时间超过一分钟没有停止的时候会执行 complete 回调
+    complete: function (res) {
+        var localId = res.localId;
+    }
+});
+```

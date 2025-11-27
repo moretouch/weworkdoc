@@ -1,0 +1,23 @@
+---
+title: "连接BLE设备"
+generated_at: "2025-11-27 14:49:14"
+source: "https://developer.work.weixin.qq.com/document/path/100643"
+---
+
+
+
+[[toc]]
+
+<!-- import createBLEConnection from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.createBLEConnection({
+  // 这里的 deviceId 需要已经通过 createBLEConnection 与对应设备建立链接 
+  deviceId: deviceId,
+  success: function (res) {
+    console.log(res)
+  }
+})
+```

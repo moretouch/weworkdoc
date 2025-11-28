@@ -1,4 +1,4 @@
-2025-11-27 23:42:26,106 - INFO - Starting WeWork documentation crawler...
-2025-11-27 23:42:26,106 - INFO - Extracting categories from https://developer.work.weixin.qq.com/document/path/90195
-2025-11-27 23:42:27,818 - INFO - Found 4275 categories
-2025-11-27 23:42:29,326 - INFO - Crawling completed!
+2025-11-28 02:18:31,903 - INFO - Starting WeWork documentation crawler...
+2025-11-28 02:18:31,904 - INFO - Extracting categories from https://developer.work.weixin.qq.com/document/path/90195
+2025-11-28 02:18:33,841 - INFO - Found 4275 categories
+2025-11-28 02:18:35,370 - INFO - Crawling completed!

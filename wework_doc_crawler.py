@@ -159,7 +159,7 @@ class WeWorkDocCrawler:
         full_path = self.output_dir / Path(*clean_path) / f"{clean_title}.mdx"
         return full_path
 
-    def md_to_mdx(self, markdown_content: str, title: str, category_id: int) -> str:
+    def md_to_mdx(self, markdown_content: str, title: str, category_id: int, update_time: int = 0) -> str:
         """Convert markdown content to MDX format by adding frontmatter."""
         if not markdown_content:
             return f"# {title}\n\n*No content available*\n"
@@ -168,12 +168,30 @@ class WeWorkDocCrawler:
         frontmatter = f"""---
 title: "{title}"
 generated_at: "{time.strftime('%Y-%m-%d %H:%M:%S')}"
+update_time: {update_time}
 source: "https://developer.work.weixin.qq.com/document/path/{category_id}"
 ---
 
 """
 
         return frontmatter + markdown_content
+
+    def extract_update_time_from_mdx(self, file_path: Path) -> Optional[int]:
+        """Extract update_time from existing MDX file's frontmatter."""
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Match frontmatter and extract update_time
+            pattern = r'^---\s*\n.*?update_time:\s*(\d+).*?\n---'
+            match = re.search(pattern, content, re.DOTALL | re.MULTILINE)
+            
+            if match:
+                return int(match.group(1))
+            return None
+        except Exception as e:
+            self.logger.error(f"Error reading update_time from {file_path}: {e}")
+            return None
 
     def save_document(self, file_path: Path, content: str):
         """Save document content to file."""
@@ -202,8 +220,20 @@ source: "https://developer.work.weixin.qq.com/document/path/{category_id}"
             if category.get('doc_id', 0) > 0:
                 # Generate file path
                 file_path = self.generate_file_path(current_path[:-1], category['title'])
-                if not os.path.exists(file_path):
-                    doc_id = category['doc_id']
+                doc_id = category['doc_id']
+                update_time = category.get('time', 0)  # 文档的更新时间
+                
+                # Check if file needs to be updated
+                needs_update = True
+                if os.path.exists(file_path):
+                    existing_update_time = self.extract_update_time_from_mdx(file_path)
+                    if existing_update_time is not None and existing_update_time >= update_time:
+                        self.logger.info(f"Skipping {category['title']} (already up-to-date)")
+                        needs_update = False
+                    else:
+                        self.logger.info(f"Updating {category['title']} (local: {existing_update_time}, remote: {update_time})")
+                
+                if needs_update:
                     self.logger.info(f"Processing document: {category['title']} (ID: {doc_id})")
 
                     # Fetch document content
@@ -217,7 +247,7 @@ source: "https://developer.work.weixin.qq.com/document/path/{category_id}"
                         content_md = data.get('content_md', '')
 
                         # Convert to MDX (just add frontmatter to existing markdown)
-                        mdx_content = self.md_to_mdx(content_md, title, category['category_id'])
+                        mdx_content = self.md_to_mdx(content_md, title, category['category_id'], update_time)
                         # Save document
                         self.save_document(file_path, mdx_content)
                     else:
@@ -239,7 +269,7 @@ source: "https://developer.work.weixin.qq.com/document/path/{category_id}"
         # Extract categories from main page
         main_url = f"{self.base_url}/document/path/90195"
         categories = self.extract_categories_from_page(main_url)
-
+        # 更新时间 categories[0]['time']
         if not categories:
             self.logger.error("Failed to extract categories")
             return
@@ -258,3 +288,4 @@ source: "https://developer.work.weixin.qq.com/document/path/{category_id}"
 if __name__ == "__main__":
     crawler = WeWorkDocCrawler()
     crawler.run()
+    

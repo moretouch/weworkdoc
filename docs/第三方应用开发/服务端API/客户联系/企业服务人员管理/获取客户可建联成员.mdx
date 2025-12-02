@@ -1,6 +1,7 @@
 ---
 title: "获取客户可建联成员"
-generated_at: "2025-11-27 13:11:48"
+generated_at: "2025-12-02 10:49:23"
+update_time: 1763004284
 source: "https://developer.work.weixin.qq.com/document/path/101146"
 ---
 
@@ -48,6 +49,6 @@ __参数说明__:
 |errcode|int32|返回码|
 |errmsg|string|错误码描述|
 |user_list|uint64[]|成员ID列表|
-|department_list|uint32[]|部门ID列表|
+|department_list|uint32[]|部门ID列表，可根据部门ID再调用「[获取部门成员](#10061)」接口，以获取部门下的成员ID|
 |tag_list|uint32[]|标签ID列表|
 

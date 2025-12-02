@@ -1,804 +1,1003 @@
-2025-12-02 07:22:33,953 - INFO - Starting WeWork documentation crawler...
-2025-12-02 07:22:33,953 - INFO - Extracting categories from https://developer.work.weixin.qq.com/document/path/90195
-2025-12-02 07:22:36,919 - INFO - Found 4275 categories
-2025-12-02 07:22:38,397 - INFO - Skipping 简易教程 (already up-to-date)
-2025-12-02 07:22:38,397 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,398 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,398 - INFO - Skipping 创建成员 (already up-to-date)
-2025-12-02 07:22:38,398 - INFO - Skipping 读取成员 (already up-to-date)
-2025-12-02 07:22:38,398 - INFO - Skipping 更新成员 (already up-to-date)
-2025-12-02 07:22:38,398 - INFO - Skipping 删除成员 (already up-to-date)
-2025-12-02 07:22:38,399 - INFO - Skipping 批量删除成员 (already up-to-date)
-2025-12-02 07:22:38,399 - INFO - Skipping 获取部门成员 (already up-to-date)
-2025-12-02 07:22:38,399 - INFO - Skipping 获取部门成员详情 (already up-to-date)
-2025-12-02 07:22:38,399 - INFO - Skipping userid与openid互换 (already up-to-date)
-2025-12-02 07:22:38,399 - INFO - Skipping 登录二次验证 (already up-to-date)
-2025-12-02 07:22:38,399 - INFO - Skipping 邀请成员 (already up-to-date)
-2025-12-02 07:22:38,400 - INFO - Skipping 获取加入企业二维码 (already up-to-date)
-2025-12-02 07:22:38,400 - INFO - Skipping 手机号获取userid (already up-to-date)
-2025-12-02 07:22:38,400 - INFO - Skipping 邮箱获取userid (already up-to-date)
-2025-12-02 07:22:38,400 - INFO - Skipping 获取成员ID列表 (already up-to-date)
-2025-12-02 07:22:38,400 - INFO - Skipping 成员扩展属性 (already up-to-date)
-2025-12-02 07:22:38,400 - INFO - Skipping 创建部门 (already up-to-date)
-2025-12-02 07:22:38,401 - INFO - Skipping 更新部门 (already up-to-date)
-2025-12-02 07:22:38,401 - INFO - Skipping 删除部门 (already up-to-date)
-2025-12-02 07:22:38,401 - INFO - Skipping 获取部门列表 (already up-to-date)
-2025-12-02 07:22:38,401 - INFO - Skipping 获取子部门ID列表 (already up-to-date)
-2025-12-02 07:22:38,401 - INFO - Skipping 获取单个部门详情 (already up-to-date)
-2025-12-02 07:22:38,402 - INFO - Skipping 创建标签 (already up-to-date)
-2025-12-02 07:22:38,402 - INFO - Skipping 更新标签名字 (already up-to-date)
-2025-12-02 07:22:38,402 - INFO - Skipping 删除标签 (already up-to-date)
-2025-12-02 07:22:38,402 - INFO - Skipping 获取标签成员 (already up-to-date)
-2025-12-02 07:22:38,402 - INFO - Skipping 增加标签成员 (already up-to-date)
-2025-12-02 07:22:38,402 - INFO - Skipping 删除标签成员 (already up-to-date)
-2025-12-02 07:22:38,403 - INFO - Skipping 获取标签列表 (already up-to-date)
-2025-12-02 07:22:38,403 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,403 - INFO - Skipping 成员变更通知 (already up-to-date)
-2025-12-02 07:22:38,403 - INFO - Skipping 部门变更通知 (already up-to-date)
-2025-12-02 07:22:38,403 - INFO - Skipping 标签变更通知 (already up-to-date)
-2025-12-02 07:22:38,403 - INFO - Skipping 异步任务完成通知 (already up-to-date)
-2025-12-02 07:22:38,404 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,404 - INFO - Skipping 增量更新成员 (already up-to-date)
-2025-12-02 07:22:38,404 - INFO - Skipping 全量覆盖成员 (already up-to-date)
-2025-12-02 07:22:38,404 - INFO - Skipping 全量覆盖部门 (already up-to-date)
-2025-12-02 07:22:38,404 - INFO - Skipping 获取异步任务结果 (already up-to-date)
-2025-12-02 07:22:38,405 - INFO - Skipping 导出成员 (already up-to-date)
-2025-12-02 07:22:38,405 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,405 - INFO - Skipping 导出成员详情 (already up-to-date)
-2025-12-02 07:22:38,405 - INFO - Skipping 导出部门 (already up-to-date)
-2025-12-02 07:22:38,405 - INFO - Skipping 导出标签成员 (already up-to-date)
-2025-12-02 07:22:38,405 - INFO - Skipping 获取导出结果 (already up-to-date)
-2025-12-02 07:22:38,406 - INFO - Skipping 导出任务完成通知 (already up-to-date)
-2025-12-02 07:22:38,406 - INFO - Skipping 通讯录同步接口调整 (already up-to-date)
-2025-12-02 07:22:38,406 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,406 - INFO - Skipping 获取应用 (already up-to-date)
-2025-12-02 07:22:38,406 - INFO - Skipping 设置应用 (already up-to-date)
-2025-12-02 07:22:38,406 - INFO - Skipping 创建菜单 (already up-to-date)
-2025-12-02 07:22:38,407 - INFO - Skipping 获取菜单 (already up-to-date)
-2025-12-02 07:22:38,407 - INFO - Skipping 删除菜单 (already up-to-date)
-2025-12-02 07:22:38,407 - INFO - Skipping 设置工作台自定义展示 (already up-to-date)
-2025-12-02 07:22:38,407 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,408 - INFO - Skipping 发送应用消息 (already up-to-date)
-2025-12-02 07:22:38,408 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,408 - INFO - Skipping 消息格式 (already up-to-date)
-2025-12-02 07:22:38,409 - INFO - Skipping 事件格式 (already up-to-date)
-2025-12-02 07:22:38,409 - INFO - Skipping 被动回复消息格式 (already up-to-date)
-2025-12-02 07:22:38,409 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,409 - INFO - Skipping 创建群聊会话 (already up-to-date)
-2025-12-02 07:22:38,410 - INFO - Skipping 应用推送消息 (already up-to-date)
-2025-12-02 07:22:38,410 - INFO - Skipping 修改群聊会话 (already up-to-date)
-2025-12-02 07:22:38,410 - INFO - Skipping 获取群聊会话 (already up-to-date)
-2025-12-02 07:22:38,410 - INFO - Skipping 发送「学校通知」 (already up-to-date)
-2025-12-02 07:22:38,410 - INFO - Skipping 撤回应用消息 (already up-to-date)
-2025-12-02 07:22:38,411 - INFO - Skipping 更新模版卡片消息 (already up-to-date)
-2025-12-02 07:22:38,411 - INFO - Skipping 消息推送配置说明 (already up-to-date)
-2025-12-02 07:22:38,411 - INFO - Skipping 接收消息 (already up-to-date)
-2025-12-02 07:22:38,412 - INFO - Skipping 接收事件 (already up-to-date)
-2025-12-02 07:22:38,412 - INFO - Skipping 被动回复消息 (already up-to-date)
-2025-12-02 07:22:38,412 - INFO - Skipping 模板卡片类型 (already up-to-date)
-2025-12-02 07:22:38,412 - INFO - Skipping 回调和回复的加解密方案 (already up-to-date)
-2025-12-02 07:22:38,413 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,413 - INFO - Skipping 主动回复消息 (already up-to-date)
-2025-12-02 07:22:38,413 - INFO - Skipping 获取群聊列表 (already up-to-date)
-2025-12-02 07:22:38,413 - INFO - Skipping 获取群聊会话 (already up-to-date)
-2025-12-02 07:22:38,413 - INFO - Skipping 修改群聊会话 (already up-to-date)
-2025-12-02 07:22:38,413 - INFO - Skipping 上传临时素材 (already up-to-date)
-2025-12-02 07:22:38,414 - INFO - Skipping 获取临时素材 (already up-to-date)
-2025-12-02 07:22:38,414 - INFO - Skipping 获取高清语音素材 (already up-to-date)
-2025-12-02 07:22:38,414 - INFO - Skipping 上传图片 (already up-to-date)
-2025-12-02 07:22:38,414 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,414 - INFO - Skipping 异步上传临时素材 (already up-to-date)
-2025-12-02 07:22:38,414 - INFO - Skipping 构造网页授权链接 (already up-to-date)
-2025-12-02 07:22:38,415 - INFO - Skipping 获取访问用户身份 (already up-to-date)
-2025-12-02 07:22:38,415 - INFO - Skipping 开始开发 (already up-to-date)
-2025-12-02 07:22:38,415 - INFO - Skipping 获取访问用户敏感信息 (already up-to-date)
-2025-12-02 07:22:38,415 - INFO - Skipping 开始开发 (already up-to-date)
-2025-12-02 07:22:38,415 - INFO - Skipping Web登录组件 (already up-to-date)
-2025-12-02 07:22:38,416 - INFO - Skipping 获取用户登录身份 (already up-to-date)
-2025-12-02 07:22:38,416 - INFO - Skipping 获取用户二次验证信息 (already up-to-date)
-2025-12-02 07:22:38,416 - INFO - Skipping 使用二次验证 (already up-to-date)
-2025-12-02 07:22:38,416 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,416 - INFO - Skipping 登录二次验证 (already up-to-date)
-2025-12-02 07:22:38,416 - INFO - Skipping 获取打卡记录数据 (already up-to-date)
-2025-12-02 07:22:38,417 - INFO - Skipping 获取员工打卡规则 (already up-to-date)
-2025-12-02 07:22:38,417 - INFO - Skipping 获取打卡日报数据 (already up-to-date)
-2025-12-02 07:22:38,417 - INFO - Skipping 录入打卡人员人脸信息 (already up-to-date)
-2025-12-02 07:22:38,417 - INFO - Skipping 获取打卡人员排班信息 (already up-to-date)
-2025-12-02 07:22:38,418 - INFO - Skipping 获取企业所有打卡规则 (already up-to-date)
-2025-12-02 07:22:38,418 - INFO - Skipping 为打卡人员排班 (already up-to-date)
-2025-12-02 07:22:38,418 - INFO - Skipping 获取打卡月报数据 (already up-to-date)
-2025-12-02 07:22:38,418 - INFO - Skipping 获取设备打卡数据 (already up-to-date)
-2025-12-02 07:22:38,418 - INFO - Skipping 为打卡人员补卡 (already up-to-date)
-2025-12-02 07:22:38,419 - INFO - Skipping 管理打卡规则 (already up-to-date)
-2025-12-02 07:22:38,419 - INFO - Skipping 添加打卡记录 (already up-to-date)
-2025-12-02 07:22:38,419 - INFO - Skipping 审批流程引擎 (already up-to-date)
-2025-12-02 07:22:38,419 - INFO - Skipping 获取审批数据（旧） (already up-to-date)
-2025-12-02 07:22:38,420 - INFO - Skipping 审批申请状态变化回调通知 (already up-to-date)
-2025-12-02 07:22:38,420 - INFO - Skipping 批量获取审批单号 (already up-to-date)
-2025-12-02 07:22:38,420 - INFO - Skipping 提交审批申请 (already up-to-date)
-2025-12-02 07:22:38,420 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,421 - INFO - Skipping 获取审批模板详情 (already up-to-date)
-2025-12-02 07:22:38,421 - INFO - Skipping 获取审批申请详情 (already up-to-date)
-2025-12-02 07:22:38,421 - INFO - Skipping 获取企业假期管理配置 (already up-to-date)
-2025-12-02 07:22:38,421 - INFO - Skipping 获取成员假期余额 (already up-to-date)
-2025-12-02 07:22:38,421 - INFO - Skipping 修改成员假期余额 (already up-to-date)
-2025-12-02 07:22:38,422 - INFO - Skipping 创建审批模板 (already up-to-date)
-2025-12-02 07:22:38,422 - INFO - Skipping 更新审批模板 (already up-to-date)
-2025-12-02 07:22:38,422 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,422 - INFO - Skipping 发放企业红包 (already up-to-date)
-2025-12-02 07:22:38,422 - INFO - Skipping 查询红包记录 (already up-to-date)
-2025-12-02 07:22:38,423 - INFO - Skipping 向员工付款 (already up-to-date)
-2025-12-02 07:22:38,423 - INFO - Skipping 查询付款记录 (already up-to-date)
-2025-12-02 07:22:38,423 - INFO - Skipping 向员工收款 (already up-to-date)
-2025-12-02 07:22:38,423 - INFO - Skipping 签名算法 (already up-to-date)
-2025-12-02 07:22:38,423 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,424 - INFO - Skipping 收款商户号管理 (already up-to-date)
-2025-12-02 07:22:38,424 - INFO - Skipping 获取对外收款记录 (already up-to-date)
-2025-12-02 07:22:38,424 - INFO - Skipping 获取收款项目的商户单号 (already up-to-date)
-2025-12-02 07:22:38,424 - INFO - Skipping 获取资金流水 (already up-to-date)
-2025-12-02 07:22:38,424 - INFO - Skipping 提交图片 (already up-to-date)
-2025-12-02 07:22:38,425 - INFO - Skipping 提交创建对外收款账户的申请单 (already up-to-date)
-2025-12-02 07:22:38,425 - INFO - Skipping 查询申请单状态 (already up-to-date)
-2025-12-02 07:22:38,425 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,425 - INFO - Skipping 查询电子发票 (already up-to-date)
-2025-12-02 07:22:38,425 - INFO - Skipping 更新发票状态 (already up-to-date)
-2025-12-02 07:22:38,426 - INFO - Skipping 批量更新发票状态 (already up-to-date)
-2025-12-02 07:22:38,426 - INFO - Skipping 批量查询电子发票 (already up-to-date)
-2025-12-02 07:22:38,426 - INFO - Skipping 开发前必读 (already up-to-date)
-2025-12-02 07:22:38,426 - INFO - Skipping 基本概念介绍 (already up-to-date)
-2025-12-02 07:22:38,426 - INFO - Skipping 回调配置 (already up-to-date)
-2025-12-02 07:22:38,426 - INFO - Skipping 获取access_token (already up-to-date)
-2025-12-02 07:22:38,427 - INFO - Skipping 获取企业微信接口IP段 (already up-to-date)
-2025-12-02 07:22:38,427 - INFO - Skipping 获取企业微信回调IP段 (already up-to-date)
-2025-12-02 07:22:38,427 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,427 - INFO - Skipping 使用前帮助 (already up-to-date)
-2025-12-02 07:22:38,427 - INFO - Skipping 开发案例演示 (already up-to-date)
-2025-12-02 07:22:38,427 - INFO - Skipping 常见问题解答 (already up-to-date)
-2025-12-02 07:22:38,428 - INFO - Skipping 获取会话内容存档开启成员列表 (already up-to-date)
-2025-12-02 07:22:38,428 - INFO - Skipping 获取会话内容 (already up-to-date)
-2025-12-02 07:22:38,428 - INFO - Skipping 获取会话同意情况 (already up-to-date)
-2025-12-02 07:22:38,428 - INFO - Skipping 客户同意进行聊天内容存档事件回调 (already up-to-date)
-2025-12-02 07:22:38,429 - INFO - Skipping 获取会话内容存档内部群信息 (already up-to-date)
-2025-12-02 07:22:38,429 - INFO - Skipping 产生会话回调事件 (already up-to-date)
-2025-12-02 07:22:38,429 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,429 - INFO - Skipping 发起语音电话 (already up-to-date)
-2025-12-02 07:22:38,429 - INFO - Skipping 获取接听状态 (already up-to-date)
-2025-12-02 07:22:38,429 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,430 - INFO - Skipping 获取访问用户身份 (already up-to-date)
-2025-12-02 07:22:38,430 - INFO - Skipping 开始开发 (already up-to-date)
-2025-12-02 07:22:38,430 - INFO - Skipping 构造网页授权链接 (already up-to-date)
-2025-12-02 07:22:38,430 - INFO - Skipping 获取家校访问用户身份 (already up-to-date)
-2025-12-02 07:22:38,430 - INFO - Skipping 成员变更事件 (already up-to-date)
-2025-12-02 07:22:38,431 - INFO - Skipping 部门变更事件 (already up-to-date)
-2025-12-02 07:22:38,431 - INFO - Skipping 管理「学校通知」的关注模式 (already up-to-date)
-2025-12-02 07:22:38,431 - INFO - Skipping 获取「学校通知」二维码 (already up-to-date)
-2025-12-02 07:22:38,431 - INFO - Skipping 发送「学校通知」 (already up-to-date)
-2025-12-02 07:22:38,431 - INFO - Skipping 外部联系人openid转换 (already up-to-date)
-2025-12-02 07:22:38,432 - INFO - Skipping 管理「班级群创建方式」 (already up-to-date)
-2025-12-02 07:22:38,432 - INFO - Skipping 获取可使用的家长范围 (already up-to-date)
-2025-12-02 07:22:38,432 - INFO - Skipping 创建学生 (already up-to-date)
-2025-12-02 07:22:38,432 - INFO - Skipping 删除学生 (already up-to-date)
-2025-12-02 07:22:38,432 - INFO - Skipping 更新学生 (already up-to-date)
-2025-12-02 07:22:38,432 - INFO - Skipping 批量创建学生 (already up-to-date)
-2025-12-02 07:22:38,433 - INFO - Skipping 批量删除学生 (already up-to-date)
-2025-12-02 07:22:38,433 - INFO - Skipping 批量更新学生 (already up-to-date)
-2025-12-02 07:22:38,433 - INFO - Skipping 创建家长 (already up-to-date)
-2025-12-02 07:22:38,433 - INFO - Skipping 删除家长 (already up-to-date)
-2025-12-02 07:22:38,433 - INFO - Skipping 更新家长 (already up-to-date)
-2025-12-02 07:22:38,434 - INFO - Skipping 批量创建家长 (already up-to-date)
-2025-12-02 07:22:38,434 - INFO - Skipping 批量删除家长 (already up-to-date)
-2025-12-02 07:22:38,434 - INFO - Skipping 批量更新家长 (already up-to-date)
-2025-12-02 07:22:38,434 - INFO - Skipping 读取学生或家长 (already up-to-date)
-2025-12-02 07:22:38,434 - INFO - Skipping 获取部门学生详情 (already up-to-date)
-2025-12-02 07:22:38,434 - INFO - Skipping 设置家校通讯录自动同步模式 (already up-to-date)
-2025-12-02 07:22:38,435 - INFO - Skipping 获取部门家长详情 (already up-to-date)
-2025-12-02 07:22:38,435 - INFO - Skipping 创建部门 (already up-to-date)
-2025-12-02 07:22:38,435 - INFO - Skipping 更新部门 (already up-to-date)
-2025-12-02 07:22:38,435 - INFO - Skipping 删除部门 (already up-to-date)
-2025-12-02 07:22:38,435 - INFO - Skipping 获取部门列表 (already up-to-date)
-2025-12-02 07:22:38,435 - INFO - Skipping 标准年级对照表 (already up-to-date)
-2025-12-02 07:22:38,436 - INFO - Skipping 修改自动升年级的配置 (already up-to-date)
-2025-12-02 07:22:38,436 - INFO - Skipping 概述 (already up-to-date)
-2025-12-02 07:22:38,436 - INFO - Skipping 获取客户列表 (already up-to-date)
-2025-12-02 07:22:38,437 - INFO - Updating 获取客户详情 (local: None, remote: 1573044567)
-2025-12-02 07:22:38,437 - INFO - Processing document: 获取客户详情 (ID: 13878)
-2025-12-02 07:22:38,755 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户管理/获取客户详情.mdx
-2025-12-02 07:22:39,756 - INFO - Updating 修改客户备注信息 (local: None, remote: 1573044613)
-2025-12-02 07:22:39,756 - INFO - Processing document: 修改客户备注信息 (ID: 16662)
-2025-12-02 07:22:40,055 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户管理/修改客户备注信息.mdx
-2025-12-02 07:22:41,056 - INFO - Updating 批量获取客户详情 (local: None, remote: 1598002471)
-2025-12-02 07:22:41,056 - INFO - Processing document: 批量获取客户详情 (ID: 23414)
-2025-12-02 07:22:41,361 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户管理/批量获取客户详情.mdx
-2025-12-02 07:22:42,363 - INFO - Updating 客户联系规则组管理 (local: None, remote: 1626870436)
-2025-12-02 07:22:42,363 - INFO - Processing document: 客户联系规则组管理 (ID: 32023)
-2025-12-02 07:22:42,710 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户管理/客户联系规则组管理.mdx
-2025-12-02 07:22:43,711 - INFO - Updating 管理企业标签 (local: None, remote: 1577069273)
-2025-12-02 07:22:43,711 - INFO - Processing document: 管理企业标签 (ID: 17298)
-2025-12-02 07:22:44,033 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户标签管理/管理企业标签.mdx
-2025-12-02 07:22:45,034 - INFO - Updating 编辑客户企业标签 (local: None, remote: 1573044667)
-2025-12-02 07:22:45,034 - INFO - Processing document: 编辑客户企业标签 (ID: 16666)
-2025-12-02 07:22:45,327 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户标签管理/编辑客户企业标签.mdx
-2025-12-02 07:22:46,329 - INFO - Updating 管理企业规则组下的客户标签 (local: None, remote: 1626870363)
-2025-12-02 07:22:46,329 - INFO - Processing document: 管理企业规则组下的客户标签 (ID: 32022)
-2025-12-02 07:22:46,651 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户标签管理/管理企业规则组下的客户标签.mdx
-2025-12-02 07:22:47,652 - INFO - Updating 获取客户群列表 (local: None, remote: 1573044754)
-2025-12-02 07:22:47,652 - INFO - Processing document: 获取客户群列表 (ID: 19409)
-2025-12-02 07:22:47,958 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户群管理/获取客户群列表.mdx
-2025-12-02 07:22:48,959 - INFO - Updating 获取客户群详情 (local: None, remote: 1573046078)
-2025-12-02 07:22:48,959 - INFO - Processing document: 获取客户群详情 (ID: 19412)
-2025-12-02 07:22:49,262 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户群管理/获取客户群详情.mdx
-2025-12-02 07:22:50,263 - INFO - Updating 客户群opengid转换 (local: None, remote: 1625639511)
-2025-12-02 07:22:50,263 - INFO - Processing document: 客户群opengid转换 (ID: 31650)
-2025-12-02 07:22:50,551 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户群管理/客户群opengid转换.mdx
-2025-12-02 07:22:51,553 - INFO - Updating 获取待分配的离职成员列表 (local: None, remote: 1611124076)
-2025-12-02 07:22:51,553 - INFO - Processing document: 获取待分配的离职成员列表 (ID: 16248)
-2025-12-02 07:22:51,850 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/离职继承/获取待分配的离职成员列表.mdx
-2025-12-02 07:22:52,852 - INFO - Updating 分配离职成员的客户群 (local: None, remote: 1607595347)
-2025-12-02 07:22:52,852 - INFO - Processing document: 分配离职成员的客户群 (ID: 19416)
-2025-12-02 07:22:53,155 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/离职继承/分配离职成员的客户群.mdx
-2025-12-02 07:22:54,157 - INFO - Updating 分配离职成员的客户 (local: None, remote: 1611123711)
-2025-12-02 07:22:54,157 - INFO - Processing document: 分配离职成员的客户 (ID: 27272)
-2025-12-02 07:22:54,458 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/离职继承/分配离职成员的客户.mdx
-2025-12-02 07:22:55,459 - INFO - Updating 查询客户接替状态 (local: None, remote: 1611124039)
-2025-12-02 07:22:55,460 - INFO - Processing document: 查询客户接替状态 (ID: 27286)
-2025-12-02 07:22:55,756 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/离职继承/查询客户接替状态.mdx
-2025-12-02 07:22:56,758 - INFO - Updating 概述 (local: None, remote: 1573046735)
-2025-12-02 07:22:56,758 - INFO - Processing document: 概述 (ID: 15608)
-2025-12-02 07:22:57,045 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/回调通知/概述.mdx
-2025-12-02 07:22:58,047 - INFO - Updating 事件格式 (local: None, remote: 1573046746)
-2025-12-02 07:22:58,047 - INFO - Processing document: 事件格式 (ID: 15260)
-2025-12-02 07:22:58,623 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/回调通知/事件格式.mdx
-2025-12-02 07:22:59,625 - INFO - Updating 获客助手事件通知 (local: None, remote: 1667805471)
-2025-12-02 07:22:59,625 - INFO - Processing document: 获客助手事件通知 (ID: 42924)
-2025-12-02 07:22:59,952 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/回调通知/获客助手事件通知.mdx
-2025-12-02 07:23:00,953 - INFO - Updating 获取「联系客户统计」数据 (local: None, remote: 1607658791)
-2025-12-02 07:23:00,953 - INFO - Processing document: 获取「联系客户统计」数据 (ID: 16392)
-2025-12-02 07:23:01,252 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/统计管理/获取「联系客户统计」数据.mdx
-2025-12-02 07:23:02,254 - INFO - Updating 获取「群聊数据统计」数据 (local: None, remote: 1607658846)
-2025-12-02 07:23:02,254 - INFO - Processing document: 获取「群聊数据统计」数据 (ID: 19418)
-2025-12-02 07:23:02,567 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/统计管理/获取「群聊数据统计」数据.mdx
-2025-12-02 07:23:03,568 - INFO - Updating 创建企业群发 (local: None, remote: 1607595065)
-2025-12-02 07:23:03,568 - INFO - Processing document: 创建企业群发 (ID: 15836)
-2025-12-02 07:23:03,875 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/创建企业群发.mdx
-2025-12-02 07:23:04,877 - INFO - Updating 发送新客户欢迎语 (local: None, remote: 1573048140)
-2025-12-02 07:23:04,877 - INFO - Processing document: 发送新客户欢迎语 (ID: 16489)
-2025-12-02 07:23:05,182 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/发送新客户欢迎语.mdx
-2025-12-02 07:23:06,184 - INFO - Updating 入群欢迎语素材管理 (local: None, remote: 1605854370)
-2025-12-02 07:23:06,184 - INFO - Processing document: 入群欢迎语素材管理 (ID: 19635)
-2025-12-02 07:23:06,516 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/入群欢迎语素材管理.mdx
-2025-12-02 07:23:07,518 - INFO - Updating 获取企业的全部群发记录 (local: None, remote: 1607595182)
-2025-12-02 07:23:07,518 - INFO - Processing document: 获取企业的全部群发记录 (ID: 25429)
-2025-12-02 07:23:07,855 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/获取企业的全部群发记录.mdx
-2025-12-02 07:23:08,857 - INFO - Updating 提醒成员群发 (local: None, remote: 1669792985)
-2025-12-02 07:23:08,857 - INFO - Processing document: 提醒成员群发 (ID: 44255)
-2025-12-02 07:23:09,143 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/提醒成员群发.mdx
-2025-12-02 07:23:10,145 - INFO - Updating 停止企业群发 (local: None, remote: 1669793047)
-2025-12-02 07:23:10,145 - INFO - Processing document: 停止企业群发 (ID: 44257)
-2025-12-02 07:23:10,436 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/消息推送/停止企业群发.mdx
-2025-12-02 07:23:11,439 - INFO - Updating 客户联系「联系我」管理 (local: None, remote: 1573566153)
-2025-12-02 07:23:11,439 - INFO - Processing document: 客户联系「联系我」管理 (ID: 15645)
-2025-12-02 07:23:12,005 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/联系我与客户入群方式/客户联系「联系我」管理.mdx
-2025-12-02 07:23:13,007 - INFO - Updating 客户群「加入群聊」管理 (local: None, remote: 1577102628)
-2025-12-02 07:23:13,007 - INFO - Processing document: 客户群「加入群聊」管理 (ID: 19243)
-2025-12-02 07:23:13,341 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/联系我与客户入群方式/客户群「加入群聊」管理.mdx
-2025-12-02 07:23:14,342 - INFO - Updating 成员对外信息 (local: None, remote: 1573566308)
-2025-12-02 07:23:14,342 - INFO - Processing document: 成员对外信息 (ID: 13450)
-2025-12-02 07:23:14,639 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/成员对外信息.mdx
-2025-12-02 07:23:15,640 - INFO - Updating 获取配置了客户联系功能的成员列表 (local: None, remote: 1577103087)
-2025-12-02 07:23:15,640 - INFO - Processing document: 获取配置了客户联系功能的成员列表 (ID: 15642)
-2025-12-02 07:23:15,935 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/企业服务人员管理/获取配置了客户联系功能的成员列表.mdx
-2025-12-02 07:23:16,937 - INFO - Updating 获取客户朋友圈全部的发表记录 (local: None, remote: 1607595677)
-2025-12-02 07:23:16,937 - INFO - Processing document: 获取客户朋友圈全部的发表记录 (ID: 25254)
-2025-12-02 07:23:17,267 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/获取客户朋友圈全部的发表记录.mdx
-2025-12-02 07:23:18,269 - INFO - Updating 概述 (local: None, remote: 1607502077)
-2025-12-02 07:23:18,269 - INFO - Processing document: 概述 (ID: 26595)
-2025-12-02 07:23:18,560 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/概述.mdx
-2025-12-02 07:23:19,561 - INFO - Updating 客户朋友圈规则组管理 (local: None, remote: 1627368322)
-2025-12-02 07:23:19,562 - INFO - Processing document: 客户朋友圈规则组管理 (ID: 32104)
-2025-12-02 07:23:19,888 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/客户朋友圈规则组管理.mdx
-2025-12-02 07:23:20,890 - INFO - Updating 企业发表内容到客户的朋友圈 (local: None, remote: 1632647811)
-2025-12-02 07:23:20,890 - INFO - Processing document: 企业发表内容到客户的朋友圈 (ID: 34646)
-2025-12-02 07:23:21,211 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/企业发表内容到客户的朋友圈.mdx
-2025-12-02 07:23:22,212 - INFO - Updating 停止发表企业朋友圈 (local: None, remote: 1669793162)
-2025-12-02 07:23:22,212 - INFO - Processing document: 停止发表企业朋友圈 (ID: 44259)
-2025-12-02 07:23:22,502 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/客户朋友圈/停止发表企业朋友圈.mdx
-2025-12-02 07:23:23,504 - INFO - Updating 查询客户接替状态 (local: None, remote: 1611124007)
-2025-12-02 07:23:23,504 - INFO - Processing document: 查询客户接替状态 (ID: 27284)
-2025-12-02 07:23:23,801 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/在职继承/查询客户接替状态.mdx
-2025-12-02 07:23:24,803 - INFO - Updating 分配在职成员的客户群 (local: None, remote: 1651758190)
-2025-12-02 07:23:24,803 - INFO - Processing document: 分配在职成员的客户群 (ID: 38681)
-2025-12-02 07:23:25,102 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/在职继承/分配在职成员的客户群.mdx
-2025-12-02 07:23:26,104 - INFO - Updating 管理商品图册 (local: None, remote: 1630416424)
-2025-12-02 07:23:26,104 - INFO - Processing document: 管理商品图册 (ID: 34655)
-2025-12-02 07:23:26,426 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/管理商品图册.mdx
-2025-12-02 07:23:27,428 - INFO - Updating 管理聊天敏感词 (local: None, remote: 1630415447)
-2025-12-02 07:23:27,428 - INFO - Processing document: 管理聊天敏感词 (ID: 34656)
-2025-12-02 07:23:27,739 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/管理聊天敏感词.mdx
-2025-12-02 07:23:28,741 - INFO - Updating 上传附件资源 (local: None, remote: 1630489426)
-2025-12-02 07:23:28,741 - INFO - Processing document: 上传附件资源 (ID: 34657)
-2025-12-02 07:23:29,084 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/上传附件资源.mdx
-2025-12-02 07:23:30,085 - INFO - Updating 获客链接管理 (local: None, remote: 1667203033)
-2025-12-02 07:23:30,085 - INFO - Processing document: 获客链接管理 (ID: 42921)
-2025-12-02 07:23:30,411 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/获客链接管理.mdx
-2025-12-02 07:23:31,412 - INFO - Updating 获取由获客链接添加的客户信息 (local: None, remote: 1667375754)
-2025-12-02 07:23:31,412 - INFO - Processing document: 获取由获客链接添加的客户信息 (ID: 42923)
-2025-12-02 07:23:31,708 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/获取由获客链接添加的客户信息.mdx
-2025-12-02 07:23:32,709 - INFO - Updating 获客助手额度管理与使用统计 (local: None, remote: 1689243323)
-2025-12-02 07:23:32,709 - INFO - Processing document: 获客助手额度管理与使用统计 (ID: 43599)
-2025-12-02 07:23:33,018 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/获客助手额度管理与使用统计.mdx
-2025-12-02 07:23:34,020 - INFO - Updating 提升广告有效率 (local: None, remote: 1703476301)
-2025-12-02 07:23:34,020 - INFO - Processing document: 提升广告有效率 (ID: 51881)
-2025-12-02 07:23:34,305 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/提升广告有效率.mdx
-2025-12-02 07:23:35,306 - INFO - Updating 获取成员多次收消息详情 (local: None, remote: 1727431133)
-2025-12-02 07:23:35,307 - INFO - Processing document: 获取成员多次收消息详情 (ID: 55183)
-2025-12-02 07:23:35,593 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获客助手/获取成员多次收消息详情.mdx
-2025-12-02 07:23:36,594 - INFO - Updating 获取已服务的外部联系人 (local: None, remote: 1695268579)
-2025-12-02 07:23:36,594 - INFO - Processing document: 获取已服务的外部联系人 (ID: 50223)
-2025-12-02 07:23:36,899 - INFO - Saved: docs/企业内部开发/服务端API/客户联系/获取已服务的外部联系人.mdx
-2025-12-02 07:23:37,901 - INFO - Updating 获取下级/下游企业小程序session (local: None, remote: 1637228797)
-2025-12-02 07:23:37,901 - INFO - Processing document: 获取下级/下游企业小程序session (ID: 25574)
-2025-12-02 07:23:38,189 - INFO - Saved: docs/企业内部开发/服务端API/企业互联/获取下级下游企业小程序session.mdx
-2025-12-02 07:23:39,190 - INFO - Updating 获取下级/下游企业的access_token (local: None, remote: 1637225981)
-2025-12-02 07:23:39,190 - INFO - Processing document: 获取下级/下游企业的access_token (ID: 24919)
-2025-12-02 07:23:39,486 - INFO - Saved: docs/企业内部开发/服务端API/企业互联/获取下级下游企业的access_token.mdx
-2025-12-02 07:23:40,488 - INFO - Updating 概述 (local: None, remote: 1606211662)
-2025-12-02 07:23:40,488 - INFO - Processing document: 概述 (ID: 24909)
-2025-12-02 07:23:40,787 - INFO - Saved: docs/企业内部开发/服务端API/企业互联/概述.mdx
-2025-12-02 07:23:41,789 - INFO - Updating 获取应用共享信息 (local: None, remote: 1606709828)
-2025-12-02 07:23:41,789 - INFO - Processing document: 获取应用共享信息 (ID: 25951)
-2025-12-02 07:23:42,087 - INFO - Saved: docs/企业内部开发/服务端API/企业互联/获取应用共享信息.mdx
-2025-12-02 07:23:43,089 - INFO - Updating 批量获取汇报记录单号 (local: None, remote: 1606982660)
-2025-12-02 07:23:43,089 - INFO - Processing document: 批量获取汇报记录单号 (ID: 25844)
-2025-12-02 07:23:43,392 - INFO - Saved: docs/企业内部开发/服务端API/汇报/批量获取汇报记录单号.mdx
-2025-12-02 07:23:44,394 - INFO - Updating 获取汇报记录详情 (local: None, remote: 1606367658)
-2025-12-02 07:23:44,394 - INFO - Processing document: 获取汇报记录详情 (ID: 25845)
-2025-12-02 07:23:44,952 - INFO - Saved: docs/企业内部开发/服务端API/汇报/获取汇报记录详情.mdx
-2025-12-02 07:23:45,953 - INFO - Updating 获取汇报统计数据 (local: None, remote: 1606982865)
-2025-12-02 07:23:45,954 - INFO - Processing document: 获取汇报统计数据 (ID: 25846)
-2025-12-02 07:23:46,282 - INFO - Saved: docs/企业内部开发/服务端API/汇报/获取汇报统计数据.mdx
-2025-12-02 07:23:47,284 - INFO - Updating 概述 (local: None, remote: 1607436084)
-2025-12-02 07:23:47,284 - INFO - Processing document: 概述 (ID: 26566)
-2025-12-02 07:23:47,575 - INFO - Saved: docs/企业内部开发/服务端API/汇报/概述.mdx
-2025-12-02 07:23:48,576 - INFO - Updating 下载微盘文件 (local: None, remote: 1670424775)
-2025-12-02 07:23:48,576 - INFO - Processing document: 下载微盘文件 (ID: 44913)
-2025-12-02 07:23:48,864 - INFO - Saved: docs/企业内部开发/服务端API/汇报/下载微盘文件.mdx
-2025-12-02 07:23:49,865 - INFO - Updating 概述 (local: None, remote: 1607570499)
-2025-12-02 07:23:49,865 - INFO - Processing document: 概述 (ID: 25813)
-2025-12-02 07:23:50,158 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/概述.mdx
-2025-12-02 07:23:51,160 - INFO - Updating 获取配置的网格及网格负责人 (local: None, remote: 1607689050)
-2025-12-02 07:23:51,160 - INFO - Processing document: 获取配置的网格及网格负责人 (ID: 25638)
-2025-12-02 07:23:51,444 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取配置的网格及网格负责人.mdx
-2025-12-02 07:23:52,446 - INFO - Updating 获取单位居民上报数据统计 (local: None, remote: 1607689095)
-2025-12-02 07:23:52,446 - INFO - Processing document: 获取单位居民上报数据统计 (ID: 25637)
-2025-12-02 07:23:52,730 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取单位居民上报数据统计.mdx
-2025-12-02 07:23:53,732 - INFO - Updating 获取个人居民上报数据统计 (local: None, remote: 1607689125)
-2025-12-02 07:23:53,732 - INFO - Processing document: 获取个人居民上报数据统计 (ID: 25635)
-2025-12-02 07:23:54,021 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取个人居民上报数据统计.mdx
-2025-12-02 07:23:55,022 - INFO - Updating 获取上报事件分类统计 (local: None, remote: 1607689158)
-2025-12-02 07:23:55,022 - INFO - Processing document: 获取上报事件分类统计 (ID: 25634)
-2025-12-02 07:23:55,309 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取上报事件分类统计.mdx
-2025-12-02 07:23:56,311 - INFO - Updating 获取居民上报事件列表 (local: None, remote: 1607689211)
-2025-12-02 07:23:56,311 - INFO - Processing document: 获取居民上报事件列表 (ID: 25908)
-2025-12-02 07:23:56,627 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取居民上报事件列表.mdx
-2025-12-02 07:23:57,629 - INFO - Updating 获取居民上报的事件详情信息 (local: None, remote: 1607689239)
-2025-12-02 07:23:57,629 - INFO - Processing document: 获取居民上报的事件详情信息 (ID: 25636)
-2025-12-02 07:23:57,927 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/居民上报/获取居民上报的事件详情信息.mdx
-2025-12-02 07:23:58,929 - INFO - Updating 概述 (local: None, remote: 1607571510)
-2025-12-02 07:23:58,929 - INFO - Processing document: 概述 (ID: 25814)
-2025-12-02 07:23:59,220 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/概述.mdx
-2025-12-02 07:24:00,221 - INFO - Updating 获取配置的网格及网格负责人 (local: None, remote: 1607688784)
-2025-12-02 07:24:00,222 - INFO - Processing document: 获取配置的网格及网格负责人 (ID: 25653)
-2025-12-02 07:24:00,508 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取配置的网格及网格负责人.mdx
-2025-12-02 07:24:01,510 - INFO - Updating 获取单位巡查上报数据统计 (local: None, remote: 1607688856)
-2025-12-02 07:24:01,510 - INFO - Processing document: 获取单位巡查上报数据统计 (ID: 25652)
-2025-12-02 07:24:01,798 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取单位巡查上报数据统计.mdx
-2025-12-02 07:24:02,799 - INFO - Updating 获取个人巡查上报数据统计 (local: None, remote: 1607688905)
-2025-12-02 07:24:02,799 - INFO - Processing document: 获取个人巡查上报数据统计 (ID: 25650)
-2025-12-02 07:24:03,084 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取个人巡查上报数据统计.mdx
-2025-12-02 07:24:04,085 - INFO - Updating 获取上报事件分类统计 (local: None, remote: 1607688940)
-2025-12-02 07:24:04,085 - INFO - Processing document: 获取上报事件分类统计 (ID: 25649)
-2025-12-02 07:24:04,384 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取上报事件分类统计.mdx
-2025-12-02 07:24:05,385 - INFO - Updating 获取巡查上报的事件详情信息 (local: None, remote: 1607689000)
-2025-12-02 07:24:05,386 - INFO - Processing document: 获取巡查上报的事件详情信息 (ID: 25651)
-2025-12-02 07:24:05,693 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取巡查上报的事件详情信息.mdx
-2025-12-02 07:24:06,695 - INFO - Updating 获取巡查上报事件列表 (local: None, remote: 1607688974)
-2025-12-02 07:24:06,695 - INFO - Processing document: 获取巡查上报事件列表 (ID: 25914)
-2025-12-02 07:24:07,003 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/巡查上报/获取巡查上报事件列表.mdx
-2025-12-02 07:24:08,004 - INFO - Updating 添加网格 (local: None, remote: 1622015390)
-2025-12-02 07:24:08,005 - INFO - Processing document: 添加网格 (ID: 30068)
-2025-12-02 07:24:08,293 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/添加网格.mdx
-2025-12-02 07:24:09,294 - INFO - Updating 编辑网格 (local: None, remote: 1622023936)
-2025-12-02 07:24:09,294 - INFO - Processing document: 编辑网格 (ID: 30078)
-2025-12-02 07:24:09,579 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/编辑网格.mdx
-2025-12-02 07:24:10,581 - INFO - Updating 删除网格 (local: None, remote: 1622039639)
-2025-12-02 07:24:10,581 - INFO - Processing document: 删除网格 (ID: 30079)
-2025-12-02 07:24:10,871 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/删除网格.mdx
-2025-12-02 07:24:11,872 - INFO - Updating 获取网格列表 (local: None, remote: 1622039736)
-2025-12-02 07:24:11,873 - INFO - Processing document: 获取网格列表 (ID: 30080)
-2025-12-02 07:24:12,158 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/获取网格列表.mdx
-2025-12-02 07:24:13,159 - INFO - Updating 获取用户负责及参与的网格列表 (local: None, remote: 1622100530)
-2025-12-02 07:24:13,159 - INFO - Processing document: 获取用户负责及参与的网格列表 (ID: 30081)
-2025-12-02 07:24:13,446 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/获取用户负责及参与的网格列表.mdx
-2025-12-02 07:24:14,448 - INFO - Updating 概述 (local: None, remote: 1622019059)
-2025-12-02 07:24:14,448 - INFO - Processing document: 概述 (ID: 30633)
-2025-12-02 07:24:14,736 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置网格结构/概述.mdx
-2025-12-02 07:24:15,737 - INFO - Updating 添加事件类别 (local: None, remote: 1622041655)
-2025-12-02 07:24:15,737 - INFO - Processing document: 添加事件类别 (ID: 30082)
-2025-12-02 07:24:16,028 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置事件类别/添加事件类别.mdx
-2025-12-02 07:24:17,029 - INFO - Updating 修改事件类别 (local: None, remote: 1622041795)
-2025-12-02 07:24:17,029 - INFO - Processing document: 修改事件类别 (ID: 30083)
-2025-12-02 07:24:17,319 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置事件类别/修改事件类别.mdx
-2025-12-02 07:24:18,320 - INFO - Updating 删除事件类别 (local: None, remote: 1622041967)
-2025-12-02 07:24:18,320 - INFO - Processing document: 删除事件类别 (ID: 30084)
-2025-12-02 07:24:18,622 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置事件类别/删除事件类别.mdx
-2025-12-02 07:24:19,624 - INFO - Updating 获取事件类别列表 (local: None, remote: 1622042001)
-2025-12-02 07:24:19,624 - INFO - Processing document: 获取事件类别列表 (ID: 30455)
-2025-12-02 07:24:19,915 - INFO - Saved: docs/企业内部开发/服务端API/政民沟通/配置事件类别/获取事件类别列表.mdx
-2025-12-02 07:24:20,916 - INFO - Updating 概述 (local: None, remote: 1607949998)
-2025-12-02 07:24:20,917 - INFO - Processing document: 概述 (ID: 22789)
-2025-12-02 07:24:21,206 - INFO - Saved: docs/企业内部开发/服务端API/会议室/概述.mdx
-2025-12-02 07:24:22,208 - INFO - Updating 会议室管理 (local: None, remote: 1607950007)
-2025-12-02 07:24:22,208 - INFO - Processing document: 会议室管理 (ID: 22512)
-2025-12-02 07:24:22,531 - INFO - Saved: docs/企业内部开发/服务端API/会议室/会议室管理.mdx
-2025-12-02 07:24:23,533 - INFO - Updating 会议室预定管理 (local: None, remote: 1607950020)
-2025-12-02 07:24:23,533 - INFO - Processing document: 会议室预定管理 (ID: 22517)
-2025-12-02 07:24:23,884 - INFO - Saved: docs/企业内部开发/服务端API/会议室/会议室预定管理.mdx
-2025-12-02 07:24:24,886 - INFO - Updating 回调事件 (local: None, remote: 1638519757)
-2025-12-02 07:24:24,886 - INFO - Processing document: 回调事件 (ID: 36019)
-2025-12-02 07:24:25,188 - INFO - Saved: docs/企业内部开发/服务端API/会议室/回调事件.mdx
-2025-12-02 07:24:26,190 - INFO - Updating 概述 (local: None, remote: 1607950709)
-2025-12-02 07:24:26,190 - INFO - Processing document: 概述 (ID: 18555)
-2025-12-02 07:24:26,490 - INFO - Saved: docs/企业内部开发/服务端API/日程/概述.mdx
-2025-12-02 07:24:27,492 - INFO - Updating 更新日历 (local: None, remote: 1669860295)
-2025-12-02 07:24:27,492 - INFO - Processing document: 更新日历 (ID: 44557)
-2025-12-02 07:24:27,799 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日历/更新日历.mdx
-2025-12-02 07:24:28,801 - INFO - Updating 获取日历详情 (local: None, remote: 1669860317)
-2025-12-02 07:24:28,801 - INFO - Processing document: 获取日历详情 (ID: 44558)
-2025-12-02 07:24:29,100 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日历/获取日历详情.mdx
-2025-12-02 07:24:30,102 - INFO - Updating 删除日历 (local: None, remote: 1669860336)
-2025-12-02 07:24:30,102 - INFO - Processing document: 删除日历 (ID: 44559)
-2025-12-02 07:24:30,391 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日历/删除日历.mdx
-2025-12-02 07:24:31,393 - INFO - Updating 更新日程 (local: None, remote: 1669860801)
-2025-12-02 07:24:31,393 - INFO - Processing document: 更新日程 (ID: 44567)
-2025-12-02 07:24:31,831 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/更新日程.mdx
-2025-12-02 07:24:32,832 - INFO - Updating 新增日程参与者 (local: None, remote: 1669860821)
-2025-12-02 07:24:32,833 - INFO - Processing document: 新增日程参与者 (ID: 44568)
-2025-12-02 07:24:33,122 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/新增日程参与者.mdx
-2025-12-02 07:24:34,124 - INFO - Updating 删除日程参与者 (local: None, remote: 1669860851)
-2025-12-02 07:24:34,124 - INFO - Processing document: 删除日程参与者 (ID: 44569)
-2025-12-02 07:24:34,411 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/删除日程参与者.mdx
-2025-12-02 07:24:35,412 - INFO - Updating 获取日历下的日程列表 (local: None, remote: 1669860879)
-2025-12-02 07:24:35,412 - INFO - Processing document: 获取日历下的日程列表 (ID: 44570)
-2025-12-02 07:24:35,716 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/获取日历下的日程列表.mdx
-2025-12-02 07:24:36,717 - INFO - Updating 获取日程详情 (local: None, remote: 1669860904)
-2025-12-02 07:24:36,718 - INFO - Processing document: 获取日程详情 (ID: 44571)
-2025-12-02 07:24:37,020 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/获取日程详情.mdx
-2025-12-02 07:24:38,022 - INFO - Updating 取消日程 (local: None, remote: 1669860934)
-2025-12-02 07:24:38,022 - INFO - Processing document: 取消日程 (ID: 44573)
-2025-12-02 07:24:38,312 - INFO - Saved: docs/企业内部开发/服务端API/日程/管理日程/取消日程.mdx
-2025-12-02 07:24:39,313 - INFO - Updating 删除日历事件 (local: None, remote: 1669861947)
-2025-12-02 07:24:39,313 - INFO - Processing document: 删除日历事件 (ID: 44583)
-2025-12-02 07:24:39,603 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/删除日历事件.mdx
-2025-12-02 07:24:40,605 - INFO - Updating 修改日历事件 (local: None, remote: 1669862010)
-2025-12-02 07:24:40,605 - INFO - Processing document: 修改日历事件 (ID: 44584)
-2025-12-02 07:24:40,891 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/修改日历事件.mdx
-2025-12-02 07:24:41,893 - INFO - Updating 修改日程事件 (local: None, remote: 1669862050)
-2025-12-02 07:24:41,893 - INFO - Processing document: 修改日程事件 (ID: 44585)
-2025-12-02 07:24:42,195 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/修改日程事件.mdx
-2025-12-02 07:24:43,197 - INFO - Updating 删除日程事件 (local: None, remote: 1669862087)
-2025-12-02 07:24:43,197 - INFO - Processing document: 删除日程事件 (ID: 44587)
-2025-12-02 07:24:43,495 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/删除日程事件.mdx
-2025-12-02 07:24:44,496 - INFO - Updating 日程回执事件 (local: None, remote: 1672980031)
-2025-12-02 07:24:44,496 - INFO - Processing document: 日程回执事件 (ID: 45406)
-2025-12-02 07:24:44,786 - INFO - Saved: docs/企业内部开发/服务端API/日程/回调通知/日程回执事件.mdx
-2025-12-02 07:24:45,787 - INFO - Updating 概述 (local: None, remote: 1607950804)
-2025-12-02 07:24:45,787 - INFO - Processing document: 概述 (ID: 25775)
-2025-12-02 07:24:46,081 - INFO - Saved: docs/企业内部开发/服务端API/会议/概述.mdx
-2025-12-02 07:24:47,083 - INFO - Updating 创建预约会议 (local: None, remote: 1682071068)
-2025-12-02 07:24:47,083 - INFO - Processing document: 创建预约会议 (ID: 45733)
-2025-12-02 07:24:47,404 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/创建预约会议.mdx
-2025-12-02 07:24:48,405 - INFO - Updating 获取会议详情 (local: None, remote: 1682349398)
-2025-12-02 07:24:48,405 - INFO - Processing document: 获取会议详情 (ID: 45739)
-2025-12-02 07:24:49,272 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议详情.mdx
-2025-12-02 07:24:50,273 - INFO - Updating 取消预约会议 (local: None, remote: 1682331075)
-2025-12-02 07:24:50,273 - INFO - Processing document: 取消预约会议 (ID: 45756)
-2025-12-02 07:24:50,571 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/取消预约会议.mdx
-2025-12-02 07:24:51,573 - INFO - Updating 修改预约会议 (local: None, remote: 1682331139)
-2025-12-02 07:24:51,573 - INFO - Processing document: 修改预约会议 (ID: 45762)
-2025-12-02 07:24:51,903 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/修改预约会议.mdx
-2025-12-02 07:24:52,905 - INFO - Updating 获取已参会成员列表 (local: None, remote: 1685459952)
-2025-12-02 07:24:52,905 - INFO - Processing document: 获取已参会成员列表 (ID: 45769)
-2025-12-02 07:24:53,207 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取已参会成员列表.mdx
-2025-12-02 07:24:54,208 - INFO - Updating 获取实时会中成员列表 (local: None, remote: 1682349295)
-2025-12-02 07:24:54,208 - INFO - Processing document: 获取实时会中成员列表 (ID: 45780)
-2025-12-02 07:24:54,503 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取实时会中成员列表.mdx
-2025-12-02 07:24:55,504 - INFO - Updating 获取会议受邀成员列表 (local: None, remote: 1676874851)
-2025-12-02 07:24:55,504 - INFO - Processing document: 获取会议受邀成员列表 (ID: 45799)
-2025-12-02 07:24:55,805 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议受邀成员列表.mdx
-2025-12-02 07:24:56,806 - INFO - Updating 更新会议受邀成员列表 (local: None, remote: 1682334489)
-2025-12-02 07:24:56,806 - INFO - Processing document: 更新会议受邀成员列表 (ID: 45821)
-2025-12-02 07:24:57,091 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/更新会议受邀成员列表.mdx
-2025-12-02 07:24:58,092 - INFO - Updating 获取实时等候室成员列表 (local: None, remote: 1676880879)
-2025-12-02 07:24:58,092 - INFO - Processing document: 获取实时等候室成员列表 (ID: 45824)
-2025-12-02 07:24:58,398 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取实时等候室成员列表.mdx
-2025-12-02 07:24:59,399 - INFO - Updating 获取等候室成员记录 (local: None, remote: 1682413020)
-2025-12-02 07:24:59,399 - INFO - Processing document: 获取等候室成员记录 (ID: 45825)
-2025-12-02 07:24:59,693 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取等候室成员记录.mdx
-2025-12-02 07:25:00,695 - INFO - Updating 获取成员设备是否入会 (local: None, remote: 1682349306)
-2025-12-02 07:25:00,695 - INFO - Processing document: 获取成员设备是否入会 (ID: 45835)
-2025-12-02 07:25:00,993 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取成员设备是否入会.mdx
-2025-12-02 07:25:01,994 - INFO - Updating 获取成员会议ID列表 (local: None, remote: 1682423035)
-2025-12-02 07:25:01,994 - INFO - Processing document: 获取成员会议ID列表 (ID: 25438)
-2025-12-02 07:25:02,292 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取成员会议ID列表.mdx
-2025-12-02 07:25:03,294 - INFO - Updating 获取会议成员报名 ID (local: None, remote: 1682349316)
-2025-12-02 07:25:03,294 - INFO - Processing document: 获取会议成员报名 ID (ID: 47182)
-2025-12-02 07:25:03,598 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议成员报名 ID.mdx
-2025-12-02 07:25:04,599 - INFO - Updating 修改会议报名配置 (local: None, remote: 1679562072)
-2025-12-02 07:25:04,599 - INFO - Processing document: 修改会议报名配置 (ID: 47185)
-2025-12-02 07:25:04,905 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/修改会议报名配置.mdx
-2025-12-02 07:25:05,906 - INFO - Updating 获取会议报名配置 (local: None, remote: 1682410360)
-2025-12-02 07:25:05,906 - INFO - Processing document: 获取会议报名配置 (ID: 47194)
-2025-12-02 07:25:06,199 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议报名配置.mdx
-2025-12-02 07:25:07,200 - INFO - Updating 审批会议报名信息 (local: None, remote: 1679569565)
-2025-12-02 07:25:07,200 - INFO - Processing document: 审批会议报名信息 (ID: 47204)
-2025-12-02 07:25:07,495 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/审批会议报名信息.mdx
-2025-12-02 07:25:08,497 - INFO - Updating 获取会议报名信息 (local: None, remote: 1682410316)
-2025-12-02 07:25:08,497 - INFO - Processing document: 获取会议报名信息 (ID: 47207)
-2025-12-02 07:25:08,813 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议报名信息.mdx
-2025-12-02 07:25:09,815 - INFO - Updating 导入会议报名信息 (local: None, remote: 1679573070)
-2025-12-02 07:25:09,815 - INFO - Processing document: 导入会议报名信息 (ID: 47221)
-2025-12-02 07:25:10,119 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/导入会议报名信息.mdx
-2025-12-02 07:25:11,120 - INFO - Updating 删除会议报名信息 (local: None, remote: 1679574388)
-2025-12-02 07:25:11,120 - INFO - Processing document: 删除会议报名信息 (ID: 47222)
-2025-12-02 07:25:11,409 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/删除会议报名信息.mdx
-2025-12-02 07:25:12,410 - INFO - Updating 创建用户专属参会链接 (local: None, remote: 1679575422)
-2025-12-02 07:25:12,411 - INFO - Processing document: 创建用户专属参会链接 (ID: 47223)
-2025-12-02 07:25:12,706 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/创建用户专属参会链接.mdx
-2025-12-02 07:25:13,708 - INFO - Updating 获取用户专属参会链接 (local: None, remote: 1679575625)
-2025-12-02 07:25:13,708 - INFO - Processing document: 获取用户专属参会链接 (ID: 47225)
-2025-12-02 07:25:13,996 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取用户专属参会链接.mdx
-2025-12-02 07:25:14,998 - INFO - Updating 获取会议健康度 (local: None, remote: 1682410182)
-2025-12-02 07:25:14,998 - INFO - Processing document: 获取会议健康度 (ID: 47227)
-2025-12-02 07:25:15,301 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议健康度.mdx
-2025-12-02 07:25:16,303 - INFO - Updating 获取会议嘉宾列表 (local: None, remote: 1682423742)
-2025-12-02 07:25:16,303 - INFO - Processing document: 获取会议嘉宾列表 (ID: 47248)
-2025-12-02 07:25:16,605 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/获取会议嘉宾列表.mdx
-2025-12-02 07:25:17,606 - INFO - Updating 更新会议嘉宾列表 (local: None, remote: 1682357688)
-2025-12-02 07:25:17,606 - INFO - Processing document: 更新会议嘉宾列表 (ID: 47249)
-2025-12-02 07:25:17,904 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议高级管理/更新会议嘉宾列表.mdx
-2025-12-02 07:25:18,905 - INFO - Updating 管理会中设置 (local: None, remote: 1682349637)
-2025-12-02 07:25:18,905 - INFO - Processing document: 管理会中设置 (ID: 45855)
-2025-12-02 07:25:19,210 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/管理会中设置.mdx
-2025-12-02 07:25:20,211 - INFO - Updating 管理联席主持人 (local: None, remote: 1682349664)
-2025-12-02 07:25:20,211 - INFO - Processing document: 管理联席主持人 (ID: 45860)
-2025-12-02 07:25:20,500 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/管理联席主持人.mdx
-2025-12-02 07:25:21,501 - INFO - Updating 移出成员 (local: None, remote: 1682408992)
-2025-12-02 07:25:21,502 - INFO - Processing document: 移出成员 (ID: 45862)
-2025-12-02 07:25:21,786 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/移出成员.mdx
-2025-12-02 07:25:22,788 - INFO - Updating 静音成员 (local: None, remote: 1682350043)
-2025-12-02 07:25:22,788 - INFO - Processing document: 静音成员 (ID: 45865)
-2025-12-02 07:25:23,118 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/静音成员.mdx
-2025-12-02 07:25:24,120 - INFO - Updating 关闭成员屏幕共享 (local: None, remote: 1682516650)
-2025-12-02 07:25:24,120 - INFO - Processing document: 关闭成员屏幕共享 (ID: 45866)
-2025-12-02 07:25:24,415 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/关闭成员屏幕共享.mdx
-2025-12-02 07:25:25,416 - INFO - Updating 管理等候室成员 (local: None, remote: 1682349886)
-2025-12-02 07:25:25,416 - INFO - Processing document: 管理等候室成员 (ID: 45873)
-2025-12-02 07:25:25,714 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/管理等候室成员.mdx
-2025-12-02 07:25:26,715 - INFO - Updating 结束会议 (local: None, remote: 1676895742)
-2025-12-02 07:25:26,716 - INFO - Processing document: 结束会议 (ID: 45875)
-2025-12-02 07:25:27,005 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/结束会议.mdx
-2025-12-02 07:25:28,007 - INFO - Updating 修改成员在会中显示的昵称 (local: None, remote: 1682516798)
-2025-12-02 07:25:28,007 - INFO - Processing document: 修改成员在会中显示的昵称 (ID: 45876)
-2025-12-02 07:25:28,297 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/修改成员在会中显示的昵称.mdx
-2025-12-02 07:25:29,299 - INFO - Updating 关闭或开启成员视频 (local: None, remote: 1682350069)
-2025-12-02 07:25:29,299 - INFO - Processing document: 关闭或开启成员视频 (ID: 45886)
-2025-12-02 07:25:29,599 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/关闭或开启成员视频.mdx
-2025-12-02 07:25:30,601 - INFO - Updating 创建会议投票主题 (local: None, remote: 1679640377)
-2025-12-02 07:25:30,601 - INFO - Processing document: 创建会议投票主题 (ID: 47252)
-2025-12-02 07:25:30,904 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/创建会议投票主题.mdx
-2025-12-02 07:25:31,906 - INFO - Updating 修改会议投票主题 (local: None, remote: 1679640616)
-2025-12-02 07:25:31,906 - INFO - Processing document: 修改会议投票主题 (ID: 47253)
-2025-12-02 07:25:32,204 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/修改会议投票主题.mdx
-2025-12-02 07:25:33,205 - INFO - Updating 获取会议投票列表 (local: None, remote: 1685430467)
-2025-12-02 07:25:33,205 - INFO - Processing document: 获取会议投票列表 (ID: 47255)
-2025-12-02 07:25:33,512 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/获取会议投票列表.mdx
-2025-12-02 07:25:34,513 - INFO - Updating 获取会议投票主题信息 (local: None, remote: 1685430479)
-2025-12-02 07:25:34,513 - INFO - Processing document: 获取会议投票主题信息 (ID: 47258)
-2025-12-02 07:25:34,816 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/获取会议投票主题信息.mdx
-2025-12-02 07:25:35,818 - INFO - Updating 获取会议投票详情 (local: None, remote: 1685430508)
-2025-12-02 07:25:35,818 - INFO - Processing document: 获取会议投票详情 (ID: 47263)
-2025-12-02 07:25:36,117 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/获取会议投票详情.mdx
-2025-12-02 07:25:37,118 - INFO - Updating 删除会议投票 (local: None, remote: 1679646677)
-2025-12-02 07:25:37,118 - INFO - Processing document: 删除会议投票 (ID: 47270)
-2025-12-02 07:25:37,404 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/删除会议投票.mdx
-2025-12-02 07:25:38,405 - INFO - Updating 发起会议投票 (local: None, remote: 1679647360)
-2025-12-02 07:25:38,405 - INFO - Processing document: 发起会议投票 (ID: 47276)
-2025-12-02 07:25:38,698 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/发起会议投票.mdx
-2025-12-02 07:25:39,699 - INFO - Updating 结束会议投票 (local: None, remote: 1679647634)
-2025-12-02 07:25:39,699 - INFO - Processing document: 结束会议投票 (ID: 47277)
-2025-12-02 07:25:39,985 - INFO - Saved: docs/企业内部开发/服务端API/会议/会中控制管理/结束会议投票.mdx
-2025-12-02 07:25:40,986 - INFO - Updating 获取会议录制列表 (local: None, remote: 1685431425)
-2025-12-02 07:25:40,986 - INFO - Processing document: 获取会议录制列表 (ID: 45889)
-2025-12-02 07:25:41,284 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取会议录制列表.mdx
-2025-12-02 07:25:42,286 - INFO - Updating 获取会议录制地址 (local: None, remote: 1744597222)
-2025-12-02 07:25:42,286 - INFO - Processing document: 获取会议录制地址 (ID: 45897)
-2025-12-02 07:25:42,587 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取会议录制地址.mdx
-2025-12-02 07:25:43,589 - INFO - Updating 获取单个录制文件详情 (local: None, remote: 1744597180)
-2025-12-02 07:25:43,589 - INFO - Processing document: 获取单个录制文件详情 (ID: 45905)
-2025-12-02 07:25:43,882 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取单个录制文件详情.mdx
-2025-12-02 07:25:44,884 - INFO - Updating 删除会议录制 (local: None, remote: 1676951336)
-2025-12-02 07:25:44,884 - INFO - Processing document: 删除会议录制 (ID: 45909)
-2025-12-02 07:25:45,168 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/删除会议录制.mdx
-2025-12-02 07:25:46,170 - INFO - Updating 删除单个录制文件 (local: None, remote: 1676951643)
-2025-12-02 07:25:46,170 - INFO - Processing document: 删除单个录制文件 (ID: 45910)
-2025-12-02 07:25:46,458 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/删除单个录制文件.mdx
-2025-12-02 07:25:47,459 - INFO - Updating 修改会议录制共享设置 (local: None, remote: 1676955341)
-2025-12-02 07:25:47,459 - INFO - Processing document: 修改会议录制共享设置 (ID: 45912)
-2025-12-02 07:25:47,756 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/修改会议录制共享设置.mdx
-2025-12-02 07:25:48,758 - INFO - Updating 获取录制文件访问统计 (local: None, remote: 1685457806)
-2025-12-02 07:25:48,758 - INFO - Processing document: 获取录制文件访问统计 (ID: 45914)
-2025-12-02 07:25:49,044 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取录制文件访问统计.mdx
-2025-12-02 07:25:50,045 - INFO - Updating 获取录制转写详情 (local: None, remote: 1744603195)
-2025-12-02 07:25:50,045 - INFO - Processing document: 获取录制转写详情 (ID: 45916)
-2025-12-02 07:25:50,347 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取录制转写详情.mdx
-2025-12-02 07:25:51,349 - INFO - Updating 获取录制转写段落信息 (local: None, remote: 1744603063)
-2025-12-02 07:25:51,349 - INFO - Processing document: 获取录制转写段落信息 (ID: 45920)
-2025-12-02 07:25:51,706 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取录制转写段落信息.mdx
-2025-12-02 07:25:52,707 - INFO - Updating 获取录制转写搜索结果 (local: None, remote: 1744603274)
-2025-12-02 07:25:52,707 - INFO - Processing document: 获取录制转写搜索结果 (ID: 45921)
-2025-12-02 07:25:52,991 - INFO - Saved: docs/企业内部开发/服务端API/会议/录制管理/获取录制转写搜索结果.mdx
-2025-12-02 07:25:53,993 - INFO - Updating 会议开始事件 (local: None, remote: 1676970583)
-2025-12-02 07:25:53,993 - INFO - Processing document: 会议开始事件 (ID: 46054)
-2025-12-02 07:25:54,293 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议开始事件.mdx
-2025-12-02 07:25:55,294 - INFO - Updating 会议结束事件 (local: None, remote: 1676970655)
-2025-12-02 07:25:55,294 - INFO - Processing document: 会议结束事件 (ID: 46059)
-2025-12-02 07:25:55,590 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议结束事件.mdx
-2025-12-02 07:25:56,591 - INFO - Updating 会议全体静音事件 (local: None, remote: 1676970798)
-2025-12-02 07:25:56,591 - INFO - Processing document: 会议全体静音事件 (ID: 46063)
-2025-12-02 07:25:56,884 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议全体静音事件.mdx
-2025-12-02 07:25:57,886 - INFO - Updating 会议解除全体静音事件 (local: None, remote: 1676970842)
-2025-12-02 07:25:57,886 - INFO - Processing document: 会议解除全体静音事件 (ID: 46067)
-2025-12-02 07:25:58,193 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议解除全体静音事件.mdx
-2025-12-02 07:25:59,194 - INFO - Updating 成员入会事件 (local: None, remote: 1682411941)
-2025-12-02 07:25:59,194 - INFO - Processing document: 成员入会事件 (ID: 46070)
-2025-12-02 07:25:59,490 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员入会事件.mdx
-2025-12-02 07:26:00,491 - INFO - Updating 成员离会事件 (local: None, remote: 1682411991)
-2025-12-02 07:26:00,492 - INFO - Processing document: 成员离会事件 (ID: 46078)
-2025-12-02 07:26:00,791 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员离会事件.mdx
-2025-12-02 07:26:01,793 - INFO - Updating 成员等待主持人入会事件 (local: None, remote: 1682257101)
-2025-12-02 07:26:01,793 - INFO - Processing document: 成员等待主持人入会事件 (ID: 46079)
-2025-12-02 07:26:02,100 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员等待主持人入会事件.mdx
-2025-12-02 07:26:03,101 - INFO - Updating 成员进入等候室事件 (local: None, remote: 1682412096)
-2025-12-02 07:26:03,101 - INFO - Processing document: 成员进入等候室事件 (ID: 46081)
-2025-12-02 07:26:03,400 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员进入等候室事件.mdx
-2025-12-02 07:26:04,402 - INFO - Updating 成员离开等候室事件 (local: None, remote: 1682412152)
-2025-12-02 07:26:04,402 - INFO - Processing document: 成员离开等候室事件 (ID: 46082)
-2025-12-02 07:26:04,714 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员离开等候室事件.mdx
-2025-12-02 07:26:05,715 - INFO - Updating 成员从等候室进入会议事件 (local: None, remote: 1682412123)
-2025-12-02 07:26:05,715 - INFO - Processing document: 成员从等候室进入会议事件 (ID: 46179)
-2025-12-02 07:26:06,019 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员从等候室进入会议事件.mdx
-2025-12-02 07:26:07,020 - INFO - Updating 成员从会议中被移入等候室事件 (local: None, remote: 1682412535)
-2025-12-02 07:26:07,020 - INFO - Processing document: 成员从会议中被移入等候室事件 (ID: 46180)
-2025-12-02 07:26:07,323 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/成员从会议中被移入等候室事件.mdx
-2025-12-02 07:26:08,324 - INFO - Updating 共享屏幕开启事件 (local: None, remote: 1677033069)
-2025-12-02 07:26:08,324 - INFO - Processing document: 共享屏幕开启事件 (ID: 46181)
-2025-12-02 07:26:08,623 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/共享屏幕开启事件.mdx
-2025-12-02 07:26:09,624 - INFO - Updating 共享屏幕结束事件 (local: None, remote: 1677033169)
-2025-12-02 07:26:09,624 - INFO - Processing document: 共享屏幕结束事件 (ID: 46182)
-2025-12-02 07:26:09,928 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/共享屏幕结束事件.mdx
-2025-12-02 07:26:10,929 - INFO - Updating 会议成员角色变更事件 (local: None, remote: 1682412445)
-2025-12-02 07:26:10,929 - INFO - Processing document: 会议成员角色变更事件 (ID: 46186)
-2025-12-02 07:26:11,230 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议成员角色变更事件.mdx
-2025-12-02 07:26:12,231 - INFO - Updating 开始云录制事件 (local: None, remote: 1685521437)
-2025-12-02 07:26:12,231 - INFO - Processing document: 开始云录制事件 (ID: 46187)
-2025-12-02 07:26:12,545 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/开始云录制事件.mdx
-2025-12-02 07:26:13,546 - INFO - Updating 暂停云录制事件 (local: None, remote: 1677033543)
-2025-12-02 07:26:13,546 - INFO - Processing document: 暂停云录制事件 (ID: 46188)
-2025-12-02 07:26:13,853 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/暂停云录制事件.mdx
-2025-12-02 07:26:14,855 - INFO - Updating 恢复云录制事件 (local: None, remote: 1677033703)
-2025-12-02 07:26:14,855 - INFO - Processing document: 恢复云录制事件 (ID: 46190)
-2025-12-02 07:26:15,158 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/恢复云录制事件.mdx
-2025-12-02 07:26:16,159 - INFO - Updating 停止云录制事件 (local: None, remote: 1677034042)
-2025-12-02 07:26:16,159 - INFO - Processing document: 停止云录制事件 (ID: 46191)
-2025-12-02 07:26:16,464 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/停止云录制事件.mdx
-2025-12-02 07:26:17,466 - INFO - Updating 云录制已完成事件 (local: None, remote: 1677034081)
-2025-12-02 07:26:17,466 - INFO - Processing document: 云录制已完成事件 (ID: 46192)
-2025-12-02 07:26:17,771 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/云录制已完成事件.mdx
-2025-12-02 07:26:18,772 - INFO - Updating 删除云录制事件 (local: None, remote: 1677034211)
-2025-12-02 07:26:18,772 - INFO - Processing document: 删除云录制事件 (ID: 46194)
-2025-12-02 07:26:19,075 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/删除云录制事件.mdx
-2025-12-02 07:26:20,077 - INFO - Updating 网络研讨会成员角色变更事件 (local: None, remote: 1682412489)
-2025-12-02 07:26:20,077 - INFO - Processing document: 网络研讨会成员角色变更事件 (ID: 47133)
-2025-12-02 07:26:20,375 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/网络研讨会成员角色变更事件.mdx
-2025-12-02 07:26:21,376 - INFO - Updating 网络研讨会暖场上传结果 (local: None, remote: 1679540164)
-2025-12-02 07:26:21,376 - INFO - Processing document: 网络研讨会暖场上传结果 (ID: 47138)
-2025-12-02 07:26:21,661 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/网络研讨会暖场上传结果.mdx
-2025-12-02 07:26:22,662 - INFO - Updating PSTN 外呼状态更新事件 (local: None, remote: 1679541515)
-2025-12-02 07:26:22,662 - INFO - Processing document: PSTN 外呼状态更新事件 (ID: 47142)
-2025-12-02 07:26:22,952 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/PSTN 外呼状态更新事件.mdx
-2025-12-02 07:26:23,953 - INFO - Updating 素材上传结果 (local: None, remote: 1679541327)
-2025-12-02 07:26:23,953 - INFO - Processing document: 素材上传结果 (ID: 47145)
-2025-12-02 07:26:24,256 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/素材上传结果.mdx
-2025-12-02 07:26:25,258 - INFO - Updating 用户报名事件 (local: None, remote: 1679541757)
-2025-12-02 07:26:25,258 - INFO - Processing document: 用户报名事件 (ID: 47152)
-2025-12-02 07:26:25,564 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/用户报名事件.mdx
-2025-12-02 07:26:26,566 - INFO - Updating 用户取消报名事件 (local: None, remote: 1679541812)
-2025-12-02 07:26:26,566 - INFO - Processing document: 用户取消报名事件 (ID: 47153)
-2025-12-02 07:26:26,876 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/用户取消报名事件.mdx
-2025-12-02 07:26:27,878 - INFO - Updating 会议室应答事件 (local: None, remote: 1679542719)
-2025-12-02 07:26:27,878 - INFO - Processing document: 会议室应答事件 (ID: 47154)
-2025-12-02 07:26:28,187 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议室应答事件.mdx
-2025-12-02 07:26:29,188 - INFO - Updating 修改会议事件 (local: None, remote: 1682478540)
-2025-12-02 07:26:29,188 - INFO - Processing document: 修改会议事件 (ID: 48488)
-2025-12-02 07:26:29,476 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/修改会议事件.mdx
-2025-12-02 07:26:30,478 - INFO - Updating  取消会议事件 (local: None, remote: 1682478556)
-2025-12-02 07:26:30,478 - INFO - Processing document:  取消会议事件 (ID: 48489)
-2025-12-02 07:26:30,769 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/取消会议事件.mdx
-2025-12-02 07:26:31,770 - INFO - Updating 概述 (local: None, remote: 1683383643)
-2025-12-02 07:26:31,770 - INFO - Processing document: 概述 (ID: 48645)
-2025-12-02 07:26:32,058 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/概述.mdx
-2025-12-02 07:26:33,060 - INFO - Updating 会议发起事件 (local: None, remote: 1709623221)
-2025-12-02 07:26:33,060 - INFO - Processing document: 会议发起事件 (ID: 52619)
-2025-12-02 07:26:33,345 - INFO - Saved: docs/企业内部开发/服务端API/会议/回调通知/会议发起事件.mdx
-2025-12-02 07:26:34,346 - INFO - Updating 获取 MRA 状态信息 (local: None, remote: 1682350294)
-2025-12-02 07:26:34,347 - INFO - Processing document: 获取 MRA 状态信息 (ID: 47165)
-2025-12-02 07:26:34,638 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议室连接器（MRA）管理/获取 MRA 状态信息.mdx
-2025-12-02 07:26:35,639 - INFO - Updating 切换 MRA 默认布局 (local: None, remote: 1679556650)
-2025-12-02 07:26:35,639 - INFO - Processing document: 切换 MRA 默认布局 (ID: 47174)
-2025-12-02 07:26:35,943 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议室连接器（MRA）管理/切换 MRA 默认布局.mdx
-2025-12-02 07:26:36,944 - INFO - Updating 设置 MRA 举手或手放下 (local: None, remote: 1679557662)
-2025-12-02 07:26:36,944 - INFO - Processing document: 设置 MRA 举手或手放下 (ID: 47177)
-2025-12-02 07:26:37,232 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议室连接器（MRA）管理/设置 MRA 举手或手放下.mdx
-2025-12-02 07:26:38,233 - INFO - Updating 挂断 MRA 呼叫 (local: None, remote: 1682350464)
-2025-12-02 07:26:38,233 - INFO - Processing document: 挂断 MRA 呼叫 (ID: 47178)
-2025-12-02 07:26:38,523 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议室连接器（MRA）管理/挂断 MRA 呼叫.mdx
-2025-12-02 07:26:39,524 - INFO - Updating 预定Rooms会议室 (local: None, remote: 1685458924)
-2025-12-02 07:26:39,524 - INFO - Processing document: 预定Rooms会议室 (ID: 47179)
-2025-12-02 07:26:39,833 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/预定Rooms会议室.mdx
-2025-12-02 07:26:40,835 - INFO - Updating 释放Rooms会议室 (local: None, remote: 1685459269)
-2025-12-02 07:26:40,835 - INFO - Processing document: 释放Rooms会议室 (ID: 47180)
-2025-12-02 07:26:41,126 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/释放Rooms会议室.mdx
-2025-12-02 07:26:42,127 - INFO - Updating 获取Rooms会议室详情 (local: None, remote: 1685459200)
-2025-12-02 07:26:42,127 - INFO - Processing document: 获取Rooms会议室详情 (ID: 47181)
-2025-12-02 07:26:42,441 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室详情.mdx
-2025-12-02 07:26:43,443 - INFO - Updating 获取Rooms会议室列表 (local: None, remote: 1685459250)
-2025-12-02 07:26:43,443 - INFO - Processing document: 获取Rooms会议室列表 (ID: 47183)
-2025-12-02 07:26:43,749 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室列表.mdx
-2025-12-02 07:26:44,750 - INFO - Updating 获取Rooms会议室下的会议列表 (local: None, remote: 1685459142)
-2025-12-02 07:26:44,751 - INFO - Processing document: 获取Rooms会议室下的会议列表 (ID: 47184)
-2025-12-02 07:26:45,045 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室下的会议列表.mdx
-2025-12-02 07:26:46,046 - INFO - Updating 获取设备列表 (local: None, remote: 1685430946)
-2025-12-02 07:26:46,047 - INFO - Processing document: 获取设备列表 (ID: 47186)
-2025-12-02 07:26:46,357 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取设备列表.mdx
-2025-12-02 07:26:47,358 - INFO - Updating 获取控制器列表 (local: None, remote: 1685431002)
-2025-12-02 07:26:47,358 - INFO - Processing document: 获取控制器列表 (ID: 47189)
-2025-12-02 07:26:47,668 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取控制器列表.mdx
-2025-12-02 07:26:48,670 - INFO - Updating 获取Rooms会议室配置项 (local: None, remote: 1685459091)
-2025-12-02 07:26:48,670 - INFO - Processing document: 获取Rooms会议室配置项 (ID: 47197)
-2025-12-02 07:26:48,973 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室配置项.mdx
-2025-12-02 07:26:49,975 - INFO - Updating 呼叫Rooms会议室 (local: None, remote: 1685459057)
-2025-12-02 07:26:49,975 - INFO - Processing document: 呼叫Rooms会议室 (ID: 47200)
-2025-12-02 07:26:50,265 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/呼叫Rooms会议室.mdx
-2025-12-02 07:26:51,266 - INFO - Updating 取消呼叫Rooms会议室 (local: None, remote: 1685459034)
-2025-12-02 07:26:51,266 - INFO - Processing document: 取消呼叫Rooms会议室 (ID: 47202)
-2025-12-02 07:26:51,550 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/取消呼叫Rooms会议室.mdx
-2025-12-02 07:26:52,552 - INFO - Updating 获取Rooms会议室应答状态 (local: None, remote: 1685458982)
-2025-12-02 07:26:52,552 - INFO - Processing document: 获取Rooms会议室应答状态 (ID: 47203)
-2025-12-02 07:26:52,845 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室应答状态.mdx
-2025-12-02 07:26:53,846 - INFO - Updating 获取Rooms会议室资源 (local: None, remote: 1685461215)
-2025-12-02 07:26:53,846 - INFO - Processing document: 获取Rooms会议室资源 (ID: 47206)
-2025-12-02 07:26:54,129 - INFO - Saved: docs/企业内部开发/服务端API/会议/Rooms会议室管理/获取Rooms会议室资源.mdx
-2025-12-02 07:26:55,130 - INFO - Updating 获取布局模板列表 (local: None, remote: 1685461447)
-2025-12-02 07:26:55,130 - INFO - Processing document: 获取布局模板列表 (ID: 47291)
-2025-12-02 07:26:55,417 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/获取布局模板列表.mdx
-2025-12-02 07:26:56,418 - INFO - Updating 添加会议基础布局 (local: None, remote: 1685461813)
-2025-12-02 07:26:56,418 - INFO - Processing document: 添加会议基础布局 (ID: 47292)
-2025-12-02 07:26:56,720 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/添加会议基础布局.mdx
-2025-12-02 07:26:57,722 - INFO - Updating 修改会议基础布局 (local: None, remote: 1685461848)
-2025-12-02 07:26:57,722 - INFO - Processing document: 修改会议基础布局 (ID: 47293)
-2025-12-02 07:26:58,012 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/修改会议基础布局.mdx
-2025-12-02 07:26:59,013 - INFO - Updating 设置会议默认布局 (local: None, remote: 1679887837)
-2025-12-02 07:26:59,013 - INFO - Processing document: 设置会议默认布局 (ID: 47294)
+2025-12-02 07:42:21,496 - INFO - Starting WeWork documentation crawler...
+2025-12-02 07:42:21,497 - INFO - Extracting categories from https://developer.work.weixin.qq.com/document/path/90195
+2025-12-02 07:42:23,241 - INFO - Found 4275 categories
+2025-12-02 07:42:24,723 - INFO - Skipping 简易教程 (already up-to-date)
+2025-12-02 07:42:24,723 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,723 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,723 - INFO - Skipping 创建成员 (already up-to-date)
+2025-12-02 07:42:24,724 - INFO - Skipping 读取成员 (already up-to-date)
+2025-12-02 07:42:24,724 - INFO - Skipping 更新成员 (already up-to-date)
+2025-12-02 07:42:24,724 - INFO - Skipping 删除成员 (already up-to-date)
+2025-12-02 07:42:24,724 - INFO - Skipping 批量删除成员 (already up-to-date)
+2025-12-02 07:42:24,724 - INFO - Skipping 获取部门成员 (already up-to-date)
+2025-12-02 07:42:24,724 - INFO - Skipping 获取部门成员详情 (already up-to-date)
+2025-12-02 07:42:24,725 - INFO - Skipping userid与openid互换 (already up-to-date)
+2025-12-02 07:42:24,725 - INFO - Skipping 登录二次验证 (already up-to-date)
+2025-12-02 07:42:24,725 - INFO - Skipping 邀请成员 (already up-to-date)
+2025-12-02 07:42:24,725 - INFO - Skipping 获取加入企业二维码 (already up-to-date)
+2025-12-02 07:42:24,725 - INFO - Skipping 手机号获取userid (already up-to-date)
+2025-12-02 07:42:24,725 - INFO - Skipping 邮箱获取userid (already up-to-date)
+2025-12-02 07:42:24,726 - INFO - Skipping 获取成员ID列表 (already up-to-date)
+2025-12-02 07:42:24,726 - INFO - Skipping 成员扩展属性 (already up-to-date)
+2025-12-02 07:42:24,726 - INFO - Skipping 创建部门 (already up-to-date)
+2025-12-02 07:42:24,726 - INFO - Skipping 更新部门 (already up-to-date)
+2025-12-02 07:42:24,726 - INFO - Skipping 删除部门 (already up-to-date)
+2025-12-02 07:42:24,726 - INFO - Skipping 获取部门列表 (already up-to-date)
+2025-12-02 07:42:24,727 - INFO - Skipping 获取子部门ID列表 (already up-to-date)
+2025-12-02 07:42:24,727 - INFO - Skipping 获取单个部门详情 (already up-to-date)
+2025-12-02 07:42:24,727 - INFO - Skipping 创建标签 (already up-to-date)
+2025-12-02 07:42:24,727 - INFO - Skipping 更新标签名字 (already up-to-date)
+2025-12-02 07:42:24,727 - INFO - Skipping 删除标签 (already up-to-date)
+2025-12-02 07:42:24,727 - INFO - Skipping 获取标签成员 (already up-to-date)
+2025-12-02 07:42:24,728 - INFO - Skipping 增加标签成员 (already up-to-date)
+2025-12-02 07:42:24,728 - INFO - Skipping 删除标签成员 (already up-to-date)
+2025-12-02 07:42:24,728 - INFO - Skipping 获取标签列表 (already up-to-date)
+2025-12-02 07:42:24,728 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,728 - INFO - Skipping 成员变更通知 (already up-to-date)
+2025-12-02 07:42:24,729 - INFO - Skipping 部门变更通知 (already up-to-date)
+2025-12-02 07:42:24,729 - INFO - Skipping 标签变更通知 (already up-to-date)
+2025-12-02 07:42:24,729 - INFO - Skipping 异步任务完成通知 (already up-to-date)
+2025-12-02 07:42:24,729 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,729 - INFO - Skipping 增量更新成员 (already up-to-date)
+2025-12-02 07:42:24,729 - INFO - Skipping 全量覆盖成员 (already up-to-date)
+2025-12-02 07:42:24,730 - INFO - Skipping 全量覆盖部门 (already up-to-date)
+2025-12-02 07:42:24,730 - INFO - Skipping 获取异步任务结果 (already up-to-date)
+2025-12-02 07:42:24,730 - INFO - Skipping 导出成员 (already up-to-date)
+2025-12-02 07:42:24,730 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,730 - INFO - Skipping 导出成员详情 (already up-to-date)
+2025-12-02 07:42:24,730 - INFO - Skipping 导出部门 (already up-to-date)
+2025-12-02 07:42:24,731 - INFO - Skipping 导出标签成员 (already up-to-date)
+2025-12-02 07:42:24,731 - INFO - Skipping 获取导出结果 (already up-to-date)
+2025-12-02 07:42:24,731 - INFO - Skipping 导出任务完成通知 (already up-to-date)
+2025-12-02 07:42:24,731 - INFO - Skipping 通讯录同步接口调整 (already up-to-date)
+2025-12-02 07:42:24,731 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,732 - INFO - Skipping 获取应用 (already up-to-date)
+2025-12-02 07:42:24,732 - INFO - Skipping 设置应用 (already up-to-date)
+2025-12-02 07:42:24,732 - INFO - Skipping 创建菜单 (already up-to-date)
+2025-12-02 07:42:24,732 - INFO - Skipping 获取菜单 (already up-to-date)
+2025-12-02 07:42:24,732 - INFO - Skipping 删除菜单 (already up-to-date)
+2025-12-02 07:42:24,732 - INFO - Skipping 设置工作台自定义展示 (already up-to-date)
+2025-12-02 07:42:24,733 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,733 - INFO - Skipping 发送应用消息 (already up-to-date)
+2025-12-02 07:42:24,733 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,734 - INFO - Skipping 消息格式 (already up-to-date)
+2025-12-02 07:42:24,734 - INFO - Skipping 事件格式 (already up-to-date)
+2025-12-02 07:42:24,734 - INFO - Skipping 被动回复消息格式 (already up-to-date)
+2025-12-02 07:42:24,735 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,735 - INFO - Skipping 创建群聊会话 (already up-to-date)
+2025-12-02 07:42:24,735 - INFO - Skipping 应用推送消息 (already up-to-date)
+2025-12-02 07:42:24,735 - INFO - Skipping 修改群聊会话 (already up-to-date)
+2025-12-02 07:42:24,735 - INFO - Skipping 获取群聊会话 (already up-to-date)
+2025-12-02 07:42:24,736 - INFO - Skipping 发送「学校通知」 (already up-to-date)
+2025-12-02 07:42:24,736 - INFO - Skipping 撤回应用消息 (already up-to-date)
+2025-12-02 07:42:24,736 - INFO - Skipping 更新模版卡片消息 (already up-to-date)
+2025-12-02 07:42:24,737 - INFO - Skipping 消息推送配置说明 (already up-to-date)
+2025-12-02 07:42:24,737 - INFO - Skipping 接收消息 (already up-to-date)
+2025-12-02 07:42:24,737 - INFO - Skipping 接收事件 (already up-to-date)
+2025-12-02 07:42:24,737 - INFO - Skipping 被动回复消息 (already up-to-date)
+2025-12-02 07:42:24,738 - INFO - Skipping 模板卡片类型 (already up-to-date)
+2025-12-02 07:42:24,738 - INFO - Skipping 回调和回复的加解密方案 (already up-to-date)
+2025-12-02 07:42:24,738 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,738 - INFO - Skipping 主动回复消息 (already up-to-date)
+2025-12-02 07:42:24,738 - INFO - Skipping 获取群聊列表 (already up-to-date)
+2025-12-02 07:42:24,738 - INFO - Skipping 获取群聊会话 (already up-to-date)
+2025-12-02 07:42:24,739 - INFO - Skipping 修改群聊会话 (already up-to-date)
+2025-12-02 07:42:24,739 - INFO - Skipping 上传临时素材 (already up-to-date)
+2025-12-02 07:42:24,739 - INFO - Skipping 获取临时素材 (already up-to-date)
+2025-12-02 07:42:24,739 - INFO - Skipping 获取高清语音素材 (already up-to-date)
+2025-12-02 07:42:24,739 - INFO - Skipping 上传图片 (already up-to-date)
+2025-12-02 07:42:24,739 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,740 - INFO - Skipping 异步上传临时素材 (already up-to-date)
+2025-12-02 07:42:24,740 - INFO - Skipping 构造网页授权链接 (already up-to-date)
+2025-12-02 07:42:24,740 - INFO - Skipping 获取访问用户身份 (already up-to-date)
+2025-12-02 07:42:24,740 - INFO - Skipping 开始开发 (already up-to-date)
+2025-12-02 07:42:24,740 - INFO - Skipping 获取访问用户敏感信息 (already up-to-date)
+2025-12-02 07:42:24,741 - INFO - Skipping 开始开发 (already up-to-date)
+2025-12-02 07:42:24,741 - INFO - Skipping Web登录组件 (already up-to-date)
+2025-12-02 07:42:24,741 - INFO - Skipping 获取用户登录身份 (already up-to-date)
+2025-12-02 07:42:24,741 - INFO - Skipping 获取用户二次验证信息 (already up-to-date)
+2025-12-02 07:42:24,741 - INFO - Skipping 使用二次验证 (already up-to-date)
+2025-12-02 07:42:24,741 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,742 - INFO - Skipping 登录二次验证 (already up-to-date)
+2025-12-02 07:42:24,742 - INFO - Skipping 获取打卡记录数据 (already up-to-date)
+2025-12-02 07:42:24,742 - INFO - Skipping 获取员工打卡规则 (already up-to-date)
+2025-12-02 07:42:24,742 - INFO - Skipping 获取打卡日报数据 (already up-to-date)
+2025-12-02 07:42:24,743 - INFO - Skipping 录入打卡人员人脸信息 (already up-to-date)
+2025-12-02 07:42:24,743 - INFO - Skipping 获取打卡人员排班信息 (already up-to-date)
+2025-12-02 07:42:24,743 - INFO - Skipping 获取企业所有打卡规则 (already up-to-date)
+2025-12-02 07:42:24,743 - INFO - Skipping 为打卡人员排班 (already up-to-date)
+2025-12-02 07:42:24,743 - INFO - Skipping 获取打卡月报数据 (already up-to-date)
+2025-12-02 07:42:24,744 - INFO - Skipping 获取设备打卡数据 (already up-to-date)
+2025-12-02 07:42:24,744 - INFO - Skipping 为打卡人员补卡 (already up-to-date)
+2025-12-02 07:42:24,744 - INFO - Skipping 管理打卡规则 (already up-to-date)
+2025-12-02 07:42:24,744 - INFO - Skipping 添加打卡记录 (already up-to-date)
+2025-12-02 07:42:24,745 - INFO - Skipping 审批流程引擎 (already up-to-date)
+2025-12-02 07:42:24,745 - INFO - Skipping 获取审批数据（旧） (already up-to-date)
+2025-12-02 07:42:24,745 - INFO - Skipping 审批申请状态变化回调通知 (already up-to-date)
+2025-12-02 07:42:24,745 - INFO - Skipping 批量获取审批单号 (already up-to-date)
+2025-12-02 07:42:24,745 - INFO - Skipping 提交审批申请 (already up-to-date)
+2025-12-02 07:42:24,746 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,746 - INFO - Skipping 获取审批模板详情 (already up-to-date)
+2025-12-02 07:42:24,746 - INFO - Skipping 获取审批申请详情 (already up-to-date)
+2025-12-02 07:42:24,746 - INFO - Skipping 获取企业假期管理配置 (already up-to-date)
+2025-12-02 07:42:24,746 - INFO - Skipping 获取成员假期余额 (already up-to-date)
+2025-12-02 07:42:24,747 - INFO - Skipping 修改成员假期余额 (already up-to-date)
+2025-12-02 07:42:24,747 - INFO - Skipping 创建审批模板 (already up-to-date)
+2025-12-02 07:42:24,747 - INFO - Skipping 更新审批模板 (already up-to-date)
+2025-12-02 07:42:24,747 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,748 - INFO - Skipping 发放企业红包 (already up-to-date)
+2025-12-02 07:42:24,748 - INFO - Skipping 查询红包记录 (already up-to-date)
+2025-12-02 07:42:24,748 - INFO - Skipping 向员工付款 (already up-to-date)
+2025-12-02 07:42:24,748 - INFO - Skipping 查询付款记录 (already up-to-date)
+2025-12-02 07:42:24,748 - INFO - Skipping 向员工收款 (already up-to-date)
+2025-12-02 07:42:24,749 - INFO - Skipping 签名算法 (already up-to-date)
+2025-12-02 07:42:24,749 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,749 - INFO - Skipping 收款商户号管理 (already up-to-date)
+2025-12-02 07:42:24,749 - INFO - Skipping 获取对外收款记录 (already up-to-date)
+2025-12-02 07:42:24,749 - INFO - Skipping 获取收款项目的商户单号 (already up-to-date)
+2025-12-02 07:42:24,749 - INFO - Skipping 获取资金流水 (already up-to-date)
+2025-12-02 07:42:24,750 - INFO - Skipping 提交图片 (already up-to-date)
+2025-12-02 07:42:24,750 - INFO - Skipping 提交创建对外收款账户的申请单 (already up-to-date)
+2025-12-02 07:42:24,750 - INFO - Skipping 查询申请单状态 (already up-to-date)
+2025-12-02 07:42:24,750 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,750 - INFO - Skipping 查询电子发票 (already up-to-date)
+2025-12-02 07:42:24,751 - INFO - Skipping 更新发票状态 (already up-to-date)
+2025-12-02 07:42:24,751 - INFO - Skipping 批量更新发票状态 (already up-to-date)
+2025-12-02 07:42:24,751 - INFO - Skipping 批量查询电子发票 (already up-to-date)
+2025-12-02 07:42:24,751 - INFO - Skipping 开发前必读 (already up-to-date)
+2025-12-02 07:42:24,751 - INFO - Skipping 基本概念介绍 (already up-to-date)
+2025-12-02 07:42:24,752 - INFO - Skipping 回调配置 (already up-to-date)
+2025-12-02 07:42:24,752 - INFO - Skipping 获取access_token (already up-to-date)
+2025-12-02 07:42:24,752 - INFO - Skipping 获取企业微信接口IP段 (already up-to-date)
+2025-12-02 07:42:24,752 - INFO - Skipping 获取企业微信回调IP段 (already up-to-date)
+2025-12-02 07:42:24,752 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,752 - INFO - Skipping 使用前帮助 (already up-to-date)
+2025-12-02 07:42:24,753 - INFO - Skipping 开发案例演示 (already up-to-date)
+2025-12-02 07:42:24,753 - INFO - Skipping 常见问题解答 (already up-to-date)
+2025-12-02 07:42:24,753 - INFO - Skipping 获取会话内容存档开启成员列表 (already up-to-date)
+2025-12-02 07:42:24,753 - INFO - Skipping 获取会话内容 (already up-to-date)
+2025-12-02 07:42:24,753 - INFO - Skipping 获取会话同意情况 (already up-to-date)
+2025-12-02 07:42:24,754 - INFO - Skipping 客户同意进行聊天内容存档事件回调 (already up-to-date)
+2025-12-02 07:42:24,754 - INFO - Skipping 获取会话内容存档内部群信息 (already up-to-date)
+2025-12-02 07:42:24,754 - INFO - Skipping 产生会话回调事件 (already up-to-date)
+2025-12-02 07:42:24,754 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,754 - INFO - Skipping 发起语音电话 (already up-to-date)
+2025-12-02 07:42:24,754 - INFO - Skipping 获取接听状态 (already up-to-date)
+2025-12-02 07:42:24,755 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,755 - INFO - Skipping 获取访问用户身份 (already up-to-date)
+2025-12-02 07:42:24,755 - INFO - Skipping 开始开发 (already up-to-date)
+2025-12-02 07:42:24,755 - INFO - Skipping 构造网页授权链接 (already up-to-date)
+2025-12-02 07:42:24,755 - INFO - Skipping 获取家校访问用户身份 (already up-to-date)
+2025-12-02 07:42:24,756 - INFO - Skipping 成员变更事件 (already up-to-date)
+2025-12-02 07:42:24,756 - INFO - Skipping 部门变更事件 (already up-to-date)
+2025-12-02 07:42:24,756 - INFO - Skipping 管理「学校通知」的关注模式 (already up-to-date)
+2025-12-02 07:42:24,756 - INFO - Skipping 获取「学校通知」二维码 (already up-to-date)
+2025-12-02 07:42:24,756 - INFO - Skipping 发送「学校通知」 (already up-to-date)
+2025-12-02 07:42:24,757 - INFO - Skipping 外部联系人openid转换 (already up-to-date)
+2025-12-02 07:42:24,757 - INFO - Skipping 管理「班级群创建方式」 (already up-to-date)
+2025-12-02 07:42:24,757 - INFO - Skipping 获取可使用的家长范围 (already up-to-date)
+2025-12-02 07:42:24,757 - INFO - Skipping 创建学生 (already up-to-date)
+2025-12-02 07:42:24,757 - INFO - Skipping 删除学生 (already up-to-date)
+2025-12-02 07:42:24,757 - INFO - Skipping 更新学生 (already up-to-date)
+2025-12-02 07:42:24,758 - INFO - Skipping 批量创建学生 (already up-to-date)
+2025-12-02 07:42:24,758 - INFO - Skipping 批量删除学生 (already up-to-date)
+2025-12-02 07:42:24,758 - INFO - Skipping 批量更新学生 (already up-to-date)
+2025-12-02 07:42:24,758 - INFO - Skipping 创建家长 (already up-to-date)
+2025-12-02 07:42:24,758 - INFO - Skipping 删除家长 (already up-to-date)
+2025-12-02 07:42:24,758 - INFO - Skipping 更新家长 (already up-to-date)
+2025-12-02 07:42:24,759 - INFO - Skipping 批量创建家长 (already up-to-date)
+2025-12-02 07:42:24,759 - INFO - Skipping 批量删除家长 (already up-to-date)
+2025-12-02 07:42:24,759 - INFO - Skipping 批量更新家长 (already up-to-date)
+2025-12-02 07:42:24,759 - INFO - Skipping 读取学生或家长 (already up-to-date)
+2025-12-02 07:42:24,759 - INFO - Skipping 获取部门学生详情 (already up-to-date)
+2025-12-02 07:42:24,760 - INFO - Skipping 设置家校通讯录自动同步模式 (already up-to-date)
+2025-12-02 07:42:24,760 - INFO - Skipping 获取部门家长详情 (already up-to-date)
+2025-12-02 07:42:24,760 - INFO - Skipping 创建部门 (already up-to-date)
+2025-12-02 07:42:24,760 - INFO - Skipping 更新部门 (already up-to-date)
+2025-12-02 07:42:24,760 - INFO - Skipping 删除部门 (already up-to-date)
+2025-12-02 07:42:24,760 - INFO - Skipping 获取部门列表 (already up-to-date)
+2025-12-02 07:42:24,761 - INFO - Skipping 标准年级对照表 (already up-to-date)
+2025-12-02 07:42:24,761 - INFO - Skipping 修改自动升年级的配置 (already up-to-date)
+2025-12-02 07:42:24,761 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,761 - INFO - Skipping 获取客户列表 (already up-to-date)
+2025-12-02 07:42:24,761 - INFO - Skipping 获取客户详情 (already up-to-date)
+2025-12-02 07:42:24,762 - INFO - Skipping 修改客户备注信息 (already up-to-date)
+2025-12-02 07:42:24,762 - INFO - Skipping 批量获取客户详情 (already up-to-date)
+2025-12-02 07:42:24,762 - INFO - Skipping 客户联系规则组管理 (already up-to-date)
+2025-12-02 07:42:24,762 - INFO - Skipping 管理企业标签 (already up-to-date)
+2025-12-02 07:42:24,762 - INFO - Skipping 编辑客户企业标签 (already up-to-date)
+2025-12-02 07:42:24,763 - INFO - Skipping 管理企业规则组下的客户标签 (already up-to-date)
+2025-12-02 07:42:24,763 - INFO - Skipping 获取客户群列表 (already up-to-date)
+2025-12-02 07:42:24,763 - INFO - Skipping 获取客户群详情 (already up-to-date)
+2025-12-02 07:42:24,763 - INFO - Skipping 客户群opengid转换 (already up-to-date)
+2025-12-02 07:42:24,763 - INFO - Skipping 获取待分配的离职成员列表 (already up-to-date)
+2025-12-02 07:42:24,764 - INFO - Skipping 分配离职成员的客户群 (already up-to-date)
+2025-12-02 07:42:24,764 - INFO - Skipping 分配离职成员的客户 (already up-to-date)
+2025-12-02 07:42:24,764 - INFO - Skipping 查询客户接替状态 (already up-to-date)
+2025-12-02 07:42:24,764 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,764 - INFO - Skipping 事件格式 (already up-to-date)
+2025-12-02 07:42:24,765 - INFO - Skipping 获客助手事件通知 (already up-to-date)
+2025-12-02 07:42:24,765 - INFO - Skipping 获取「联系客户统计」数据 (already up-to-date)
+2025-12-02 07:42:24,765 - INFO - Skipping 获取「群聊数据统计」数据 (already up-to-date)
+2025-12-02 07:42:24,765 - INFO - Skipping 创建企业群发 (already up-to-date)
+2025-12-02 07:42:24,765 - INFO - Skipping 发送新客户欢迎语 (already up-to-date)
+2025-12-02 07:42:24,766 - INFO - Skipping 入群欢迎语素材管理 (already up-to-date)
+2025-12-02 07:42:24,766 - INFO - Skipping 获取企业的全部群发记录 (already up-to-date)
+2025-12-02 07:42:24,766 - INFO - Skipping 提醒成员群发 (already up-to-date)
+2025-12-02 07:42:24,766 - INFO - Skipping 停止企业群发 (already up-to-date)
+2025-12-02 07:42:24,766 - INFO - Skipping 客户联系「联系我」管理 (already up-to-date)
+2025-12-02 07:42:24,767 - INFO - Skipping 客户群「加入群聊」管理 (already up-to-date)
+2025-12-02 07:42:24,767 - INFO - Skipping 成员对外信息 (already up-to-date)
+2025-12-02 07:42:24,767 - INFO - Skipping 获取配置了客户联系功能的成员列表 (already up-to-date)
+2025-12-02 07:42:24,767 - INFO - Skipping 获取客户朋友圈全部的发表记录 (already up-to-date)
+2025-12-02 07:42:24,767 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,768 - INFO - Skipping 客户朋友圈规则组管理 (already up-to-date)
+2025-12-02 07:42:24,768 - INFO - Skipping 企业发表内容到客户的朋友圈 (already up-to-date)
+2025-12-02 07:42:24,768 - INFO - Skipping 停止发表企业朋友圈 (already up-to-date)
+2025-12-02 07:42:24,768 - INFO - Skipping 查询客户接替状态 (already up-to-date)
+2025-12-02 07:42:24,768 - INFO - Skipping 分配在职成员的客户群 (already up-to-date)
+2025-12-02 07:42:24,769 - INFO - Skipping 管理商品图册 (already up-to-date)
+2025-12-02 07:42:24,769 - INFO - Skipping 管理聊天敏感词 (already up-to-date)
+2025-12-02 07:42:24,769 - INFO - Skipping 上传附件资源 (already up-to-date)
+2025-12-02 07:42:24,769 - INFO - Skipping 获客链接管理 (already up-to-date)
+2025-12-02 07:42:24,769 - INFO - Skipping 获取由获客链接添加的客户信息 (already up-to-date)
+2025-12-02 07:42:24,770 - INFO - Skipping 获客助手额度管理与使用统计 (already up-to-date)
+2025-12-02 07:42:24,770 - INFO - Skipping 提升广告有效率 (already up-to-date)
+2025-12-02 07:42:24,770 - INFO - Skipping 获取成员多次收消息详情 (already up-to-date)
+2025-12-02 07:42:24,770 - INFO - Skipping 获取已服务的外部联系人 (already up-to-date)
+2025-12-02 07:42:24,770 - INFO - Skipping 获取下级/下游企业小程序session (already up-to-date)
+2025-12-02 07:42:24,770 - INFO - Skipping 获取下级/下游企业的access_token (already up-to-date)
+2025-12-02 07:42:24,771 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,771 - INFO - Skipping 获取应用共享信息 (already up-to-date)
+2025-12-02 07:42:24,771 - INFO - Skipping 批量获取汇报记录单号 (already up-to-date)
+2025-12-02 07:42:24,771 - INFO - Skipping 获取汇报记录详情 (already up-to-date)
+2025-12-02 07:42:24,771 - INFO - Skipping 获取汇报统计数据 (already up-to-date)
+2025-12-02 07:42:24,772 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,772 - INFO - Skipping 下载微盘文件 (already up-to-date)
+2025-12-02 07:42:24,772 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,772 - INFO - Skipping 获取配置的网格及网格负责人 (already up-to-date)
+2025-12-02 07:42:24,772 - INFO - Skipping 获取单位居民上报数据统计 (already up-to-date)
+2025-12-02 07:42:24,772 - INFO - Skipping 获取个人居民上报数据统计 (already up-to-date)
+2025-12-02 07:42:24,773 - INFO - Skipping 获取上报事件分类统计 (already up-to-date)
+2025-12-02 07:42:24,773 - INFO - Skipping 获取居民上报事件列表 (already up-to-date)
+2025-12-02 07:42:24,773 - INFO - Skipping 获取居民上报的事件详情信息 (already up-to-date)
+2025-12-02 07:42:24,773 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,773 - INFO - Skipping 获取配置的网格及网格负责人 (already up-to-date)
+2025-12-02 07:42:24,773 - INFO - Skipping 获取单位巡查上报数据统计 (already up-to-date)
+2025-12-02 07:42:24,773 - INFO - Skipping 获取个人巡查上报数据统计 (already up-to-date)
+2025-12-02 07:42:24,774 - INFO - Skipping 获取上报事件分类统计 (already up-to-date)
+2025-12-02 07:42:24,774 - INFO - Skipping 获取巡查上报的事件详情信息 (already up-to-date)
+2025-12-02 07:42:24,774 - INFO - Skipping 获取巡查上报事件列表 (already up-to-date)
+2025-12-02 07:42:24,774 - INFO - Skipping 添加网格 (already up-to-date)
+2025-12-02 07:42:24,774 - INFO - Skipping 编辑网格 (already up-to-date)
+2025-12-02 07:42:24,774 - INFO - Skipping 删除网格 (already up-to-date)
+2025-12-02 07:42:24,774 - INFO - Skipping 获取网格列表 (already up-to-date)
+2025-12-02 07:42:24,775 - INFO - Skipping 获取用户负责及参与的网格列表 (already up-to-date)
+2025-12-02 07:42:24,775 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,775 - INFO - Skipping 添加事件类别 (already up-to-date)
+2025-12-02 07:42:24,775 - INFO - Skipping 修改事件类别 (already up-to-date)
+2025-12-02 07:42:24,775 - INFO - Skipping 删除事件类别 (already up-to-date)
+2025-12-02 07:42:24,775 - INFO - Skipping 获取事件类别列表 (already up-to-date)
+2025-12-02 07:42:24,775 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,776 - INFO - Skipping 会议室管理 (already up-to-date)
+2025-12-02 07:42:24,776 - INFO - Skipping 会议室预定管理 (already up-to-date)
+2025-12-02 07:42:24,776 - INFO - Skipping 回调事件 (already up-to-date)
+2025-12-02 07:42:24,776 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,776 - INFO - Skipping 更新日历 (already up-to-date)
+2025-12-02 07:42:24,776 - INFO - Skipping 获取日历详情 (already up-to-date)
+2025-12-02 07:42:24,777 - INFO - Skipping 删除日历 (already up-to-date)
+2025-12-02 07:42:24,777 - INFO - Skipping 更新日程 (already up-to-date)
+2025-12-02 07:42:24,777 - INFO - Skipping 新增日程参与者 (already up-to-date)
+2025-12-02 07:42:24,777 - INFO - Skipping 删除日程参与者 (already up-to-date)
+2025-12-02 07:42:24,777 - INFO - Skipping 获取日历下的日程列表 (already up-to-date)
+2025-12-02 07:42:24,777 - INFO - Skipping 获取日程详情 (already up-to-date)
+2025-12-02 07:42:24,777 - INFO - Skipping 取消日程 (already up-to-date)
+2025-12-02 07:42:24,778 - INFO - Skipping 删除日历事件 (already up-to-date)
+2025-12-02 07:42:24,778 - INFO - Skipping 修改日历事件 (already up-to-date)
+2025-12-02 07:42:24,778 - INFO - Skipping 修改日程事件 (already up-to-date)
+2025-12-02 07:42:24,778 - INFO - Skipping 删除日程事件 (already up-to-date)
+2025-12-02 07:42:24,778 - INFO - Skipping 日程回执事件 (already up-to-date)
+2025-12-02 07:42:24,778 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,778 - INFO - Skipping 创建预约会议 (already up-to-date)
+2025-12-02 07:42:24,779 - INFO - Skipping 获取会议详情 (already up-to-date)
+2025-12-02 07:42:24,779 - INFO - Skipping 取消预约会议 (already up-to-date)
+2025-12-02 07:42:24,779 - INFO - Skipping 修改预约会议 (already up-to-date)
+2025-12-02 07:42:24,779 - INFO - Skipping 获取已参会成员列表 (already up-to-date)
+2025-12-02 07:42:24,779 - INFO - Skipping 获取实时会中成员列表 (already up-to-date)
+2025-12-02 07:42:24,779 - INFO - Skipping 获取会议受邀成员列表 (already up-to-date)
+2025-12-02 07:42:24,780 - INFO - Skipping 更新会议受邀成员列表 (already up-to-date)
+2025-12-02 07:42:24,780 - INFO - Skipping 获取实时等候室成员列表 (already up-to-date)
+2025-12-02 07:42:24,780 - INFO - Skipping 获取等候室成员记录 (already up-to-date)
+2025-12-02 07:42:24,780 - INFO - Skipping 获取成员设备是否入会 (already up-to-date)
+2025-12-02 07:42:24,780 - INFO - Skipping 获取成员会议ID列表 (already up-to-date)
+2025-12-02 07:42:24,780 - INFO - Skipping 获取会议成员报名 ID (already up-to-date)
+2025-12-02 07:42:24,780 - INFO - Skipping 修改会议报名配置 (already up-to-date)
+2025-12-02 07:42:24,781 - INFO - Skipping 获取会议报名配置 (already up-to-date)
+2025-12-02 07:42:24,781 - INFO - Skipping 审批会议报名信息 (already up-to-date)
+2025-12-02 07:42:24,781 - INFO - Skipping 获取会议报名信息 (already up-to-date)
+2025-12-02 07:42:24,781 - INFO - Skipping 导入会议报名信息 (already up-to-date)
+2025-12-02 07:42:24,781 - INFO - Skipping 删除会议报名信息 (already up-to-date)
+2025-12-02 07:42:24,781 - INFO - Skipping 创建用户专属参会链接 (already up-to-date)
+2025-12-02 07:42:24,782 - INFO - Skipping 获取用户专属参会链接 (already up-to-date)
+2025-12-02 07:42:24,782 - INFO - Skipping 获取会议健康度 (already up-to-date)
+2025-12-02 07:42:24,782 - INFO - Skipping 获取会议嘉宾列表 (already up-to-date)
+2025-12-02 07:42:24,782 - INFO - Skipping 更新会议嘉宾列表 (already up-to-date)
+2025-12-02 07:42:24,782 - INFO - Skipping 管理会中设置 (already up-to-date)
+2025-12-02 07:42:24,782 - INFO - Skipping 管理联席主持人 (already up-to-date)
+2025-12-02 07:42:24,783 - INFO - Skipping 移出成员 (already up-to-date)
+2025-12-02 07:42:24,783 - INFO - Skipping 静音成员 (already up-to-date)
+2025-12-02 07:42:24,783 - INFO - Skipping 关闭成员屏幕共享 (already up-to-date)
+2025-12-02 07:42:24,783 - INFO - Skipping 管理等候室成员 (already up-to-date)
+2025-12-02 07:42:24,783 - INFO - Skipping 结束会议 (already up-to-date)
+2025-12-02 07:42:24,783 - INFO - Skipping 修改成员在会中显示的昵称 (already up-to-date)
+2025-12-02 07:42:24,784 - INFO - Skipping 关闭或开启成员视频 (already up-to-date)
+2025-12-02 07:42:24,784 - INFO - Skipping 创建会议投票主题 (already up-to-date)
+2025-12-02 07:42:24,784 - INFO - Skipping 修改会议投票主题 (already up-to-date)
+2025-12-02 07:42:24,784 - INFO - Skipping 获取会议投票列表 (already up-to-date)
+2025-12-02 07:42:24,784 - INFO - Skipping 获取会议投票主题信息 (already up-to-date)
+2025-12-02 07:42:24,784 - INFO - Skipping 获取会议投票详情 (already up-to-date)
+2025-12-02 07:42:24,785 - INFO - Skipping 删除会议投票 (already up-to-date)
+2025-12-02 07:42:24,785 - INFO - Skipping 发起会议投票 (already up-to-date)
+2025-12-02 07:42:24,785 - INFO - Skipping 结束会议投票 (already up-to-date)
+2025-12-02 07:42:24,785 - INFO - Skipping 获取会议录制列表 (already up-to-date)
+2025-12-02 07:42:24,785 - INFO - Skipping 获取会议录制地址 (already up-to-date)
+2025-12-02 07:42:24,785 - INFO - Skipping 获取单个录制文件详情 (already up-to-date)
+2025-12-02 07:42:24,786 - INFO - Skipping 删除会议录制 (already up-to-date)
+2025-12-02 07:42:24,786 - INFO - Skipping 删除单个录制文件 (already up-to-date)
+2025-12-02 07:42:24,786 - INFO - Skipping 修改会议录制共享设置 (already up-to-date)
+2025-12-02 07:42:24,786 - INFO - Skipping 获取录制文件访问统计 (already up-to-date)
+2025-12-02 07:42:24,786 - INFO - Skipping 获取录制转写详情 (already up-to-date)
+2025-12-02 07:42:24,786 - INFO - Skipping 获取录制转写段落信息 (already up-to-date)
+2025-12-02 07:42:24,787 - INFO - Skipping 获取录制转写搜索结果 (already up-to-date)
+2025-12-02 07:42:24,787 - INFO - Skipping 会议开始事件 (already up-to-date)
+2025-12-02 07:42:24,787 - INFO - Skipping 会议结束事件 (already up-to-date)
+2025-12-02 07:42:24,787 - INFO - Skipping 会议全体静音事件 (already up-to-date)
+2025-12-02 07:42:24,787 - INFO - Skipping 会议解除全体静音事件 (already up-to-date)
+2025-12-02 07:42:24,787 - INFO - Skipping 成员入会事件 (already up-to-date)
+2025-12-02 07:42:24,788 - INFO - Skipping 成员离会事件 (already up-to-date)
+2025-12-02 07:42:24,788 - INFO - Skipping 成员等待主持人入会事件 (already up-to-date)
+2025-12-02 07:42:24,788 - INFO - Skipping 成员进入等候室事件 (already up-to-date)
+2025-12-02 07:42:24,788 - INFO - Skipping 成员离开等候室事件 (already up-to-date)
+2025-12-02 07:42:24,788 - INFO - Skipping 成员从等候室进入会议事件 (already up-to-date)
+2025-12-02 07:42:24,788 - INFO - Skipping 成员从会议中被移入等候室事件 (already up-to-date)
+2025-12-02 07:42:24,789 - INFO - Skipping 共享屏幕开启事件 (already up-to-date)
+2025-12-02 07:42:24,789 - INFO - Skipping 共享屏幕结束事件 (already up-to-date)
+2025-12-02 07:42:24,789 - INFO - Skipping 会议成员角色变更事件 (already up-to-date)
+2025-12-02 07:42:24,789 - INFO - Skipping 开始云录制事件 (already up-to-date)
+2025-12-02 07:42:24,789 - INFO - Skipping 暂停云录制事件 (already up-to-date)
+2025-12-02 07:42:24,789 - INFO - Skipping 恢复云录制事件 (already up-to-date)
+2025-12-02 07:42:24,790 - INFO - Skipping 停止云录制事件 (already up-to-date)
+2025-12-02 07:42:24,790 - INFO - Skipping 云录制已完成事件 (already up-to-date)
+2025-12-02 07:42:24,790 - INFO - Skipping 删除云录制事件 (already up-to-date)
+2025-12-02 07:42:24,790 - INFO - Skipping 网络研讨会成员角色变更事件 (already up-to-date)
+2025-12-02 07:42:24,790 - INFO - Skipping 网络研讨会暖场上传结果 (already up-to-date)
+2025-12-02 07:42:24,790 - INFO - Skipping PSTN 外呼状态更新事件 (already up-to-date)
+2025-12-02 07:42:24,791 - INFO - Skipping 素材上传结果 (already up-to-date)
+2025-12-02 07:42:24,791 - INFO - Skipping 用户报名事件 (already up-to-date)
+2025-12-02 07:42:24,791 - INFO - Skipping 用户取消报名事件 (already up-to-date)
+2025-12-02 07:42:24,791 - INFO - Skipping 会议室应答事件 (already up-to-date)
+2025-12-02 07:42:24,791 - INFO - Skipping 修改会议事件 (already up-to-date)
+2025-12-02 07:42:24,791 - INFO - Skipping  取消会议事件 (already up-to-date)
+2025-12-02 07:42:24,792 - INFO - Skipping 概述 (already up-to-date)
+2025-12-02 07:42:24,792 - INFO - Skipping 会议发起事件 (already up-to-date)
+2025-12-02 07:42:24,792 - INFO - Skipping 获取 MRA 状态信息 (already up-to-date)
+2025-12-02 07:42:24,792 - INFO - Skipping 切换 MRA 默认布局 (already up-to-date)
+2025-12-02 07:42:24,792 - INFO - Skipping 设置 MRA 举手或手放下 (already up-to-date)
+2025-12-02 07:42:24,792 - INFO - Skipping 挂断 MRA 呼叫 (already up-to-date)
+2025-12-02 07:42:24,793 - INFO - Skipping 预定Rooms会议室 (already up-to-date)
+2025-12-02 07:42:24,793 - INFO - Skipping 释放Rooms会议室 (already up-to-date)
+2025-12-02 07:42:24,793 - INFO - Skipping 获取Rooms会议室详情 (already up-to-date)
+2025-12-02 07:42:24,793 - INFO - Skipping 获取Rooms会议室列表 (already up-to-date)
+2025-12-02 07:42:24,793 - INFO - Skipping 获取Rooms会议室下的会议列表 (already up-to-date)
+2025-12-02 07:42:24,793 - INFO - Skipping 获取设备列表 (already up-to-date)
+2025-12-02 07:42:24,794 - INFO - Skipping 获取控制器列表 (already up-to-date)
+2025-12-02 07:42:24,794 - INFO - Skipping 获取Rooms会议室配置项 (already up-to-date)
+2025-12-02 07:42:24,794 - INFO - Skipping 呼叫Rooms会议室 (already up-to-date)
+2025-12-02 07:42:24,794 - INFO - Skipping 取消呼叫Rooms会议室 (already up-to-date)
+2025-12-02 07:42:24,794 - INFO - Skipping 获取Rooms会议室应答状态 (already up-to-date)
+2025-12-02 07:42:24,794 - INFO - Skipping 获取Rooms会议室资源 (already up-to-date)
+2025-12-02 07:42:24,795 - INFO - Skipping 获取布局模板列表 (already up-to-date)
+2025-12-02 07:42:24,795 - INFO - Skipping 添加会议基础布局 (already up-to-date)
+2025-12-02 07:42:24,795 - INFO - Skipping 修改会议基础布局 (already up-to-date)
+2025-12-02 07:42:24,795 - INFO - Updating 设置会议默认布局 (local: None, remote: 1679887837)
+2025-12-02 07:42:24,795 - INFO - Processing document: 设置会议默认布局 (ID: 47294)
+2025-12-02 07:42:25,069 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/设置会议默认布局.mdx
+2025-12-02 07:42:26,071 - INFO - Updating 添加会议背景 (local: None, remote: 1679887904)
+2025-12-02 07:42:26,071 - INFO - Processing document: 添加会议背景 (ID: 47298)
+2025-12-02 07:42:26,339 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/添加会议背景.mdx
+2025-12-02 07:42:27,341 - INFO - Updating 设置会议默认背景 (local: None, remote: 1679887926)
+2025-12-02 07:42:27,341 - INFO - Processing document: 设置会议默认背景 (ID: 47299)
+2025-12-02 07:42:27,607 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/设置会议默认背景.mdx
+2025-12-02 07:42:28,608 - INFO - Updating 删除会议背景 (local: None, remote: 1679887944)
+2025-12-02 07:42:28,608 - INFO - Processing document: 删除会议背景 (ID: 47300)
+2025-12-02 07:42:28,885 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/删除会议背景.mdx
+2025-12-02 07:42:29,886 - INFO - Updating 批量删除会议背景 (local: None, remote: 1679887967)
+2025-12-02 07:42:29,887 - INFO - Processing document: 批量删除会议背景 (ID: 47301)
+2025-12-02 07:42:30,159 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/批量删除会议背景.mdx
+2025-12-02 07:42:31,160 - INFO - Updating 获取会议背景列表 (local: None, remote: 1685430766)
+2025-12-02 07:42:31,160 - INFO - Processing document: 获取会议背景列表 (ID: 47302)
+2025-12-02 07:42:31,435 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/获取会议背景列表.mdx
+2025-12-02 07:42:32,437 - INFO - Updating 添加会议高级布局 (local: None, remote: 1685461873)
+2025-12-02 07:42:32,437 - INFO - Processing document: 添加会议高级布局 (ID: 47359)
+2025-12-02 07:42:32,727 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/添加会议高级布局.mdx
+2025-12-02 07:42:33,729 - INFO - Updating 获取会议布局列表 (local: None, remote: 1685457658)
+2025-12-02 07:42:33,729 - INFO - Processing document: 获取会议布局列表 (ID: 47360)
+2025-12-02 07:42:34,009 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/获取会议布局列表.mdx
+2025-12-02 07:42:35,011 - INFO - Updating 获取用户布局 (local: None, remote: 1685457687)
+2025-12-02 07:42:35,011 - INFO - Processing document: 获取用户布局 (ID: 47365)
+2025-12-02 07:42:35,293 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/获取用户布局.mdx
+2025-12-02 07:42:36,295 - INFO - Updating 批量删除布局 (local: None, remote: 1685457728)
+2025-12-02 07:42:36,295 - INFO - Processing document: 批量删除布局 (ID: 47366)
+2025-12-02 07:42:36,570 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/批量删除布局.mdx
+2025-12-02 07:42:37,571 - INFO - Updating 修改会议高级布局 (local: None, remote: 1685462002)
+2025-12-02 07:42:37,571 - INFO - Processing document: 修改会议高级布局 (ID: 47367)
+2025-12-02 07:42:37,854 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/修改会议高级布局.mdx
+2025-12-02 07:42:38,855 - INFO - Updating 设置高级布局 (local: None, remote: 1685462284)
+2025-12-02 07:42:38,856 - INFO - Processing document: 设置高级布局 (ID: 47368)
+2025-12-02 07:42:39,136 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议布局和背景管理/设置高级布局.mdx
+2025-12-02 07:42:40,138 - INFO - Updating 批量外呼 (local: None, remote: 1679580068)
+2025-12-02 07:42:40,138 - INFO - Processing document: 批量外呼 (ID: 47228)
+2025-12-02 07:42:40,414 - INFO - Saved: docs/企业内部开发/服务端API/会议/电话入会（PSTN）管理/批量外呼.mdx
+2025-12-02 07:42:41,415 - INFO - Updating 获取会议的外呼状态 (local: None, remote: 1682582744)
+2025-12-02 07:42:41,415 - INFO - Processing document: 获取会议的外呼状态 (ID: 47229)
+2025-12-02 07:42:41,698 - INFO - Saved: docs/企业内部开发/服务端API/会议/电话入会（PSTN）管理/获取会议的外呼状态.mdx
+2025-12-02 07:42:42,699 - INFO - Updating 获取电话入会的成员ID (local: None, remote: 1682582784)
+2025-12-02 07:42:42,699 - INFO - Processing document: 获取电话入会的成员ID (ID: 47230)
+2025-12-02 07:42:42,977 - INFO - Saved: docs/企业内部开发/服务端API/会议/电话入会（PSTN）管理/获取电话入会的成员ID.mdx
+2025-12-02 07:42:43,978 - INFO - Updating 创建网络研讨会 (local: None, remote: 1679648733)
+2025-12-02 07:42:43,978 - INFO - Processing document: 创建网络研讨会 (ID: 47278)
+2025-12-02 07:42:44,264 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/创建网络研讨会.mdx
+2025-12-02 07:42:45,265 - INFO - Updating 修改网络研讨会 (local: None, remote: 1679650446)
+2025-12-02 07:42:45,265 - INFO - Processing document: 修改网络研讨会 (ID: 47279)
+2025-12-02 07:42:45,557 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/修改网络研讨会.mdx
+2025-12-02 07:42:46,559 - INFO - Updating 获取网络研讨会详情 (local: None, remote: 1682349943)
+2025-12-02 07:42:46,559 - INFO - Processing document: 获取网络研讨会详情 (ID: 47342)
+2025-12-02 07:42:46,844 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会详情.mdx
+2025-12-02 07:42:47,846 - INFO - Updating 取消网络研讨会 (local: None, remote: 1679993906)
+2025-12-02 07:42:47,846 - INFO - Processing document: 取消网络研讨会 (ID: 47378)
+2025-12-02 07:42:48,126 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/取消网络研讨会.mdx
+2025-12-02 07:42:49,127 - INFO - Updating 获取网络研讨会嘉宾列表 (local: None, remote: 1682349932)
+2025-12-02 07:42:49,127 - INFO - Processing document: 获取网络研讨会嘉宾列表 (ID: 47380)
+2025-12-02 07:42:49,407 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会嘉宾列表.mdx
+2025-12-02 07:42:50,409 - INFO - Updating 更新网络研讨会嘉宾列表 (local: None, remote: 1682493304)
+2025-12-02 07:42:50,409 - INFO - Processing document: 更新网络研讨会嘉宾列表 (ID: 47382)
+2025-12-02 07:42:50,689 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/更新网络研讨会嘉宾列表.mdx
+2025-12-02 07:42:51,690 - INFO - Updating 获取网络研讨会成员报名 ID (local: None, remote: 1682349958)
+2025-12-02 07:42:51,690 - INFO - Processing document: 获取网络研讨会成员报名 ID (ID: 47383)
+2025-12-02 07:42:51,972 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会成员报名 ID.mdx
+2025-12-02 07:42:52,974 - INFO - Updating 获取网络研讨会报名配置 (local: None, remote: 1685460253)
+2025-12-02 07:42:52,974 - INFO - Processing document: 获取网络研讨会报名配置 (ID: 47395)
+2025-12-02 07:42:53,252 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会报名配置.mdx
+2025-12-02 07:42:54,254 - INFO - Updating 修改网络研讨会报名配置 (local: None, remote: 1682350211)
+2025-12-02 07:42:54,254 - INFO - Processing document: 修改网络研讨会报名配置 (ID: 47398)
+2025-12-02 07:42:54,541 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/修改网络研讨会报名配置.mdx
+2025-12-02 07:42:55,542 - INFO - Updating 获取网络研讨会报名信息 (local: None, remote: 1682350012)
+2025-12-02 07:42:55,542 - INFO - Processing document: 获取网络研讨会报名信息 (ID: 47399)
+2025-12-02 07:42:55,821 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/获取网络研讨会报名信息.mdx
+2025-12-02 07:42:56,823 - INFO - Updating 审批网络研讨会报名信息 (local: None, remote: 1680010008)
+2025-12-02 07:42:56,823 - INFO - Processing document: 审批网络研讨会报名信息 (ID: 47401)
+2025-12-02 07:42:57,098 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/审批网络研讨会报名信息.mdx
+2025-12-02 07:42:58,100 - INFO - Updating 导入网络研讨会报名信息 (local: None, remote: 1680072102)
+2025-12-02 07:42:58,100 - INFO - Processing document: 导入网络研讨会报名信息 (ID: 47413)
+2025-12-02 07:42:58,381 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/导入网络研讨会报名信息.mdx
+2025-12-02 07:42:59,383 - INFO - Updating 删除网络研讨会报名信息 (local: None, remote: 1680072266)
+2025-12-02 07:42:59,383 - INFO - Processing document: 删除网络研讨会报名信息 (ID: 47414)
+2025-12-02 07:42:59,659 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/删除网络研讨会报名信息.mdx
+2025-12-02 07:43:00,661 - INFO - Updating 管理网络研讨会暖场配置 (local: None, remote: 1682350230)
+2025-12-02 07:43:00,661 - INFO - Processing document: 管理网络研讨会暖场配置 (ID: 47416)
+2025-12-02 07:43:00,942 - INFO - Saved: docs/企业内部开发/服务端API/会议/网络研讨会 (Webinar) 管理/管理网络研讨会暖场配置.mdx
+2025-12-02 07:43:01,943 - INFO - Updating 修改预约会议 (local: None, remote: 1682357941)
+2025-12-02 07:43:01,943 - INFO - Processing document: 修改预约会议 (ID: 25434)
+2025-12-02 07:43:02,230 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/修改预约会议.mdx
+2025-12-02 07:43:03,231 - INFO - Updating 取消预约会议 (local: None, remote: 1682357949)
+2025-12-02 07:43:03,232 - INFO - Processing document: 取消预约会议 (ID: 25248)
+2025-12-02 07:43:03,508 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/取消预约会议.mdx
+2025-12-02 07:43:04,509 - INFO - Updating 获取会议详情 (local: None, remote: 1682357964)
+2025-12-02 07:43:04,509 - INFO - Processing document: 获取会议详情 (ID: 25246)
+2025-12-02 07:43:04,802 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/获取会议详情.mdx
+2025-12-02 07:43:05,804 - INFO - Updating 获取成员会议ID列表 (local: None, remote: 1682357973)
+2025-12-02 07:43:05,804 - INFO - Processing document: 获取成员会议ID列表 (ID: 25438)
+2025-12-02 07:43:06,080 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/获取成员会议ID列表.mdx
+2025-12-02 07:43:07,081 - INFO - Updating 创建预约会议 (local: None, remote: 1683513617)
+2025-12-02 07:43:07,081 - INFO - Processing document: 创建预约会议 (ID: 25245)
+2025-12-02 07:43:07,372 - INFO - Saved: docs/企业内部开发/服务端API/会议/预约会议基础管理/创建预约会议.mdx
+2025-12-02 07:43:08,373 - INFO - Updating 分配高级功能账号 (local: None, remote: 1699949863)
+2025-12-02 07:43:08,373 - INFO - Processing document: 分配高级功能账号 (ID: 50750)
+2025-12-02 07:43:08,653 - INFO - Saved: docs/企业内部开发/服务端API/会议/高级功能账号管理/分配高级功能账号.mdx
+2025-12-02 07:43:09,654 - INFO - Updating 取消高级功能账号 (local: None, remote: 1699950148)
+2025-12-02 07:43:09,654 - INFO - Processing document: 取消高级功能账号 (ID: 50756)
+2025-12-02 07:43:09,929 - INFO - Saved: docs/企业内部开发/服务端API/会议/高级功能账号管理/取消高级功能账号.mdx
+2025-12-02 07:43:10,930 - INFO - Updating 获取高级功能账号列表 (local: None, remote: 1699950204)
+2025-12-02 07:43:10,930 - INFO - Processing document: 获取高级功能账号列表 (ID: 50757)
+2025-12-02 07:43:11,211 - INFO - Saved: docs/企业内部开发/服务端API/会议/高级功能账号管理/获取高级功能账号列表.mdx
+2025-12-02 07:43:12,212 - INFO - Updating 获取会议发起记录 (local: None, remote: 1709628165)
+2025-12-02 07:43:12,212 - INFO - Processing document: 获取会议发起记录 (ID: 52624)
+2025-12-02 07:43:12,487 - INFO - Saved: docs/企业内部开发/服务端API/会议/会议统计管理/获取会议发起记录.mdx
+2025-12-02 07:43:13,488 - INFO - Updating 概述 (local: None, remote: 1607950902)
+2025-12-02 07:43:13,488 - INFO - Processing document: 概述 (ID: 25967)
+2025-12-02 07:43:13,876 - INFO - Saved: docs/企业内部开发/服务端API/直播/概述.mdx
+2025-12-02 07:43:14,878 - INFO - Updating 获取成员直播ID列表 (local: None, remote: 1607950915)
+2025-12-02 07:43:14,878 - INFO - Processing document: 获取成员直播ID列表 (ID: 26267)
+2025-12-02 07:43:15,172 - INFO - Saved: docs/企业内部开发/服务端API/直播/获取成员直播ID列表.mdx
+2025-12-02 07:43:16,173 - INFO - Updating 获取直播详情 (local: None, remote: 1607950924)
+2025-12-02 07:43:16,173 - INFO - Processing document: 获取直播详情 (ID: 21995)
+2025-12-02 07:43:16,457 - INFO - Saved: docs/企业内部开发/服务端API/直播/获取直播详情.mdx
+2025-12-02 07:43:17,459 - INFO - Updating 获取直播观看明细 (local: None, remote: 1608171805)
+2025-12-02 07:43:17,459 - INFO - Processing document: 获取直播观看明细 (ID: 21999)
+2025-12-02 07:43:17,735 - INFO - Saved: docs/企业内部开发/服务端API/直播/获取直播观看明细.mdx
+2025-12-02 07:43:18,736 - INFO - Updating 创建预约直播 (local: None, remote: 1608171815)
+2025-12-02 07:43:18,736 - INFO - Processing document: 创建预约直播 (ID: 25240)
+2025-12-02 07:43:19,009 - INFO - Saved: docs/企业内部开发/服务端API/直播/创建预约直播.mdx
+2025-12-02 07:43:20,010 - INFO - Updating 取消预约直播 (local: None, remote: 1608171823)
+2025-12-02 07:43:20,010 - INFO - Processing document: 取消预约直播 (ID: 25243)
+2025-12-02 07:43:20,284 - INFO - Saved: docs/企业内部开发/服务端API/直播/取消预约直播.mdx
+2025-12-02 07:43:21,285 - INFO - Updating 修改预约直播 (local: None, remote: 1608171835)
+2025-12-02 07:43:21,285 - INFO - Processing document: 修改预约直播 (ID: 25516)
+2025-12-02 07:43:21,568 - INFO - Saved: docs/企业内部开发/服务端API/直播/修改预约直播.mdx
+2025-12-02 07:43:22,570 - INFO - Updating 在微信中观看直播或直播回放 (local: None, remote: 1608218339)
+2025-12-02 07:43:22,570 - INFO - Processing document: 在微信中观看直播或直播回放 (ID: 26465)
+2025-12-02 07:43:22,855 - INFO - Saved: docs/企业内部开发/服务端API/直播/在微信中观看直播或直播回放.mdx
+2025-12-02 07:43:23,856 - INFO - Updating 删除直播回放 (local: None, remote: 1608523765)
+2025-12-02 07:43:23,856 - INFO - Processing document: 删除直播回放 (ID: 25244)
+2025-12-02 07:43:24,130 - INFO - Saved: docs/企业内部开发/服务端API/直播/删除直播回放.mdx
+2025-12-02 07:43:25,131 - INFO - Updating 直播回调事件 (local: None, remote: 1612771961)
+2025-12-02 07:43:25,131 - INFO - Processing document: 直播回调事件 (ID: 28367)
+2025-12-02 07:43:25,403 - INFO - Saved: docs/企业内部开发/服务端API/直播/直播回调事件.mdx
+2025-12-02 07:43:26,404 - INFO - Updating 获取跳转小程序商城的直播观众信息 (local: None, remote: 1620877541)
+2025-12-02 07:43:26,404 - INFO - Processing document: 获取跳转小程序商城的直播观众信息 (ID: 29984)
+2025-12-02 07:43:26,682 - INFO - Saved: docs/企业内部开发/服务端API/直播/获取跳转小程序商城的直播观众信息.mdx
+2025-12-02 07:43:27,683 - INFO - Updating 概述 (local: None, remote: 1608020872)
+2025-12-02 07:43:27,683 - INFO - Processing document: 概述 (ID: 23784)
+2025-12-02 07:43:27,965 - INFO - Saved: docs/企业内部开发/服务端API/微盘/概述.mdx
+2025-12-02 07:43:28,966 - INFO - Updating 版本和容量管理 (local: None, remote: 1655435019)
+2025-12-02 07:43:28,966 - INFO - Processing document: 版本和容量管理 (ID: 39471)
+2025-12-02 07:43:29,243 - INFO - Saved: docs/企业内部开发/服务端API/微盘/版本和容量管理.mdx
+2025-12-02 07:43:30,245 - INFO - Updating 重命名空间 (local: None, remote: 1669867710)
+2025-12-02 07:43:30,245 - INFO - Processing document: 重命名空间 (ID: 44634)
+2025-12-02 07:43:30,525 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间/重命名空间.mdx
+2025-12-02 07:43:31,526 - INFO - Updating 解散空间 (local: None, remote: 1669867739)
+2025-12-02 07:43:31,526 - INFO - Processing document: 解散空间 (ID: 44636)
+2025-12-02 07:43:31,805 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间/解散空间.mdx
+2025-12-02 07:43:32,806 - INFO - Updating 获取空间信息 (local: None, remote: 1669867781)
+2025-12-02 07:43:32,806 - INFO - Processing document: 获取空间信息 (ID: 44639)
+2025-12-02 07:43:33,086 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间/获取空间信息.mdx
+2025-12-02 07:43:34,087 - INFO - Updating 移除成员/部门 (local: None, remote: 1669871895)
+2025-12-02 07:43:34,087 - INFO - Processing document: 移除成员/部门 (ID: 44652)
+2025-12-02 07:43:34,356 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间权限/移除成员部门.mdx
+2025-12-02 07:43:35,358 - INFO - Updating 安全设置 (local: None, remote: 1669871924)
+2025-12-02 07:43:35,358 - INFO - Processing document: 安全设置 (ID: 44653)
+2025-12-02 07:43:35,643 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间权限/安全设置.mdx
+2025-12-02 07:43:36,644 - INFO - Updating 获取邀请链接 (local: None, remote: 1669871948)
+2025-12-02 07:43:36,644 - INFO - Processing document: 获取邀请链接 (ID: 44654)
+2025-12-02 07:43:36,911 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间权限/获取邀请链接.mdx
+2025-12-02 07:43:37,912 - INFO - Updating 获取空间信息 (local: None, remote: 1669871972)
+2025-12-02 07:43:37,913 - INFO - Processing document: 获取空间信息 (ID: 44655)
+2025-12-02 07:43:38,189 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理空间权限/获取空间信息.mdx
+2025-12-02 07:43:39,191 - INFO - Updating 上传文件 (local: None, remote: 1669872263)
+2025-12-02 07:43:39,191 - INFO - Processing document: 上传文件 (ID: 44657)
+2025-12-02 07:43:39,471 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/上传文件.mdx
+2025-12-02 07:43:40,473 - INFO - Updating 下载文件 (local: None, remote: 1669872289)
+2025-12-02 07:43:40,473 - INFO - Processing document: 下载文件 (ID: 44658)
+2025-12-02 07:43:40,749 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/下载文件.mdx
+2025-12-02 07:43:41,751 - INFO - Updating 新建文件夹/文档 (local: None, remote: 1669872315)
+2025-12-02 07:43:41,751 - INFO - Processing document: 新建文件夹/文档 (ID: 44659)
+2025-12-02 07:43:42,023 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/新建文件夹文档.mdx
+2025-12-02 07:43:43,025 - INFO - Updating 重命名文件 (local: None, remote: 1669872347)
+2025-12-02 07:43:43,025 - INFO - Processing document: 重命名文件 (ID: 44660)
+2025-12-02 07:43:43,304 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/重命名文件.mdx
+2025-12-02 07:43:44,306 - INFO - Updating 移动文件 (local: None, remote: 1669872380)
+2025-12-02 07:43:44,306 - INFO - Processing document: 移动文件 (ID: 44661)
+2025-12-02 07:43:44,580 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/移动文件.mdx
+2025-12-02 07:43:45,581 - INFO - Updating 删除文件 (local: None, remote: 1669872412)
+2025-12-02 07:43:45,581 - INFO - Processing document: 删除文件 (ID: 44662)
+2025-12-02 07:43:45,850 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/删除文件.mdx
+2025-12-02 07:43:46,852 - INFO - Updating 获取文件信息 (local: None, remote: 1669872447)
+2025-12-02 07:43:46,852 - INFO - Processing document: 获取文件信息 (ID: 44663)
+2025-12-02 07:43:47,127 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/获取文件信息.mdx
+2025-12-02 07:43:48,128 - INFO - Updating 文件分块上传 (local: None, remote: 1669877620)
+2025-12-02 07:43:48,128 - INFO - Processing document: 文件分块上传 (ID: 40102)
+2025-12-02 07:43:48,430 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件/文件分块上传.mdx
+2025-12-02 07:43:49,431 - INFO - Updating 删除成员 (local: None, remote: 1669872638)
+2025-12-02 07:43:49,431 - INFO - Processing document: 删除成员 (ID: 44665)
+2025-12-02 07:43:49,703 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/删除成员.mdx
+2025-12-02 07:43:50,705 - INFO - Updating 分享设置 (local: None, remote: 1669872675)
+2025-12-02 07:43:50,705 - INFO - Processing document: 分享设置 (ID: 44666)
+2025-12-02 07:43:50,972 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/分享设置.mdx
+2025-12-02 07:43:51,974 - INFO - Updating 获取分享链接 (local: None, remote: 1669872710)
+2025-12-02 07:43:51,974 - INFO - Processing document: 获取分享链接 (ID: 44667)
+2025-12-02 07:43:52,249 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/获取分享链接.mdx
+2025-12-02 07:43:53,250 - INFO - Updating 获取文件权限信息 (local: None, remote: 1669872762)
+2025-12-02 07:43:53,251 - INFO - Processing document: 获取文件权限信息 (ID: 44668)
+2025-12-02 07:43:53,532 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/获取文件权限信息.mdx
+2025-12-02 07:43:54,533 - INFO - Updating 修改文件安全设置 (local: None, remote: 1669872791)
+2025-12-02 07:43:54,533 - INFO - Processing document: 修改文件安全设置 (ID: 44669)
+2025-12-02 07:43:54,808 - INFO - Saved: docs/企业内部开发/服务端API/微盘/管理文件权限/修改文件安全设置.mdx
+2025-12-02 07:43:55,810 - INFO - Updating 微盘容量不足事件 (local: None, remote: 1669873186)
+2025-12-02 07:43:55,810 - INFO - Processing document: 微盘容量不足事件 (ID: 44676)
+2025-12-02 07:43:56,079 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/微盘容量不足事件.mdx
+2025-12-02 07:43:57,081 - INFO - Updating 空间变更事件 (local: None, remote: 1669873217)
+2025-12-02 07:43:57,081 - INFO - Processing document: 空间变更事件 (ID: 44677)
+2025-12-02 07:43:57,360 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/空间变更事件.mdx
+2025-12-02 07:43:58,362 - INFO - Updating 文件变更事件 (local: None, remote: 1669873243)
+2025-12-02 07:43:58,362 - INFO - Processing document: 文件变更事件 (ID: 44678)
+2025-12-02 07:43:58,638 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/文件变更事件.mdx
+2025-12-02 07:43:59,640 - INFO - Updating 解散空间 (local: None, remote: 1669873277)
+2025-12-02 07:43:59,640 - INFO - Processing document: 解散空间 (ID: 44679)
+2025-12-02 07:43:59,921 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/解散空间.mdx
+2025-12-02 07:44:00,922 - INFO - Updating 修改空间成员 (local: None, remote: 1669873300)
+2025-12-02 07:44:00,922 - INFO - Processing document: 修改空间成员 (ID: 44680)
+2025-12-02 07:44:01,192 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/修改空间成员.mdx
+2025-12-02 07:44:02,193 - INFO - Updating 修改空间安全设置 (local: None, remote: 1669873325)
+2025-12-02 07:44:02,193 - INFO - Processing document: 修改空间安全设置 (ID: 44681)
+2025-12-02 07:44:02,476 - INFO - Saved: docs/企业内部开发/服务端API/微盘/回调通知/修改空间安全设置.mdx
+2025-12-02 07:44:03,478 - INFO - Updating 分配高级功能账号 (local: None, remote: 1699950428)
+2025-12-02 07:44:03,478 - INFO - Processing document: 分配高级功能账号 (ID: 50758)
+2025-12-02 07:44:03,746 - INFO - Saved: docs/企业内部开发/服务端API/微盘/高级功能账号管理/分配高级功能账号.mdx
+2025-12-02 07:44:04,747 - INFO - Updating 取消高级功能账号 (local: None, remote: 1699950459)
+2025-12-02 07:44:04,747 - INFO - Processing document: 取消高级功能账号 (ID: 50759)
+2025-12-02 07:44:05,017 - INFO - Saved: docs/企业内部开发/服务端API/微盘/高级功能账号管理/取消高级功能账号.mdx
+2025-12-02 07:44:06,019 - INFO - Updating 获取高级功能账号列表 (local: None, remote: 1699950491)
+2025-12-02 07:44:06,019 - INFO - Processing document: 获取高级功能账号列表 (ID: 50760)
+2025-12-02 07:44:06,295 - INFO - Saved: docs/企业内部开发/服务端API/微盘/高级功能账号管理/获取高级功能账号列表.mdx
+2025-12-02 07:44:07,297 - INFO - Updating 获取公费电话拨打记录 (local: None, remote: 1608021718)
+2025-12-02 07:44:07,297 - INFO - Processing document: 获取公费电话拨打记录 (ID: 14744)
+2025-12-02 07:44:07,580 - INFO - Saved: docs/企业内部开发/服务端API/公费电话/获取公费电话拨打记录.mdx
+2025-12-02 07:44:08,581 - INFO - Updating 获取健康上报使用统计 (local: None, remote: 1608022794)
+2025-12-02 07:44:08,581 - INFO - Processing document: 获取健康上报使用统计 (ID: 22028)
+2025-12-02 07:44:08,854 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/健康上报/获取健康上报使用统计.mdx
+2025-12-02 07:44:09,855 - INFO - Updating 获取健康上报任务ID列表 (local: None, remote: 1608022804)
+2025-12-02 07:44:09,856 - INFO - Processing document: 获取健康上报任务ID列表 (ID: 22038)
+2025-12-02 07:44:10,129 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/健康上报/获取健康上报任务ID列表.mdx
+2025-12-02 07:44:11,130 - INFO - Updating 获取健康上报任务详情 (local: None, remote: 1608022814)
+2025-12-02 07:44:11,130 - INFO - Processing document: 获取健康上报任务详情 (ID: 22041)
+2025-12-02 07:44:11,418 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/健康上报/获取健康上报任务详情.mdx
+2025-12-02 07:44:12,419 - INFO - Updating 获取用户填写答案 (local: None, remote: 1608022824)
+2025-12-02 07:44:12,419 - INFO - Processing document: 获取用户填写答案 (ID: 22062)
+2025-12-02 07:44:12,693 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/健康上报/获取用户填写答案.mdx
+2025-12-02 07:44:13,695 - INFO - Updating 获取老师直播ID列表 (local: None, remote: 1608100004)
+2025-12-02 07:44:13,695 - INFO - Processing document: 获取老师直播ID列表 (ID: 21632)
+2025-12-02 07:44:13,967 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取老师直播ID列表.mdx
+2025-12-02 07:44:14,968 - INFO - Updating 获取直播详情 (local: None, remote: 1608100023)
+2025-12-02 07:44:14,968 - INFO - Processing document: 获取直播详情 (ID: 21636)
+2025-12-02 07:44:15,252 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取直播详情.mdx
+2025-12-02 07:44:16,254 - INFO - Updating 获取观看直播统计 (local: None, remote: 1608100044)
+2025-12-02 07:44:16,254 - INFO - Processing document: 获取观看直播统计 (ID: 21657)
+2025-12-02 07:44:16,532 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取观看直播统计.mdx
+2025-12-02 07:44:17,534 - INFO - Updating 获取未观看直播统计 (local: None, remote: 1608100087)
+2025-12-02 07:44:17,534 - INFO - Processing document: 获取未观看直播统计 (ID: 21653)
+2025-12-02 07:44:17,816 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取未观看直播统计.mdx
+2025-12-02 07:44:18,817 - INFO - Updating 删除直播回放 (local: None, remote: 1608100106)
+2025-12-02 07:44:18,818 - INFO - Processing document: 删除直播回放 (ID: 25244)
+2025-12-02 07:44:19,091 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/删除直播回放.mdx
+2025-12-02 07:44:20,092 - INFO - Updating 获取观看直播统计V2 (local: None, remote: 1653287073)
+2025-12-02 07:44:20,092 - INFO - Processing document: 获取观看直播统计V2 (ID: 39112)
+2025-12-02 07:44:20,366 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取观看直播统计V2.mdx
+2025-12-02 07:44:21,367 - INFO - Updating 获取未观看直播统计V2 (local: None, remote: 1653287165)
+2025-12-02 07:44:21,367 - INFO - Processing document: 获取未观看直播统计V2 (ID: 39116)
+2025-12-02 07:44:21,657 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/上课直播/获取未观看直播统计V2.mdx
+2025-12-02 07:44:22,658 - INFO - Updating 获取学生付款结果 (local: None, remote: 1620706664)
+2025-12-02 07:44:22,658 - INFO - Processing document: 获取学生付款结果 (ID: 30127)
+2025-12-02 07:44:22,933 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/班级收款/获取学生付款结果.mdx
+2025-12-02 07:44:23,935 - INFO - Updating 获取订单详情 (local: None, remote: 1620713355)
+2025-12-02 07:44:23,935 - INFO - Processing document: 获取订单详情 (ID: 30132)
+2025-12-02 07:44:24,213 - INFO - Saved: docs/企业内部开发/服务端API/家校应用/班级收款/获取订单详情.mdx
+2025-12-02 07:44:25,214 - INFO - Updating 概述 (local: None, remote: 1624289962)
+2025-12-02 07:44:25,214 - INFO - Processing document: 概述 (ID: 31106)
+2025-12-02 07:44:25,491 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/概述.mdx
+2025-12-02 07:44:26,493 - INFO - Updating 获取接待人员列表 (local: None, remote: 1624464375)
+2025-12-02 07:44:26,493 - INFO - Processing document: 获取接待人员列表 (ID: 31064)
+2025-12-02 07:44:26,765 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/接待人员管理/获取接待人员列表.mdx
+2025-12-02 07:44:27,767 - INFO - Updating 添加接待人员 (local: None, remote: 1624464356)
+2025-12-02 07:44:27,767 - INFO - Processing document: 添加接待人员 (ID: 31065)
+2025-12-02 07:44:28,055 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/接待人员管理/添加接待人员.mdx
+2025-12-02 07:44:29,057 - INFO - Updating 删除接待人员 (local: None, remote: 1624464365)
+2025-12-02 07:44:29,057 - INFO - Processing document: 删除接待人员 (ID: 31066)
+2025-12-02 07:44:29,329 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/接待人员管理/删除接待人员.mdx
+2025-12-02 07:44:30,330 - INFO - Updating 获取客服账号列表 (local: None, remote: 1624451869)
+2025-12-02 07:44:30,330 - INFO - Processing document: 获取客服账号列表 (ID: 31139)
+2025-12-02 07:44:30,609 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/获取客服账号列表.mdx
+2025-12-02 07:44:31,610 - INFO - Updating 添加客服账号 (local: None, remote: 1624368831)
+2025-12-02 07:44:31,611 - INFO - Processing document: 添加客服账号 (ID: 31140)
+2025-12-02 07:44:32,350 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/添加客服账号.mdx
+2025-12-02 07:44:33,351 - INFO - Updating 删除客服账号 (local: None, remote: 1624368885)
+2025-12-02 07:44:33,351 - INFO - Processing document: 删除客服账号 (ID: 31141)
+2025-12-02 07:44:33,697 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/删除客服账号.mdx
+2025-12-02 07:44:34,698 - INFO - Updating 修改客服账号 (local: None, remote: 1624420039)
+2025-12-02 07:44:34,699 - INFO - Processing document: 修改客服账号 (ID: 31142)
+2025-12-02 07:44:34,972 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/修改客服账号.mdx
+2025-12-02 07:44:35,973 - INFO - Updating 获取客服账号链接 (local: None, remote: 1624451876)
+2025-12-02 07:44:35,973 - INFO - Processing document: 获取客服账号链接 (ID: 31144)
+2025-12-02 07:44:36,250 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/客服账号管理/获取客服账号链接.mdx
+2025-12-02 07:44:37,252 - INFO - Updating 分配客服会话 (local: None, remote: 1624378422)
+2025-12-02 07:44:37,252 - INFO - Processing document: 分配客服会话 (ID: 31080)
+2025-12-02 07:44:37,534 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/会话分配与消息收发/分配客服会话.mdx
+2025-12-02 07:44:38,536 - INFO - Updating 接收消息和事件 (local: None, remote: 1624378432)
+2025-12-02 07:44:38,537 - INFO - Processing document: 接收消息和事件 (ID: 31078)
+2025-12-02 07:44:39,052 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/会话分配与消息收发/接收消息和事件.mdx
+2025-12-02 07:44:40,054 - INFO - Updating 发送消息 (local: None, remote: 1624418192)
+2025-12-02 07:44:40,054 - INFO - Processing document: 发送消息 (ID: 31152)
+2025-12-02 07:44:40,552 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/会话分配与消息收发/发送消息.mdx
+2025-12-02 07:44:41,554 - INFO - Updating 发送欢迎语等事件响应消息 (local: None, remote: 1631157687)
+2025-12-02 07:44:41,554 - INFO - Processing document: 发送欢迎语等事件响应消息 (ID: 32344)
+2025-12-02 07:44:41,848 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/会话分配与消息收发/发送欢迎语等事件响应消息.mdx
+2025-12-02 07:44:42,850 - INFO - Updating 「升级服务」配置 (local: None, remote: 1625114204)
+2025-12-02 07:44:42,850 - INFO - Processing document: 「升级服务」配置 (ID: 31085)
+2025-12-02 07:44:43,144 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/「升级服务」配置.mdx
+2025-12-02 07:44:44,146 - INFO - Updating 获取客户基础信息 (local: None, remote: 1632472297)
+2025-12-02 07:44:44,146 - INFO - Processing document: 获取客户基础信息 (ID: 31072)
+2025-12-02 07:44:44,428 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/其他基础信息获取/获取客户基础信息.mdx
+2025-12-02 07:44:45,430 - INFO - Updating 获取「客户数据统计」企业汇总数据 (local: None, remote: 1646103966)
+2025-12-02 07:44:45,430 - INFO - Processing document: 获取「客户数据统计」企业汇总数据 (ID: 37457)
+2025-12-02 07:44:45,707 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/统计管理/获取「客户数据统计」企业汇总数据.mdx
+2025-12-02 07:44:46,709 - INFO - Updating 获取「客户数据统计」接待人员明细数据 (local: None, remote: 1646103980)
+2025-12-02 07:44:46,709 - INFO - Processing document: 获取「客户数据统计」接待人员明细数据 (ID: 37469)
+2025-12-02 07:44:47,002 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/统计管理/获取「客户数据统计」接待人员明细数据.mdx
+2025-12-02 07:44:48,004 - INFO - Updating 知识库分组管理 (local: None, remote: 1657855926)
+2025-12-02 07:44:48,004 - INFO - Processing document: 知识库分组管理 (ID: 40159)
+2025-12-02 07:44:48,302 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/机器人管理/知识库分组管理.mdx
+2025-12-02 07:44:49,305 - INFO - Updating 知识库问答管理 (local: None, remote: 1657857883)
+2025-12-02 07:44:49,305 - INFO - Processing document: 知识库问答管理 (ID: 40162)
+2025-12-02 07:44:49,607 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/机器人管理/知识库问答管理.mdx
+2025-12-02 07:44:50,608 - INFO - Updating 回调通知 (local: None, remote: 1669859768)
+2025-12-02 07:44:50,609 - INFO - Processing document: 回调通知 (ID: 42945)
+2025-12-02 07:44:50,892 - INFO - Saved: docs/企业内部开发/服务端API/微信客服/回调通知.mdx
+2025-12-02 07:44:51,893 - INFO - Updating 获取对接规则id列表 (local: None, remote: 1648629886)
+2025-12-02 07:44:51,894 - INFO - Processing document: 获取对接规则id列表 (ID: 38131)
+2025-12-02 07:44:52,164 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/获取对接规则id列表.mdx
+2025-12-02 07:44:53,166 - INFO - Updating 删除对接规则 (local: None, remote: 1649675916)
+2025-12-02 07:44:53,166 - INFO - Processing document: 删除对接规则 (ID: 38133)
+2025-12-02 07:44:53,441 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/删除对接规则.mdx
+2025-12-02 07:44:54,443 - INFO - Updating 获取对接规则详情 (local: None, remote: 1649676889)
+2025-12-02 07:44:54,443 - INFO - Processing document: 获取对接规则详情 (ID: 38134)
+2025-12-02 07:44:54,722 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/获取对接规则详情.mdx
+2025-12-02 07:44:55,723 - INFO - Updating 新增对接规则 (local: None, remote: 1649675950)
+2025-12-02 07:44:55,723 - INFO - Processing document: 新增对接规则 (ID: 38135)
+2025-12-02 07:44:56,004 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/新增对接规则.mdx
+2025-12-02 07:44:57,005 - INFO - Updating 更新对接规则 (local: None, remote: 1649676035)
+2025-12-02 07:44:57,005 - INFO - Processing document: 更新对接规则 (ID: 38136)
+2025-12-02 07:44:57,289 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游规则/更新对接规则.mdx
+2025-12-02 07:44:58,290 - INFO - Updating 概述 (local: None, remote: 1653287148)
+2025-12-02 07:44:58,291 - INFO - Processing document: 概述 (ID: 39114)
+2025-12-02 07:44:58,576 - INFO - Saved: docs/企业内部开发/服务端API/上下游/回调事件/概述.mdx
+2025-12-02 07:44:59,578 - INFO - Updating 上下游变更回调 (local: None, remote: 1653287179)
+2025-12-02 07:44:59,578 - INFO - Processing document: 上下游变更回调 (ID: 38768)
+2025-12-02 07:44:59,874 - INFO - Saved: docs/企业内部开发/服务端API/上下游/回调事件/上下游变更回调.mdx
+2025-12-02 07:45:00,876 - INFO - Updating 异步任务完成通知 (local: None, remote: 1653287204)
+2025-12-02 07:45:00,876 - INFO - Processing document: 异步任务完成通知 (ID: 38773)
+2025-12-02 07:45:01,153 - INFO - Saved: docs/企业内部开发/服务端API/上下游/回调事件/异步任务完成通知.mdx
+2025-12-02 07:45:02,154 - INFO - Updating 获取应用共享信息 (local: None, remote: 1654313141)
+2025-12-02 07:45:02,154 - INFO - Processing document: 获取应用共享信息 (ID: 25951)
+2025-12-02 07:45:02,438 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/获取应用共享信息.mdx
+2025-12-02 07:45:03,439 - INFO - Updating 获取下级/下游企业的access_token (local: None, remote: 1654313412)
+2025-12-02 07:45:03,439 - INFO - Processing document: 获取下级/下游企业的access_token (ID: 24919)
+2025-12-02 07:45:03,710 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/获取下级下游企业的access_token.mdx
+2025-12-02 07:45:04,711 - INFO - Updating 获取下级/下游企业小程序session (local: None, remote: 1654313428)
+2025-12-02 07:45:04,711 - INFO - Processing document: 获取下级/下游企业小程序session (ID: 25574)
+2025-12-02 07:45:04,991 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/获取下级下游企业小程序session.mdx
+2025-12-02 07:45:05,992 - INFO - Updating 上下游关联客户信息-已添加客户 (local: None, remote: 1654313502)
+2025-12-02 07:45:05,992 - INFO - Processing document: 上下游关联客户信息-已添加客户 (ID: 35987)
+2025-12-02 07:45:06,273 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/上下游关联客户信息-已添加客户.mdx
+2025-12-02 07:45:07,275 - INFO - Updating 上下游关联客户信息-未添加客户 (local: None, remote: 1670826105)
+2025-12-02 07:45:07,275 - INFO - Processing document: 上下游关联客户信息-未添加客户 (ID: 43378)
+2025-12-02 07:45:07,561 - INFO - Saved: docs/企业内部开发/服务端API/上下游/基础接口/上下游关联客户信息-未添加客户.mdx
+2025-12-02 07:45:08,563 - INFO - Updating 获取上下游信息 (local: None, remote: 1654313693)
+2025-12-02 07:45:08,563 - INFO - Processing document: 获取上下游信息 (ID: 35438)
+2025-12-02 07:45:08,859 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/获取上下游信息.mdx
+2025-12-02 07:45:09,860 - INFO - Updating 批量导入上下游联系人 (local: None, remote: 1654313711)
+2025-12-02 07:45:09,860 - INFO - Processing document: 批量导入上下游联系人 (ID: 38752)
+2025-12-02 07:45:10,145 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/批量导入上下游联系人.mdx
+2025-12-02 07:45:11,147 - INFO - Updating 移除企业 (local: None, remote: 1654313735)
+2025-12-02 07:45:11,147 - INFO - Processing document: 移除企业 (ID: 38769)
+2025-12-02 07:45:11,418 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/移除企业.mdx
+2025-12-02 07:45:12,420 - INFO - Updating 获取异步任务结果 (local: None, remote: 1654313752)
+2025-12-02 07:45:12,420 - INFO - Processing document: 获取异步任务结果 (ID: 38785)
+2025-12-02 07:45:12,711 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/获取异步任务结果.mdx
+2025-12-02 07:45:13,712 - INFO - Updating 查询成员自定义id (local: None, remote: 1669125526)
+2025-12-02 07:45:13,712 - INFO - Processing document: 查询成员自定义id (ID: 43913)
+2025-12-02 07:45:13,982 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/查询成员自定义id.mdx
+2025-12-02 07:45:14,984 - INFO - Updating 获取下级企业加入的上下游 (local: None, remote: 1669125665)
+2025-12-02 07:45:14,984 - INFO - Processing document: 获取下级企业加入的上下游 (ID: 43918)
+2025-12-02 07:45:15,260 - INFO - Saved: docs/企业内部开发/服务端API/上下游/上下游通讯录管理/获取下级企业加入的上下游.mdx
+2025-12-02 07:45:16,262 - INFO - Updating 概述 (local: None, remote: 1665455045)
+2025-12-02 07:45:16,262 - INFO - Processing document: 概述 (ID: 42599)
+2025-12-02 07:45:16,552 - INFO - Saved: docs/企业内部开发/服务端API/上下游/概述.mdx
+2025-12-02 07:45:17,553 - INFO - Updating 概述 (local: None, remote: 1646053453)
+2025-12-02 07:45:17,553 - INFO - Processing document: 概述 (ID: 37468)
+2025-12-02 07:45:17,831 - INFO - Saved: docs/企业内部开发/服务端API/邮件/概述.mdx
+2025-12-02 07:45:18,833 - INFO - Updating 禁用/启用邮箱账号 (local: None, remote: 1669812315)
+2025-12-02 07:45:18,833 - INFO - Processing document: 禁用/启用邮箱账号 (ID: 37505)
+2025-12-02 07:45:19,103 - INFO - Saved: docs/企业内部开发/服务端API/邮件/禁用启用邮箱账号.mdx
+2025-12-02 07:45:20,105 - INFO - Updating 获取邮件未读数 (local: None, remote: 1669812343)
+2025-12-02 07:45:20,105 - INFO - Processing document: 获取邮件未读数 (ID: 37507)
+2025-12-02 07:45:20,376 - INFO - Saved: docs/企业内部开发/服务端API/邮件/获取邮件未读数.mdx
+2025-12-02 07:45:21,377 - INFO - Updating 回调通知 (local: None, remote: 1669695145)
+2025-12-02 07:45:21,377 - INFO - Processing document: 回调通知 (ID: 44020)
+2025-12-02 07:45:21,646 - INFO - Saved: docs/企业内部开发/服务端API/邮件/回调通知.mdx
+2025-12-02 07:45:22,648 - INFO - Updating 发送日程邮件 (local: None, remote: 1669867620)
+2025-12-02 07:45:22,648 - INFO - Processing document: 发送日程邮件 (ID: 44632)
+2025-12-02 07:45:22,940 - INFO - Saved: docs/企业内部开发/服务端API/邮件/发送邮件/发送日程邮件.mdx
+2025-12-02 07:45:23,942 - INFO - Updating 发送会议邮件 (local: None, remote: 1669867642)
+2025-12-02 07:45:23,942 - INFO - Processing document: 发送会议邮件 (ID: 44633)
+2025-12-02 07:45:24,239 - INFO - Saved: docs/企业内部开发/服务端API/邮件/发送邮件/发送会议邮件.mdx
+2025-12-02 07:45:25,240 - INFO - Updating 获取邮件内容 (local: None, remote: 1669875496)
+2025-12-02 07:45:25,241 - INFO - Processing document: 获取邮件内容 (ID: 44689)
+2025-12-02 07:45:25,508 - INFO - Saved: docs/企业内部开发/服务端API/邮件/获取接收的邮件/获取邮件内容.mdx
+2025-12-02 07:45:26,509 - INFO - Updating 查询应用邮箱账号 (local: None, remote: 1669876050)
+2025-12-02 07:45:26,509 - INFO - Processing document: 查询应用邮箱账号 (ID: 44692)
+2025-12-02 07:45:26,788 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理应用邮箱账号/查询应用邮箱账号.mdx
+2025-12-02 07:45:27,790 - INFO - Updating 更新邮件群组 (local: None, remote: 1669876532)
+2025-12-02 07:45:27,790 - INFO - Processing document: 更新邮件群组 (ID: 44701)
+2025-12-02 07:45:28,070 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理邮件群组/更新邮件群组.mdx
+2025-12-02 07:45:29,071 - INFO - Updating 删除邮件群组 (local: None, remote: 1669876625)
+2025-12-02 07:45:29,071 - INFO - Processing document: 删除邮件群组 (ID: 44702)
+2025-12-02 07:45:29,349 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理邮件群组/删除邮件群组.mdx
+2025-12-02 07:45:30,350 - INFO - Updating 获取邮件群组详情 (local: None, remote: 1669876663)
+2025-12-02 07:45:30,350 - INFO - Processing document: 获取邮件群组详情 (ID: 44703)
+2025-12-02 07:45:30,636 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理邮件群组/获取邮件群组详情.mdx
+2025-12-02 07:45:31,638 - INFO - Updating 模糊搜索邮件群组 (local: None, remote: 1669876735)
+2025-12-02 07:45:31,638 - INFO - Processing document: 模糊搜索邮件群组 (ID: 44705)
+2025-12-02 07:45:31,910 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理邮件群组/模糊搜索邮件群组.mdx
+2025-12-02 07:45:32,912 - INFO - Updating 更新公共邮箱 (local: None, remote: 1724849443)
+2025-12-02 07:45:32,912 - INFO - Processing document: 更新公共邮箱 (ID: 44710)
+2025-12-02 07:45:33,195 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/更新公共邮箱.mdx
+2025-12-02 07:45:34,197 - INFO - Updating 删除公共邮箱 (local: None, remote: 1724849454)
+2025-12-02 07:45:34,197 - INFO - Processing document: 删除公共邮箱 (ID: 44711)
+2025-12-02 07:45:34,474 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/删除公共邮箱.mdx
+2025-12-02 07:45:35,476 - INFO - Updating 获取公共邮箱详情 (local: None, remote: 1724849466)
+2025-12-02 07:45:35,476 - INFO - Processing document: 获取公共邮箱详情 (ID: 44712)
+2025-12-02 07:45:35,765 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/获取公共邮箱详情.mdx
+2025-12-02 07:45:36,767 - INFO - Updating 模糊搜索公共邮箱 (local: None, remote: 1724849477)
+2025-12-02 07:45:36,767 - INFO - Processing document: 模糊搜索公共邮箱 (ID: 44713)
+2025-12-02 07:45:37,044 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/模糊搜索公共邮箱.mdx
+2025-12-02 07:45:38,046 - INFO - Updating 回调通知 (local: None, remote: 1724828397)
+2025-12-02 07:45:38,046 - INFO - Processing document: 回调通知 (ID: 55395)
+2025-12-02 07:45:38,335 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/回调通知.mdx
+2025-12-02 07:45:39,337 - INFO - Updating 获取客户端专用密码列表 (local: None, remote: 1726135969)
+2025-12-02 07:45:39,337 - INFO - Processing document: 获取客户端专用密码列表 (ID: 55435)
+2025-12-02 07:45:39,613 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/获取客户端专用密码列表.mdx
+2025-12-02 07:45:40,615 - INFO - Updating 删除客户端专用密码 (local: None, remote: 1726135982)
+2025-12-02 07:45:40,615 - INFO - Processing document: 删除客户端专用密码 (ID: 55438)
+2025-12-02 07:45:40,894 - INFO - Saved: docs/企业内部开发/服务端API/邮件/管理公共邮箱/删除客户端专用密码.mdx
+2025-12-02 07:45:41,896 - INFO - Updating 更改用户功能属性 (local: None, remote: 1669877828)
+2025-12-02 07:45:41,896 - INFO - Processing document: 更改用户功能属性 (ID: 44727)
+2025-12-02 07:45:42,173 - INFO - Saved: docs/企业内部开发/服务端API/邮件/其他邮件客户端登录设置/更改用户功能属性.mdx
+2025-12-02 07:45:43,175 - INFO - Updating 分配高级功能账号 (local: None, remote: 1687255001)
+2025-12-02 07:45:43,175 - INFO - Processing document: 分配高级功能账号 (ID: 49575)
+2025-12-02 07:45:43,449 - INFO - Saved: docs/企业内部开发/服务端API/邮件/高级功能账号管理/分配高级功能账号.mdx
+2025-12-02 07:45:44,450 - INFO - Updating 取消高级功能账号 (local: None, remote: 1687255022)
+2025-12-02 07:45:44,450 - INFO - Processing document: 取消高级功能账号 (ID: 49576)
+2025-12-02 07:45:44,724 - INFO - Saved: docs/企业内部开发/服务端API/邮件/高级功能账号管理/取消高级功能账号.mdx
+2025-12-02 07:45:45,725 - INFO - Updating 获取高级功能账号列表 (local: None, remote: 1687255040)
+2025-12-02 07:45:45,725 - INFO - Processing document: 获取高级功能账号列表 (ID: 49577)
+2025-12-02 07:45:45,999 - INFO - Saved: docs/企业内部开发/服务端API/邮件/高级功能账号管理/获取高级功能账号列表.mdx
+2025-12-02 07:45:47,000 - INFO - Updating 概述 (local: None, remote: 1669088874)
+2025-12-02 07:45:47,001 - INFO - Processing document: 概述 (ID: 43883)
+2025-12-02 07:45:47,280 - INFO - Saved: docs/企业内部开发/服务端API/文档/概述.mdx
+2025-12-02 07:45:48,282 - INFO - Updating 编辑文档内容 (local: None, remote: 1669797081)
+2025-12-02 07:45:48,282 - INFO - Processing document: 编辑文档内容 (ID: 44293)
+2025-12-02 07:45:48,578 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档内容/编辑文档内容.mdx
+2025-12-02 07:45:49,580 - INFO - Updating 获取文档数据 (local: None, remote: 1762264863)
+2025-12-02 07:45:49,580 - INFO - Processing document: 获取文档数据 (ID: 44378)
+2025-12-02 07:45:50,093 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档内容/获取文档数据.mdx
+2025-12-02 07:45:51,095 - INFO - Updating 获取表格数据 (local: None, remote: 1669807937)
+2025-12-02 07:45:51,095 - INFO - Processing document: 获取表格数据 (ID: 44380)
+2025-12-02 07:45:51,586 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理表格内容/获取表格数据.mdx
+2025-12-02 07:45:52,588 - INFO - Updating 获取表格行列信息 (local: None, remote: 1669823534)
+2025-12-02 07:45:52,588 - INFO - Processing document: 获取表格行列信息 (ID: 44543)
+2025-12-02 07:45:52,865 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理表格内容/获取表格行列信息.mdx
+2025-12-02 07:45:53,867 - INFO - Updating 编辑表格内容 (local: None, remote: 1762265517)
+2025-12-02 07:45:53,867 - INFO - Processing document: 编辑表格内容 (ID: 60079)
+2025-12-02 07:45:54,156 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理表格内容/编辑表格内容.mdx
+2025-12-02 07:45:55,157 - INFO - Updating 分享文档 (local: None, remote: 1669862197)
+2025-12-02 07:45:55,157 - INFO - Processing document: 分享文档 (ID: 44589)
+2025-12-02 07:45:55,429 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档/分享文档.mdx
+2025-12-02 07:45:56,431 - INFO - Updating 获取文档基础信息 (local: None, remote: 1669862292)
+2025-12-02 07:45:56,431 - INFO - Processing document: 获取文档基础信息 (ID: 44590)
+2025-12-02 07:45:56,701 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档/获取文档基础信息.mdx
+2025-12-02 07:45:57,702 - INFO - Updating 删除文档 (local: None, remote: 1717061951)
+2025-12-02 07:45:57,702 - INFO - Processing document: 删除文档 (ID: 44592)
+2025-12-02 07:45:57,973 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档/删除文档.mdx
+2025-12-02 07:45:58,974 - INFO - Updating 重命名文档 (local: None, remote: 1717040616)
+2025-12-02 07:45:58,974 - INFO - Processing document: 重命名文档 (ID: 44593)
+2025-12-02 07:45:59,255 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理文档/重命名文档.mdx
+2025-12-02 07:46:00,256 - INFO - Updating 修改文档查看规则 (local: None, remote: 1669884239)
+2025-12-02 07:46:00,256 - INFO - Processing document: 修改文档查看规则 (ID: 44606)
+2025-12-02 07:46:00,546 - INFO - Saved: docs/企业内部开发/服务端API/文档/设置文档权限/修改文档查看规则.mdx
+2025-12-02 07:46:01,548 - INFO - Updating 修改文档通知范围及权限 (local: None, remote: 1669884227)
+2025-12-02 07:46:01,548 - INFO - Processing document: 修改文档通知范围及权限 (ID: 44607)
+2025-12-02 07:46:01,829 - INFO - Saved: docs/企业内部开发/服务端API/文档/设置文档权限/修改文档通知范围及权限.mdx
+2025-12-02 07:46:02,831 - INFO - Updating 修改文档安全设置 (local: None, remote: 1669863977)
+2025-12-02 07:46:02,831 - INFO - Processing document: 修改文档安全设置 (ID: 44608)
+2025-12-02 07:46:03,115 - INFO - Saved: docs/企业内部开发/服务端API/文档/设置文档权限/修改文档安全设置.mdx
+2025-12-02 07:46:04,117 - INFO - Updating 管理智能表格内容权限 (local: None, remote: 1717063159)
+2025-12-02 07:46:04,117 - INFO - Processing document: 管理智能表格内容权限 (ID: 53864)
+2025-12-02 07:46:04,412 - INFO - Saved: docs/企业内部开发/服务端API/文档/设置文档权限/管理智能表格内容权限.mdx
+2025-12-02 07:46:05,414 - INFO - Updating 编辑收集表 (local: None, remote: 1669865489)
+2025-12-02 07:46:05,414 - INFO - Processing document: 编辑收集表 (ID: 44610)
+2025-12-02 07:46:05,702 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理收集表/编辑收集表.mdx
+2025-12-02 07:46:06,703 - INFO - Updating 获取收集表信息 (local: None, remote: 1669865521)
+2025-12-02 07:46:06,703 - INFO - Processing document: 获取收集表信息 (ID: 44611)
+2025-12-02 07:46:07,004 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理收集表/获取收集表信息.mdx
+2025-12-02 07:46:08,005 - INFO - Updating 收集表的统计信息查询 (local: None, remote: 1669865567)
+2025-12-02 07:46:08,005 - INFO - Processing document: 收集表的统计信息查询 (ID: 44612)
+2025-12-02 07:46:08,284 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理收集表/收集表的统计信息查询.mdx
+2025-12-02 07:46:09,286 - INFO - Updating 读取收集表答案 (local: None, remote: 1669865606)
+2025-12-02 07:46:09,286 - INFO - Processing document: 读取收集表答案 (ID: 44613)
+2025-12-02 07:46:09,587 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理收集表/读取收集表答案.mdx
+2025-12-02 07:46:10,588 - INFO - Updating 修改文档成员事件 (local: None, remote: 1669866723)
+2025-12-02 07:46:10,588 - INFO - Processing document: 修改文档成员事件 (ID: 44621)
+2025-12-02 07:46:10,868 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/修改文档成员事件.mdx
+2025-12-02 07:46:11,870 - INFO - Updating 删除文档事件 (local: None, remote: 1669866745)
+2025-12-02 07:46:11,870 - INFO - Processing document: 删除文档事件 (ID: 44622)
+2025-12-02 07:46:12,147 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/删除文档事件.mdx
+2025-12-02 07:46:13,149 - INFO - Updating 收集表完成事件 (local: None, remote: 1669866762)
+2025-12-02 07:46:13,149 - INFO - Processing document: 收集表完成事件 (ID: 44623)
+2025-12-02 07:46:13,489 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/收集表完成事件.mdx
+2025-12-02 07:46:14,490 - INFO - Updating 删除收集表事件 (local: None, remote: 1672835435)
+2025-12-02 07:46:14,490 - INFO - Processing document: 删除收集表事件 (ID: 45066)
+2025-12-02 07:46:14,771 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/删除收集表事件.mdx
+2025-12-02 07:46:15,772 - INFO - Updating 修改收集表设置事件 (local: None, remote: 1672835444)
+2025-12-02 07:46:15,772 - INFO - Processing document: 修改收集表设置事件 (ID: 45068)
+2025-12-02 07:46:16,053 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/修改收集表设置事件.mdx
+2025-12-02 07:46:17,055 - INFO - Updating 记录变更事件 (local: None, remote: 1748528284)
+2025-12-02 07:46:17,055 - INFO - Processing document: 记录变更事件 (ID: 58863)
+2025-12-02 07:46:17,332 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/记录变更事件.mdx
+2025-12-02 07:46:18,334 - INFO - Updating 字段变更事件 (local: None, remote: 1748527294)
+2025-12-02 07:46:18,334 - INFO - Processing document: 字段变更事件 (ID: 58864)
+2025-12-02 07:46:18,622 - INFO - Saved: docs/企业内部开发/服务端API/文档/回调通知/字段变更事件.mdx
+2025-12-02 07:46:19,623 - INFO - Updating 分配高级功能账号 (local: None, remote: 1699952009)
+2025-12-02 07:46:19,623 - INFO - Processing document: 分配高级功能账号 (ID: 50761)
+2025-12-02 07:46:19,908 - INFO - Saved: docs/企业内部开发/服务端API/文档/高级功能账号管理/分配高级功能账号.mdx
+2025-12-02 07:46:20,910 - INFO - Updating 取消高级功能账号 (local: None, remote: 1699952085)
+2025-12-02 07:46:20,910 - INFO - Processing document: 取消高级功能账号 (ID: 50763)
+2025-12-02 07:46:21,183 - INFO - Saved: docs/企业内部开发/服务端API/文档/高级功能账号管理/取消高级功能账号.mdx
+2025-12-02 07:46:22,184 - INFO - Updating 获取高级功能账号列表 (local: None, remote: 1699952117)
+2025-12-02 07:46:22,184 - INFO - Processing document: 获取高级功能账号列表 (ID: 50764)
+2025-12-02 07:46:22,462 - INFO - Saved: docs/企业内部开发/服务端API/文档/高级功能账号管理/获取高级功能账号列表.mdx
+2025-12-02 07:46:23,464 - INFO - Updating 添加子表 (local: None, remote: 1717051176)
+2025-12-02 07:46:23,464 - INFO - Processing document: 添加子表 (ID: 53106)
+2025-12-02 07:46:23,740 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加子表.mdx
+2025-12-02 07:46:24,742 - INFO - Updating 更新子表 (local: None, remote: 1717051904)
+2025-12-02 07:46:24,742 - INFO - Processing document: 更新子表 (ID: 53108)
+2025-12-02 07:46:25,023 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新子表.mdx
+2025-12-02 07:46:26,024 - INFO - Updating 删除子表 (local: None, remote: 1717052024)
+2025-12-02 07:46:26,024 - INFO - Processing document: 删除子表 (ID: 53107)
+2025-12-02 07:46:26,296 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/删除子表.mdx
+2025-12-02 07:46:27,298 - INFO - Updating 添加视图 (local: None, remote: 1717052053)
+2025-12-02 07:46:27,298 - INFO - Processing document: 添加视图 (ID: 53110)
+2025-12-02 07:46:27,586 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加视图.mdx
+2025-12-02 07:46:28,587 - INFO - Updating 删除视图 (local: None, remote: 1717052263)
+2025-12-02 07:46:28,588 - INFO - Processing document: 删除视图 (ID: 53111)
+2025-12-02 07:46:28,865 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/删除视图.mdx
+2025-12-02 07:46:29,867 - INFO - Updating 更新视图 (local: None, remote: 1717052271)
+2025-12-02 07:46:29,867 - INFO - Processing document: 更新视图 (ID: 53113)
+2025-12-02 07:46:30,160 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新视图.mdx
+2025-12-02 07:46:31,162 - INFO - Updating 添加字段 (local: None, remote: 1717052360)
+2025-12-02 07:46:31,162 - INFO - Processing document: 添加字段 (ID: 53114)
+2025-12-02 07:46:31,469 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加字段.mdx
+2025-12-02 07:46:32,471 - INFO - Updating 删除字段 (local: None, remote: 1717052374)
+2025-12-02 07:46:32,471 - INFO - Processing document: 删除字段 (ID: 53115)
+2025-12-02 07:46:32,741 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/删除字段.mdx
+2025-12-02 07:46:33,743 - INFO - Updating 更新字段 (local: None, remote: 1717052384)
+2025-12-02 07:46:33,743 - INFO - Processing document: 更新字段 (ID: 53116)
+2025-12-02 07:46:34,028 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新字段.mdx
+2025-12-02 07:46:35,029 - INFO - Updating 添加记录 (local: None, remote: 1717052396)
+2025-12-02 07:46:35,029 - INFO - Processing document: 添加记录 (ID: 53118)
+2025-12-02 07:46:35,314 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加记录.mdx
+2025-12-02 07:46:36,315 - INFO - Updating 删除记录 (local: None, remote: 1717052402)
+2025-12-02 07:46:36,315 - INFO - Processing document: 删除记录 (ID: 53119)
+2025-12-02 07:46:36,592 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/删除记录.mdx
+2025-12-02 07:46:37,593 - INFO - Updating 更新记录 (local: None, remote: 1717052412)
+2025-12-02 07:46:37,593 - INFO - Processing document: 更新记录 (ID: 53120)
+2025-12-02 07:46:37,876 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新记录.mdx
+2025-12-02 07:46:38,878 - INFO - Updating 添加编组 (local: None, remote: 1755142587)
+2025-12-02 07:46:38,878 - INFO - Processing document: 添加编组 (ID: 59536)
+2025-12-02 07:46:39,159 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/添加编组.mdx
+2025-12-02 07:46:40,161 - INFO - Updating 更新编组 (local: None, remote: 1755142604)
+2025-12-02 07:46:40,161 - INFO - Processing document: 更新编组 (ID: 59537)
+2025-12-02 07:46:40,438 - INFO - Saved: docs/企业内部开发/服务端API/文档/管理智能表格内容/更新编组.mdx
+2025-12-02 07:46:41,439 - INFO - Updating 删除编组 (local: None, remote: 1755142617)
+2025-12-02 07:46:41,439 - INFO - Processing document: 删除编组 (ID: 59538)
 Traceback (most recent call last):
   File "/home/runner/work/weworkdoc/weworkdoc/wework_doc_crawler.py", line 290, in <module>
     crawler.run()

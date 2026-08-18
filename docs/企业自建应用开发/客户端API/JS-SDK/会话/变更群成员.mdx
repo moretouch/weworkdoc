@@ -1,0 +1,25 @@
+---
+title: "变更群成员"
+generated_at: "2026-08-18 01:59:53"
+update_time: 1603510499
+source: "https://developer.work.weixin.qq.com/document/path/93223"
+---
+
+[[toc]]
+
+<!-- import updateEnterpriseChat from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```
+wx.invoke(
+        "updateEnterpriseChat", {
+                chatId: "CHATID", //通过企业微信创建群聊接口返回的chatId
+                userIdsToAdd: 'zhangshan;lisi;wangwu',    //参与会话的企业成员列表，格式为userid1;userid2;...，用分号隔开。
+    }, function(res) {
+        if (res.err_msg == "updateEnterpriseChat:ok") {
+
+        }
+    }
+);
+```

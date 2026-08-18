@@ -1,0 +1,21 @@
+---
+title: "选择目录位置"
+generated_at: "2026-08-18 02:00:28"
+update_time: 1684415601
+source: "https://developer.work.weixin.qq.com/document/path/99009"
+---
+
+[[toc]]
+<!-- import wedriveSelectDir from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```javascript
+ wx.invoke('wedriveSelectDir', {
+
+	}, function(res) {
+		var selectedTicket = res.result.selectedTicket;
+	}
+ });
+
+```

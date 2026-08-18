@@ -1,0 +1,21 @@
+---
+title: "监听播放完毕"
+generated_at: "2026-08-18 02:00:51"
+update_time: 1732695461
+source: "https://developer.work.weixin.qq.com/document/path/100534"
+---
+
+
+
+[[toc]]
+
+<!-- import onVoicePlayEnd from @wecom/jssdk -->
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.onVoicePlayEnd({
+    success: function (res) {
+        var localId = res.localId; // 返回音频的本地ID
+    }
+});
+```

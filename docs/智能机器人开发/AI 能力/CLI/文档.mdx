@@ -1,0 +1,26 @@
+---
+title: "文档"
+generated_at: "2026-08-18 16:57:46"
+update_time: 1786549848
+source: "https://developer.work.weixin.qq.com/document/path/101849"
+---
+
+[TOC]
+
+文档服务，提供文档创建、导入、列表、搜索、删除、重命名、权限管理及内容读写等能力。
+
+> 使用前需在机器人管理后台授权「**文档**」能力权限，授权方式参考[开发前必读 — 能力授权](#62131/能力授权)。
+
+## 命令说明
+
+| 命令 | 说明 |
+|---|---|
+| `wecom-cli doc create` | 新建文档，支持 doc 文档类型，可设置初始内容和字段 |
+| `wecom-cli doc import` | 创建文档导入任务（将外部文件导入为在线文档），也可通过传入 taskid 查询已有导入任务的状态 |
+| `wecom-cli doc search` | 按关键词搜索文档，支持按文档类型、创建者、浏览者、时间范围等多维度过滤，支持排序和分页。支持 doc/sheet/smartsheet 文档类型 |
+| `wecom-cli doc contents append` | 在在线文档末尾追加文本内容 |
+| `wecom-cli doc contents get` | 读取在线文档内容，支持 text 和 ooxml 格式返回 |
+| `wecom-cli doc contents overwrite` | 用新内容全量覆盖在线文档的全部内容，原内容将被替换 |
+| `wecom-cli doc members update` | 添加文档协作成员，设置成员的读写权限。支持支持 doc/sheet/smartsheet 文档类型 |
+| `wecom-cli doc names update` | 重命名指定文档的标题 。支持 doc/sheet/smartsheet 文档类型|
+| `wecom-cli doc rules update` | 设置文档加入规则，包括是否开启成员加入确认、企业内外成员加入权限。支持 doc/sheet/smartsheet 文档类型 |

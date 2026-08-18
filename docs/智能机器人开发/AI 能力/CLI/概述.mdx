@@ -1,0 +1,72 @@
+---
+title: "概述"
+generated_at: "2026-08-18 16:57:34"
+update_time: 1786702244
+source: "https://developer.work.weixin.qq.com/document/path/101750"
+---
+
+[TOC]
+
+## 概述
+
+CLI（`wecom-cli`）是企业微信提供的命令行工具，支持对文档、日程、会议、待办等企业数据进行读写操作。用户、AI Agent 及自动化脚本均可通过 CLI 命令与企业微信数据直接交互。详见 [GitHub 仓库](https://github.com/WecomTeam/wecom-cli)。
+
+---
+
+## 安装
+
+```bash
+npm install -g @wecom/cli
+```
+
+---
+
+## 初始化
+
+```bash
+wecom-cli auth init
+```
+
+执行后会进入交互式向导，选择接入方式：
+
+- **扫码接入（推荐）**：用企业微信客户端扫描终端二维码，自动创建并绑定一个新机器人，无需额外操作
+- **手动输入 Bot ID 和 Secret**：手动输入已有机器人的 `bot_id` 和 `websocket_secret`
+
+---
+
+## Skill
+
+为 LLM（Claude / Cursor 等）安装CLI Skill 后，LLM 可以直接理解并调用 CLI 命令完成数据操作，无需手动组织命令。
+
+```bash
+npx skills add WeComTeam/wecom-cli -y -g
+```
+
+---
+
+## 能力命令汇总
+
+完成安装与初始化后，在机器人管理后台授权对应能力权限，即可通过以下命令直接读写企业微信数据。点击能力名称查看详细命令说明。
+
+| 能力 | biz_type | 命令前缀 | 说明 |
+|---|---|---|---|
+| [消息](#61945) | `msg` | `wecom-cli message` | 发送消息、获取会话列表 |
+| [邮件](#61951) | `mail` | `wecom-cli mail` | 邮件搜索、读取详情、发送 |
+| [文档](#62199) | `doc` | `wecom-cli doc` | 文档的增删改查、导入导出、成员权限管理 |
+| [表格](#62200) | `doc` | `wecom-cli sheet` | 在线表格的创建、单元格读写、工作表管理 |
+| [智能表格](#62201) | `doc` | `wecom-cli smartsheet` | 智能表格字段/记录/视图/图表的完整 CRUD |
+| [智能文档](#62202) | `doc` | `wecom-cli smartpage` | 智能文档页面读取、编辑、追加内容 |
+| [待办](#61949) | `todo` | `wecom-cli todo` | 待办创建/查询/更新/删除/完成 |
+| [日程](#61947) | `schedule` | `wecom-cli calendar` | 日历本查询、日程创建/查询/更新/取消、忙闲查询 |
+| [会议](#61948) | `meeting` | `wecom-cli meeting` | 会议创建/查询/更新/取消、会议室查询、转写拉取 |
+| [微盘](#61950) | `disk` | `wecom-cli disk` | 文件上传/下载/查询/搜索/重命名，新建文件夹 |
+| [通讯录](#61952) | `contact` | `wecom-cli contact` | 搜索成员信息 |
+| [素材](#61963) | `media` | `wecom-cli media` | 媒体文件上传/下载 |
+
+---
+
+## OpenClaw 接入
+
+安装 OpenClaw 插件后，可在 OpenClaw 环境中直接使用 `wecom-cli` 对企业微信数据进行读写操作，无需额外配置。
+
+详细接入指引参考：https://github.com/WecomTeam/wecom-openclaw-plugin

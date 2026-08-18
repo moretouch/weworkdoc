@@ -1,0 +1,23 @@
+---
+title: "待办"
+generated_at: "2026-08-18 16:57:40"
+update_time: 1786347967
+source: "https://developer.work.weixin.qq.com/document/path/101755"
+---
+
+[TOC]
+
+待办服务，提供待办事项的创建、更新、删除、查询、完成等能力。
+
+> 使用前需在机器人管理后台授权「**待办**」能力权限，授权方式参考[开发前必读 — 能力授权](#62131/能力授权)。
+
+## 命令说明
+
+| 命令 | 说明 |
+|---|---|
+| `wecom-cli todo create` | 机器人批量创建待办 |
+| `wecom-cli todo delete` | 机器人批量删除待办 |
+| `wecom-cli todo finish` | 机器人批量完成待办 |
+| `wecom-cli todo get` | 批量读取待办详情，返回标题/描述/参与人/时间等 |
+| `wecom-cli todo list` | 读取待办列表（按 update_time 降序），返回标题/描述/人名 |
+| `wecom-cli todo update` | 机器人批量更新待办（标题/描述/参与人/截止时间等） |

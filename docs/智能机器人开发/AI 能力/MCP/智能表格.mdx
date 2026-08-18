@@ -1,0 +1,43 @@
+---
+title: "智能表格"
+generated_at: "2026-08-18 16:58:04"
+update_time: 1786549929
+source: "https://developer.work.weixin.qq.com/document/path/101855"
+---
+
+[TOC]
+
+> 使用前需在机器人管理后台授权「**文档**」能力权限，授权方式参考[开发前必读 — 能力授权](#62131/能力授权)。
+
+## 工具说明
+
+| 工具 | 说明 |
+|---|---|
+| `smartsheet_create` | 新建智能表格文档，支持设置初始表结构与内容 |
+| `smartsheet_get` | 获取智能表格基本信息，包含子表列表（子表 ID、名称、类型、行列数、前五列信息等） |
+| `smartsheet_import_submit` | 提交将文件导入为智能表格的任务（异步任务） |
+| `smartsheet_import_query` | 查询 `smartsheet_import_submit` 提交的异步导入任务状态和结果 |
+| `smartsheet_sheets_list` | 获取智能表格的子表列表 |
+| `smartsheet_sheets_add` | 新增子表 |
+| `smartsheet_sheets_update` | 修改智能表格结构，支持增加/更新/删除子表和列字段 |
+| `smartsheet_sheets_delete` | 删除子表 |
+| `smartsheet_fields_list` | 拉取字段列表 |
+| `smartsheet_fields_add` | 新增字段（列） |
+| `smartsheet_fields_update` | 更新字段信息 |
+| `smartsheet_fields_delete` | 删除字段（列） |
+| `smartsheet_records_list` | 读取表格数据，支持字段、视图、记录，支持排序、过滤和分页 |
+| `smartsheet_records_add` | 批量新增行记录 |
+| `smartsheet_records_update` | 批量增加/更新/删除行记录 |
+| `smartsheet_records_delete` | 批量删除行记录 |
+| `smartsheet_records_query_submit` | 通过 SQL 查询表格数据（异步任务） |
+| `smartsheet_records_query_query` | 查询 `smartsheet_records_query_submit` 提交的异步任务状态和结果 |
+| `smartsheet_views_list` | 拉取视图列表 |
+| `smartsheet_views_add` | 新增视图 |
+| `smartsheet_views_update` | 更新视图配置 |
+| `smartsheet_views_delete` | 删除视图 |
+| `smartsheet_charts_list` | 拉取图表列表 |
+| `smartsheet_charts_add` | 新增图表配置 |
+| `smartsheet_charts_update` | 更新图表配置 |
+| `smartsheet_charts_delete` | 删除图表配置 |
+| `smartsheet_files_upload` | 上传文件到智能表格，返回文件 URL |
+| `smartsheet_images_upload` | 上传图片到智能表格，返回图片 URL |

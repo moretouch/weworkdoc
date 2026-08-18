@@ -1,0 +1,24 @@
+---
+title: "日程"
+generated_at: "2026-08-18 16:57:37"
+update_time: 1786347864
+source: "https://developer.work.weixin.qq.com/document/path/101753"
+---
+
+[TOC]
+
+日历服务，提供日程创建、查询、取消、忙闲查询、搜索等能力。
+
+> 使用前需在机器人管理后台授权「**日程**」能力权限，授权方式参考[开发前必读 — 能力授权](#62131/能力授权)。
+
+## 命令说明
+
+| 命令 | 说明 |
+|---|---|
+| `wecom-cli calendar schedules cancel` | 取消日程 |
+| `wecom-cli calendar schedules create` | 创建日程，支持设置标题、时间、地点、备注、参与人、提醒时间、时区、是否全天等信息 |
+| `wecom-cli calendar schedules get` | 根据日程 ID 获取日程详情，返回日程的完整信息：标题、时间、地点、备注、参与人、提醒、时区、周期规则等 |
+| `wecom-cli calendar schedules list` | 查询指定时间范围内的日程列表，返回日程的基本信息：标题、开始时间、结束时间、参与人、会议室、地点、备注 |
+| `wecom-cli calendar schedules search` | 按关键词搜索指定时间范围内的日程，返回匹配的日程列表（标题、时间、参与人、会议室、地点、备注） |
+| `wecom-cli calendar schedules update` | 更新日程信息，支持修改标题、时间、地点、备注、新增/移除参与人，周期日程需指定编辑规则 |
+| `wecom-cli calendar schedules free list` | 查询指定成员在指定时间范围内的共同空闲时段，返回推荐的空闲时间段列表 |

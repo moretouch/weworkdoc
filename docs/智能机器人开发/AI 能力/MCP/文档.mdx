@@ -1,0 +1,28 @@
+---
+title: "文档"
+generated_at: "2026-08-18 16:58:01"
+update_time: 1786549905
+source: "https://developer.work.weixin.qq.com/document/path/101853"
+---
+
+[TOC]
+
+> 使用前需在机器人管理后台授权「**文档**」能力权限，授权方式参考[开发前必读 — 能力授权](#62131/能力授权)。
+
+## 工具说明
+
+| 工具 | 说明 |
+|---|---|
+| `doc_create` | 新建在线文档，可设置初始内容和字段 |
+| `doc_import_submit` | 创建文档导入任务（将外部文件导入为在线文档），也可通过传入 taskid 查询已有导入任务的状态 这是一个异步任务。请先提交任务，再使用 doc_import_query 并传入返回的 taskid 查询任务状态和结果。 |
+| `doc_import_query` | 查询通过 doc_import_submit 提交的异步任务状态和结果。请传入提交接口返回的 taskid；如果任务仍在执行中，请稍后再次查询。 |
+| `doc_search` | 按关键词搜索文档，支持按文档类型、创建者、浏览者、时间范围等多维度过滤，支持排序和分页，支持 doc/sheet/smartsheet 文档类型 |
+| `doc_contents_append` | 向在线文档末尾追加文本内容 |
+| `doc_contents_get_submit` | 读取在线文档内容，支持 text 和 ooxml 格式返回 这是一个异步任务。请先提交任务，再使用 doc_contents_get_query 并传入返回的 taskid 查询任务状态和结果。 |
+| `doc_contents_get_query` | 查询通过 doc_contents_get_submit 提交的异步任务状态和结果。请传入提交接口返回的 taskid；如果任务仍在执行中，请稍后再次查询。 |
+| `doc_contents_overwrite` | 用新内容全量覆盖在线文档的全部内容，原内容将被替换 |
+| `doc_members_update` | 添加文档协作成员，设置成员的读写权限，支持 doc/sheet/smartsheet 文档类型 |
+| `doc_names_update` | 重命名指定文档的标题，支持 doc/sheet/smartsheet 文档类型 |
+| `doc_rules_update` | 设置文档加入规则，包括是否开启成员加入确认、企业内外成员加入权限，支持 doc/sheet/smartsheet 文档类型 |
+| `media_download` | 根据 media_id 下载媒体文件。 |
+| `media_upload` | 上传媒体文件，返回 media_id |

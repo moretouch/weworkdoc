@@ -1,0 +1,26 @@
+---
+title: "智能文档"
+generated_at: "2026-08-18 16:58:05"
+update_time: 1786549940
+source: "https://developer.work.weixin.qq.com/document/path/101856"
+---
+
+[TOC]
+
+> 使用前需在机器人管理后台授权「**文档**」能力权限，授权方式参考[开发前必读 — 能力授权](#62131/能力授权)。
+
+## 工具说明
+
+| 工具 | 说明 |
+|---|---|
+| `smartpage_create` | 新建智能文档 |
+| `smartpage_import_submit` | 导入 markdown 创建智能文档。这是一个异步任务，请先提交任务，再使用 smartpage_import_query 并传入返回的 taskid 查询任务状态和结果。 |
+| `smartpage_import_query` | 查询通过 smartpage_import_submit 提交的异步任务状态和结果。请传入提交接口返回的 taskid；如果任务仍在执行中，请稍后再次查询。 |
+| `smartpage_blocks_update` | 编辑智能文档block(插入/替换/删除) |
+| `smartpage_databases_get` | 读取数据库信息 |
+| `smartpage_files_upload` | 上传文件到文档,得到url |
+| `smartpage_images_upload` | 上传图片到文档,得到url |
+| `smartpage_pages_append` | 追加内容到页面 |
+| `smartpage_pages_get` | 读取智能文档内容 |
+| `smartpage_pages_overwrite` | 覆盖页面内容 |
+| `smartpage_pages_update` | 修改页面(创建/删除/重命名/移动/更新布局) |

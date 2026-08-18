@@ -1,0 +1,25 @@
+---
+title: "表格"
+generated_at: "2026-08-18 16:57:47"
+update_time: 1786549863
+source: "https://developer.work.weixin.qq.com/document/path/101850"
+---
+
+[TOC]
+
+在线表格服务，提供基本信息查询、数据读写、工作表增删及行数据追加等能力。
+
+> 使用前需在机器人管理后台授权「**文档**」能力权限，授权方式参考[开发前必读 — 能力授权](#62131/能力授权)。
+
+## 命令说明
+
+| 命令 | 说明 |
+|---|---|
+| `wecom-cli sheet create` | 新建文档，支持 doc/sheet/smartsheet 文档类型，可设置初始内容和字段 |
+| `wecom-cli sheet get` | 获取表格文档的基本信息，包含工作表列表（sheet_id、标题、行列数等） |
+| `wecom-cli sheet import` | 创建文档导入任务（将外部文件导入为在线文档），也可通过传入 taskid 查询已有导入任务的状态 |
+| `wecom-cli sheet contents update` | 更新表格指定范围的单元格数据 |
+| `wecom-cli sheet ranges get` | 读取表格指定范围的单元格数据，范围格式遵循 A1 表示法 |
+| `wecom-cli sheet rows append` | 在表格工作表末尾追加一行数据 |
+| `wecom-cli sheet subsheets add` | 在表格文档中添加新的工作表，可指定标题和插入位置 |
+| `wecom-cli sheet subsheets delete` | 删除表格文档中的指定工作表，删除后不可恢复 |

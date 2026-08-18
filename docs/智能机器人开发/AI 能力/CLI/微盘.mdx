@@ -1,0 +1,24 @@
+---
+title: "微盘"
+generated_at: "2026-08-18 16:57:41"
+update_time: 1786348017
+source: "https://developer.work.weixin.qq.com/document/path/101756"
+---
+
+[TOC]
+
+磁盘文件服务，提供微盘文件的上传、下载、查询、搜索、重命名及文件夹管理等能力。
+
+> 使用前需在机器人管理后台授权「**微盘**」能力权限，授权方式参考[开发前必读 — 能力授权](#62131/能力授权)。
+
+## 命令说明
+
+| 命令 | 说明 |
+|---|---|
+| `wecom-cli disk files download` | 异步根据微盘文件 ID 或 URL 下载文件，轮询完成后返回本地文件路径 |
+| `wecom-cli disk files get` | 读取一个微盘文件的基础信息，包含名称、大小、类型、创建者、所属知识空间、所在文件夹、时间与路径等 |
+| `wecom-cli disk files list` | 列出当前用户在微盘中最近浏览过的文件，按最后浏览时间倒序返回，支持分页 |
+| `wecom-cli disk files rename` | 修改微盘文件的显示名称 |
+| `wecom-cli disk files search` | 根据关键词搜索微盘中的文件或文件夹；支持按文件类型、创建者、知识空间过滤，支持排序和分页 |
+| `wecom-cli disk files upload` | 使用 media_id 或本地文件路径将文件上传到微盘指定文件夹，传 file_path 且 file_name 不传时从路径自动提取文件名 |
+| `wecom-cli disk folders create` | 在微盘指定父文件夹下新建文件夹，不传 folder_id 时默认创建到机器人默认空间根目录 |

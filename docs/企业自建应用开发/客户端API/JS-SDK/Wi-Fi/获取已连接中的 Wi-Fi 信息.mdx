@@ -1,0 +1,20 @@
+---
+title: "获取已连接中的 Wi-Fi 信息"
+generated_at: "2026-08-18 09:02:36"
+update_time: 1732695589
+source: "https://developer.work.weixin.qq.com/document/path/100547"
+---
+
+[[toc]]
+
+<!-- import getConnectedWifi from @wecom/jssdk -->
+
+## 旧版jweixin调用
+### 示例代码
+```javascript
+wx.getConnectedWifi({
+   success: function(res){
+       console.log(res.wifi)
+   }
+})
+```

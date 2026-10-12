@@ -1,0 +1,243 @@
+---
+title: "获取全部内容"
+generated_at: "2026-10-12 06:18:07"
+update_time: 1791613247
+source: "https://developer.work.weixin.qq.com/document/path/101922"
+---
+
+[TOC]
+机器人可以获取频道下的内容，可全量拉取或指定拉取。仅支持频道的机器人调用。
+
+## 获取帖子列表和内容
+获取指定频道下的帖子，可按顺序全量拉取，或指定帖子ID拉取。
+**请求方式：** POST（**HTTPS**）
+**请求地址：** https://qyapi.weixin.qq.com/cgi-bin/aibot/topic/get_post_list?access_token=ACCESS_TOKEN
+```
+{
+	"topic_id": "TOPIC_ID",
+	"type": "TYPE",
+	"post_id_list": [
+		"POST_ID"
+	],
+	"begin_time": 1700000000,
+	"end_time": 1700100000,
+	"sort_type": 0,
+	"cursor": "CURSOR",
+	"limit": 10
+}
+```
+
+**参数说明：** 
+
+| 参数      | 是否必须| 类型| 说明   |
+| ------- | ---- | --|-- |
+|access_token|是|String|[机器人调用接口凭证](#62616)|
+|topic_id|是|String|频道ID，长度不超过 128 字节|
+|type|否|Interger|获取类型：0-指定`post_id_list`获取（默认）；1-分页获取话题下的所有帖子；|
+|post_id_list|否|String[]|指定获取的帖子ID列表，不超过 50 个，单个ID长度不超过 128 字节`type`为 0 时有效|
+| begin_time | 否 | Integer | 起始时间（秒级时间戳），`type`为 1 时有效 |
+| end_time | 否 | Integer | 结束时间（秒级时间戳），`type`为 1 时有效 |
+|sort_type|否|Integer|排序方式。0-按帖子创建时间从旧到新（默认），1-从新到旧。`type`为 1 时有效。翻页过程中 sort_type 须保持一致|
+|cursor|否|String|分页游标，首页为空，长度不超过 256 字节，`type`为 1 时有效|
+|limit|否|Interger|分页大小，默认 20，最大 50，`type`为 1 时有效|
+
+**返回结果：**
+```json
+{
+	"errcode": 0,
+	"errmsg": "ok",
+	"post_list": [
+		{
+			"post_id": "POST_ID",
+			"creator": {
+			    "type": 0,
+				"userid": "USER_ID",
+				"aibotid": "BOT_ID"
+			},
+			"create_time": 1700000000,
+			"is_recalled": false,
+			"is_modified": false,
+			"modify_time": 1700000000,
+			"content": "带占位符的 markdown 内容",
+			"inline_file_list": [
+				{
+					"placeholder": "PLACE_HOLDER",
+					"file_name": "FILE_NAME",
+					"download_url": "DOWNLOAD_URL",
+					"cookie_name": "COOKIE_NAME",
+					"cookie_value": "COOKIE_VALUE"
+				}
+			],
+			"inline_mention_list": [
+				{
+					"placeholder": "PLACE_HOLDER1",
+					"member": {
+						"type": 0,
+						"userid": "USERID"
+					}
+				},
+				{
+					"placeholder": "PLACE_HOLDER2",
+					"member": {
+						"type": 1,
+						"aibotid": "BOTID"
+					}
+				}
+			],
+			"image_list": [
+				{
+					"download_url": "DOWNLOAD_URL",
+					"cookie_name": "COOKIE_NAME",
+					"cookie_value": "COOKIE_VALUE"
+				}
+			],
+			"emoji_list": [
+				{
+					"emoji_type": 1,
+					"user_list": [
+						{
+							"type": 0,
+							"userid": "USERID"
+						},
+						{
+							"type": 1,
+							"aibotid": "BOTID"
+						}
+					]
+				}
+			]
+		}
+	],
+	"has_more": true,
+	"next_cursor": "NEXT_CURSOR"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|post_list| Object([PostInfo](#62818/PostInfo))[]| 帖子详情列表 |
+|has_more|Bool|是否有更多数据|
+|next_cursor|String|下一页的游标|
+
+
+## 获取评论列表和内容
+获取指定频道和帖子下的评论/回复，可按顺序全量拉取，或指定评论ID拉取。
+**请求方式：** POST（**HTTPS**）
+**请求地址：** https://qyapi.weixin.qq.com/cgi-bin/aibot/topic/get_reply_list?access_token=ACCESS_TOKEN
+```
+{
+	"topic_id": "TOPIC_ID",
+	"post_id": "POST_ID",
+	"type": "TYPE",
+	"reply_id_list": [
+		"REPLY_ID"
+	],
+	"begin_time": 1700000000,
+	"end_time": 1700100000,
+	"sort_type": 0,
+	"cursor": "CURSOR",
+	"limit": 20
+}
+```
+
+**参数说明：** 
+
+| 参数      | 是否必须| 类型| 说明   |
+| ------- | ---- | --|-- |
+|access_token|是|String|机器人调用接口凭证|
+|topic_id|是|String|频道ID，长度不超过 128 字节|
+|post_id|是|String|帖子ID，长度不超过 128 字节|
+|type|否|Interger|获取类型：0-指定`reply_id_list`获取（默认）；1-分页获取帖子下的所有评论|
+|reply_id_list|否|String[]|指定获取的评论ID列表，不超过 50 个，单个ID长度不超过 128 字节，`type`为 0 时有效|
+| begin_time | 否 | Integer | 起始时间（秒级时间戳），`type`为 1 时有效 |
+| end_time | 否 | Integer | 结束时间（秒级时间戳），`type`为 1 时有效 |
+|sort_type|否|Integer|排序方式。0-按评论创建时间从旧到新（默认），1-从新到旧。`type`为 1 时有效。翻页过程中 sort_type 须保持一致|
+|cursor|否|String|分页游标，首页为空，长度不超过 256 字节，`type`为 1 时有效|
+|limit|否|Interger|分页大小，默认 20，最大 50，`type`为 1 时有效|
+
+
+**返回结果：**
+```json
+{
+	"errcode": 0,
+	"errmsg": "ok",
+	"reply_list": [
+		{
+			"reply_id": "REPLY_ID",
+			"parent_reply_id": "PARENT_REPLY_ID",
+			"creator": {
+				"type": 0,
+				"userid": "USER_ID",
+				"aibotid": "BOT_ID"
+			},
+			"create_time": 1700000000,
+			"is_recalled": false,
+			"is_modified": false,
+			"modify_time": 1700000000,
+			"content": "带占位符的 markdown 内容",
+			"inline_file_list": [
+				{
+					"placeholder": "PLACE_HOLDER",
+					"file_name": "FILE_NAME",
+					"download_url": "DOWNLOAD_URL",
+					"cookie_name": "COOKIE_NAME",
+					"cookie_value": "COOKIE_VALUE"
+				}
+			],
+			"inline_mention_list": [
+				{
+					"placeholder": "PLACE_HOLDER1",
+					"member": {
+						"type": 0,
+						"userid": "USERID"
+					}
+				},
+				{
+					"placeholder": "PLACE_HOLDER2",
+					"member": {
+						"type": 1,
+						"aibotid": "BOTID"
+					}
+				}
+			],
+			"image_list": [
+				{
+					"download_url": "DOWNLOAD_URL",
+					"cookie_name": "COOKIE_NAME",
+					"cookie_value": "COOKIE_VALUE"
+				}
+			],
+			"emoji_list": [
+				{
+					"emoji_type": 1,
+					"user_list": [
+						{
+							"type": 0,
+							"userid": "USERID"
+						},
+						{
+							"type": 1,
+							"aibotid": "BOTID"
+						}
+					]
+				}
+			]
+		}
+	],
+	"has_more": true,
+	"next_cursor": "NEXT_CURSOR"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|reply_list| Object([ReplyInfo](#62818/ReplyInfo))[]| 评论/回复详情列表 |
+|has_more|Bool|是否有更多数据|
+|next_cursor|String|下一页的游标|
+

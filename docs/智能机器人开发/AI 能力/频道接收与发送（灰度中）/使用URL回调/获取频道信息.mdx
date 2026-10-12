@@ -1,0 +1,133 @@
+---
+title: "获取频道信息"
+generated_at: "2026-10-12 06:18:11"
+update_time: 1791606312
+source: "https://developer.work.weixin.qq.com/document/path/101925"
+---
+
+[TOC]
+
+机器人可以获取机器人所在的频道列表，可指定频道ID拉取，或分页遍历机器人已加入的所有频道。仅支持频道的机器人调用。
+
+
+**请求方式：** POST（**HTTPS**）
+**请求地址：** https://qyapi.weixin.qq.com/cgi-bin/aibot/topic/get_topic_list?access_token=ACCESS_TOKEN
+```json
+{
+	"type": 0,
+	"topic_id_list": [
+		"TOPIC_ID"
+	],
+	"cursor": "CURSOR",
+	"limit": 20
+}
+```
+
+**参数说明：** 
+
+| 参数      | 是否必须| 类型| 说明   |
+| ------- | ---- | --|-- |
+|access_token|是|String|机器人调用接口凭证|
+|type|否|Interger|获取类型：0-指定`topic_id_list`获取（默认）；1-分页获取机器人已加入的所有频道|
+|topic_id_list|否|String[]|指定获取的频道ID列表，不超过100个，单个 ID 长度不超过 128 字节，`type`为 0 时有效。需为机器人已加入的频道，未加入的频道ID将被跳过|
+|cursor|否|String|分页游标，首页为空，长度不超过 256 字节，`type`为 1 时有效|
+|limit|否|Interger|分页大小，默认20，最大100，`type`为 1 时有效|
+
+**返回结果：**
+```json
+{
+	"errcode": 0,
+	"errmsg": "ok",
+	"topic_list": [
+		{
+			"topic_id": "TOPIC_ID",
+			"topic_name": "TOPIC_NAME",
+			"topic_desc": "TOPIC_DESC",
+			"permission": 0,
+			"creator": {
+				"type": 0,
+				"userid": "USER_ID"
+			},
+			"create_time": 1758518400
+		}
+	],
+	"has_more": true,
+	"next_cursor": "NEXT_CURSOR"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|topic_list| Object([TopicInfo](#TopicInfo))[]| 频道详情列表 |
+|has_more|Bool|是否有更多数据，`type`为 1 时有效|
+|next_cursor|String|下一页的游标，`type`为 1 时有效|
+
+## 获取频道成员列表
+
+获取指定频道的成员列表，包含普通成员和机器人。
+
+**请求方式：** POST（**HTTPS**）
+**请求地址：** https://qyapi.weixin.qq.com/cgi-bin/aibot/topic/get_topic_member_list?access_token=ACCESS_TOKEN
+
+```json
+{
+    "topic_id": "TOPIC_ID",
+    "cursor": "CURSOR",
+    "limit": 100
+}
+```
+
+**参数说明：**
+
+| 参数 | 是否必须 | 类型 | 说明 |
+|------|---------|------|------|
+| access_token | 是 | String | 机器人调用接口凭证 |
+| topic_id | 是 | String | 频道 ID，长度不超过 128 字节 |
+| cursor | 否 | String | 分页游标，首页为空，长度不超过 256 字节 |
+| limit | 否 | Integer | 分页大小，默认 100，最大 200 |
+
+**返回结果：**
+
+```json
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "member_list": [
+        {
+            "type": 0,
+            "userid": "USER_ID"
+        },
+        {
+            "type": 1,
+            "aibotid": "BOT_ID"
+        }
+    ],
+    "has_more": true,
+    "next_cursor": "NEXT_CURSOR"
+}
+```
+
+**参数说明：**
+
+| 参数 | 类型 | 说明 |
+|------|------|------|
+| errcode | Integer | 错误码 |
+| errmsg | String | 错误码说明 |
+| member_list | Object([UserInfo](#62818/UserInfo))[]| 成员列表 |
+| has_more | Bool | 是否有更多数据 |
+| next_cursor | String | 下一页的游标 |
+
+## 附录
+### TopicInfo
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|topic_id |String|频道ID  |
+|topic_name |String|频道名称  |
+|topic_desc |String|频道描述  |
+|permission|Interger|频道权限：0-公开（默认），1-私有|
+|creator|Object([UserInfo](#62818/UserInfo))[]|创建者信息，目前只有 userid 类型的创建者|
+|create_time|Interger|频道创建时间，timestamp|
+<!-- |update_time|Interger|频道最近变更时间，timestamp。新帖/回复/改名等活动会持续更新该时间，仅供展示用途，请勿作为分页游标使用| -->

@@ -1,0 +1,174 @@
+---
+title: "搜索内容"
+generated_at: "2026-10-12 06:18:08"
+update_time: 1791613264
+source: "https://developer.work.weixin.qq.com/document/path/101923"
+---
+
+[TOC]
+
+机器人可以搜索频道中的帖子和评论，支持关键词、发件人、时间范围等条件。仅支持频道的机器人调用。
+
+搜索分两步：
+
+1. **第一步**：调用「搜索命中的频道列表」接口，获取命中的频道列表和搜索任务 ID（`jobid`）
+2. **第二步**：调用「获取搜索结果详情」接口，按频道逐个拉取命中的帖子和评论 ID 及内容摘要
+
+---
+
+### 搜索频道列表
+
+**请求方式：** POST（**HTTPS**）
+**请求地址：** https://qyapi.weixin.qq.com/cgi-bin/aibot/topic/search?access_token=ACCESS_TOKEN
+
+```json
+{
+    "keyword_list": ["KEYWORD"],
+    "topic_id_list": ["TOPIC_ID"],
+    "topic_keyword_list": ["TOPIC_KEYWORD"],
+    "creator_list": [
+        {
+            "type": 0,
+            "userid": "USER_ID"
+        }
+    ],
+    "begin_time": 1700000000,
+    "end_time": 1700100000,
+    "cursor": "CURSOR",
+    "limit": 10
+}
+```
+
+**参数说明：**
+
+| 参数 | 是否必须 | 类型 | 说明 |
+|------|---------|------|------|
+| access_token | 是 | String | 机器人调用接口凭证 |
+| keyword_list | 是 | String[] | 正文关键词，多个之间取「且」关系。最多不超过 8 个关键字，单个关键字长度不超过 32 字节 |
+| topic_id_list | 否 | String[] | 限定搜索范围的频道 ID 列表，多个之间「或」关系，最多不超过 8 个，单个 ID 长度不超过 128 字节。不传则搜索机器人已加入的全部频道 |
+| topic_keyword_list | 否 | String[] | 频道名关键词，多个之间「且」关系，最多不超过 8 个关键字，单个关键字长度不超过 32 字节。用于按频道名称过滤搜索范围 |
+| creator_list | 否 | Object([UserInfo](#62818/UserInfo))[] | 限定发帖人，多个之间「或」关系，精确匹配，最多不超过 8 个。不传则不限定 |
+| begin_time | 否 | Integer | 起始时间（秒级时间戳） |
+| end_time | 否 | Integer | 结束时间（秒级时间戳） |
+| cursor | 否 | String | 分页游标，首页为空，长度不超过 256 字节 |
+|limit|否|Interger|分页大小，默认 20，最大 50|
+<!-- | jobid | 否 | String | 翻页时传上一次返回的 `jobid`（首页不传），长度不超过 256 字节，其他参数继续保留 |-->
+
+**返回结果：**
+
+```json
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "jobid": "JOB_ID",
+    "topic_list": [
+        {
+            "topic_id": "TOPIC_ID"
+        }
+    ],
+    "has_more": true,
+    "next_cursor": "NEXT_CURSOR"
+}
+```
+
+**参数说明：**
+
+| 参数 | 类型 | 说明 |
+|------|------|------|
+| errcode | Integer | 错误码 |
+| errmsg | String | 错误码说明 |
+| jobid | String | 搜索任务 ID，获取搜索结果详情时需传入 |
+| topic_list | Object[] | 命中的频道列表 |
+| topic_list[].topic_id | String | 频道 ID |
+| has_more | Bool | 是否有更多频道 |
+| next_cursor | String | 下一页的游标 |
+
+---
+
+### 获取搜索结果详情
+
+根据「搜索频道列表」返回的 `jobid`，按频道逐个拉取命中的帖子和评论 ID。
+
+**请求方式：** POST（**HTTPS**）
+**请求地址：** https://qyapi.weixin.qq.com/cgi-bin/aibot/topic/get_search_result?access_token=ACCESS_TOKEN
+
+```json
+{
+    "jobid": "JOB_ID",
+    "topic_id": "TOPIC_ID",
+    "cursor": "CURSOR",
+    "limit": 20
+}
+```
+
+**参数说明：**
+
+| 参数 | 是否必须 | 类型 | 说明 |
+|------|---------|------|------|
+| access_token | 是 | String | 机器人调用接口凭证 |
+| jobid | 是 | String | 「搜索频道列表」返回的搜索任务 ID，长度不超过 256 字节 |
+| topic_id | 是 | String | 要拉取详情的频道 ID，长度不超过 128 字节（从「搜索频道列表」返回的 `topic_list` 中获取） |
+| cursor | 否 | String | 分页游标，首页为空，长度不超过 256 字节 |
+| limit | 否 | Integer | 分页大小，默认 10，最大 20 |
+
+**返回结果：**
+
+```json
+{
+    "errcode": 0,
+    "errmsg": "ok",
+    "result_list": [
+        {
+            "post_id": "POST_ID",
+            "brief_content": "POST_BRIEF_CONTENT",
+            "reply_list": [
+                {
+                    "reply_id": "REPLY_ID",
+                    "brief_content": "REPLY_BRIEF_CONTENT"
+                }
+            ]
+        }
+    ],
+    "has_more": true,
+    "next_cursor": "NEXT_CURSOR"
+}
+```
+
+**参数说明：**
+
+| 参数 | 类型 | 说明 |
+|------|------|------|
+| errcode | Integer | 错误码 |
+| errmsg | String | 错误码说明 |
+| result_list | Object[] | 命中的帖子列表 |
+| result_list[].post_id | String | 帖子 ID |
+| result_list[].brief_content | String | 帖子内容摘要：纯文本（非 markdown），最多 1024 字节（超出截断） |
+| result_list[].reply_list | Object[] | 该帖子下命中的评论列表（仅评论命中时有值） |
+| result_list[].reply_list[].reply_id | String | 评论 ID |
+| result_list[].reply_list[].brief_content | String | 评论内容摘要：纯文本（非 markdown），最多 1024 字节（超出截断）|
+| has_more | Bool | 是否有更多帖子 |
+| next_cursor | String | 下一页的游标 |
+
+> **说明**：`brief_content` 仅供搜索结果预览。需要完整内容（markdown、附件、@列表）请用 post_id / reply_id 调「获取帖子列表」/「获取评论列表」。
+
+---
+
+### 典型调用流程
+
+```
+第一步：搜索频道（拿 jobid + 频道列表）
+  POST /topic/search  {keyword_list: ["xxx"]}
+  → {jobid: "J1", topic_list: [{topic_id: "T1"}, {topic_id: "T2"}], has_more: false}
+
+第二步：逐个频道拉命中的帖子/评论及内容摘要
+  POST /topic/get_search_result  {jobid: "J1", topic_id: "T1"}
+  → {result_list: [{post_id: "P1", brief_content: "摘要...", reply_list: [{reply_id: "R1", brief_content: "摘要..."}]}, {post_id: "P2", brief_content: "摘要...", reply_list: []}], has_more: false}
+
+  POST /topic/get_search_result  {jobid: "J1", topic_id: "T2"}
+  → {result_list: [...], has_more: true, next_cursor: "CUR1"}
+
+  POST /topic/get_search_result  {jobid: "J1", topic_id: "T2", cursor: "CUR1"}
+  → {result_list: [...], has_more: false}
+  
+第三步（可选）：需要完整内容（markdown、附件、@列表等）时，拿 post_id / reply_id 调「获取帖子列表」/「获取评论列表」接口
+```

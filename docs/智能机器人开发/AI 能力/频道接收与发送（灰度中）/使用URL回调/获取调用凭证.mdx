@@ -1,0 +1,95 @@
+---
+title: "获取调用凭证"
+generated_at: "2026-10-12 06:18:01"
+update_time: 1790666354
+source: "https://developer.work.weixin.qq.com/document/path/101910"
+---
+
+[TOC]
+
+该 API 用于获取智能机器人调用 OpenAPI 的凭证，可用于[获取内容](#62733)、[回复内容](#62734)等接口调用。
+
+> 调用前，需要在企业微信管理端为机器人开启 API 模式，并获取机器人 ID 和 Secret。
+>
+> 通过本接口获取的 Token 有效期为 1 天。开发者需要妥善缓存，不可频繁获取；Token 失效或过期后，应重新调用本接口获取。
+
+**请求方式：**POST（**HTTPS**）  
+**请求地址：** https://qyapi.weixin.qq.com/cgi-bin/aibot/get_token
+
+**请求包体：**
+
+```json
+{
+  "bot_id": "wwxxxxxxxxxxxxxxxx",
+  "time": 1789545600,
+  "nonce": "d7f3a9c2b1e84f60",
+  "signature": "3b7b52c8f1d9e6a21d438db10bf99f8538b685f495cfa81ea9c87bc893fa4623"
+}
+```
+
+**参数说明：**
+
+| 参数 | 是否必须 | 说明 |
+|------|----------|------|
+| bot_id | 是 | 机器人的 ID，最多 256 字节 |
+| time | 是 | 当前 Unix 时间戳，单位为秒；与企业微信服务器时间的偏差不能超过 1 分钟 |
+| nonce | 是 | 随机字符串，长度为 1～64 字节；建议每次请求使用不同的随机值 |
+| signature | 是 | 请求签名，64 位小写十六进制字符串；计算方式见下文 |
+
+**签名说明：**
+
+使用机器人 Secret、`bot_id`、`time` 和 `nonce` 按固定顺序直接拼接，不添加分隔符，再计算 SHA-256；最后将摘要转换为小写十六进制字符串：
+
+```text
+signature = lower_hex(sha256(secret + bot_id + time + nonce))
+```
+
+其中，`time` 按十进制字符串参与拼接。例如：
+
+```text
+secret = SECRET
+bot_id = wwxxxxxxxxxxxxxxxx
+time = 1789545600
+nonce = d7f3a9c2b1e84f60
+
+待签名字符串：SECRETwwxxxxxxxxxxxxxxxx1789545600d7f3a9c2b1e84f60
+```
+
+**返回结果：**
+
+```json
+{
+  "errcode": 0,
+  "errmsg": "ok",
+  "access_token": "ACCESS_TOKEN"
+}
+```
+
+**参数说明：**
+
+| 参数 | 说明 |
+|------|------|
+| errcode | 返回码，0 表示成功 |
+| errmsg | 返回码说明 |
+| access_token | 机器人OpenAPI 调用凭证，有效期为 1 天 |
+
+**出错返回示例：**
+
+```json
+{
+  "errcode": 853000,
+  "errmsg": "invalid bot_id or secret"
+}
+```
+
+**常见错误：**
+
+| 错误码 | 说明 | 处理建议 |
+|--------|------|----------|
+| 45009 | 接口调用超过频率限制 | 降低调用频率，并复用有效期内的 Token |
+| 846601 | 机器人未开启 API 模式 | 在企业微信管理端开启机器人的 API 模式后重试 |
+| 853000 | `bot_id`、Secret、签名或时间戳无效 | 检查机器人配置、签名拼接顺序及服务器时间 |
+
+**注意：**
+- 请勿在日志或错误信息中记录机器人 Secret 或完整 Token。
+- 不要在 Token 有效期内重复获取；建议在本地缓存，并在失效后重新获取。

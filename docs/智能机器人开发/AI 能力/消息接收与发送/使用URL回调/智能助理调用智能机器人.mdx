@@ -1,0 +1,234 @@
+---
+title: "智能助理调用智能机器人"
+generated_at: "2026-10-12 06:17:56"
+update_time: 1790512864
+source: "https://developer.work.weixin.qq.com/document/path/101904"
+---
+
+[TOC]
+
+## 概述
+
+智能助理支持调用开发者配置的智能机器人：用户在智能助理会话中发起对话后，智能助理会判断是否需要调用已添加的机器人来完成任务——可以是用户指定使用某个机器人，也可以是智能助理自动识别后调用，由机器人提供具体的服务能力。
+
+智能助理调用智能机器人是**复用已有的智能机器人消息回调通道**：已经接入消息回调通道的智能机器人，在智能助理场景下通常可以直接使用，无需额外改造。如果希望机器人在智能助理场景下获得更好的体验，或需要识别出当前调用来自智能助理，可参考本文档的说明进行接入。
+
+与普通用户消息回调相比，智能助理场景有以下差异：
+
+- 回调中通过 `compat_info` 标识本次消息来自智能助理，同时携带本次调用的唯一 ID 和消息序号，用于智能助理一次调用拆分多条消息时的聚合
+- 消息回调支持**文本、图片、文件**三种消息类型，且一次智能助理调用可能被拆分为多条消息回调
+- 智能助理的会话会映射为群聊会话，用于区分不同的会话，因此回调中 `chattype` 为 `group` 并携带 `chatid`
+- 机器人仅支持回复**流式消息、Markdown 消息**，不支持模板卡片消息
+- 机器人回复多条消息时，企业微信会将本次调用的所有回复**合并为一份结果**返回给智能助理，智能助理侧只会看到一次完整的回复结果
+- 开发者可通过 `to_ai_assistant.reply_status` 声明本次回复状态：`"finished"` 表示已全部结束，`"waiting"` 表示后续还有更多回复
+
+> 本文档适用于**接收 URL** 模式。长连接模式参考[智能助理调用智能机器人（长连接）](#62775)。
+
+---
+
+## 使用前配置
+
+**1. 在拓展中添加可使用的智能机器人**
+
+![](https://wework.qpic.cn/wwpic3az/128009_r6lCF6skSoWaXYV_1790513466/0)
+
+**2. 在智能助理会话中选择已添加的智能机器人使用**
+
+![](https://wework.qpic.cn/wwpic3az/978915_5wRYzGHjSM23xsz_1790513472/0)
+
+---
+
+## 交互流程
+
+```mermaid
+sequenceDiagram
+    participant User as 用户
+    participant Assistant as 智能助理
+    participant WeCom as 企业微信
+    participant Dev as 开发者服务（机器人）
+
+    User->>Assistant: 在智能助理会话中发起对话
+    Note over Assistant: 识别到可由已添加的机器人完成该任务<br/>（用户指定或智能助理自动判断）
+    Assistant->>WeCom: 发起调用
+    WeCom->>Dev: 消息回调<br/>(compat_info={source:"ai_assistant", task_id:"X", sub_id:1, total_sub_count:1}, chattype=group)
+
+    Dev-->>WeCom: 被动回复流式消息首帧<br/>(stream.id=abc, finish=false, to_ai_assistant={reply_status:"waiting"})
+    loop 轮询流式内容
+        WeCom->>Dev: 流式消息刷新
+        Dev-->>WeCom: 流式内容
+    end
+
+    alt 方式一：流式结束后直接声明结束
+        Dev-->>WeCom: 流式最后一帧<br/>(stream.finish=true, to_ai_assistant={reply_status:"finished"})
+        Note over WeCom: 收到 reply_status="finished"<br/>标记本次回复已结束
+        WeCom->>Assistant: 展示最终消息
+    else 方式二：流式 + 一定时间内 response_url 追加后结束
+        Dev-->>WeCom: 流式最后一帧<br/>(stream.finish=true, to_ai_assistant={reply_status:"waiting"})
+        Note over WeCom: reply_status="waiting"，继续等待，不启动超时计时
+        Dev->>WeCom: 一定时间内通过 response_url<br/>回复 Markdown 消息（to_ai_assistant={reply_status:"waiting"}）
+        WeCom->>Assistant: 展示追加消息
+        Dev->>WeCom: response_url 最后一条回复<br/>(to_ai_assistant={reply_status:"finished"})
+        Note over WeCom: 收到 reply_status="finished"<br/>标记本次回复已结束
+    end
+
+    Assistant->>User: 展示机器人的回复结果
+```
+
+---
+
+## 消息回调的特殊标识
+
+智能助理发起的调用，消息回调中会携带 `compat_info` 字段，用于与普通用户消息区分，同时携带本次调用的序号信息。
+
+智能助理调用机器人的消息回调支持以下消息类型：
+
+| 消息类型 | msgtype | 说明 |
+|---|---|---|
+| 文本消息 | `text` | 参考[文本消息](#62163/文本消息) |
+| 图片消息 | `image` | 参考[图片消息](#62163/图片消息) |
+| 文件消息 | `file` | 参考[文件消息](#62163/文件消息) |
+
+> **一次智能助理调用可能被拆分为多条消息回调**（例如同时携带文本和文件）。拆分出的多条消息共享同一个 `task_id`，并通过 `sub_id` / `total_sub_count` 标识序号和总数，开发者应据此聚合后再统一处理，详见下方字段说明。
+
+```json
+{
+    "msgid": "MSGID",
+    "aibotid": "AIBOTID",
+    "chatid": "CHATID",
+    "chattype": "group",
+    "from": {
+        "userid": "USERID"
+    },
+    "msgtype": "text",
+    "text": {
+        "content": "查询一下今天的天气"
+    },
+    "compat_info": {
+        "source": "ai_assistant",
+        "from_ai_assistant": {
+            "task_id": "CALL_ID",
+            "sub_id": 1,
+            "total_sub_count": 1
+        }
+    }
+}
+```
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| compat_info | Object | 本次回调的来源附加信息。有此字段表示本次回调非普通用户消息，开发者可据此与普通用户消息区分处理策略；不返回表示普通用户消息。仅**消息类回调**携带，目前仅文本消息、图片消息、文件消息三种消息类型会携带。**流式消息刷新事件**（`msgtype=stream`、仅有 `stream.id`、无正文）**不携带**本字段 |
+| compat_info.source | string | 本次回调的来源标识，智能助理场景下固定为 `ai_assistant` |
+| compat_info.from_ai_assistant | Object | 智能助理调用的附加信息 |
+| compat_info.from_ai_assistant.task_id | string | 本次智能助理调用的唯一标识。同一次智能助理调用拆分为多条消息时，所有消息共享同一个 `task_id`，开发者可用此字段聚合多条拆分消息 |
+| compat_info.from_ai_assistant.sub_id | int32 | 当前消息在本次智能助理调用拆分消息中的序号，从 1 开始计数 |
+| compat_info.from_ai_assistant.total_sub_count | int32 | 本次智能助理调用拆分的消息总条数。建议用「已收到 sub_id 集合大小 == total_sub_count」判断是否收齐，不依赖消息到达顺序 |
+| chattype | string | 智能助理场景下为 `group` |
+| chatid | string | 智能助理场景下会返回，用于区分不同的会话 |
+
+> **关于流式消息刷新事件**：机器人首次以流式消息（`finish=false`）被动回复后，企业微信会通过
+> 「流式消息刷新事件」回调拉取后续内容（每刷新一帧下发一次）。该事件是**同一次回调的续传帧请求**，
+> 并非新的一条拆分消息，因此**不携带** `compat_info`
+
+> 其余字段与[接收消息回调](#62163)一致。图片消息、文件消息在智能助理场景下以群聊形式下发，详细说明参考对应消息类型章节。
+
+---
+
+## 回复状态字段
+
+智能助理场景下，机器人可在回复时通过 `to_ai_assistant.reply_status` 声明当前的回复状态。
+
+`reply_status` 的取值：
+
+| 取值 | 含义 | 企业微信侧行为 |
+|---|---|---|
+| `"finished"` | 本次回复已全部结束 | 将本次回复标记为结束，无需等待超时 |
+| `"waiting"` | 后续还有回复，继续等待 | 不启动超时计时，等待后续消息到达 |
+| 不填（`to_ai_assistant` 不存在） | 未明确声明 | 由企业微信侧自行判断结束时机 |
+
+> **`"waiting"` 的使用场景**：机器人需要回复多条消息时（如先用流式消息发文字，再通过 `response_url` 追加一条 Markdown 消息），可在中间每条消息中声明 `"waiting"`，告知企业微信侧「别启动超时计时器，我还有更多消息要发」，避免任务在中途被错误关闭。
+
+### 支持的回复消息类型
+
+接收 URL 模式下，智能助理场景支持以下回复方式及消息类型，**不支持模板卡片消息**，也**不支持回复图片、文件、视频消息**：
+
+| 回复方式 | 支持的消息类型 | 说明 |
+|---|---|---|
+| 被动回复（响应包） | 流式消息 `stream` | 参考[流式消息回复](#62165/流式消息回复) |
+| `response_url` 回复 | Markdown 消息 `markdown` | 参考[Markdown 消息](#62166/markdown-消息) |
+
+典型的回复顺序为：先在响应包中回复流式消息直至 `stream.finish=true`，随后可在一定时间内通过 `response_url` 追加 Markdown 消息，并在**最后一条**回复中将 `reply_status` 设置为 `"finished"`。
+
+> **多条消息的合并**：机器人在本次调用中回复的所有消息（流式消息的完整内容、后续通过 `response_url` 追加的消息等），会由企业微信侧**合并为一份完整结果**再返回给智能助理。智能助理侧看到的是一次完整回复，而非逐条消息。
+>
+> 因此机器人应在**最后一条**消息上声明 `reply_status="finished"`：声明后企业微信侧即结束本次回复并将合并结果返回给智能助理，之后再到达的消息不会再被计入本次结果。
+
+### 被动回复（流式消息）
+
+在[响应包](#62165)中回复流式消息时，在响应包中设置 `to_ai_assistant`：
+
+```json
+{
+    "msgtype": "stream",
+    "stream": {
+        "id": "STREAMID",
+        "finish": true,
+        "content": "广州今日天气：29度，多云，降雨概率60%，建议携带雨具。"
+    },
+    "to_ai_assistant": {
+        "reply_status": "finished"
+    }
+}
+```
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| to_ai_assistant | Object | 否 | 回复给智能助理的信息，仅智能助理场景需要设置 |
+| to_ai_assistant.reply_status | string | 是（有 to_ai_assistant 时） | 回复状态声明。`"finished"` 表示本次回复已全部结束；`"waiting"` 表示后续还有回复；不填则由企业微信侧自行判断 |
+
+
+### 流式消息刷新
+
+企业微信轮询[流式消息刷新](#57141/流式消息刷新)时，机器人可在返回流式最后一帧的同时设置 `to_ai_assistant`，声明本次回复状态：
+
+```json
+{
+    "msgtype": "stream",
+    "stream": {
+        "id": "STREAMID",
+        "finish": true,
+        "content": "广州今日天气：29度，多云，降雨概率60%，建议携带雨具。"
+    },
+    "to_ai_assistant": {
+        "reply_status": "finished"
+    }
+}
+```
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| to_ai_assistant | Object | 否 | 回复给智能助理的信息，仅智能助理场景需要设置 |
+| to_ai_assistant.reply_status | string | 是（有 to_ai_assistant 时） | 回复状态声明。`"finished"` 表示本次回复已全部结束；`"waiting"` 表示后续还有回复；不填则由企业微信侧自行判断 |
+
+> `stream.finish` 仅表示流式消息本身结束，若机器人后续还会通过 `response_url` 追加其他消息，应设置 `to_ai_assistant.reply_status="waiting"` 而非 `"finished"`。
+
+
+### response_url 回复
+
+流式消息结束后，可在一定时间内使用 [`response_url`](#62166) 追加回复 Markdown 消息，并在最后一条设置 `reply_status="finished"`：
+
+```json
+{
+    "msgtype": "markdown",
+    "markdown": {
+        "content": "查询结果已生成"
+    },
+    "to_ai_assistant": {
+        "reply_status": "finished"
+    }
+}
+```
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| to_ai_assistant | Object | 否 | 回复给智能助理的信息，仅智能助理场景需要设置 |
+| to_ai_assistant.reply_status | string | 是（有 to_ai_assistant 时） | 回复状态声明。`"finished"` 表示本次回复已全部结束；`"waiting"` 表示后续还有更多回复 |

@@ -1,0 +1,351 @@
+---
+title: "接收事件"
+generated_at: "2026-10-12 06:18:06"
+update_time: 1791605479
+source: "https://developer.work.weixin.qq.com/document/path/101918"
+---
+
+[TOC]
+
+## 概述
+
+当用户在频道中与智能机器人发生交互，或频道、帖子、回复发生变更时，企业微信会将事件加密后回调到机器人配置的接收消息 URL。开发者可根据事件类型获取频道上下文、处理成员变化，或识别机器人生成内容收到的用户反馈。
+
+目前支持的事件类型：
+
+- [频道内被 @ 事件](#频道内被-事件)：用户在帖子或回复中 @ 机器人
+- [机器人加入/移除频道事件](#机器人加入移除频道事件)：机器人被加入或移出频道
+- [频道成员变更事件](#频道成员变更事件)：频道成员加入或被移除
+- [频道信息变更事件](#频道信息变更事件)：频道名称、描述、权限或创建者发生变更
+- [帖子变更事件](#帖子变更事件)：帖子新建、更新或删除
+- [回复变更事件](#回复变更事件)：回复新建、更新或删除
+- [用户反馈事件](#用户反馈事件)：用户对机器人生成的帖子或回复进行点赞、点踩等反馈
+
+---
+
+## 事件通用格式
+
+所有频道事件回调均遵循以下通用协议格式：
+
+```json
+{
+    "msgid": "CAIQ16HMjQYY/NGagIOAgAMgq4KM0AI=",
+    "create_time": 1700000000,
+    "aibotid": "AIBOTID",
+    "topic_id": "TOPICID",
+    "from": {
+        "userid": "USERID"
+    },
+    "msgtype": "event",
+    "event": {
+        "eventtype": "eventtype_name",
+        "eventtype_name": {}
+    }
+}
+```
+
+参数说明：
+
+| 参数 | 是否必填 | 说明 |
+|---|---|---|
+| `msgid` | 是 | 本次回调的唯一标识，开发者需据此进行事件排重 |
+| `create_time` | 是 | 回调事件产生的时间，Unix 时间戳，单位为秒。帖子和回复事件不额外提供独立的变更时间字段 |
+| `aibotid` | 是 | 智能机器人 ID |
+| `topic_id` | 是 | 频道 ID，统一放在回调外层 |
+| `from.userid` | 否 | 操作者或事件发起者的 userid。from结构体中，aibotid和userid互斥。 |
+| `from.aibotid` | 否 | 操作者或事件发起机器人的 aibotid。from结构体中，aibotid和userid互斥。 |
+| `msgtype` | 是 | 消息类型，事件通知固定为 `event` |
+| `event.eventtype` | 是 | 事件类型名称 |
+| `event.eventtype_name` | 是 | 与 `eventtype` 同名的具体事件结构体 |
+
+### 频道 ID 字段说明
+
+| 字段 | 说明 |
+|---|---|
+| `topic_id` | 频道 ID |
+| `post_id` | 频道中的帖子 ID |
+| `reply_id` | 帖子下的回复 ID |
+| `from.userid` | 操作人、作者或反馈用户的 userid，具体含义取决于事件类型 |
+
+---
+
+## 事件格式
+
+## 频道内被 @ 事件
+
+当用户在频道帖子或回复中 @ 机器人时触发。机器人收到事件后，可通过频道接口获取被 @ 所在帖子的完整上下文，包括帖子、回复、附件和表情等内容。
+
+```json
+{
+    "msgid": "CAIQ16HMjQYY/NGagIOAgAMgq4KM0AI=",
+    "create_time": 1700000000,
+    "aibotid": "AIBOTID",
+    "topic_id": "TOPICID",
+    "from": {
+        "userid": "USERID"
+    },
+    "msgtype": "event",
+    "event": {
+        "eventtype": "topic_at_bot",
+        "topic_at_bot": {
+            "post_id": "POSTID",
+            "reply_id": "REPLYID"
+        }
+    }
+}
+```
+
+参数说明：
+
+| 参数 | 是否必填 | 说明 |
+|---|---|---|
+| `event.eventtype` | 是 | 固定为 `topic_at_bot` |
+| `event.topic_at_bot.post_id` | 是 | 被 @ 所在的帖子 ID |
+| `event.topic_at_bot.reply_id` | 否 | 被 @ 所在的回复 ID。在帖子正文中直接 @ 时不返回该字段 |
+| `from.userid` | 是 | @ 机器人的用户 userid |
+
+---
+
+## 机器人加入/移除频道事件
+
+当机器人被加入频道或从频道中移除时触发。
+
+```json
+{
+    "msgid": "CAIQ16HMjQYY/NGagIOAgAMgq4KM0AI=",
+    "create_time": 1700000000,
+    "aibotid": "AIBOTID",
+    "topic_id": "TOPICID",
+    "from": {
+        "userid": "USERID"
+    },
+    "msgtype": "event",
+    "event": {
+        "eventtype": "topic_bot_join_leave",
+        "topic_bot_join_leave": {
+            "change_type": 1
+        }
+    }
+}
+```
+
+参数说明：
+
+| 参数 | 是否必填 | 说明 |
+|---|---|---|
+| `event.eventtype` | 是 | 固定为 `topic_bot_join_leave` |
+| `event.topic_bot_join_leave.change_type` | 是 | 变化类型：`1` 被加入，`2` 被移除 |
+| `from.userid` | 是 | 执行加入或移除操作的用户 userid |
+
+---
+
+## 频道成员变更事件
+
+当频道成员加入或被移除时触发。
+
+```json
+{
+    "msgid": "CAIQ16HMjQYY/NGagIOAgAMgq4KM0AI=",
+    "create_time": 1700000000,
+    "aibotid": "AIBOTID",
+    "topic_id": "TOPICID",
+    "from": {
+        "userid": "OPERATOR_USERID"
+    },
+    "msgtype": "event",
+    "event": {
+        "eventtype": "topic_member_change",
+        "topic_member_change": {
+            "change_type": 1
+        }
+    }
+}
+```
+
+参数说明：
+
+| 参数 | 是否必填 | 说明 |
+|---|---|---|
+| `event.eventtype` | 是 | 固定为 `topic_member_change` |
+| `event.topic_member_change.change_type` | 是 | 变化类型：`1` 加入，`2` 被移除 |
+| `from.userid` | 是 | 执行成员变更操作的用户 userid |
+
+---
+
+## 频道信息变更事件
+
+当频道的基本信息发生变更时触发。支持权限、名称、描述和创建者变更。
+
+```json
+{
+    "msgid": "CAIQ16HMjQYY/NGagIOAgAMgq4KM0AI=",
+    "create_time": 1700000000,
+    "aibotid": "AIBOTID",
+    "topic_id": "TOPICID",
+    "from": {
+        "userid": "OPERATOR_USERID"
+    },
+    "msgtype": "event",
+    "event": {
+        "eventtype": "topic_info_change",
+        "topic_info_change": {
+            "info_type": 2
+        }
+    }
+}
+```
+
+参数说明：
+
+| 参数 | 是否必填 | 说明 |
+|---|---|---|
+| `event.eventtype` | 是 | 固定为 `topic_info_change` |
+| `event.topic_info_change.info_type` | 是 | 信息变化类型，见下表 |
+| `from.userid` | 是 | 执行信息变更操作的用户 userid |
+
+`info_type` 取值：
+
+| 值 | 含义 |
+|---|---|
+| `1` | 权限变更，公开/私有状态发生变化 |
+| `2` | 名称变更 |
+| `3` | 描述变更 |
+| `4` | 创建者变更 |
+
+
+---
+
+## 帖子变更事件
+
+当频道中的帖子新建、更新或删除时触发。
+
+```json
+{
+    "msgid": "CAIQ16HMjQYY/NGagIOAgAMgq4KM0AI=",
+    "create_time": 1700000000,
+    "aibotid": "AIBOTID",
+    "topic_id": "TOPICID",
+    "from": {
+        "userid": "AUTHOR_USERID"
+    },
+    "msgtype": "event",
+    "event": {
+        "eventtype": "topic_event",
+        "topic_event": {
+            "type": 1,
+            "post_id": "POSTID"
+        }
+    }
+}
+```
+
+参数说明：
+
+| 参数 | 是否必填 | 说明 |
+|---|---|---|
+| `event.eventtype` | 是 | 固定为 `topic_event` |
+| `event.topic_event.type` | 是 | 变更类型：`1` 新建，`2` 更新，`3` 删除 |
+| `event.topic_event.post_id` | 是 | 发生变更的帖子 ID |
+| `from.userid` | 是 | 帖子作者，也是该事件的操作者 |
+
+> 帖子变更事件不携带帖子内容摘要，也不额外返回独立的变更时间。需要获取帖子内容时，开发者应根据 `topic_id` 和 `post_id` 调用频道内容接口。
+
+---
+
+## 回复变更事件
+
+当频道中的回复新建、更新或删除时触发。
+
+```json
+{
+    "msgid": "CAIQ16HMjQYY/NGagIOAgAMgq4KM0AI=",
+    "create_time": 1700000000,
+    "aibotid": "AIBOTID",
+    "topic_id": "TOPICID",
+    "from": {
+        "userid": "AUTHOR_USERID"
+    },
+    "msgtype": "event",
+    "event": {
+        "eventtype": "topic_reply_event",
+        "topic_reply_event": {
+            "type": 2,
+            "post_id": "POSTID",
+            "reply_id": "REPLYID"
+        }
+    }
+}
+```
+
+参数说明：
+
+| 参数 | 是否必填 | 说明 |
+|---|---|---|
+| `event.eventtype` | 是 | 固定为 `topic_reply_event` |
+| `event.topic_reply_event.type` | 是 | 变更类型：`1` 新建，`2` 更新，`3` 删除 |
+| `event.topic_reply_event.post_id` | 是 | 所属帖子 ID |
+| `event.topic_reply_event.reply_id` | 是 | 发生变更的回复 ID |
+| `from.userid` | 是 | 回复作者，也是该事件的操作者 |
+
+> 回复变更事件不携带回复内容摘要，也不额外返回独立的变更时间。需要获取回复内容时，开发者应根据 `topic_id`、`post_id` 和 `reply_id` 调用频道内容接口。
+
+---
+
+## 用户反馈事件
+
+当用户对机器人在频道中生成的帖子或回复进行点赞、点踩或取消反馈时触发。
+
+```json
+{
+    "msgid": "CAIQ16HMjQYY/NGagIOAgAMgq4KM0AI=",
+    "create_time": 1700000000,
+    "aibotid": "AIBOTID",
+    "topic_id": "TOPICID",
+    "from": {
+        "userid": "FEEDBACK_USERID"
+    },
+    "msgtype": "event",
+    "event": {
+        "eventtype": "feedback_event",
+        "feedback_event": {
+            "type": 2,
+			"id":"FEEDBACKID",
+            "content": "能再详细一些么",
+            "inaccurate_reason_list": [2, 4],
+            "post_id": "POSTID",
+            "reply_id": "REPLYID"
+        }
+    }
+}
+```
+
+参数说明：
+
+| 参数 | 是否必填 | 说明 |
+|---|---|---|
+| `event.eventtype` | 是 | 固定为 `feedback_event` |
+| `event.feedback_event.type` | 是 | 反馈类型：`1` 准确，`2` 不准确，`3` 取消准确或不准确 |
+|`feedback_event.id` |是|回复消息中设置的反馈 id |
+| `event.feedback_event.content` | 否 | 用户输入的反馈内容，仅不准确反馈类型返回 |
+| `event.feedback_event.inaccurate_reason_list` | 否 | 用户选择的负反馈原因列表，仅不准确反馈类型返回 |
+| `event.feedback_event.post_id` | 是 | 反馈对象所属的帖子 ID |
+| `event.feedback_event.reply_id` | 否 | 反馈对象为回复时返回，帖子反馈不返回 |
+| `from.userid` | 是 | 提交反馈的用户 userid |
+
+负反馈原因取值：
+
+| 值 | 含义 |
+|---|---|
+| `1` | 与内容无关 |
+| `2` | 内容不完整 |
+| `3` | 内容有错误 |
+| `4` | 数据分析错误 |
+
+---
+
+## 回调处理建议
+
+1. 使用 `msgid` 对所有事件进行幂等排重。
+2. 帖子和回复事件中的 `from.userid` 同时表示作者和操作者。
+3. `feedback_event` 中根据反馈对象类型判断是否存在 `reply_id`；不存在时表示反馈对象是帖子。
+4. HTTP 回调和 WebSocket 长连接收到的业务事件结构一致，差异仅在传输通道和鉴权上下文。

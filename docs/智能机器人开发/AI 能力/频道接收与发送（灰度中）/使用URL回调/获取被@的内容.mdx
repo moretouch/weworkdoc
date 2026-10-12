@@ -1,0 +1,289 @@
+---
+title: "获取被@的内容"
+generated_at: "2026-10-12 06:18:02"
+update_time: 1791613337
+source: "https://developer.work.weixin.qq.com/document/path/101913"
+---
+
+[TOC]
+机器人收到被 @ 回调事件后，允许调用接口获取指定的帖子和回复内容。（超过24小时则不可调用）。
+
+## 获取指定的帖子列表和内容
+获取指定频道下的帖子，可指定帖子ID拉取。
+**请求方式：** POST（**HTTPS**）
+**请求地址：** https://qyapi.weixin.qq.com/cgi-bin/aibot/topic/get_post_list?access_token=ACCESS_TOKEN
+```
+{
+	"topic_id": "TOPIC_ID",
+	"post_id_list": [
+		"POST_ID"
+	]
+}
+```
+
+**参数说明：** 
+
+| 参数      | 是否必须| 类型| 说明   |
+| ------- | ---- | --|-- |
+|access_token|是|String|[机器人调用接口凭证](#62616)|
+|topic_id|是|String|频道ID，长度不超过 128 字节|
+|post_id_list|否|String[]|指定获取的帖子ID列表，不超过 50 个，单个ID长度不超过 128 字节`type`为 0 时有效|
+<!--| begin_time | 否 | Integer | 起始时间（秒级时间戳），`type`为 1 时有效 |
+| end_time | 否 | Integer | 结束时间（秒级时间戳），`type`为 1 时有效 |
+|sort_type|否|Integer|排序方式。0-按帖子创建时间从旧到新（默认），1-从新到旧。`type`为 1 时有效。翻页过程中 sort_type 须保持一致|
+|cursor|否|String|分页游标，首页为空，长度不超过 256 字节，`type`为 1 时有效|
+|limit|否|Interger|分页大小，默认 20，最大 50，`type`为 1 时有效|
+|type|是|Interger|获取类型：0-指定`post_id_list`获取；1-分页获取频道下的所有帖子；| -->
+
+**返回结果：**
+```json
+{
+	"errcode": 0,
+	"errmsg": "ok",
+	"post_list": [
+		{
+			"post_id": "POST_ID",
+			"creator_info": {
+			    "type": 0,
+				"userid": "USER_ID",
+				"botid": "BOT_ID"
+			},
+			"create_time": 1700000000,
+			"is_recalled": false,
+			"is_modified": false,
+			"modify_time": 1700000000,
+			"content": "带占位符的 markdown 内容",
+			"inline_file_list": [
+				{
+					"placeholder": "PLACE_HOLDER",
+					"file_name": "FILE_NAME",
+					"download_url": "DOWNLOAD_URL",
+					"cookie_name": "COOKIE_NAME",
+					"cookie_value": "COOKIE_VALUE"
+				}
+			],
+			"inline_mention_list": [
+				{
+					"placeholder": "PLACE_HOLDER1",
+					"member": {
+						"type": 0,
+						"userid": "USERID"
+					}
+				},
+				{
+					"placeholder": "PLACE_HOLDER2",
+					"member": {
+						"type": 1,
+						"aibotid": "BOTID"
+					}
+				}
+			],
+			"image_list": [
+				{
+					"download_url": "DOWNLOAD_URL",
+					"cookie_name": "COOKIE_NAME",
+					"cookie_value": "COOKIE_VALUE"
+				}
+			],
+			"emoji_list": [
+				{
+					"emoji_type": 1,
+					"user_list": [
+						{
+							"type": 0,
+							"userid": "USERID"
+						},
+						{
+							"type": 1,
+							"aibotid": "BOTID"
+						}
+					]
+				}
+			]
+		}
+	],
+	"has_more": true,
+	"next_cursor": "NEXT_CURSOR"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|post_list| Object([PostInfo](#PostInfo))[]| 帖子详情列表 |
+|has_more|Bool|是否有更多数据|
+|next_cursor|String|下一页的游标|
+
+
+## 获取指定的评论列表和内容
+获取指定频道和帖子下的评论/回复，可指定评论ID拉取。
+**请求方式：** POST（**HTTPS**）
+**请求地址：** https://qyapi.weixin.qq.com/cgi-bin/aibot/topic/get_reply_list?access_token=ACCESS_TOKEN
+```
+{
+	"topic_id": "TOPIC_ID",
+	"post_id": "POST_ID",
+	"type": "TYPE",
+	"reply_id_list": [
+		"REPLY_ID"
+	],
+	"begin_time": 1700000000,
+	"end_time": 1700100000,
+	"sort_type": 0,
+	"cursor": "CURSOR",
+	"limit": "LIMIT"
+}
+```
+
+**参数说明：** 
+
+| 参数      | 是否必须| 类型| 说明   |
+| ------- | ---- | --|-- |
+|access_token|是|String|[机器人调用接口凭证](#62616)|
+|topic_id|是|String|频道ID，长度不超过 128 字节|
+|post_id|是|String|帖子ID，长度不超过 128 字节|
+<!-- |type|是|Interger|获取类型：0-指定`reply_id_list`获取；1-分页获取帖子下的所有评论|
+|reply_id_list|否|String[]|指定获取的评论ID列表，不超过 50 个，单个ID长度不超过 128 字节，`type`为 0 时有效|
+| begin_time | 否 | Integer | 起始时间（秒级时间戳），`type`为 1 时有效 |
+| end_time | 否 | Integer | 结束时间（秒级时间戳），`type`为 1 时有效 |
+|sort_type|否|Integer|排序方式。0-按评论创建时间从旧到新（默认），1-从新到旧。`type`为 1 时有效。翻页过程中 sort_type 须保持一致|
+|cursor|否|String|分页游标，首页为空，长度不超过 256 字节，`type`为 1 时有效|
+|limit|否|Interger|分页大小，默认 20，最大 50，`type`为 1 时有效|
+-->
+
+**返回结果：**
+```json
+{
+	"errcode": 0,
+	"errmsg": "ok",
+	"reply_list": [
+		{
+			"reply_id": "REPLY_ID",
+			"parent_reply_id": "PARENT_REPLY_ID",
+			"creator_info": {
+				"type": 0,
+				"userid": "USER_ID",
+				"botid": "BOT_ID"
+			},
+			"create_time": 1700000000,
+			"is_recalled": false,
+			"is_modified": false,
+			"modify_time": 1700000000,
+			"content": "带占位符的 markdown 内容",
+			"inline_file_list": [
+				{
+					"placeholder": "PLACE_HOLDER",
+					"file_name": "FILE_NAME",
+					"download_url": "DOWNLOAD_URL",
+					"cookie_name": "COOKIE_NAME",
+					"cookie_value": "COOKIE_VALUE"
+				}
+			],
+			"inline_mention_list": [
+				{
+					"placeholder": "PLACE_HOLDER1",
+					"member": {
+						"type": 0,
+						"userid": "USERID"
+					}
+				},
+				{
+					"placeholder": "PLACE_HOLDER2",
+					"member": {
+						"type": 1,
+						"aibotid": "BOTID"
+					}
+				}
+			],
+			"image_list": [
+				{
+					"download_url": "DOWNLOAD_URL",
+					"cookie_name": "COOKIE_NAME",
+					"cookie_value": "COOKIE_VALUE"
+				}
+			],
+			"emoji_list": [
+				{
+					"emoji_type": 1,
+					"user_list": [
+						{
+							"type": 0,
+							"userid": "USERID"
+						},
+						{
+							"type": 1,
+							"aibotid": "BOTID"
+						}
+					]
+				}
+			]
+		}
+	],
+	"has_more": true,
+	"next_cursor": "NEXT_CURSOR"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|reply_list| Object([ReplyInfo](#ReplyInfo))[]| 评论/回复详情列表 |
+|has_more|Bool|是否有更多数据|
+|next_cursor|String|下一页的游标|
+
+## 附录
+
+### PostInfo
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|post_id |String|帖子ID  |
+|creator|Object([UserInfo](#62734/UserInfo))|创建者信息|
+|create_time|Interger|创建时间，timestamp|
+|is_recalled|Bool|帖子是否已撤回|
+|is_modified|Bool|帖子是否已修改|
+|modify_time|Bool|帖子最后修改时间，timestamp|
+|content|String|markdown格式内容，可内嵌文件/@人，详见[占位符说明](#content_note)|
+|inline_file_list|object[]|content内嵌文件列表|
+|inline_file_list[].placeholder|string| content 中 ${inline_file:placeholder}  对应的 placeholder|
+|inline_file_list[].file_name|string| 文件名 |
+|inline_file_list[].download_url|string| 临时下载链接，该url一小时内有效 |
+|inline_file_list[].cookie_name|string| 下载请求带cookie的key |
+|inline_file_list[].cookie_value|string| 下载请求带cookie的value |
+|inline_mention_list|object[]|content内嵌@人列表|
+|inline_mention_list[].placeholder|string| content 中 ${inline_mention:placeholder} 对应的 placeholder  |
+|inline_mention_list[].member|Object([UserInfo](#62734/UserInfo))| 被 @ 的用户信息（成员 `type=0` 或机器人 `type=1`） |
+| image_list |  object[] | 图片列表 |
+| image_list[].download_url |  string |  临时下载链接，该url一小时内有效 |
+|image_list[].cookie_name|string| 下载请求带cookie的key |
+|image_list[].cookie_value|string| 下载请求带cookie的value |
+| emoji_list | Object([EmojiInfo](#62734/EmojiInfo))[] |  贴表情列表 |
+
+### ReplyInfo
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|reply_id |String|回复ID  |
+|parent_reply_id |String| 回复某条评论/回复  |
+|creator|Object\[[UserInfo](#62734/UserInfo)\]|创建者信息|
+|create_time|Interger|创建时间，timestamp|
+|is_recalled|Bool|帖子是否已撤回|
+|is_modified|Bool|帖子是否已修改|
+|modify_time|Bool|帖子最后修改时间，timestamp|
+|content|String|markdown格式内容，可内嵌文件/@人，详见[占位符说明](#62734/content_note)|
+|inline_file_list|object[]|content内嵌文件列表|
+|inline_file_list[].placeholder|string| content 中 ${inline_file:placeholder}  对应的 placeholder|
+|inline_file_list[].file_name|string| 文件名 |
+|inline_file_list[].download_url|string| 临时下载链接，该url一小时内有效 |
+|inline_file_list[].cookie_name|string| 下载请求带cookie的key |
+|inline_file_list[].cookie_value|string| 下载请求带cookie的value |
+|inline_mention_list|object[]|content内嵌@人列表|
+|inline_mention_list[].placeholder|string| content 中 ${inline_mention:placeholder} 对应的 placeholder  |
+|inline_mention_list[].member|Object([UserInfo](#62734/UserInfo))| 被 @ 的用户信息（成员 `type=0` 或机器人 `type=1`） |
+| image_list |  object[] | 图片列表 |
+| image_list[].download_url |  string |  临时下载链接，该url一小时内有效 |
+|image_list[].cookie_name|string| 下载请求带cookie的key |
+|image_list[].cookie_value|string| 下载请求带cookie的value |
+| emoji_list | Object([EmojiInfo](#62734/EmojiInfo))[] |  贴表情列表 |

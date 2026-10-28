@@ -1,0 +1,261 @@
+---
+title: "获取被@的内容"
+generated_at: "2026-10-28 15:18:30"
+update_time: 1792066828
+source: "https://developer.work.weixin.qq.com/document/path/101962"
+---
+
+[TOC]
+机器人收到被 @ 回调事件后，允许调用接口获取指定的帖子和回复内容。（超过24小时则不可调用）。
+
+## 获取指定的帖子列表和内容
+获取指定频道下的帖子，可指定帖子ID拉取。
+
+**请求示例：**
+```json
+{
+	"cmd": "aibot_topic_get_post_list",
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"topic_id": "TOPIC_ID",
+		"post_id_list": [
+			"POST_ID"
+		]
+	}
+}
+```
+
+**请求字段说明：**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| cmd | string | 是 | 固定值 `aibot_topic_get_post_list` |
+| headers.req_id | string | 是 | 请求唯一标识，由开发者自行生成 |
+| body.topic_id | string | 是 | 频道ID，长度不超过 128 字节 |
+| body.post_id_list | string[] | 否 | 指定获取的帖子ID列表，不超过 50 个，单个ID长度不超过 128 字节 |
+<!--| body.begin_time | integer | 否 | 起始时间（秒级时间戳），`type`为 1 时有效 |
+| body.end_time | integer | 否 | 结束时间（秒级时间戳），`type`为 1 时有效 |
+| body.sort_type | integer | 否 | 排序方式。0-按帖子创建时间从旧到新（默认），1-从新到旧。`type`为 1 时有效。翻页过程中 sort_type 须保持一致 |
+| body.cursor | string | 否 | 分页游标，首页为空，长度不超过 256 字节，`type`为 1 时有效 |
+| body.limit | integer | 否 | 分页大小，默认 20，最大 50，`type`为 1 时有效 |
+| body.type | integer | 是 | 获取类型：0-指定`post_id_list`获取；1-分页获取频道下的所有帖子 | -->
+
+**响应示例：**
+```json
+{
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"post_list": [
+			{
+				"post_id": "POST_ID",
+				"creator_info": {
+				    "type": 0,
+					"userid": "USER_ID",
+					"botid": "BOT_ID"
+				},
+				"create_time": 1700000000,
+				"is_recalled": false,
+				"is_modified": false,
+				"modify_time": 1700000000,
+				"content": "带占位符的 markdown 内容",
+				"inline_file_list": [
+					{
+						"placeholder": "PLACE_HOLDER",
+						"file_name": "FILE_NAME",
+						"download_url": "DOWNLOAD_URL",
+						"cookie_name": "COOKIE_NAME",
+						"cookie_value": "COOKIE_VALUE"
+					}
+				],
+				"inline_mention_list": [
+					{
+						"placeholder": "PLACE_HOLDER1",
+						"member": {
+							"type": 0,
+							"userid": "USERID"
+						}
+					},
+					{
+						"placeholder": "PLACE_HOLDER2",
+						"member": {
+							"type": 1,
+							"aibotid": "BOTID"
+						}
+					}
+				],
+				"inline_chat_record_list": [
+					{
+						"placeholder": "PLACE_HOLDER",
+						"chat_record_id": "CHAT_RECORD_ID"
+					}
+				],
+				"image_list": [
+					{
+						"download_url": "DOWNLOAD_URL",
+						"cookie_name": "COOKIE_NAME",
+						"cookie_value": "COOKIE_VALUE"
+					}
+				],
+				"emoji_list": [
+					{
+						"emoji_type": 1,
+						"user_list": [
+							{
+								"type": 0,
+								"userid": "USERID"
+							},
+							{
+								"type": 1,
+								"aibotid": "BOTID"
+							}
+						]
+					}
+				]
+			}
+		],
+		"has_more": true,
+		"next_cursor": "NEXT_CURSOR"
+	},
+	"errcode": 0,
+	"errmsg": "ok"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|body.post_list| Object([PostInfo](#63045/PostInfo))[]| 帖子详情列表 |
+|body.has_more|Bool|是否有更多数据|
+|body.next_cursor|String|下一页的游标|
+
+
+## 获取指定的评论列表和内容
+获取指定频道和帖子下的评论/回复，可指定评论ID拉取。
+
+**请求示例：**
+```json
+{
+	"cmd": "aibot_topic_get_reply_list",
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"topic_id": "TOPIC_ID",
+		"post_id": "POST_ID",
+		"reply_id_list": [
+			"REPLY_ID"
+		]
+	}
+}
+```
+
+**请求字段说明：**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| cmd | string | 是 | 固定值 `aibot_topic_get_reply_list` |
+| headers.req_id | string | 是 | 请求唯一标识，由开发者自行生成 |
+| body.topic_id | string | 是 | 频道ID，长度不超过 128 字节 |
+| body.post_id | string | 是 | 帖子ID，长度不超过 128 字节 |
+| body.reply_id_list | string[] | 否 | 指定获取的评论ID列表，不超过 50 个，单个ID长度不超过 128 字节 |
+<!-- | body.type | integer | 是 | 获取类型：0-指定`reply_id_list`获取；1-分页获取帖子下的所有评论 |
+| body.reply_id_list | string[] | 否 | 指定获取的评论ID列表，不超过 50 个，单个ID长度不超过 128 字节，`type`为 0 时有效 |
+| body.begin_time | integer | 否 | 起始时间（秒级时间戳），`type`为 1 时有效 |
+| body.end_time | integer | 否 | 结束时间（秒级时间戳），`type`为 1 时有效 |
+| body.sort_type | integer | 否 | 排序方式。0-按评论创建时间从旧到新（默认），1-从新到旧。`type`为 1 时有效。翻页过程中 sort_type 须保持一致 |
+| body.cursor | string | 否 | 分页游标，首页为空，长度不超过 256 字节，`type`为 1 时有效 |
+| body.limit | integer | 否 | 分页大小，默认 20，最大 50，`type`为 1 时有效 |
+-->
+
+**响应示例：**
+```json
+{
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"reply_list": [
+			{
+				"reply_id": "REPLY_ID",
+				"parent_reply_id": "PARENT_REPLY_ID",
+				"creator_info": {
+					"type": 0,
+					"userid": "USER_ID",
+					"botid": "BOT_ID"
+				},
+				"create_time": 1700000000,
+				"is_recalled": false,
+				"is_modified": false,
+				"modify_time": 1700000000,
+				"content": "带占位符的 markdown 内容",
+				"inline_file_list": [
+					{
+						"placeholder": "PLACE_HOLDER",
+						"file_name": "FILE_NAME",
+						"download_url": "DOWNLOAD_URL",
+						"cookie_name": "COOKIE_NAME",
+						"cookie_value": "COOKIE_VALUE"
+					}
+				],
+				"inline_mention_list": [
+					{
+						"placeholder": "PLACE_HOLDER1",
+						"member": {
+							"type": 0,
+							"userid": "USERID"
+						}
+					},
+					{
+						"placeholder": "PLACE_HOLDER2",
+						"member": {
+							"type": 1,
+							"aibotid": "BOTID"
+						}
+					}
+				],
+				"image_list": [
+					{
+						"download_url": "DOWNLOAD_URL",
+						"cookie_name": "COOKIE_NAME",
+						"cookie_value": "COOKIE_VALUE"
+					}
+				],
+				"emoji_list": [
+					{
+						"emoji_type": 1,
+						"user_list": [
+							{
+								"type": 0,
+								"userid": "USERID"
+							},
+							{
+								"type": 1,
+								"aibotid": "BOTID"
+							}
+						]
+					}
+				]
+			}
+		],
+		"has_more": true,
+		"next_cursor": "NEXT_CURSOR"
+	},
+	"errcode": 0,
+	"errmsg": "ok"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|body.reply_list| Object([ReplyInfo](#63045/ReplyInfo))[]| 评论/回复详情列表 |
+|body.has_more|Bool|是否有更多数据|
+|body.next_cursor|String|下一页的游标|

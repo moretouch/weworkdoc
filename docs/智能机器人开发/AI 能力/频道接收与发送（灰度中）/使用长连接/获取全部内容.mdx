@@ -1,0 +1,511 @@
+---
+title: "获取全部内容"
+generated_at: "2026-10-28 15:18:33"
+update_time: 1792066855
+source: "https://developer.work.weixin.qq.com/document/path/101964"
+---
+
+[TOC]
+机器人可以获取频道下的内容，可全量拉取或指定拉取。仅支持频道的机器人调用。
+
+## 获取帖子列表和内容
+获取指定频道下的帖子，可按顺序全量拉取，或指定帖子ID拉取。
+
+**请求示例：**
+```json
+{
+	"cmd": "aibot_topic_get_post_list",
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"topic_id": "TOPIC_ID",
+		"type": 0,
+		"post_id_list": [
+			"POST_ID"
+		],
+		"begin_time": 1700000000,
+		"end_time": 1700100000,
+		"sort_type": 0,
+		"cursor": "CURSOR",
+		"limit": 10
+	}
+}
+```
+
+**请求字段说明：**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| cmd | string | 是 | 固定值 `aibot_topic_get_post_list` |
+| headers.req_id | string | 是 | 请求唯一标识，由开发者自行生成 |
+| body.topic_id | string | 是 | 频道ID，长度不超过 128 字节 |
+| body.type | integer | 否 | 获取类型：0-指定`post_id_list`获取（默认）；1-分页获取话题下的所有帖子；|
+| body.post_id_list | string[] | 否 | 指定获取的帖子ID列表，不超过 50 个，单个ID长度不超过 128 字节`type`为 0 时有效|
+| body.begin_time | integer | 否 | 起始时间（秒级时间戳），`type`为 1 时有效 |
+| body.end_time | integer | 否 | 结束时间（秒级时间戳），`type`为 1 时有效 |
+| body.sort_type | integer | 否 | 排序方式。0-按帖子创建时间从旧到新（默认），1-从新到旧。`type`为 1 时有效。翻页过程中 sort_type 须保持一致|
+| body.cursor | string | 否 | 分页游标，首页为空，长度不超过 256 字节，`type`为 1 时有效|
+| body.limit | integer | 否 | 分页大小，默认 20，最大 50，`type`为 1 时有效|
+
+**响应示例：**
+```json
+{
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"post_list": [
+			{
+				"post_id": "POST_ID",
+				"creator": {
+					"type": 0,
+					"userid": "USER_ID",
+					"aibotid": "BOT_ID"
+				},
+				"create_time": 1700000000,
+				"is_recalled": false,
+				"is_modified": false,
+				"modify_time": 1700000000,
+				"content": "带占位符的 markdown 内容",
+				"inline_file_list": [
+					{
+						"placeholder": "PLACE_HOLDER",
+						"file_name": "FILE_NAME",
+						"download_url": "DOWNLOAD_URL",
+						"cookie_name": "COOKIE_NAME",
+						"cookie_value": "COOKIE_VALUE"
+					}
+				],
+				"inline_mention_list": [
+					{
+						"placeholder": "PLACE_HOLDER1",
+						"member": {
+							"type": 0,
+							"userid": "USERID"
+						}
+					},
+					{
+						"placeholder": "PLACE_HOLDER2",
+						"member": {
+							"type": 1,
+							"aibotid": "BOTID"
+						}
+					}
+				],
+				"inline_chat_record_list": [
+					{
+						"placeholder": "PLACE_HOLDER",
+						"chat_record_id": "CHAT_RECORD_ID"
+					}
+				],
+				"image_list": [
+					{
+						"download_url": "DOWNLOAD_URL",
+						"cookie_name": "COOKIE_NAME",
+						"cookie_value": "COOKIE_VALUE"
+					}
+				],
+				"emoji_list": [
+					{
+						"emoji_type": 1,
+						"user_list": [
+							{
+								"type": 0,
+								"userid": "USERID"
+							},
+							{
+								"type": 1,
+								"aibotid": "BOTID"
+							}
+						]
+					}
+				]
+			}
+		],
+		"has_more": true,
+		"next_cursor": "NEXT_CURSOR"
+	},
+	"errcode": 0,
+	"errmsg": "ok"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|body.post_list| Object([PostInfo](#PostInfo))[]| 帖子详情列表 |
+|body.has_more|Bool|是否有更多数据|
+|body.next_cursor|String|下一页的游标|
+
+
+## 获取评论列表和内容
+获取指定频道和帖子下的评论/回复，可按顺序全量拉取，或指定评论ID拉取。
+
+**请求示例：**
+```json
+{
+	"cmd": "aibot_topic_get_reply_list",
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"topic_id": "TOPIC_ID",
+		"post_id": "POST_ID",
+		"type": 0,
+		"reply_id_list": [
+			"REPLY_ID"
+		],
+		"begin_time": 1700000000,
+		"end_time": 1700100000,
+		"sort_type": 0,
+		"cursor": "CURSOR",
+		"limit": 20
+	}
+}
+```
+
+**请求字段说明：**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| cmd | string | 是 | 固定值 `aibot_topic_get_reply_list` |
+| headers.req_id | string | 是 | 请求唯一标识，由开发者自行生成 |
+| body.topic_id | string | 是 | 频道ID，长度不超过 128 字节|
+| body.post_id | string | 是 | 帖子ID，长度不超过 128 字节|
+| body.type | integer | 否 | 获取类型：0-指定`reply_id_list`获取（默认）；1-分页获取帖子下的所有评论|
+| body.reply_id_list | string[] | 否 | 指定获取的评论ID列表，不超过 50 个，单个ID长度不超过 128 字节，`type`为 0 时有效|
+| body.begin_time | integer | 否 | 起始时间（秒级时间戳），`type`为 1 时有效 |
+| body.end_time | integer | 否 | 结束时间（秒级时间戳），`type`为 1 时有效 |
+| body.sort_type | integer | 否 | 排序方式。0-按评论创建时间从旧到新（默认），1-从新到旧。`type`为 1 时有效。翻页过程中 sort_type 须保持一致|
+| body.cursor | string | 否 | 分页游标，首页为空，长度不超过 256 字节，`type`为 1 时有效|
+| body.limit | integer | 否 | 分页大小，默认 20，最大 50，`type`为 1 时有效|
+
+
+**响应示例：**
+```json
+{
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"reply_list": [
+			{
+				"reply_id": "REPLY_ID",
+				"parent_reply_id": "PARENT_REPLY_ID",
+				"creator": {
+					"type": 0,
+					"userid": "USER_ID",
+					"aibotid": "BOT_ID"
+				},
+				"create_time": 1700000000,
+				"is_recalled": false,
+				"is_modified": false,
+				"modify_time": 1700000000,
+				"content": "带占位符的 markdown 内容",
+				"inline_file_list": [
+					{
+						"placeholder": "PLACE_HOLDER",
+						"file_name": "FILE_NAME",
+						"download_url": "DOWNLOAD_URL",
+						"cookie_name": "COOKIE_NAME",
+						"cookie_value": "COOKIE_VALUE"
+					}
+				],
+				"inline_mention_list": [
+					{
+						"placeholder": "PLACE_HOLDER1",
+						"member": {
+							"type": 0,
+							"userid": "USERID"
+						}
+					},
+					{
+						"placeholder": "PLACE_HOLDER2",
+						"member": {
+							"type": 1,
+							"aibotid": "BOTID"
+						}
+					}
+				],
+				"image_list": [
+					{
+						"download_url": "DOWNLOAD_URL",
+						"cookie_name": "COOKIE_NAME",
+						"cookie_value": "COOKIE_VALUE"
+					}
+				],
+				"emoji_list": [
+					{
+						"emoji_type": 1,
+						"user_list": [
+							{
+								"type": 0,
+								"userid": "USERID"
+							},
+							{
+								"type": 1,
+								"aibotid": "BOTID"
+							}
+						]
+					}
+				]
+			}
+		],
+		"has_more": true,
+		"next_cursor": "NEXT_CURSOR"
+	},
+	"errcode": 0,
+	"errmsg": "ok"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|body.reply_list| Object([ReplyInfo](#ReplyInfo))[]| 评论/回复详情列表 |
+|body.has_more|Bool|是否有更多数据|
+|body.next_cursor|String|下一页的游标|
+
+## 附录
+<span id="content_note"></span>
+### content 占位符说明
+假如 content 内容如下：
+
+``` markdown
+${inline_mention_all} 这是活动方案：${inline_file:placeholder_A}，请${inline_mention:placeholder_B} 特别关注。
+
+讨论记录见：${inline_chat_record:placeholder_C}
+```
+
+返回的 json 同时附带关于 placeholder 的说明：
+
+``` 
+{
+	"inline_file_list": [
+		{
+			"placeholder": "placeholder_A",
+			"download_url": "MEDIA_ID",
+			"cookie_name": "cookie名字，下载需要设置",
+			"cookie_value": "cookie值，下载需要设置"
+		}
+	],
+	"inline_mention_list": [
+		{
+			"placeholder": "placeholder_B",
+			"member": {
+				"type": 0,
+				"userid": "USERID"
+			}
+		}
+	],
+	"inline_chat_record_list": [
+		{
+			"placeholder": "placeholder_C",
+			"chat_record_id": "CHAT_RECORD_ID"
+		}
+	]
+}
+```
+
+<span></span>
+:::: tip 说明
+`${inline_mention_all}` - 客户端渲染为 @所有人
+`${inline_mention:placeholder_A}` - 客户端渲染为 @某个成员
+`${inline_file:placeholder_A}` - 客户端渲染为 可点击预览的文件超链接
+`${inline_chat_record:placeholder_C}` - 客户端渲染为 可展开的聊天记录卡片
+`inline_file_list` 获取到的结构中，为下载链接`download_url`以及附带的cookie信息。
+`inline_chat_record_list` 获取到的结构中，`chat_record_id` 可传给 `get_chat_record` 接口获取聊天记录详情。
+::::
+
+### UserInfo
+
+| 参数 | 类型 | 说明 |
+|------|------|------|
+| type | Integer | 用户类型：0-成员 `userid`，1-机器人 `aibotid` |
+| userid | String | 成员 userid，`type` 为 0 时有值，长度不超过 64 字节 |
+| aibotid | String | 机器人 botid，`type` 为 1 时有值，长度不超过 64 字节 |
+
+### PostInfo
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|post_id |String|帖子ID  |
+|creator|Object([UserInfo](#UserInfo))|创建者信息|
+|create_time|Interger|创建时间，timestamp|
+|is_recalled|Bool|帖子是否已撤回|
+|is_modified|Bool|帖子是否已修改|
+|modify_time|Bool|帖子最后修改时间，timestamp|
+|content|String|markdown格式内容，可内嵌文件/@人，详见[占位符说明](#content_note)|
+|inline_file_list|object[]|content内嵌文件列表|
+|inline_file_list[].placeholder|string| content 中 ${inline_file:placeholder}  对应的 placeholder|
+|inline_file_list[].file_name|string| 文件名 |
+|inline_file_list[].download_url|string| 临时下载链接，该url一小时内有效 |
+|inline_file_list[].cookie_name|string| 下载请求带cookie的key |
+|inline_file_list[].cookie_value|string| 下载请求带cookie的value |
+|inline_mention_list|object[]|content内嵌@人列表|
+|inline_mention_list[].placeholder|string| content 中 ${inline_mention:placeholder} 对应的 placeholder  |
+|inline_mention_list[].member|Object([UserInfo](#UserInfo))| 被 @ 的用户信息（成员 `type=0` 或机器人 `type=1`） |
+|inline_chat_record_list|object[]|content内嵌聊天记录列表|
+|inline_chat_record_list[].placeholder|string| content 中 `${inline_chat_record:placeholder}` 对应的 placeholder |
+|inline_chat_record_list[].chat_record_id|string| 聊天记录ID，可通过 [获取聊天记录内容](#63046) 接口获取内容 |
+| image_list |  object[] | 图片列表 |
+| image_list[].download_url |  string |  临时下载链接，该url一小时内有效 |
+|image_list[].cookie_name|string| 下载请求带cookie的key |
+|image_list[].cookie_value|string| 下载请求带cookie的value |
+| emoji_list | Object([EmojiInfo](#EmojiInfo))[] | 贴表情列表 |
+
+### ReplyInfo
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|reply_id |String|回复ID  |
+|parent_reply_id |String| 回复某条评论/回复  |
+|creator|Object\[[UserInfo](#UserInfo)\]|创建者信息|
+|create_time|Interger|创建时间，timestamp|
+|is_recalled|Bool|帖子是否已撤回|
+|is_modified|Bool|帖子是否已修改|
+|modify_time|Bool|帖子最后修改时间，timestamp|
+|content|String|markdown格式内容，可内嵌文件/@人，详见[占位符说明](#content_note)|
+|inline_file_list|object[]|content内嵌文件列表|
+|inline_file_list[].placeholder|string| content 中 ${inline_file:placeholder}  对应的 placeholder|
+|inline_file_list[].file_name|string| 文件名 |
+|inline_file_list[].download_url|string| 临时下载链接，该url一小时内有效 |
+|inline_file_list[].cookie_name|string| 下载请求带cookie的key |
+|inline_file_list[].cookie_value|string| 下载请求带cookie的value |
+|inline_mention_list|object[]|content内嵌@人列表|
+|inline_mention_list[].placeholder|string| content 中 ${inline_mention:placeholder} 对应的 placeholder  |
+|inline_mention_list[].member|Object([UserInfo](#UserInfo))| 被 @ 的用户信息（成员 `type=0` 或机器人 `type=1`） |
+| image_list |  object[] | 图片列表 |
+| image_list[].download_url |  string |  临时下载链接，该url一小时内有效 |
+|image_list[].cookie_name|string| 下载请求带cookie的key |
+|image_list[].cookie_value|string| 下载请求带cookie的value |
+| emoji_list | Object([EmojiInfo](#EmojiInfo))[] | 贴表情列表 |
+
+### EmojiInfo
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|emoji_type |Interger| 表情类型，详见[EmojiType](#EmojiType)  |
+|user_list|Object([UserInfo](#UserInfo))[]|成员列表|
+
+### EmojiType
+
+| 枚举值 | 含义 | 参考表情 |
+|--------|------|---------|
+| 1 | [+1] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_18c5f3cbce.png" width="24" height="24" /> |
+| 2 | [666] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_300726437e.png" width="24" height="24" /> |
+| 3 | [DONE] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_c45c10c31b.png" width="24" height="24" /> |
+| 4 | [Emm] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_5a882d3128.png" width="24" height="24" /> |
+| 5 | [GET] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_7f31c5001d.png" width="24" height="24" /> |
+| 6 | [OK] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_86276e0efe.png" width="24" height="24" /> |
+| 7 | [YES] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_15f9aee063.png" width="24" height="24" /> |
+| 8 | [亲亲] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_5eaa47df74.png" width="24" height="24" /> |
+| 9 | [便便] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_a920ef4ebf.png" width="24" height="24" /> |
+| 10 | [偷笑] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_dbe200915f.png" width="24" height="24" /> |
+| 11 | [傲慢] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_3f59439d7b.png" width="24" height="24" /> |
+| 12 | [再见] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_cc770e6ee3.png" width="24" height="24" /> |
+| 13 | [凋谢] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_79139d2439.png" width="24" height="24" /> |
+| 14 | [加油] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_a8be61d8ec.png" width="24" height="24" /> |
+| 15 | [勾引] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_0298890ce0.png" width="24" height="24" /> |
+| 16 | [发呆] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_fc343dec5a.png" width="24" height="24" /> |
+| 17 | [发怒] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_584c415ae7.png" width="24" height="24" /> |
+| 18 | [发抖] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_9f6e1f93e2.png" width="24" height="24" /> |
+| 19 | [可怜] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_b0f76130b9.png" width="24" height="24" /> |
+| 20 | [右哼哼] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_3d2c147f3a.png" width="24" height="24" /> |
+| 21 | [叹气] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_e93aad2b06.png" width="24" height="24" /> |
+| 22 | [吃瓜] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_e99a401778.png" width="24" height="24" /> |
+| 23 | [合十] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_ef2e91b4fa.png" width="24" height="24" /> |
+| 24 | [吐] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_394afba374.png" width="24" height="24" /> |
+| 25 | [呲牙] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_b96737fa20.png" width="24" height="24" /> |
+| 26 | [咒骂] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_98df680132.png" width="24" height="24" /> |
+| 27 | [咖啡] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_2ce64be6f5.png" width="24" height="24" /> |
+| 28 | [哇] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_f51ffb57fd.png" width="24" height="24" /> |
+| 29 | [啤酒] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_13d376b53d.png" width="24" height="24" /> |
+| 30 | [嘘] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_f82831e310.png" width="24" height="24" /> |
+| 31 | [嘴唇] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_fd8e22eb86.png" width="24" height="24" /> |
+| 32 | [嘿哈] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_681a5138a8.png" width="24" height="24" /> |
+| 33 | [囧] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_00157fac87.png" width="24" height="24" /> |
+| 34 | [困] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_eb170d2ff9.png" width="24" height="24" /> |
+| 35 | [坏笑] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_a88ff35080.png" width="24" height="24" /> |
+| 36 | [大哭] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_fb4713038f.png" width="24" height="24" /> |
+| 37 | [天啊] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_30bdb6e5dd.png" width="24" height="24" /> |
+| 38 | [太阳] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_fead87a963.png" width="24" height="24" /> |
+| 39 | [失望] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_4f8e2e9eb2.png" width="24" height="24" /> |
+| 40 | [奸笑] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_d994b57694.png" width="24" height="24" /> |
+| 41 | [好] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_b9b57db7df.png" width="24" height="24" /> |
+| 42 | [好的] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_ba277f9dac.png" width="24" height="24" /> |
+| 43 | [委屈] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_21ff41779f.png" width="24" height="24" /> |
+| 44 | [害羞] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_bb8d728256.png" width="24" height="24" /> |
+| 45 | [尴尬] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_83b07d7651.png" width="24" height="24" /> |
+| 46 | [庆祝] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_1907601cdc.png" width="24" height="24" /> |
+| 47 | [弱] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_1df9984048.png" width="24" height="24" /> |
+| 48 | [强] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_50b0e3b2f7.png" width="24" height="24" /> |
+| 49 | [得意] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_3f6b80904b.png" width="24" height="24" /> |
+| 50 | [微笑] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_3ba1aeb6e4.png" width="24" height="24" /> |
+| 51 | [心碎] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_f304a80c0a.png" width="24" height="24" /> |
+| 52 | [快哭了] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_a1c7ff972e.png" width="24" height="24" /> |
+| 53 | [恐惧] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_b30b4f547b.png" width="24" height="24" /> |
+| 54 | [悠闲] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_346c8f4cd0.png" width="24" height="24" /> |
+| 55 | [惊恐] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_a565043fed.png" width="24" height="24" /> |
+| 56 | [惊讶] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_620cfbf3f2.png" width="24" height="24" /> |
+| 57 | [愉快] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_1f9ca9462d.png" width="24" height="24" /> |
+| 58 | [憨笑] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_9e5e83a8ac.png" width="24" height="24" /> |
+| 59 | [打脸] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_dd8e49163d.png" width="24" height="24" /> |
+| 60 | [抓狂] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_49f46857d0.png" width="24" height="24" /> |
+| 61 | [抠鼻] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_a2d20d45f0.png" width="24" height="24" /> |
+| 62 | [抱拳] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_a17cba683d.png" width="24" height="24" /> |
+| 63 | [拥抱] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_fe5f802091.png" width="24" height="24" /> |
+| 64 | [拳头] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_34064e4484.png" width="24" height="24" /> |
+| 65 | [捂脸] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_beacaff08b.png" width="24" height="24" /> |
+| 66 | [握手] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_264267d577.png" width="24" height="24" /> |
+| 67 | [撇嘴] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_9042c1253c.png" width="24" height="24" /> |
+| 68 | [擦汗] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_7087c421b2.png" width="24" height="24" /> |
+| 69 | [收到] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_16d32ed3d6.png" width="24" height="24" /> |
+| 70 | [敲打] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_c4c144d610.png" width="24" height="24" /> |
+| 71 | [无语] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_e33b76bfc4.png" width="24" height="24" /> |
+| 72 | [旺柴] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_53264c8943.png" width="24" height="24" /> |
+| 73 | [晕] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_55352b18f9.png" width="24" height="24" /> |
+| 74 | [月亮] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_c83aa0698a.png" width="24" height="24" /> |
+| 75 | [机智] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_a5c7007a26.png" width="24" height="24" /> |
+| 76 | [汗] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_e9bdfd7163.png" width="24" height="24" /> |
+| 77 | [流泪] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_4d7134330e.png" width="24" height="24" /> |
+| 78 | [炸弹] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_ef503385af.png" width="24" height="24" /> |
+| 79 | [烟花] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_8743a6ba84.png" width="24" height="24" /> |
+| 80 | [爆竹] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_6518dee304.png" width="24" height="24" /> |
+| 81 | [爱心] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_c3aa366d78.png" width="24" height="24" /> |
+| 82 | [猪头] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_cc564e7a2d.png" width="24" height="24" /> |
+| 83 | [玫瑰] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_c6443ebcef.png" width="24" height="24" /> |
+| 84 | [生病] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_e072291b56.png" width="24" height="24" /> |
+| 85 | [疑问] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_9d4eebc6d8.png" width="24" height="24" /> |
+| 86 | [發] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_221a0994bb.png" width="24" height="24" /> |
+| 87 | [白眼] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_58225d8821.png" width="24" height="24" /> |
+| 88 | [皱眉] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_1bb34a1c72.png" width="24" height="24" /> |
+| 89 | [睡] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_82820ae84e.png" width="24" height="24" /> |
+| 90 | [破涕为笑] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_e25f38a4e7.png" width="24" height="24" /> |
+| 91 | [礼物] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_e65cabab86.png" width="24" height="24" /> |
+| 92 | [社会社会] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_76f37a7db2.png" width="24" height="24" /> |
+| 93 | [福] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_3fec289975.png" width="24" height="24" /> |
+| 94 | [笑脸] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_cb06df1188.png" width="24" height="24" /> |
+| 95 | [红包] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_0d729c2563.png" width="24" height="24" /> |
+| 96 | [翻白眼] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_0d72b57f1a.png" width="24" height="24" /> |
+| 97 | [耶] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_030cb42da1.png" width="24" height="24" /> |
+| 98 | [胜利] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_33d3a909cc.png" width="24" height="24" /> |
+| 99 | [脸红] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_0dc9df1495.png" width="24" height="24" /> |
+| 100 | [色] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_b4489347b6.png" width="24" height="24" /> |
+| 101 | [苦涩] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_2b8a4efcbb.png" width="24" height="24" /> |
+| 102 | [菜刀] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_c76f9489eb.png" width="24" height="24" /> |
+| 103 | [蛋糕] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_2655a26bd7.png" width="24" height="24" /> |
+| 104 | [衰] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_3d646e36ff.png" width="24" height="24" /> |
+| 105 | [裂开] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_da5ccc5e89.png" width="24" height="24" /> |
+| 106 | [让我看看] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_4c4cab6fff.png" width="24" height="24" /> |
+| 107 | [调皮] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_37c2f232e6.png" width="24" height="24" /> |
+| 108 | [跳跳] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_e4b257cc70.png" width="24" height="24" /> |
+| 109 | [转圈] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_a36e9ff555.png" width="24" height="24" /> |
+| 110 | [鄙视] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_b9748aa138.png" width="24" height="24" /> |
+| 111 | [闭嘴] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_bafa2677da.png" width="24" height="24" /> |
+| 112 | [阴险] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_c258f6f449.png" width="24" height="24" /> |
+| 113 | [难过] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_891399a0bb.png" width="24" height="24" /> |
+| 114 | [骷髅] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_4486d65de0.png" width="24" height="24" /> |
+| 115 | [鼓掌] | <img src="https://rescdn.qqmail.com/node/wwqy/qymng/images/emoji_e3fd14cd4a.png" width="24" height="24" /> |

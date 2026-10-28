@@ -1,0 +1,107 @@
+---
+title: "停止"群聊通道"的同步"
+generated_at: "2026-10-28 15:18:39"
+update_time: 1792066921
+source: "https://developer.work.weixin.qq.com/document/path/101969"
+---
+
+[TOC]
+开发者可以调用接口停止频道内容同步到「群聊通道」。
+
+##概述
+- 为保证已有机器人的使用体验，机器人加入频道后，频道内容会通过「群聊通道」同步给已适配群聊的机器人，回复也会同步回频道。
+-  建议适配频道接口，机器人可以理解结构化内容，获取频道全部内容和信息。
+-  适配后需停止"群聊通道"的同步。同一内容同时走「群聊」和「频道」两条通道，各响应一次会导致重复回答。
+
+
+## 修改群聊同步开关
+
+修改当前机器人身份对应的「群聊通道」同步状态。
+设置 `stop_compat_from_channel` 为 `true` 之后，「消息接收与发送」-[「接收消息」](#62155)的 `compat_info.source` 为 `channel` 的消息会被过滤掉。
+
+**请求示例：**
+
+```json
+{
+  "cmd": "aibot_set_compat_sync",
+  "headers": {
+    "req_id": "REQUEST_ID"
+  },
+  "body": {
+    "stop_compat_from_channel": true
+  }
+}
+```
+
+**请求字段说明：**
+
+| 字段 | 类型 | 必填 |说明 |
+|------|------|------|------|
+| cmd | string | 是 | 固定值 `aibot_set_compat_sync` |
+| headers.req_id | string | 是 | 请求唯一标识，由开发者自行生成 |
+| body.stop_compat_from_channel | bool | 是 |`true`：停止「群聊通道」同步；`false`：恢复「群聊通道」同步 |
+
+**响应示例：**
+
+```json
+{
+  "headers": {
+    "req_id": "REQUEST_ID"
+  },
+  "errcode": 0,
+  "errmsg": "ok"
+}
+```
+
+**响应字段说明：**
+
+| 参数 | 类型|说明 |
+|------|------|
+| errcode | int32|返回码；`0` 表示成功 |
+| errmsg | string|返回码说明 |
+
+## 查询群聊同步开关
+
+查询当前机器人身份对应的「群聊通道」同步状态。
+
+**请求示例：**
+
+```json
+{
+  "cmd": "aibot_get_compat_sync",
+  "headers": {
+    "req_id": "REQUEST_ID"
+  },
+  "body": {}
+}
+```
+
+**请求字段说明：**
+
+| 字段 | 类型 | 必填 |说明 |
+|------|------|------|------|
+| cmd | string | 是 | 固定值 `aibot_get_compat_sync` |
+| headers.req_id | string | 是 | 请求唯一标识，由开发者自行生成 |
+
+**响应示例：**
+
+```json
+{
+  "headers": {
+    "req_id": "REQUEST_ID"
+  },
+  "body": {
+    "stop_compat_from_channel": true
+  },
+  "errcode": 0,
+  "errmsg": "ok"
+}
+```
+
+**响应字段说明：**
+
+| 参数 | 类型|说明 |
+|------|------|
+| errcode | int32|返回码；`0` 表示成功 |
+| errmsg | string|返回码说明 |
+| body.stop_compat_from_channel | bool|布尔值。`true` 表示已停止「群聊通道」同步；`false` 表示未停止。 |

@@ -1,0 +1,356 @@
+---
+title: "获取聊天记录内容"
+generated_at: "2026-10-28 15:18:34"
+update_time: 1792066868
+source: "https://developer.work.weixin.qq.com/document/path/101965"
+---
+
+[TOC]
+机器人通过[获取全部内容](#63045)或[获取被@的内容](#63043)接口拿到帖子中的聊天记录 ID（`inline_chat_record_list[].chat_record_id`）后，可调用本接口获取聊天记录的详细内容。
+聊天记录中有图片、文件、视频时，首次调用会开始处理这些文件，处理完成前只返回部分内容，全部处理完成后返回完整内容，详见[返回状态说明](#返回状态说明)。
+
+**请求示例：**
+```json
+{
+  "cmd": "aibot_topic_get_chat_record",
+  "headers": {
+    "req_id": "REQUEST_ID"
+  },
+  "body": {
+    "chat_record_id": "CHAT_RECORD_ID",
+    "topic_id": "TOPIC_ID",
+    "post_id": "POST_ID"
+  }
+}
+```
+
+**请求字段说明：** 
+
+| 字段      | 类型| 必填| 说明   |
+| ------- | ---- | --|-- |
+| cmd | string | 是 | 固定值 `aibot_topic_get_chat_record` |
+| headers.req_id | string | 是 | 请求唯一标识，由开发者自行生成 |
+| body.chat_record_id|String|是|聊天记录ID，取自帖子详情中的 `inline_chat_record_list[].chat_record_id`，长度不超过 256 字节|
+| body.topic_id|String|是|聊天记录所在的频道ID，长度不超过 128 字节|
+| body.post_id|String|是|聊天记录所在的帖子ID，长度不超过 128 字节|
+> 需要指定 `topic_id`、`post_id`。
+> 接口校验 `chat_record_id`跟帖子的关系。如果当前帖子被撤回，或重新编辑去掉了此聊天记录，则会返回错误。
+
+**响应示例：**
+```json
+{
+  "headers": {
+    "req_id": "REQUEST_ID"
+  },
+  "body": {
+    "status": 0,
+    "msgtype": "merged_msg",
+    "merged_msg": {
+      "msg_item": [
+        {
+          "from": {
+            "type": 0,
+            "id": "USERID"
+          },
+          "send_time": 1700000000,
+          "msgtype": "text",
+          "text": {
+            "content": "这是今日的测试情况"
+          }
+        }
+      ]
+    }
+  },
+  "errcode": 0,
+  "errmsg": "ok"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|body.status|Integer|内容状态：0-完整内容；1-部分内容，有文件还在处理中。详见[返回状态说明](#返回状态说明)|
+|body.msgtype|String|固定为 `merged_msg`|
+|body.merged_msg|Object|聊天记录内容|
+|body.merged_msg.msg_item|Object[]|聊天记录中的消息，按原顺序排列，格式见[消息格式](#消息格式)。聊天记录中没有消息时为空|
+
+## 返回状态说明
+
+- 聊天记录中没有图片、文件、视频、图文混排消息时，直接返回 `status` 为 0 的完整内容。
+- 聊天记录中有图片、文件、视频、图文混排消息时，首次调用会开始处理其中的文件。只要还有文件没有处理完，就返回 `status` 为 1 的部分内容：
+  - 只返回[文本消息](#文本消息)和[聊天记录消息](#聊天记录消息)，嵌套的聊天记录中同样只保留文本消息，过滤后没有消息的嵌套聊天记录不返回；
+  - 图片、文件、视频、图文混排消息**一律不返回**（`msg_item` 中直接没有这条消息，而不是占位），其中已经处理完成的、已经确定无法下载的也同样不返回；
+- 收到 `status` 为 1 时，请使用相同参数重试，建议间隔 3～5 秒，最长等待 5 分钟。重复调用不会重复处理文件。
+- 所有文件都处理完成后，返回 `status` 为 0 的完整内容。无法下载的文件以文本消息返回错误提示，见[无法下载的文件](#无法下载的文件)。
+
+---
+
+## 消息格式
+
+`merged_msg.msg_item` 中的每一项是聊天记录中的一条消息。以下示例均为 `msg_item` 中的一项。
+
+## 通用字段说明
+
+所有类型的消息均包含以下通用字段：
+
+```json
+{
+    "from": {
+        "type": 0,
+        "id": "USERID"
+    },
+    "send_time": 1700000000,
+    "msgtype": "msgtype_name",
+    "msgtype_name": {}
+}
+```
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| from | object | 消息发送者。没有任何可用信息时（如微信消息既没有 ID 也没有昵称）不返回 |
+| from.type | int | 发送者类型：0-本企业成员；1-智能机器人；2-微信来源；100-其他（其他企业的成员、外部联系人、普通机器人、客服等） |
+| from.id | string | `type` 为 0 时为成员 userid，与帖子中 `creator` 等字段的 userid 一致；<br/>`type` 为 1 时为智能机器人 ID，与帖子中 `creator` 等字段的 `aibotid` 一致；<br/>`type` 为 100 时为临时ID：同一个机器人、同一个频道下，同一个发送者的临时ID固定；不同机器人或不同频道下的临时ID不同；<br/>`type` 为 2 时不返回 |
+| from.name | string | 发送者昵称。**仅 `type` 为 2（微信来源）时返回**，其他类型不返回 |
+| send_time | int | 消息发送时间，秒级时间戳 |
+| msgtype | string | 消息类型，同时也是消息内容的字段名。目前支持 [text](#文本消息)、[image](#图片消息)、[file](#文件消息)、[video](#视频消息)、[mixed](#图文混排消息)、[merged_msg](#聊天记录消息) |
+| msgtype_name | object | 消息内容结构体，字段名与 msgtype 值一致 |
+
+`from` 中返回 `id` 还是 `name` 取决于发送者类型：微信来源的发送者没有企业内 ID，只返回昵称。
+
+```json
+"from": {
+    "type": 2,
+    "name": "微信昵称"
+}
+```
+
+---
+
+## 文本消息
+
+```json
+{
+    "from": {
+        "type": 0,
+        "id": "USERID"
+    },
+    "send_time": 1700000000,
+    "msgtype": "text",
+    "text": {
+        "content": "这是今日的测试情况"
+    }
+}
+```
+
+| 参数 | 说明 |
+|---|---|
+| msgtype | 固定是 `text` |
+| text.content | 文本内容 |
+
+以下消息均以文本消息返回，`text.content` 的内容如下：
+
+| 原始消息 | content |
+|---|---|
+| 文本 | 消息中的文字、表情和 @ 信息，@所有人 显示为「@所有人」。引用回复只返回回复的内容，不返回被引用的内容 |
+| markdown | markdown 原文（不去除 markdown 标记）及其中的附加文本，多段内容以换行分隔 |
+| 在线文档 | `【企业微信文档】文档名 链接` |
+| 微盘文件 | `【企业微信微盘】文件名 链接` |
+| 网页链接 | `链接` |
+| 超过三层的聊天记录 | `[该消息类型暂不能展示]` |
+| 其他（语音、表情、位置、名片、邮件等） | `[该消息类型暂不能展示]` |
+| 无法下载的图片、文件、视频 | 错误提示，见[无法下载的文件](#无法下载的文件) |
+
+---
+
+## 图片消息
+
+> 仅在 `status` 为 0 时返回。
+
+```json
+{
+    "from": {
+        "type": 0,
+        "id": "USERID"
+    },
+    "send_time": 1700000000,
+    "msgtype": "image",
+    "image": {
+        "url": "IMAGE_URL",
+        "file_name": "FILE_NAME"
+    }
+}
+```
+
+| 参数 | 说明 |
+|---|---|
+| msgtype | 固定是 `image` |
+| image.url | 图片的下载 url，该 url 一小时内有效。文件未加密，可直接下载 |
+| image.file_name | 文件名，可能不返回 |
+
+---
+
+## 文件消息
+
+> 仅在 `status` 为 0 时返回。仅支持 **100M** 以内的文件，超过的以文本消息返回错误提示。
+
+```json
+{
+    "from": {
+        "type": 0,
+        "id": "USERID"
+    },
+    "send_time": 1700000000,
+    "msgtype": "file",
+    "file": {
+        "url": "FILE_URL",
+        "file_name": "FILE_NAME",
+        "file_size": 1024
+    }
+}
+```
+
+| 参数 | 说明 |
+|---|---|
+| msgtype | 固定是 `file` |
+| file.url | 文件的下载 url，该 url 一小时内有效。文件未加密，可直接下载 |
+| file.file_name | 文件名，可能不返回 |
+| file.file_size | 文件大小，单位为字节，可能不返回 |
+
+---
+
+## 视频消息
+
+> 仅在 `status` 为 0 时返回。仅支持 **100M** 以内的视频，超过的以文本消息返回错误提示。
+
+```json
+{
+    "from": {
+        "type": 0,
+        "id": "USERID"
+    },
+    "send_time": 1700000000,
+    "msgtype": "video",
+    "video": {
+        "url": "VIDEO_URL",
+        "file_name": "FILE_NAME"
+    }
+}
+```
+
+| 参数 | 说明 |
+|---|---|
+| msgtype | 固定是 `video` |
+| video.url | 视频的下载 url，该 url 一小时内有效。文件未加密，可直接下载 |
+| video.file_name | 文件名，可能不返回 |
+
+---
+
+## 图文混排消息
+
+> 仅在 `status` 为 0 时返回。
+
+```json
+{
+    "from": {
+        "type": 0,
+        "id": "USERID"
+    },
+    "send_time": 1700000000,
+    "msgtype": "mixed",
+    "mixed": {
+        "msg_item": [
+            {
+                "msgtype": "text",
+                "text": {
+                    "content": "这是今日的测试截图"
+                }
+            },
+            {
+                "msgtype": "image",
+                "image": {
+                    "url": "IMAGE_URL",
+                    "file_name": "FILE_NAME"
+                }
+            }
+        ]
+    }
+}
+```
+
+| 参数 | 说明 |
+|---|---|
+| msgtype | 固定是 `mixed` |
+| mixed.msg_item | 图文混排中的各项，按原顺序排列 |
+| mixed.msg_item.msgtype | 图文混排中的类型，`text`/`image` |
+| mixed.msg_item.text | 图文混排中的文本内容，格式同[文本消息](#文本消息)的 `text` |
+| mixed.msg_item.image | 图文混排中的图片内容，格式同[图片消息](#图片消息)的 `image` |
+
+图文混排中的在线文档、微盘文件、网页链接按[文本消息](#文本消息)中的格式以 `text` 子项返回，其他内容返回「[该消息类型暂不能展示]」；无法下载的图片以 `text` 子项返回错误提示。
+
+---
+
+## 聊天记录消息
+
+> 最多返回三层聊天记录（顶层聊天记录算第一层），更深的聊天记录以文本消息返回「[该消息类型暂不能展示]」。
+
+```json
+{
+    "from": {
+        "type": 0,
+        "id": "USERID"
+    },
+    "send_time": 1700000000,
+    "msgtype": "merged_msg",
+    "merged_msg": {
+        "msg_item": [
+            {
+                "from": {
+                    "type": 100,
+                    "id": "TMP_ID"
+                },
+                "send_time": 1690000000,
+                "msgtype": "text",
+                "text": {
+                    "content": "这是之前的讨论记录"
+                }
+            }
+        ]
+    }
+}
+```
+
+| 参数 | 说明 |
+|---|---|
+| msgtype | 固定是 `merged_msg` |
+| merged_msg.msg_item | 嵌套聊天记录中的消息，按原顺序排列，格式见[消息格式](#消息格式) |
+
+---
+
+## 无法下载的文件
+
+> 仅在 `status` 为 0 时返回。`status` 为 1 时，这些消息与其他图片、文件、视频一样不返回。
+
+图片、文件、视频无法下载时，在原位置以[文本消息](#文本消息)返回错误提示；图文混排中的图片以 `text` 子项返回。
+
+```json
+{
+    "from": {
+        "type": 0,
+        "id": "USERID"
+    },
+    "send_time": 1700000000,
+    "msgtype": "text",
+    "text": {
+        "content": "视频/文件超过100M，无法下载"
+    }
+}
+```
+
+| 场景 | content |
+|---|---|
+| 超过 100M | 视频/文件超过100M，无法下载 |
+| 资源已过期或被封禁 | 资源已过期或者被封禁 |
+| 文件被设置为限制下载/导出 | 这份文件是限制下载/导出的文件，智能机器人暂时无法获取。可联系企业管理员在企业微信管理后台「安全管理——文件防泄漏——文件下载/导出限制」中修改设置，允许企业创建的智能机器人获取。 |
+| 其他下载异常 | 资源下载异常 |

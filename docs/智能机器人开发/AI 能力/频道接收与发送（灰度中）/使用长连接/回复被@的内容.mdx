@@ -1,0 +1,141 @@
+---
+title: "回复被@的内容"
+generated_at: "2026-10-28 15:18:31"
+update_time: 1792066843
+source: "https://developer.work.weixin.qq.com/document/path/101963"
+---
+
+[TOC]
+机器人收到被 @ 回调事件后， 允许调用接口回复、贴表情。（超过24小时则不可调用）。
+<!-- 发送帖子，仅长连模式可用 -->
+
+## 发送评论
+
+**请求示例：**
+```json
+{
+	"cmd": "aibot_topic_send_reply",
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"topic_id": "TOPIC_ID",
+		"post_id": "POST_ID",
+		"parent_reply_id": "可选，对某条评论进行回复",
+		"content": "带占位符的 markdown 内容",
+		"inline_file_list": [
+			{
+				"placeholder": "PLACE_HOLDER",
+				"media_id": "MEDIA_ID"
+			}
+		],
+		"inline_mention_list": [
+			{
+				"placeholder": "PLACE_HOLDER",
+				"member": {
+					"type": 0,
+					"userid": "USERID"
+				}
+			}
+		],
+		"image_list": [
+			{
+				"media_id": "MEDIA_ID"
+			}
+		],
+		"feedback": {
+			"id": "FEEDBACK_ID"
+		}
+	}
+}
+```
+
+**请求字段说明：**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| cmd | string | 是 | 固定值 `aibot_topic_send_reply` |
+| headers.req_id | string | 是 | 请求唯一标识，由开发者自行生成 |
+| body.topic_id | string | 是 | 频道ID，长度不超过 128 字节 |
+| body.post_id | string | 是 | 帖子ID，长度不超过 128 字节 |
+| body.parent_reply_id | string | 否 | 回复某条评论ID，长度不超过 128 字节。空表示评论，非空则表示回复某条评论/回复 |
+| body.content | string | 是 | markdown格式内容，可内嵌文件/@人，详见[占位符说明](#63048/content_note)。长度不超过 20480 字节 |
+| body.inline_file_list | object[] | 否 | content内嵌文件列表，不超过8个 |
+| body.inline_file_list[].placeholder | string | 是 | content 中 ${inline_file:placeholder}  对应的 placeholder；仅支持大小写字母、数字、下划线(_)、横杆(-)，长度 1~32 字符 |
+| body.inline_file_list[].media_id | string | 是 | 临时素材ID，仅支持`file`类型，可通过[上传临时素材](#62159)获取；长度不超过 128 字节 |
+| body.inline_mention_list | object[] | 否 | content内嵌@人列表，不超过8个 |
+| body.inline_mention_list[].placeholder | string | 是 | content 中 ${inline_mention:placeholder} 对应的 placeholder；仅支持大小写字母、数字、下划线(_)、横杆(-)，长度 1~32 字符 |
+| body.inline_mention_list[].member | Object([UserInfo](#63048/UserInfo)) | 是 | 被 @ 的成员信息，仅支持 `type=0`（成员），不支持 @ 机器人 |
+| body.image_list | object[] | 否 | 图片列表，不超过8个 |
+| body.image_list[].media_id | string | 是 | 临时素材ID，仅支持`image`类型，可通过[上传临时素材](#62159)获取；长度不超过 128 字节 |
+| body.feedback | object | 否 | 反馈配置 |
+| body.feedback.id | string | 否 | 不为空时，用户反馈会触发[用户反馈事件](#62992)，不超过 256 字节 |
+
+**响应示例：**
+```json
+{
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"reply_id": "REPLY_ID"
+	},
+	"errcode": 0,
+	"errmsg": "ok"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
+|body.reply_id|String|回复/评论ID|
+
+## 贴表情/取消贴表情
+
+**请求示例：**
+```json
+{
+	"cmd": "aibot_topic_post_emoji",
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"body": {
+		"topic_id": "TOPIC_ID",
+		"post_id": "POST_ID",
+		"reply_id": "REPLY_ID",
+		"emoji_type": 1,
+		"action": 1
+	}
+}
+```
+
+**请求字段说明：**
+
+| 字段 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| cmd | string | 是 | 固定值 `aibot_topic_post_emoji` |
+| headers.req_id | string | 是 | 请求唯一标识，由开发者自行生成 |
+| body.topic_id | string | 是 | 频道ID，长度不超过 128 字节 |
+| body.post_id | string | 是 | 帖子ID，长度不超过 128 字节 |
+| body.reply_id | string | 否 | 回复ID，长度不超过 128 字节 |
+| body.emoji_type | integer | 是 | 表情类型，详见[EmojiType](#63048/EmojiType) |
+| body.action | integer | 是 | 操作类型：0-取消贴表情 1-贴表情 |
+
+**响应示例：**
+```json
+{
+	"headers": {
+		"req_id": "REQUEST_ID"
+	},
+	"errcode": 0,
+	"errmsg": "ok"
+}
+```
+**参数说明：**
+
+| 参数      | 类型|说明   |
+| ------- | --|-- |
+|errcode |Integer|错误码  |
+|errmsg|String|错误码说明|
